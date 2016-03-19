@@ -19,7 +19,7 @@ h2.page_subhead {font-size: 18px; font-weight: 300; text-align: center; margin: 
 
 .notice-inner {max-width: 1400px; margin: 0 auto; color: #ffffff; text-align: center; padding: 10px 0;}
 
-/* ---------------- Site Callout ------------------------------------------ *
+/* ---------------- Site Callout ------------------------------------------ */
 #site_callout {background: #002b5a; color: #ffffff;}
     #site_callout a {color: #ffffff;}
 
@@ -74,8 +74,7 @@ h2.page_subhead {font-size: 18px; font-weight: 300; text-align: center; margin: 
 
 
 /* ---------------- Main Nav ------------------------------------------ */
-#main_nav {display: none;}
-    #main_nav {text-align: right; }
+#main_nav {display: none; text-align: right;}
 
 #main_nav_items {}
     #main_nav_items > li  { display: inline-block; font-size: 20px;}
@@ -94,8 +93,8 @@ h2.page_subhead {font-size: 18px; font-weight: 300; text-align: center; margin: 
     #main_nav_items ul > li a:active {color: #ffa500;}
 
 .nav-1-1 a {background: url('/media/hubbard_content/go_to_work_cat_landing.jpg') no-repeat center center;}
-.nav-1-2 a {background: url('/media/hubbard_content/un-sneaker_cat_landing.jpg') no-repeat center center;}
-.nav-1-3 a {background: url('/media/hubbard_content/limited_cat_landing.jpg') no-repeat center center;}
+    .nav-1-2 a {background: url('/media/hubbard_content/un-sneaker_cat_landing.jpg') no-repeat center center;}
+    .nav-1-3 a {background: url('/media/hubbard_content/limited_cat_landing.jpg') no-repeat center center;}
 
 
 

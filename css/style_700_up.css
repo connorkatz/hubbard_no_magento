@@ -2,13 +2,13 @@
 
 /* ---------------- Site Callout ------------------------------------------ */
 #site_callout_inner {padding: 10px 0;}
-    #site_callout_inner p:first-of-type {font-weight: 700;}
-    #site_callout_inner p:nth-of-type(2) {display: inline-block;}
+#site_callout_inner p:first-of-type {font-weight: 700;}
+#site_callout_inner p:nth-of-type(2) {display: inline-block;}
 
 
 /* ---------------- Header ------------------------------------------ */
 #mobile_nav_toggle {padding: 0 20px;}
-    #mobile_nav_toggle label {font-size: 16px; top: -6px;}
+#mobile_nav_toggle label {font-size: 16px; top: -6px;}
 
 #logo_container {padding: 10px 0 15px 0;}
 
@@ -21,23 +21,23 @@
 
 /* ---------------- Footer ------------------------------------------ */
 .footer_link_group {}
-    .footer_link_group li {font-size: 14px;}
-    .footer_link_group a {padding: 8px 5px;}
+.footer_link_group li {font-size: 14px;}
+.footer_link_group a {padding: 8px 5px;}
 
 
 
 /* ---------------- Product Listing ------------------------------------------ */
 .prod_list_group {margin-bottom: 50px;}
-    .prod_list_group h2 {font-size: 22px;}
+.prod_list_group h2 {font-size: 22px;}
 
 .prod_list_items {margin-left: 0;}
-    .prod_list_items li {width: 33.33333%; margin: 0;}
+.prod_list_items li {width: 33.33333%; margin: 0;}
 
 
 
 /* ---------------- Static Content Pages ------------------------------------------ */
 .static_title_block {margin: 35px auto 30px auto;}
-    .static_title_block h1 {font-size: 28px;}
+.static_title_block h1 {font-size: 28px;}
 
 
 } /* end media query */

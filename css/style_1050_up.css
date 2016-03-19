@@ -4,7 +4,7 @@
 #mobile_nav_toggle {display: none}
 
 #logo_container {width: 250px; padding: 15px 0; margin-left: 20px}
-    #logo_container p {display: block;}
+#logo_container p {display: block;}
 
 #logo {width: 100%;}
 
@@ -35,15 +35,15 @@
 
 /* ---------------- Product Listing ------------------------------------------ */
 .prod_list_group {}
-    .prod_list_group h2 {font-size: 26px;}
+.prod_list_group h2 {font-size: 26px;}
 
 .prod_list_items {margin-left: 0;}
-    .prod_list_items li {width: 25%; margin-left: 0;}
+.prod_list_items li {width: 25%; margin-left: 0;}
 
 
 /* ---------------- Static Content Pages ------------------------------------------ */
 .static_title_block {margin: 40px auto 35px auto;}
-    .static_title_block h1 {font-size: 32px;}
+.static_title_block h1 {font-size: 32px;}
 
 
 } /* end media query */
