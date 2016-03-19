@@ -19,7 +19,7 @@ h2.page_subhead {font-size: 18px; font-weight: 300; text-align: center; margin: 
 
 .notice-inner {max-width: 1400px; margin: 0 auto; color: #ffffff; text-align: center; padding: 10px 0;}
 
-/* ---------------- Site Callout ------------------------------------------ */
+/* ---------------- Site Callout ------------------------------------------ *
 #site_callout {background: #002b5a; color: #ffffff;}
     #site_callout a {color: #ffffff;}
 
