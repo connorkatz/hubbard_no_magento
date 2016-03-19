@@ -1,0 +1,14 @@
+@media (min-width: 1500px) {
+
+/* ---------------- Global ------------------------------------------ */
+.site_width {}
+    .site_width.padded {padding: 0;}
+
+
+/* ---------------- Header ------------------------------------------ */
+#logo_container {margin-left: 0}
+
+#header_right {width: calc(100% - 250px); padding: 0;}
+
+
+} /* end media query */

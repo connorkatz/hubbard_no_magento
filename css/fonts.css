@@ -1,0 +1,11 @@
+/* ====================
+DIN
+ ==================== */
+@font-face {
+    font-family: 'DINCondensed-Regular';
+    src: url('../fonts/din/din-condensed-regular.eot');
+    src: url('../fonts/din/din-condensed-regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/din/din-condensed-regular.woff2') format('woff2'),
+        url('../fonts/din/din-condensed-regular.woff') format('woff'),
+        url('../fonts/din/din-condensed-regular.ttf') format('truetype');
+}

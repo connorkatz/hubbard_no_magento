@@ -1,0 +1,8 @@
+@media (min-width: 400px) {
+
+/* ---------------- Header ------------------------------------------ */
+#mobile_nav_toggle {}
+    #mobile_nav_toggle label {display: block;}
+
+
+} /* end media query */
