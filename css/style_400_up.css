@@ -1,8 +1,9 @@
 @media (min-width: 400px) {
 
 /* ---------------- Header ------------------------------------------ */
-#mobile_nav_toggle {}
+#mobile_nav_toggle {width: 85px;}
     #mobile_nav_toggle label {display: block;}
 
+#logo_container {width: calc(100% - 170px); text-align: center;}
 
 } /* end media query */
