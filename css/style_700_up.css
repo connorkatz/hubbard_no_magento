@@ -18,13 +18,12 @@
 
 #user_nav {padding: 0 20px; top: 10px;}
     #user_nav li.link.support {display: inline-block; margin-right: 15px;}
-    #user_nav a:hover {color: #cccccc;}
+
 
 #search_icon {margin: 0;}
     #search_icon a {font-size: 18px; padding: 6px 15px 6px 5px;}
 
 /* ---------------- Mobile Nav ------------------------------------------ */
-#mobile_nav {top: 108px;}
 
 
 /* ---------------- Footer ------------------------------------------ */

@@ -13,21 +13,22 @@ function hideMobileNav() {
 
 function showSiteSearch() {
     hideMobileNav();
-    $j('#site_search').addClass('active');
+    showHeaderAlternate();
     var $searchIcon = $j('#search_icon a');
     $searchIcon.removeClass('fa-search');
     $searchIcon.addClass('fa-close');
     $j('#search_icon').addClass('active');
-    showHeaderAlternate();
+    $j('#site_search').addClass('active');
+    $j('#site_search input').focus();
 }
 
 function hideSiteSearch() {
+    hideHeaderAlternate();
     $j('#site_search').removeClass('active');
+    $j('#search_icon').removeClass('active');
     var $searchIcon = $j('#search_icon a');
     $searchIcon.removeClass('fa-close');
     $searchIcon.addClass('fa-search');
-    $j('#search_icon').removeClass('active');
-    hideHeaderAlternate();
 }
 
 function showHeaderAlternate() {
@@ -38,12 +39,23 @@ function hideHeaderAlternate() {
     $j('#site_header').removeClass('alternate');
 }
 
+function showMainNavSubmenu() {
+    $j('#main_nav_items a.parent').hoverIntent(
+        function() {
+            $j(this).next().slideDown();
+        },
+        function() {
+            $j(this).next().hide();
+        }
+    );
+}
+
 // -------------------------------------
 // Document Ready
 // -------------------------------------
 $j(document).ready(function(){
 
-    // handle hide/show mobile nav
+    //  hide/show mobile nav
     $j('#mobile_nav_toggle a').click(function() {
         var $parent = $j(this).parent();
         if( $parent.hasClass('active') ) {
@@ -56,7 +68,7 @@ $j(document).ready(function(){
         return false;
     });
 
-    // handle hide show site search
+    // hide/show site search
     $j('#search_icon a').click(function() {
        var $parent = $j(this).parent();
         if ( $parent.hasClass('active') ){
@@ -67,5 +79,8 @@ $j(document).ready(function(){
         }
         return false;
     });
+
+    // show main nav submenu
+    showMainNavSubmenu();
 
 }); // end document ready

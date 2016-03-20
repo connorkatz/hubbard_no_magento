@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/style_1500_up.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/jquery_noconflict.js"></script>
+    <script src="js/hoverintent/jquery.hoverIntent.min.js"></script>
     <script src="js/enquire.min.js"></script>
     <script src="js/base.js"></script>
     <script src="js/responsive.js"></script>
@@ -55,7 +56,7 @@
                         <li id="search_icon"><a class="fa fa-search"></a></li>
                         <li class="link"><a href="#">Sign In</a></li>
                         <li class="link support"><a href="#">Support</a></li>
-                        <li class="cart_link"><a href="#" id="cart_icon"><span>2</span></a></li>
+                        <li class="cart_link"><a href="#" id="cart_icon"><span>0</span></a></li>
                     </ul>
                 </section><!-- end user nav -->
                 <nav id="main_nav">
@@ -67,13 +68,13 @@
         </div><!-- end site header inner -->
     </header><!-- end site header -->
     <section id="site_search">
-        <div id="search_bar">
+        <div id="search_bar" class="site_width">
             <input type="text" placeholder="Product Name or Part #">
             <button type="button"><i class="fa fa-chevron-circle-right"></i></button>
         </div><!-- end search bar -->
     </section><!-- end site search -->
     <nav id="mobile_nav">
-        <ul>
+        <ul id="mobile_nav_items">
             <?php include 'nav_items.php'; ?>
         </ul>
     </nav>

@@ -16,7 +16,12 @@
 
 #header_right {position: static;}
 
-#cart_icon {}
+#user_nav {}
+    #user_nav li.link a {padding: 9px 20px;}
+    #user_nav li.link a:hover {color: #cccccc;}
+
+#cart_icon {width: 35px; top: -1px;}
+    #cart_icon span {top: 14px;}
 
 
 
@@ -24,7 +29,7 @@
 #main_nav {display: block;}
 
 /* ---------------- Mobile Nav ------------------------------------------ */
-#mobile_nav {display: none;}
+#mobile_nav {display: none !important;}
 
 /* ---------------- Footer ------------------------------------------ */
 
@@ -37,15 +42,15 @@
 
 /* ---------------- Product Listing ------------------------------------------ */
 .prod_list_group {}
-.prod_list_group h2 {font-size: 26px;}
+    .prod_list_group h2 {font-size: 26px;}
 
 .prod_list_items {margin-left: 0;}
-.prod_list_items li {width: 25%; margin-left: 0;}
+    .prod_list_items li {width: 25%; margin-left: 0;}
 
 
 /* ---------------- Static Content Pages ------------------------------------------ */
 .static_title_block {margin: 40px auto 35px auto;}
-.static_title_block h1 {font-size: 32px;}
+    .static_title_block h1 {font-size: 32px;}
 
 
 } /* end media query */

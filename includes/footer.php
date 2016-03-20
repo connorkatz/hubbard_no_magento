@@ -25,17 +25,9 @@
             <div id="footer_email_submit">
                 <button>Join</button>
             </div><!-- end footer email submit -->
-            <ul id="social_links">
-                <li>
-                    <a href="#" target="_blank"><i class="fa fa-facebook-official "></i></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
-                </li>
-                <li>
-                    <a href="#" target="_blank"><i class="fa fa-twitter-square"></i></a>
-                </li>
-            </ul>
+            <ul id="footer_social_links">
+                <?php include 'social_links.php' ?>
+            </ul><!-- end footer social links -->
             <address class="copyright">&copy; <?php echo date("Y") ?> Samuel Hubbard, LLC.</address>
         </section><!-- end footer group -->
     </div><!-- end site footer inner -->
