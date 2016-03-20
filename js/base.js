@@ -40,15 +40,27 @@ function hideHeaderAlternate() {
 }
 
 function showMainNavSubmenu() {
-    $j('#main_nav_items a.parent').hoverIntent(
+    $j('#main_nav_items li.parent').hoverIntent({
+        over: function(){
+            jQuery(this).find('ul.child').slideDown(200);
+        },
+        out: function(){
+            jQuery(this).find('ul.child').slideUp(50);
+        },
+        timeout: 300
+    });
+    $j('#main_nav_items .child').hover(
         function() {
-            $j(this).next().slideDown();
+            $j(this).addClass('active');
+            $j(this).prev().addClass('active')
         },
         function() {
-            $j(this).next().hide();
+            $j(this).removeClass('active');
+            $j(this).prev().removeClass('active')
         }
     );
 }
+
 
 // -------------------------------------
 // Document Ready

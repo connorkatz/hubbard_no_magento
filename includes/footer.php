@@ -18,7 +18,7 @@
         </section><!-- end footer group -->
         <section id="footer_email_group">
             <h5>Be in the know</h5>
-            <p>Do stuff that makes you happy</p>
+            <p>The latest news, special projects &amp; offers.</p>
             <div id="footer_email_input">
                 <input type="email" placeholder="Your email address">
             </div><!-- end footer email input -->

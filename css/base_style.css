@@ -88,18 +88,17 @@ h2.page_subhead {font-size: 18px; font-weight: 300; text-align: center; margin: 
 #main_nav_items {}
     #main_nav_items > li  { display: inline-block; font-size: 20px;}
     #main_nav_items > li > a {display: inline-block; font-size: 20px; color: #4d4d4d; text-transform: uppercase; padding: 20px 15px; border-bottom: 2px solid transparent; font-weight: 300;}
-    #main_nav_items > li > a:hover {color: rgba(0,0,0,0.2);}
+    #main_nav_items > li > a:hover, #main_nav_items > li > a.active {color: #FBB034;}
     #main_nav_items > li.last-link > a {padding-right: 0;}
-    #main_nav_items > li > a:hover {color: #FBB034;}
     #main_nav_items > li.active > a {border-color: #faa21b; color: #4d4d4d;}
-    #main_nav_items > li a.parent:after {display: inline-block; font-family: FontAwesome; position: relative; top: -2px; margin-left: 10px; content: '\f107'; font-size: 20px; color: rgba(0,0,0,0.3); vertical-align: middle;}
+    #main_nav_items > li.parent > a:after {display: inline-block; font-family: FontAwesome; position: relative; top: -2px; margin-left: 10px; content: '\f107'; font-size: 20px; color: rgba(0,0,0,0.3); vertical-align: middle;}
 
 /* Main Nav Dropdown */
-.nav_lvl_2 {border-top: 1px solid rgba(0,0,0,0.1); display: none; position: absolute; width: 100%; left: 0; background: #faf8f6; text-align: center; box-shadow: 0 1px 1px rgba(0,0,0,0.2);}
-    .nav_lvl_2 > li {display: inline-block; margin: 0 10px;}
-    .nav_lvl_2 > li a {display: block; width: 300px; background-size: contain; padding: 215px 0 15px 0; text-align: center; color: rgba(0,0,0,0.5); font-size: 14px; text-transform: uppercase;}
-    .nav_lvl_2 > li a:hover {color: rgba(0,0,0,0.2);}
-    .nav_lvl_2 > li a:active {color: #ffa500;}
+#main_nav_items .child {border-top: 1px solid rgba(0,0,0,0.1); display: none; position: absolute; width: 100%; left: 0; background: #faf8f6; text-align: center; box-shadow: 0 1px 1px rgba(0,0,0,0.2);}
+    #main_nav_items .child > li {display: inline-block; margin: 0 10px;}
+    #main_nav_items .child > li a {display: block; width: 300px; background-size: contain; padding: 215px 0 15px 0; text-align: center; color: rgba(0,0,0,0.5); font-size: 14px; text-transform: uppercase;}
+    #main_nav_items .child > li a:hover {color: rgba(0,0,0,0.2);}
+    #main_nav_items .child > li a:active {color: #ffa500;}
 
 .nav-1-1 a {background: url('/media/hubbard_content/go_to_work_cat_landing.jpg') no-repeat center center;}
     .nav-1-2 a {background: url('/media/hubbard_content/un-sneaker_cat_landing.jpg') no-repeat center center;}
@@ -137,12 +136,12 @@ h2.page_subhead {font-size: 18px; font-weight: 300; text-align: center; margin: 
 
 
 /* ---------------- Homepage ------------------------------------------ */
-#homepage_slideshow {background: #e5e5e5; padding-top: 40%; text-align: center;}
+#homepage_slideshow {background: #e5e5e5; padding-top: 35%; text-align: center;}
 
 #publication_logos {}
     #publication_logos ul {font-size: 0; text-align: center; padding: 10px 0;}
     #publication_logos li {display: inline-block; width: 30%; margin-left: 3%; max-width: 175px; vertical-align: middle;}
-    #publication_logos li img {width: 100%; opacity: 0.5;}
+    #publication_logos li img {width: 100%;}
     #publication_logos li:first-of-type{margin: 0;}
     #publication_logos li:last-of-type{display: none;}
 

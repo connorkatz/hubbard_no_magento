@@ -1,6 +1,6 @@
-<li>
-    <a href="#" class="parent">Men</a>
-    <ul class="nav_lvl_2">
+<li class="parent">
+    <a href="#">Men</a>
+    <ul class="child">
         <li>
             <a href="#">Go to Work Collection</a>
         </li>
@@ -12,9 +12,9 @@
         </li>
     </ul>
 </li>
-<li>
+<li class="parent">
     <a href="#" class="parent">Women</a>
-    <ul class="nav_lvl_2">
+    <ul class="child">
         <li>
             <a href="#">Women #1 Collection</a>
         </li>
