@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/resets.css">
     <link rel="stylesheet" type="text/css" href="css/base_style.css">
-    <link rel="stylesheet" type="text/css" href="css/style_375_up.css">
     <link rel="stylesheet" type="text/css" href="css/style_400_up.css">
     <link rel="stylesheet" type="text/css" href="css/style_700_up.css">
     <link rel="stylesheet" type="text/css" href="css/style_1050_up.css">

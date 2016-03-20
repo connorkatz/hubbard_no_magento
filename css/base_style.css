@@ -44,7 +44,7 @@ h2.page_subhead {font-size: 18px; font-weight: 300; text-align: center; margin: 
     #mobile_nav_toggle.active span:before {-webkit-transform: rotate(45deg); transform: rotate(45deg);}
     #mobile_nav_toggle.active span:after {-webkit-transform: rotate(-45deg); transform: rotate(-45deg);}
 
-#logo_container {width: calc(100% - 135px); display: inline-block; vertical-align: middle; padding: 10px 0;}
+#logo_container {width: calc(100% - 135px); display: inline-block; vertical-align: middle; text-align:center; padding: 10px 0;}
     #logo_container a {display: inline-block; color: #999999;}
     #logo_container p {display: none; font-size: 12px; text-transform: uppercase; text-align: center; margin-top: 10px;}
 
@@ -114,7 +114,7 @@ h2.page_subhead {font-size: 18px; font-weight: 300; text-align: center; margin: 
 
 
 .footer_link_group {display: inline-block; width: 50%; vertical-align: top; text-transform: uppercase; margin-bottom: 15px;}
-    .footer_link_group li {font-size: 12px; text-transform: uppercase;}
+    .footer_link_group li {font-size: 14px; text-transform: uppercase;}
     .footer_link_group a {display: block; padding: 8px 5px;}
 
 #footer_email_group {border-top: 1px solid rgba(0,0,0,0.2); padding: 15px 0 0 0;}
@@ -134,6 +134,12 @@ h2.page_subhead {font-size: 18px; font-weight: 300; text-align: center; margin: 
     #footer_social_links i {font-size: 35px;}
 
 #mobile_nav #social_links {color: rgba(0,0,0,0.5);}
+
+
+/* ---------------- Homepage ------------------------------------------ */
+#publication_logos {display: none;}
+    #publication_logos ul {font-size: 0; text-align: center;}
+    #publication_logos li {display: inline-block; width: 20%; margin-right: 5%; max-width: 200px; vertical-align: middle; opacity: 50;}
 
 
 
