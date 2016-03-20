@@ -3,7 +3,7 @@
 <div id="site_content_container">
     <section id="homepage_slideshow">
         <ul>
-            <li></li>
+            <li>Homepage Hero Content</li>
         </ul>
     </section><!-- end homepage slideshow -->
     <section id="publication_logos" class="site_width">
@@ -14,6 +14,9 @@
             <li><img src="../images/ad_logos/golf.svg"></li>
         </ul>
     </section><!-- end publication logos -->
+    <section class="homepage_feature_block">
+        Homepage Feature content
+    </section><!-- end homepage feature -->
 </div><!-- end site content container -->
 
 <?php include 'includes/footer.php'; ?>

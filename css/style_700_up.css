@@ -32,6 +32,15 @@
 
 
 
+/* ---------------- Homepage ------------------------------------------ */
+
+#publication_logos {}
+    #publication_logos ul {padding: 20px 0;}
+    #publication_logos li {width: 20%; margin-left: 5%;}
+    #publication_logos li:last-of-type{display: inline-block;}
+
+
+
 /* ---------------- Product Listing ------------------------------------------ */
 .prod_list_group {margin-bottom: 50px;}
     .prod_list_group h2 {font-size: 22px;}
