@@ -7,6 +7,8 @@ $break_medium           :   '(min-width: 1050px)';
 $break_large            :   '(min-width: 1500px)';
 
 
+
+
 // =====================================
 // Color Variables
 // =====================================
@@ -16,10 +18,13 @@ $break_large            :   '(min-width: 1500px)';
 $white                        : #ffffff;
 $hubbard_blue                 : #022f59;
 $hubbard_yellow               : #ffa400;
+$light_grey                   : #999999;
+$medium_grey                  : #808080;
 $dark_grey                    : #4d4d4d;
 $dark_grey_blue               : #4b4f54;
 $light_grey_orange            : #cccac8;
 $almost_white_grey_orange     : #faf8f6;
+
 
 
 // Brand Colors
@@ -34,20 +39,34 @@ $color_link_hover             : $light_grey_orange;
 
 // Text Colors
 // -------------------------------------
-$color_text_base              : $dark_grey_blue;
-$color_text_dark              : $dark_grey;
 $color_text_white             : $white;
+$color_text_light             : $light_grey;
+$color_text_base              : $dark_grey_blue;
+$color_text_medium            : $medium_grey;
+$color_text_dark              : $dark_grey;
+
 
 // Background Colors
 // ------------------------------------
 $color_background_main        : $almost_white_grey_orange;
 $color_background_secondary   : $hubbard_blue;
 
+
+// Utility Colors
+// ------------------------------------
+$color_util_1                 : $light_grey;
+$color_util_2                 : $medium_grey;
+$color_util_3                 : $dark_grey;
+
+
+
 // =====================================
 // Base Path Variables
 // =====================================
 $path_image         : '../images/';
 $path_font          : '../fonts/';
+
+
 
 
 // =====================================

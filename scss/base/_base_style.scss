@@ -1,10 +1,12 @@
 /* ---------------- Global ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
 #site_container { position: relative; min-height: 100%; }
 
 #site_container_inner { position: relative; min-height: 100%; left: 0; transition: left 0.5s ease; }
 
 .site_width {
-    min-width: 320px; max-width: 1400px; margin: 0 auto;
+    max-width: 1400px; margin: 0 auto;
     .padded { padding: 0 10px; }
 }
 
@@ -20,7 +22,10 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 
 .notice-inner { max-width: 1400px; margin: 0 auto; color: $color_text_white; text-align: center; padding: 10px 0; }
 
+
 /* ---------------- Site Callout ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
 #site_callout {
     background: $color_background_secondary; color: $color_text_white;
     a { color: $color_text_white; }
@@ -32,7 +37,10 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
     p:nth-of-type(2) { display: none; margin-left: 20px; font-weight: 300; }
 }
 
+
 /* ---------------- Header ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
 #site_header {
     position: relative; z-index: 100; background: #ffffff; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     &.alternate { box-shadow: none; border-bottom: 1px solid #e5e5e5; }
@@ -43,7 +51,7 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 #mobile_nav_toggle {
     position: relative; top: 1px; width: 50px; display: inline-block; vertical-align: middle; padding: 0 10px;
     label { display: none; font-size: 12px; font-weight: 300; position: relative; top: -3px; text-transform: uppercase; margin-left: 35px; }
-    a { color: #808080; position: relative; display: block; height: 30px; padding: 15px 0 0 0; }
+    a { color: $color_text_medium; position: relative; display: block; height: 30px; padding: 15px 0 0 0; }
     span, span:before, span:after { position: absolute; display: block; content: ''; background: #666666; width: 25px; height: 4px; transition: all 0.3s; }
     span:before { top: -7px; }
     span:after { bottom: -7px; }
@@ -55,7 +63,7 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 
 #logo_container {
     width: calc(100% - 135px); display: inline-block; vertical-align: middle; text-align: center; padding: 10px 0;
-    a { display: inline-block; color: #999999; }
+    a { display: inline-block; color: $color_text_light; }
     p { display: none; font-size: 12px; text-transform: uppercase; text-align: center; margin-top: 10px; }
 }
 
@@ -69,28 +77,43 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 #user_nav {
     li { display: inline-block; vertical-align: middle; }
     li.link { display: none; border-right: 1px solid rgba(0, 0, 0, 0.1); }
-    li.link a { padding: 9px 15px; font-weight: 300; display: block; font-size: 14px; text-transform: uppercase; color: #808080; }
+    li.link a { padding: 7px 15px; font-weight: 300; display: block; font-size: 14px; text-transform: uppercase; color: $color_text_medium; }
 }
 
 #search_icon { border-right: 1px solid rgba(0, 0, 0, 0.1); margin-right: 10px;
-    a { font-size: 16px; padding: 6px 10px 6px 5px; color: #808080; }
+    a { font-size: 16px; padding: 6px 10px 6px 5px; color: $color_text_medium; }
 }
 
 #cart_icon {
-    display: block; position: relative; background: url("../images/cart_icon_off.svg") no-repeat; background-size: contain; width: 32px; height: 35px; text-align: center;
+    display: block; position: relative; background: url("#{$path_image}cart_icon_off.svg") no-repeat; background-size: contain; width: 32px; height: 35px; text-align: center;
     span { position: absolute; font-size: 14px; display: block; top: 12px; left: 0; width: 100%; text-align: center; color: rgba(255, 255, 255, 0.5); }
 }
 
 #site_search {
-    display: none; position: relative; background: #faf8f6; padding: 20px 15px; font-size: 0; border-top: 1px solid #ffffff; border-bottom: 1px solid rgba(255, 255, 255, 0.8); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    display: none; position: absolute; z-index: 999; width: 100%; background: $color_background_main; font-size: 0; border-top: 1px solid #ffffff; border-bottom: 1px solid rgba(255, 255, 255, 0.8); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     &.active { display: block; }
-    input { background: transparent; border: none; width: calc(100% - 35px); font-size: 14px; color: #4d4d4d; }
+}
+
+#search_bar { padding: 10px; }
+
+#search_bar_inner {
+    background: #ffffff; border: 2px solid $color_util_1; border-radius: 30px; width: 100%; padding: 10px 15px; margin-right: 50px;
+    input { background: transparent; border: none; width: calc(100% - 35px); font-size: 14px; color: $color_text_medium; }
     button { font-family: $font_fontAwesome; width: 35px; font-size: 16px; background: rgba(0, 0, 0, 0.1); border: none; border-radius: 20px; padding: 9px 10px; color: rgba(0, 0, 0, 0.2); }
 }
 
-#search_bar { background: #ffffff; border: 2px solid rgba(0, 0, 0, 0.3); border-radius: 30px; padding: 10px 15px; }
+#search_quick_links {
+    background: rgba(0, 0, 0, 0.03); border-top: 1px solid rgba(0, 0, 0, 0.08); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5); padding: 10px 15px;
+    span { font-size: 11px; display: block; color: $color_text_light; margin-bottom: 5px; }
+    ul { font-size: 0; }
+    li { display: block; font-size: 14px; margin-left: -5px; }
+    a { color: $color_text_medium; display: block; padding: 5px; }
+}
+
 
 /* ---------------- Mobile Nav ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
 #mobile_nav { position: absolute; z-index: 999; left: 0; height: 100%; width: 100%; background: #faf8f6; display: none; }
 
 #mobile_nav_items {
@@ -101,7 +124,10 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
     a:active { background: rgba(0, 0, 0, 0.05); }
 }
 
+
 /* ---------------- Main Nav ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
 #main_nav { display: none; text-align: right; }
 
 #main_nav_items {
@@ -115,11 +141,11 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 }
 
 #main_nav_items .nav_lvl_2 {
-     border-top: 1px solid rgba(0, 0, 0, 0.1); display: none; position: absolute; width: 100%; left: 0; background: $color_background_main; text-align: center; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.1); display: none; position: absolute; width: 100%; left: 0; background: $color_background_main; text-align: center; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     > li { display: inline-block; margin: 0 10px; }
-    > li a { display: block; width: 300px; background-size: contain; padding: 215px 0 15px 0; text-align: center; color: rgba(0, 0, 0, 0.5); font-size: 14px; text-transform: uppercase; }
+    > li a { display: block; width: 300px; background-size: contain; padding: 215px 0 15px 0; text-align: center; color: $color_text_medium; font-size: 14px; text-transform: uppercase; }
     > li a:hover { color: rgba(0, 0, 0, 0.2); }
-    > li a:active { color: #ffa500; }
+    > li a:active { color: $color_text_light; }
 }
 
 .nav-1-1 a { background: url('/media/hubbard_content/go_to_work_cat_landing.jpg') no-repeat center center; }
@@ -128,16 +154,19 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 
 .nav-1-3 a { background: url('/media/hubbard_content/limited_cat_landing.jpg') no-repeat center center; }
 
+
 /* ---------------- Footer ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
 #site_footer {
-    color: #f4f4f4; font-size: 0; padding: 20px 20px;
+    color: #f4f4f4; font-size: 0; padding: 15px;
     a { color: #f4f4f4; }
     a:active { background: rgba(0, 0, 0, 0.1); }
 }
 
 .footer_link_group {
     display: inline-block; width: 50%; vertical-align: top; text-transform: uppercase; margin-bottom: 15px;
-    li { font-size: 14px; text-transform: uppercase; }
+    li { font-size: 12px; text-transform: uppercase; }
     a { display: block; padding: 8px 5px; }
 }
 
@@ -167,11 +196,17 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 
 #mobile_nav #social_links { color: rgba(0, 0, 0, 0.5); }
 
+
+
 /* ---------------- Homepage ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
 #homepage_slideshow { background: #e5e5e5; padding-top: 35%; text-align: center; }
 
 #publication_logos {
-    ul { font-size: 0; text-align: center; padding: 10px 0; }
+    padding: 5px 5px 10px 5px; text-align: center;
+    p { display: inline-block; text-transform: uppercase; font-size: 10px; margin-bottom: 5px; color: $color_text_light; }
+    ul { font-size: 0; text-align: center; }
     li { display: inline-block; width: 30%; margin-left: 3%; max-width: 175px; vertical-align: middle; }
     li img { width: 100%; opacity: 0.5; }
     li:first-of-type { margin: 0; }
@@ -180,7 +215,11 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 
 .homepage_feature_block { text-align: center; background: #e5e5e5; }
 
+
+
 /* ---------------- Product Listing ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
 .prod_list_group {
     font-size: 0; margin-bottom: 30px;
     h2 { font-size: 18px; font-weight: 400; font-family: $font_din_regular, sans-serif; text-transform: uppercase; text-align: center; max-width: 500px; margin: 0 auto 10px auto; border-top: 1px dotted rgba(0, 0, 0, 0.2); border-bottom: 1px dotted rgba(0, 0, 0, 0.2); padding: 10px 0; color: #4d4d4d; }
@@ -194,7 +233,10 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
     a { color: #666666; }
 }
 
+
 /* ---------------- Product Detail ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
 #prod_detail_container { position: relative; }
 
 #prod_title_group { position: absolute; top: 15px; left: 0; width: 94%; margin: 0 3%; background: #ffffff; padding: 10px; box-shadow: 0 0 1px rgba(0, 0, 0, 0.1); text-align: center; }
@@ -203,7 +245,10 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 
 #prod_title_group span { display: block; margin-top: 2px; font-size: 18px; font-weight: 300; color: #808080; }
 
+
 /* ---------------- Static Content Pages ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
 .full_width_image_block { }
 
 .full_width_image_block img { width: 100%; }

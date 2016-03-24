@@ -1,56 +1,64 @@
 @media #{$break_medium} {
 
-/* ---------------- Header ------------------------------------------ */
-#mobile_nav_toggle {display: none}
+    /* ---------------- Header ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
 
-#logo_container {width: 250px; padding: 15px 0; margin-left: 20px}
-    #logo_container p {display: block;}
+    #mobile_nav_toggle { display: none }
 
-#logo {width: 100%;}
+    #logo_container { width: 250px; padding: 15px 0; margin-left: 20px }
+    #logo_container p { display: block; }
 
-#header_right {width: calc(100% - 270px); padding: 0 10px 0 0;}
+    #logo { width: 100%; }
 
-#user_nav {padding: 0; margin: 16px 15px 0 0;}
-    #user_nav li.link {display: inline-block;}
-    #user_nav a:hover {color: #cccccc;}
+    #header_right { width: calc(100% - 270px); padding: 0 10px 0 0; }
 
-#header_right {position: static;}
+    #user_nav { padding: 0; margin: 16px 15px 0 0; }
+    #user_nav li.link { display: inline-block; }
+    #user_nav a:hover { color: #cccccc; }
 
-#user_nav {}
-    #user_nav li.link a {padding: 9px 20px;}
-    #user_nav li.link a:hover {color: #cccccc;}
+    #header_right { position: static; }
 
-#cart_icon {width: 35px; top: -1px;}
-    #cart_icon span {top: 14px;}
+    #user_nav { }
+    #user_nav li.link a { padding: 9px 20px; }
+    #user_nav li.link a:hover { color: #cccccc; }
 
+    #cart_icon { width: 35px; top: -1px; }
+    #cart_icon span { top: 14px; }
 
+    /* ---------------- Main Nav ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
 
-/* ---------------- Main Nav ------------------------------------------ */
-#main_nav {display: block;}
+    #main_nav { display: block; }
 
-/* ---------------- Mobile Nav ------------------------------------------ */
-#mobile_nav {display: none !important;}
+    /* ---------------- Mobile Nav ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
 
-/* ---------------- Footer ------------------------------------------ */
+    #mobile_nav { display: none !important; }
 
-.footer_link_group {width: 33.3%;}
+    /* ---------------- Footer ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
 
-#footer_email_group {width: 33.3%; display: inline-block; border-top: none; padding: 0;}
+    .footer_link_group { width: 33.3%; }
 
-#social_links {margin: 20px 0 0 0;}
+    #footer_email_group { width: 33.3%; display: inline-block; border-top: none; padding: 0; }
 
+    #social_links { margin: 20px 0 0 0; }
 
-/* ---------------- Product Listing ------------------------------------------ */
-.prod_list_group {}
-    .prod_list_group h2 {font-size: 26px;}
+    /* ---------------- Product Listing ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
 
-.prod_list_items {margin-left: 0;}
-    .prod_list_items li {width: 25%; margin-left: 0;}
+    .prod_list_group { }
+    .prod_list_group h2 { font-size: 26px; }
 
+    .prod_list_items { margin-left: 0; }
+    .prod_list_items li { width: 25%; margin-left: 0; }
 
-/* ---------------- Static Content Pages ------------------------------------------ */
-.static_title_block {margin: 40px auto 35px auto;}
-    .static_title_block h1 {font-size: 32px;}
+    /* ---------------- Static Content Pages ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
 
+    .static_title_block { margin: 40px auto 35px auto; }
+    .static_title_block h1 { font-size: 32px; }
 
-} /* end media query */
+}
+
+/* end media query */

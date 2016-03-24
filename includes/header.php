@@ -61,9 +61,20 @@
     </header><!-- end site header -->
     <section id="site_search">
         <div id="search_bar" class="site_width">
-            <input type="text" placeholder="Product Name or Part #">
-            <button type="button"><i class="fa fa-chevron-circle-right"></i></button>
+            <div id="search_bar_inner">
+                <input type="text" placeholder="Product Name or Part #">
+                <button type="button"><i class="fa fa-chevron-circle-right"></i></button>
+            </div><!-- end search bar inner -->
         </div><!-- end search bar -->
+        <div id="search_quick_links">
+            <span>Quick Links:</span>
+            <ul>
+                <li><a href="#">Find a Store</a></li>
+                <li><a href="#">Hubbard Free</a></li>
+                <li><a href="#">Un-Sneaker</a></li>
+                <li><a href="#">Women's</a></li>
+            </ul>
+        </div><!-- end search quick links -->
     </section><!-- end site search -->
     <nav id="mobile_nav">
         <ul id="mobile_nav_items">

@@ -7,6 +7,7 @@
         </ul>
     </section><!-- end homepage slideshow -->
     <section id="publication_logos" class="site_width">
+        <p>As Advertised In</p>
         <ul>
             <li><img src="../images/ad_logos/ny_times.svg"></li>
             <li><img src="../images/ad_logos/forbes.svg"></li>

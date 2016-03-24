@@ -1,14 +1,19 @@
 @media #{$break_large} {
 
-/* ---------------- Global ------------------------------------------ */
-.site_width {}
-.site_width.padded {padding: 0;}
+    /* ---------------- Global ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+    .site_width {
+        &.padded { padding: 0; }
+    }
 
 
-/* ---------------- Header ------------------------------------------ */
-#logo_container {margin-left: 0}
+    /* ---------------- Header ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
 
-#header_right {width: calc(100% - 250px); padding: 0;}
+    #logo_container { margin-left: 0; }
 
+    #header_right { width: calc(100% - 250px); padding: 0; }
 
-} /* end media query */
+}
+
+/* end media query */

@@ -2140,6 +2140,7 @@ select {
 
 /* IE7 */
 /* ---------------- Global ------------------------------------------ */
+/* ------------------------------------------------------------------ */
 #site_container {
   position: relative;
   min-height: 100%; }
@@ -2151,7 +2152,6 @@ select {
   transition: left 0.5s ease; }
 
 .site_width {
-  min-width: 320px;
   max-width: 1400px;
   margin: 0 auto; }
   .site_width .padded {
@@ -2187,6 +2187,7 @@ h2.page_subhead {
   padding: 10px 0; }
 
 /* ---------------- Site Callout ------------------------------------------ */
+/* ------------------------------------------------------------------ */
 #site_callout {
   background: #022f59;
   color: #ffffff; }
@@ -2205,6 +2206,7 @@ h2.page_subhead {
     font-weight: 300; }
 
 /* ---------------- Header ------------------------------------------ */
+/* ------------------------------------------------------------------ */
 #site_header {
   position: relative;
   z-index: 100;
@@ -2299,7 +2301,7 @@ h2.page_subhead {
   display: none;
   border-right: 1px solid rgba(0, 0, 0, 0.1); }
 #user_nav li.link a {
-  padding: 9px 15px;
+  padding: 7px 15px;
   font-weight: 300;
   display: block;
   font-size: 14px;
@@ -2334,22 +2336,34 @@ h2.page_subhead {
 
 #site_search {
   display: none;
-  position: relative;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
   background: #faf8f6;
-  padding: 20px 15px;
   font-size: 0;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); }
   #site_search.active {
     display: block; }
-  #site_search input {
+
+#search_bar {
+  padding: 10px; }
+
+#search_bar_inner {
+  background: #ffffff;
+  border: 2px solid #999999;
+  border-radius: 30px;
+  width: 100%;
+  padding: 10px 15px;
+  margin-right: 50px; }
+  #search_bar_inner input {
     background: transparent;
     border: none;
     width: calc(100% - 35px);
     font-size: 14px;
-    color: #4d4d4d; }
-  #site_search button {
+    color: #808080; }
+  #search_bar_inner button {
     font-family: "FontAwesome";
     width: 35px;
     font-size: 16px;
@@ -2359,13 +2373,29 @@ h2.page_subhead {
     padding: 9px 10px;
     color: rgba(0, 0, 0, 0.2); }
 
-#search_bar {
-  background: #ffffff;
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  border-radius: 30px;
+#search_quick_links {
+  background: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
   padding: 10px 15px; }
+  #search_quick_links span {
+    font-size: 11px;
+    display: block;
+    color: #999999;
+    margin-bottom: 5px; }
+  #search_quick_links ul {
+    font-size: 0; }
+  #search_quick_links li {
+    display: block;
+    font-size: 14px;
+    margin-left: -5px; }
+  #search_quick_links a {
+    color: #808080;
+    display: block;
+    padding: 5px; }
 
 /* ---------------- Mobile Nav ------------------------------------------ */
+/* ------------------------------------------------------------------ */
 #mobile_nav {
   position: absolute;
   z-index: 999;
@@ -2392,6 +2422,7 @@ h2.page_subhead {
   background: rgba(0, 0, 0, 0.05); }
 
 /* ---------------- Main Nav ------------------------------------------ */
+/* ------------------------------------------------------------------ */
 #main_nav {
   display: none;
   text-align: right; }
@@ -2444,13 +2475,13 @@ h2.page_subhead {
     background-size: contain;
     padding: 215px 0 15px 0;
     text-align: center;
-    color: rgba(0, 0, 0, 0.5);
+    color: #808080;
     font-size: 14px;
     text-transform: uppercase; }
   #main_nav_items .nav_lvl_2 > li a:hover {
     color: rgba(0, 0, 0, 0.2); }
   #main_nav_items .nav_lvl_2 > li a:active {
-    color: #ffa500; }
+    color: #999999; }
 
 .nav-1-1 a {
   background: url("/media/hubbard_content/go_to_work_cat_landing.jpg") no-repeat center center; }
@@ -2462,10 +2493,11 @@ h2.page_subhead {
   background: url("/media/hubbard_content/limited_cat_landing.jpg") no-repeat center center; }
 
 /* ---------------- Footer ------------------------------------------ */
+/* ------------------------------------------------------------------ */
 #site_footer {
   color: #f4f4f4;
   font-size: 0;
-  padding: 20px 20px; }
+  padding: 15px; }
   #site_footer a {
     color: #f4f4f4; }
   #site_footer a:active {
@@ -2478,7 +2510,7 @@ h2.page_subhead {
   text-transform: uppercase;
   margin-bottom: 15px; }
   .footer_link_group li {
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase; }
   .footer_link_group a {
     display: block;
@@ -2540,34 +2572,44 @@ h2.page_subhead {
   color: rgba(0, 0, 0, 0.5); }
 
 /* ---------------- Homepage ------------------------------------------ */
+/* ------------------------------------------------------------------ */
 #homepage_slideshow {
   background: #e5e5e5;
   padding-top: 35%;
   text-align: center; }
 
-#publication_logos ul {
-  font-size: 0;
-  text-align: center;
-  padding: 10px 0; }
-#publication_logos li {
-  display: inline-block;
-  width: 30%;
-  margin-left: 3%;
-  max-width: 175px;
-  vertical-align: middle; }
-#publication_logos li img {
-  width: 100%;
-  opacity: 0.5; }
-#publication_logos li:first-of-type {
-  margin: 0; }
-#publication_logos li:last-of-type {
-  display: none; }
+#publication_logos {
+  padding: 5px 5px 10px 5px;
+  text-align: center; }
+  #publication_logos p {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: #999999; }
+  #publication_logos ul {
+    font-size: 0;
+    text-align: center; }
+  #publication_logos li {
+    display: inline-block;
+    width: 30%;
+    margin-left: 3%;
+    max-width: 175px;
+    vertical-align: middle; }
+  #publication_logos li img {
+    width: 100%;
+    opacity: 0.5; }
+  #publication_logos li:first-of-type {
+    margin: 0; }
+  #publication_logos li:last-of-type {
+    display: none; }
 
 .homepage_feature_block {
   text-align: center;
   background: #e5e5e5; }
 
 /* ---------------- Product Listing ------------------------------------------ */
+/* ------------------------------------------------------------------ */
 .prod_list_group {
   font-size: 0;
   margin-bottom: 30px; }
@@ -2602,6 +2644,7 @@ h2.page_subhead {
     color: #666666; }
 
 /* ---------------- Product Detail ------------------------------------------ */
+/* ------------------------------------------------------------------ */
 #prod_detail_container {
   position: relative; }
 
@@ -2631,6 +2674,7 @@ h2.page_subhead {
   color: #808080; }
 
 /* ---------------- Static Content Pages ------------------------------------------ */
+/* ------------------------------------------------------------------ */
 .full_width_image_block img {
   width: 100%; }
 
@@ -2659,6 +2703,7 @@ h2.page_subhead {
 
 @media (min-width: 400px) {
   /* ---------------- Header ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   #mobile_nav_toggle {
     width: 85px; }
     #mobile_nav_toggle label {
@@ -2670,23 +2715,22 @@ h2.page_subhead {
 /* end media query */
 @media (min-width: 700px) {
   /* ---------------- Site Callout ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   #site_callout_inner {
     padding: 10px 0; }
-
-  #site_callout_inner p:nth-of-type(1) {
-    font-weight: 700; }
-
-  #site_callout_inner p:nth-of-type(2) {
-    display: inline-block; }
+    #site_callout_inner p:nth-of-type(1) {
+      font-weight: 700; }
+    #site_callout_inner p:nth-of-type(2) {
+      display: inline-block; }
 
   /* ---------------- Header ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   #mobile_nav_toggle {
     padding: 0 20px;
     width: 35%; }
-
-  #mobile_nav_toggle label {
-    font-size: 16px;
-    top: -6px; }
+    #mobile_nav_toggle label {
+      font-size: 16px;
+      top: -6px; }
 
   #logo_container {
     padding: 10px 0 15px 0;
@@ -2701,57 +2745,62 @@ h2.page_subhead {
   #user_nav {
     padding: 0 20px;
     top: 10px; }
-
-  #user_nav li.link.support {
-    display: inline-block;
-    margin-right: 15px; }
+    #user_nav li.link.support {
+      display: inline-block;
+      margin-right: 15px; }
 
   #search_icon {
     margin: 0; }
+    #search_icon #search_icon a {
+      font-size: 18px;
+      padding: 6px 15px 6px 5px; }
 
-  #search_icon a {
-    font-size: 18px;
-    padding: 6px 15px 6px 5px; }
+  #search_quick_links span {
+    font-size: 12px;
+    margin-bottom: 10px; }
 
-  /* ---------------- Mobile Nav ------------------------------------------ */
   /* ---------------- Footer ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   .footer_link_group a {
     padding: 8px 5px; }
+  .footer_link_group li {
+    font-size: 14px; }
 
   /* ---------------- Homepage ------------------------------------------ */
-  #publication_logos ul {
-    padding: 20px 0; }
-
-  #publication_logos li {
-    width: 20%;
-    margin-left: 5%; }
-
-  #publication_logos li:last-of-type {
-    display: inline-block; }
+  /* ------------------------------------------------------------------ */
+  #publication_logos {
+    padding: 10px 10px 15px 10px; }
+    #publication_logos p {
+      margin-bottom: 0px; }
+    #publication_logos li {
+      width: 20%;
+      margin-left: 5%; }
+    #publication_logos li:last-of-type {
+      display: inline-block; }
 
   /* ---------------- Product Listing ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   .prod_list_group {
     margin-bottom: 50px; }
-
-  .prod_list_group h2 {
-    font-size: 22px; }
+    .prod_list_group .prod_list_group h2 {
+      font-size: 22px; }
 
   .prod_list_items {
     margin-left: 0; }
-
-  .prod_list_items li {
-    width: 33.33333%;
-    margin: 0; }
+    .prod_list_items li {
+      width: 33.33333%;
+      margin: 0; }
 
   /* ---------------- Static Content Pages ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   .static_title_block {
     margin: 35px auto 30px auto; }
-
-  .static_title_block h1 {
-    font-size: 28px; } }
+    .static_title_block .static_title_block h1 {
+      font-size: 28px; } }
 /* end media query */
 @media (min-width: 1050px) {
   /* ---------------- Header ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   #mobile_nav_toggle {
     display: none; }
 
@@ -2797,14 +2846,17 @@ h2.page_subhead {
     top: 14px; }
 
   /* ---------------- Main Nav ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   #main_nav {
     display: block; }
 
   /* ---------------- Mobile Nav ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   #mobile_nav {
     display: none !important; }
 
   /* ---------------- Footer ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   .footer_link_group {
     width: 33.3%; }
 
@@ -2818,6 +2870,7 @@ h2.page_subhead {
     margin: 20px 0 0 0; }
 
   /* ---------------- Product Listing ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   .prod_list_group h2 {
     font-size: 26px; }
 
@@ -2829,6 +2882,7 @@ h2.page_subhead {
     margin-left: 0; }
 
   /* ---------------- Static Content Pages ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   .static_title_block {
     margin: 40px auto 35px auto; }
 
@@ -2837,10 +2891,12 @@ h2.page_subhead {
 /* end media query */
 @media (min-width: 1500px) {
   /* ---------------- Global ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   .site_width.padded {
     padding: 0; }
 
   /* ---------------- Header ------------------------------------------ */
+  /* ------------------------------------------------------------------ */
   #logo_container {
     margin-left: 0; }
 
