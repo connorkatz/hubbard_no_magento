@@ -3,14 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/resets.css">
-    <link rel="stylesheet" type="text/css" href="css/base_style.css">
-    <link rel="stylesheet" type="text/css" href="css/style_400_up.css">
-    <link rel="stylesheet" type="text/css" href="css/style_700_up.css">
-    <link rel="stylesheet" type="text/css" href="css/style_1050_up.css">
-    <link rel="stylesheet" type="text/css" href="css/style_1500_up.css">
+    <link rel="stylesheet" type="text/css" href="css/application.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/jquery_noconflict.js"></script>
     <script src="js/hoverintent/jquery.hoverIntent.min.js"></script>

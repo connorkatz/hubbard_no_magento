@@ -2,18 +2,19 @@
 // Functions
 // -------------------------------------
 function showMobileNav() {
+    showHeaderAlternateShadow();
     $j('#mobile_nav').slideDown();
     $j('#mobile_nav_toggle').addClass('active');
 }
 
 function hideMobileNav() {
-    $j('#mobile_nav').slideUp('fast');
+    $j('#mobile_nav').slideUp('fast', hideHeaderAlternateShadow);
     $j('#mobile_nav_toggle').removeClass('active');
 }
 
 function showSiteSearch() {
     hideMobileNav();
-    showHeaderAlternate();
+    showHeaderAlternateShadow();
     var $searchIcon = $j('#search_icon a');
     $searchIcon.removeClass('fa-search');
     $searchIcon.addClass('fa-close');
@@ -23,7 +24,7 @@ function showSiteSearch() {
 }
 
 function hideSiteSearch() {
-    hideHeaderAlternate();
+    hideHeaderAlternateShadow();
     $j('#site_search').removeClass('active');
     $j('#search_icon').removeClass('active');
     var $searchIcon = $j('#search_icon a');
@@ -31,25 +32,25 @@ function hideSiteSearch() {
     $searchIcon.addClass('fa-search');
 }
 
-function showHeaderAlternate() {
+function showHeaderAlternateShadow() {
     $j('#site_header').addClass('alternate');
 }
 
-function hideHeaderAlternate() {
+function hideHeaderAlternateShadow() {
     $j('#site_header').removeClass('alternate');
 }
 
 function showMainNavSubmenu() {
-    $j('#main_nav_items li.parent').hoverIntent({
+    $j('#main_nav_items li.nav_lvl_1').hoverIntent({
         over: function(){
-            jQuery(this).find('ul.child').slideDown(200);
+            jQuery(this).find('ul.nav_lvl_2').slideDown(200);
         },
         out: function(){
-            jQuery(this).find('ul.child').slideUp(50);
+            jQuery(this).find('ul.nav_lvl_2').slideUp(50);
         },
         timeout: 300
     });
-    $j('#main_nav_items .child').hover(
+    $j('#main_nav_items .nav_lvl_2').hover(
         function() {
             $j(this).addClass('active');
             $j(this).prev().addClass('active')
