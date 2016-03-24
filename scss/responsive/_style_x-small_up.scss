@@ -1,0 +1,12 @@
+@media #{$break_xsmall} {
+
+/* ---------------- Header ------------------------------------------ */
+#mobile_nav_toggle {
+    width: 85px;
+    label { display: block; }
+}
+#logo_container { width: calc(100% - 170px); text-align: center; }
+
+}
+
+/* end media query */

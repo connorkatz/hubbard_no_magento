@@ -1,0 +1,29 @@
+/* ------------------ Resets ------------------------------------------------------- */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+html,body {height: 100%;}
+
+body {font-size: 14px; font-family: $font_lato; font-weight: 400; line-height: 1; color: $color_text_base; background: $color_brand_secondary;}
+
+/* Default Link Styles */
+a {color: $color_link; text-decoration: none;}
+a:hover {color: $color_link_hover;}
+
+/* Default List Styles */
+ul, ol {list-style-type: none;}
+
+/* Default img style */
+img {border: none;}
+
+/* Default focus style */
+:focus {outline: none;}
+
+::selection {background: $color_brand_primary;}
+
+select {color: $color_text_base; font-family: $font_sans_serif;}
+
+/* ---------------- Aslett clearing method ------------------------------------------ */
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
