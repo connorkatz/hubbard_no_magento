@@ -1,5 +1,5 @@
 <footer id="site_footer">
-    <div id="site_footer_inner" class="site_width">
+    <div id="site_footer_inner">
         <section class="footer_link_group">
             <ul>
                 <li><a href="#">Order Status</a></li>

@@ -13,7 +13,7 @@ a:hover {color: $color_link_hover;}
 ul, ol {list-style-type: none;}
 
 /* Default img style */
-img {border: none;}
+img {border: none; max-width: 100%;}
 
 /* Default focus style */
 :focus {outline: none;}
@@ -21,9 +21,3 @@ img {border: none;}
 ::selection {background: $color_brand_primary;}
 
 select {color: $color_text_base; font-family: $font_sans_serif;}
-
-/* ---------------- Aslett clearing method ------------------------------------------ */
-.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
-
-* html .clearfix { zoom: 1; } /* IE6 */
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */

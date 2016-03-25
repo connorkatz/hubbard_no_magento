@@ -1,25 +1,46 @@
 <li class="nav_lvl_1">
-    <a href="#">Men</a>
+    <a href="/category_landing.php">Men</a>
     <ul class="nav_lvl_2">
-        <li>
-            <a href="#">Go to Work Collection</a>
+        <li class="nav-1-1">
+            <a href="#">
+                <span></span>
+                <p>Go to Work Collection</p>
+            </a>
         </li>
-        <li>
-            <a href="#">Un-Sneaker Collection</a>
+        <li class="nav-1-2">
+            <a href="#">
+                <span></span>
+                <p>Casual Collection</p>
+            </a>
         </li>
-        <li>
-            <a href="#">Limite Edition Collection</a>
+        <li class="nav-1-3">
+            <a href="#">
+                <span></span>
+                <p>Limited Edition Collection</p>
+            </a>
+        </li>
+        <li class="nav-1-4">
+            <a href="#">
+                <span></span>
+                <p>Offroad Collection</p>
+            </a>
         </li>
     </ul>
 </li>
 <li class="nav_lvl_1">
-    <a href="#">Women</a>
+    <a href="/category_landing.php">Women</a>
     <ul class="nav_lvl_2">
         <li>
-            <a href="#">Women #1 Collection</a>
+            <a href="#">
+                <span></span>
+                <p>Women #1 Collection</p>
+            </a>
         </li>
         <li>
-            <a href="Un-Sneaker Collection">Women #2 Collection</a>
+            <a href="#">
+                <span></span>
+                <p>Women #2 Collection</p>
+            </a>
         </li>
     </ul>
 </li>

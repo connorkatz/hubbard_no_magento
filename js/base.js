@@ -2,50 +2,39 @@
 // Functions
 // -------------------------------------
 function showMobileNav() {
-    showHeaderAlternateShadow();
     $j('#mobile_nav').slideDown();
     $j('#mobile_nav_toggle').addClass('active');
 }
 
 function hideMobileNav() {
-    $j('#mobile_nav').slideUp('fast', hideHeaderAlternateShadow);
+    $j('#mobile_nav').slideUp('fast');
     $j('#mobile_nav_toggle').removeClass('active');
 }
 
 function showSiteSearch() {
     hideMobileNav();
-    showHeaderAlternateShadow();
-    var $searchIcon = $j('#search_icon a');
+    var $searchIcon = $j('#search_link i');
     $searchIcon.removeClass('fa-search');
     $searchIcon.addClass('fa-close');
-    $j('#search_icon').addClass('active');
+    $j('#search_link').addClass('active');
     $j('#site_search').addClass('active');
     $j('#site_search input').focus();
 }
 
 function hideSiteSearch() {
-    hideHeaderAlternateShadow();
     $j('#site_search').removeClass('active');
-    $j('#search_icon').removeClass('active');
-    var $searchIcon = $j('#search_icon a');
+    $j('#search_link').removeClass('active');
+    var $searchIcon = $j('#search_link i');
     $searchIcon.removeClass('fa-close');
     $searchIcon.addClass('fa-search');
 }
 
-function showHeaderAlternateShadow() {
-    $j('#site_header').addClass('alternate');
-}
-
-function hideHeaderAlternateShadow() {
-    $j('#site_header').removeClass('alternate');
-}
-
 function showMainNavSubmenu() {
     $j('#main_nav_items li.nav_lvl_1').hoverIntent({
-        over: function(){
+        over: function() {
             jQuery(this).find('ul.nav_lvl_2').slideDown(200);
         },
-        out: function(){
+        out: function() {
             jQuery(this).find('ul.nav_lvl_2').slideUp(50);
         },
         timeout: 300
@@ -66,12 +55,12 @@ function showMainNavSubmenu() {
 // -------------------------------------
 // Document Ready
 // -------------------------------------
-$j(document).ready(function(){
+$j(document).ready(function() {
 
     //  hide/show mobile nav
     $j('#mobile_nav_toggle a').click(function() {
         var $parent = $j(this).parent();
-        if( $parent.hasClass('active') ) {
+        if($parent.hasClass('active')) {
             hideMobileNav();
         }
         else {
@@ -82,9 +71,9 @@ $j(document).ready(function(){
     });
 
     // hide/show site search
-    $j('#search_icon a').click(function() {
-       var $parent = $j(this).parent();
-        if ( $parent.hasClass('active') ){
+    $j('#search_link a').click(function() {
+        var $parent = $j(this).parent();
+        if($parent.hasClass('active')) {
             hideSiteSearch();
         }
         else {

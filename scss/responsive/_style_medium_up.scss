@@ -5,25 +5,32 @@
 
     #mobile_nav_toggle { display: none }
 
-    #logo_container { width: 250px; padding: 15px 0; margin-left: 20px }
-    #logo_container p { display: block; }
+    #logo_container {
+        width: 250px; padding: 10px 0; margin-left: 20px;
+        p { display: block; }
+    }
 
     #logo { width: 100%; }
 
     #header_right { width: calc(100% - 270px); padding: 0 10px 0 0; }
 
-    #user_nav { padding: 0; margin: 16px 15px 0 0; }
-    #user_nav li.link { display: inline-block; }
-    #user_nav a:hover { color: #cccccc; }
+    #user_nav {
+        padding: 0; margin: 15px 15px 0 0;
+        li.link { display: inline-block; }
+        li.link a:hover { color: #cccccc; }
+        a:hover { color: #cccccc; }
+        #sign_in_link { margin: 0; }
+        #support_link { display: inline-block; margin-right: 15px; }
+        #search_link i { margin-right: 10px }
+        #search_link span { display: inline-block; }
+    }
 
     #header_right { position: static; }
 
-    #user_nav { }
-    #user_nav li.link a { padding: 9px 20px; }
-    #user_nav li.link a:hover { color: #cccccc; }
-
-    #cart_icon { width: 35px; top: -1px; }
-    #cart_icon span { top: 14px; }
+    #cart_icon {
+        width: 35px; top: -1px;
+        span { top: 14px; }
+    }
 
     /* ---------------- Main Nav ------------------------------------------ */
     /* ------------------------------------------------------------------ */
@@ -47,17 +54,22 @@
     /* ---------------- Product Listing ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
-    .prod_list_group { }
-    .prod_list_group h2 { font-size: 26px; }
+    .prod_list_group {
+        h2 { font-size: 26px; }
+    }
 
-    .prod_list_items { margin-left: 0; }
-    .prod_list_items li { width: 25%; margin-left: 0; }
+    .prod_list_items {
+        margin-left: 0;
+        li { width: 25%; margin-left: 0; }
+    }
 
     /* ---------------- Static Content Pages ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
-    .static_title_block { margin: 40px auto 35px auto; }
-    .static_title_block h1 { font-size: 32px; }
+    .static_title_block {
+        margin: 40px auto 35px auto;
+        .static_title_block h1 { font-size: 32px; }
+    }
 
 }
 

@@ -3,25 +3,25 @@
 
 #site_container { position: relative; min-height: 100%; }
 
-#site_container_inner { position: relative; min-height: 100%; left: 0; transition: left 0.5s ease; }
-
-.site_width {
-    max-width: 1400px; margin: 0 auto;
-    .padded { padding: 0 10px; }
-}
-
 #site_content_container { background: $color_background_main; }
 
-h1.page_header { font-size: 24px; font-weight: 400; text-align: center; font-family: 'Domine', Georgia, Serif; }
+h1.page_header { font-size: 24px; font-weight: 400; max-width: 500px; text-align: center; margin: 0 auto; font-family: $font_din_regular; text-transform: uppercase; letter-spacing: -.03em; color: $color_text_dark; padding: 15px 20px; }
 
 h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin: 10px 0; }
 
-.category_desc { text-align: center; }
+hr.decorative_break { display: none; border: none; border-top: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 1px 0 #ffffff; max-width: 300px; margin: 0 auto 10px auto; padding: 0 20px; height: 1px; }
+
+.category_desc { text-align: center; font-weight: 300; line-height: 1.6; max-width: 700px; margin: 0 auto 10px auto; padding: 0 20px; }
+
+.category_banner {
+    @extend %site_width;
+    display: none;
+    background: $color_util_1; padding-top: 15%; text-align: center;
+}
 
 .global-site-notice { background: $color_brand_primary; display: none; }
 
 .notice-inner { max-width: 1400px; margin: 0 auto; color: $color_text_white; text-align: center; padding: 10px 0; }
-
 
 /* ---------------- Site Callout ------------------------------------------ */
 /* ------------------------------------------------------------------ */
@@ -32,21 +32,21 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 }
 
 #site_callout_inner {
+    @extend %site_width;
     text-align: center; padding: 5px 0;
     p { display: inline-block; text-transform: uppercase; }
     p:nth-of-type(2) { display: none; margin-left: 20px; font-weight: 300; }
 }
 
-
 /* ---------------- Header ------------------------------------------ */
 /* ------------------------------------------------------------------ */
 
-#site_header {
-    position: relative; z-index: 100; background: #ffffff; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-    &.alternate { box-shadow: none; border-bottom: 1px solid #e5e5e5; }
-}
+#site_header { position: relative; z-index: 100; background: #ffffff; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
-#site_header_inner { font-size: 0; vertical-align: middle; }
+#site_header_inner {
+    @extend %site_width;
+    font-size: 0; vertical-align: middle;
+}
 
 #mobile_nav_toggle {
     position: relative; top: 1px; width: 50px; display: inline-block; vertical-align: middle; padding: 0 10px;
@@ -62,7 +62,7 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 }
 
 #logo_container {
-    width: calc(100% - 135px); display: inline-block; vertical-align: middle; text-align: center; padding: 10px 0;
+    width: calc(100% - 140px); display: inline-block; vertical-align: middle; text-align: center; padding: 10px 0;
     a { display: inline-block; color: $color_text_light; }
     p { display: none; font-size: 12px; text-transform: uppercase; text-align: center; margin-top: 10px; }
 }
@@ -72,16 +72,17 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
     img { width: 100%; }
 }
 
-#header_right { position: relative; top: 3px; width: 85px; display: inline-block; text-align: right; vertical-align: middle; padding: 0 10px 0 0; }
+#header_right { position: relative; top: 3px; width: 90px; display: inline-block; text-align: right; vertical-align: middle; padding: 0 10px 0 0; }
 
 #user_nav {
     li { display: inline-block; vertical-align: middle; }
-    li.link { display: none; border-right: 1px solid rgba(0, 0, 0, 0.1); }
-    li.link a { padding: 7px 15px; font-weight: 300; display: block; font-size: 14px; text-transform: uppercase; color: $color_text_medium; }
-}
-
-#search_icon { border-right: 1px solid rgba(0, 0, 0, 0.1); margin-right: 10px;
-    a { font-size: 16px; padding: 6px 10px 6px 5px; color: $color_text_medium; }
+    li.link { border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    li.link a { padding: 10px 15px; font-weight: 300; display: block; font-size: 14px; text-transform: uppercase; color: $color_text_medium; }
+    #sign_in_link, #support_link { display: none; }
+    #search_link a { padding: 8px 10px; }
+    #search_link { margin-right: 10px; }
+    #search_link i { font-size: 16px; }
+    #search_link span { display: none; }
 }
 
 #cart_icon {
@@ -94,7 +95,7 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
     &.active { display: block; }
 }
 
-#search_bar { padding: 10px; }
+#search_bar { padding: 10px; border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 #search_bar_inner {
     background: #ffffff; border: 2px solid $color_util_1; border-radius: 30px; width: 100%; padding: 10px 15px; margin-right: 50px;
@@ -102,19 +103,20 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
     button { font-family: $font_fontAwesome; width: 35px; font-size: 16px; background: rgba(0, 0, 0, 0.1); border: none; border-radius: 20px; padding: 9px 10px; color: rgba(0, 0, 0, 0.2); }
 }
 
-#search_quick_links {
+#search_utility_links {
     background: rgba(0, 0, 0, 0.03); border-top: 1px solid rgba(0, 0, 0, 0.08); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5); padding: 10px 15px;
     span { font-size: 11px; display: block; color: $color_text_light; margin-bottom: 5px; }
     ul { font-size: 0; }
     li { display: block; font-size: 14px; margin-left: -5px; }
-    a { color: $color_text_medium; display: block; padding: 5px; }
+    a { color: $color_text_medium; display: block; padding: 8px 5px; }
 }
-
 
 /* ---------------- Mobile Nav ------------------------------------------ */
 /* ------------------------------------------------------------------ */
 
-#mobile_nav { position: absolute; z-index: 999; left: 0; height: 100%; width: 100%; background: #faf8f6; display: none; }
+#mobile_nav {
+    position: absolute; z-index: 999; left: 0; height: 100%; width: 100%; border-top: 1px solid rgba(0, 0, 0, 0.1); background: $color_background_main; display: none;
+}
 
 #mobile_nav_items {
     li { border-top: 1px solid rgba(255, 255, 255, 0.8); border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
@@ -124,6 +126,12 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
     a:active { background: rgba(0, 0, 0, 0.05); }
 }
 
+#mobile_social_links {
+    font-size: 0; padding: 15px;
+    li:first-of-type { margin: 0; }
+    li { display: inline-block; font-size: 30px; margin-left: 10px; }
+    a { color: $color_text_light; }
+}
 
 /* ---------------- Main Nav ------------------------------------------ */
 /* ------------------------------------------------------------------ */
@@ -132,7 +140,7 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 
 #main_nav_items {
     > li { display: inline-block; font-size: 20px; }
-    > li > a { display: inline-block; font-size: 20px; color: $color_text_dark; text-transform: uppercase; padding: 20px 15px; border-bottom: 2px solid transparent; font-weight: 300; }
+    > li > a { display: inline-block; font-size: 20px; color: $color_text_dark; text-transform: uppercase; padding: 20px 15px 0 15px; height: 55px; border-bottom: 2px solid transparent; font-weight: 300; }
     > li > a:hover, #main_nav_items > li > a.active { color: $color_brand_primary; }
     > li.last-link > a { padding-right: 0; }
     > li.last-link > a { padding-right: 0; }
@@ -141,19 +149,20 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 }
 
 #main_nav_items .nav_lvl_2 {
-    border-top: 1px solid rgba(0, 0, 0, 0.1); display: none; position: absolute; width: 100%; left: 0; background: $color_background_main; text-align: center; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    > li { display: inline-block; margin: 0 10px; }
-    > li a { display: block; width: 300px; background-size: contain; padding: 215px 0 15px 0; text-align: center; color: $color_text_medium; font-size: 14px; text-transform: uppercase; }
-    > li a:hover { color: rgba(0, 0, 0, 0.2); }
+    border-top: 1px solid rgba(0, 0, 0, 0.1); display: none; position: absolute; width: 100%; left: 0; font-size: 0; background: $color_background_main; text-align: center; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); padding: 0 20px;
+    > li { display: inline-block; width: calc(100% / 4); padding: 0 10px; }
+    > li a { display: block; text-align: center; font-size: 16px; font-weight: 300; text-transform: uppercase; color: $color_text_dark; }
+    > li a:hover { color: $color_text_medium; }
     > li a:active { color: $color_text_light; }
+    span { display: block; background-size: contain; padding-top: 70%; }
+    p { @extend %border_title; margin: 10px 0 20px 0; }
 }
 
-.nav-1-1 a { background: url('/media/hubbard_content/go_to_work_cat_landing.jpg') no-repeat center center; }
+.nav-1-1 span { background: url("#{$path_image}category_image/category_go_to_work.png") no-repeat center center; }
 
-.nav-1-2 a { background: url('/media/hubbard_content/un-sneaker_cat_landing.jpg') no-repeat center center; }
+.nav-1-2 span { background: url("#{$path_image}category_image/category_un-sneaker.png") no-repeat center center; }
 
-.nav-1-3 a { background: url('/media/hubbard_content/limited_cat_landing.jpg') no-repeat center center; }
-
+.nav-1-3 span { background: url("#{$path_image}category_image/category_limited_edition.png") no-repeat center center; }
 
 /* ---------------- Footer ------------------------------------------ */
 /* ------------------------------------------------------------------ */
@@ -162,6 +171,10 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
     color: #f4f4f4; font-size: 0; padding: 15px;
     a { color: #f4f4f4; }
     a:active { background: rgba(0, 0, 0, 0.1); }
+}
+
+#site_footer_inner {
+    @extend %site_width;
 }
 
 .footer_link_group {
@@ -196,12 +209,10 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 
 #mobile_nav #social_links { color: rgba(0, 0, 0, 0.5); }
 
-
-
 /* ---------------- Homepage ------------------------------------------ */
 /* ------------------------------------------------------------------ */
 
-#homepage_slideshow { background: #e5e5e5; padding-top: 35%; text-align: center; }
+#homepage_slideshow { background: $color_util_1; padding-top: 35%; text-align: center; }
 
 #publication_logos {
     padding: 5px 5px 10px 5px; text-align: center;
@@ -215,7 +226,18 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 
 .homepage_feature_block { text-align: center; background: #e5e5e5; }
 
-
+/* ---------------- Category Landing -------------------------------- */
+/* ------------------------------------------------------------------ */
+#category_items_block {
+    @extend %site_width_padded;
+    padding-bottom: 20px;
+    ul { font-size: 0; text-align: center; }
+    li { margin-bottom: 10px; }
+    a { display: block; color: $color_text_dark; }
+    a:hover { color: $color_text_medium; }
+    a:active { color: $color_text_light; }
+    h3 { @extend %border_title; font-size: 20px; text-transform: uppercase; font-weight: 300; margin-top: 10px; }
+}
 
 /* ---------------- Product Listing ------------------------------------------ */
 /* ------------------------------------------------------------------ */
@@ -233,7 +255,6 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
     a { color: #666666; }
 }
 
-
 /* ---------------- Product Detail ------------------------------------------ */
 /* ------------------------------------------------------------------ */
 
@@ -244,7 +265,6 @@ h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin:
 #prod_title_group h1 { font-family: $font_din_regular, sans-serif; font-size: 22px; font-weight: 400; color: #4d4d4d; text-transform: uppercase; }
 
 #prod_title_group span { display: block; margin-top: 2px; font-size: 18px; font-weight: 300; color: #808080; }
-
 
 /* ---------------- Static Content Pages ------------------------------------------ */
 /* ------------------------------------------------------------------ */
