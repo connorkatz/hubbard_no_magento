@@ -81,6 +81,7 @@ $j(document).ready(function() {
         }
         return false;
     });
+    
 
     // show main nav submenu
     showMainNavSubmenu();

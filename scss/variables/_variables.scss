@@ -24,6 +24,7 @@ $dark_grey                    : #4d4d4d;
 $dark_grey_blue               : #696A6D;
 $light_grey_orange            : #cccac8;
 $almost_white_grey_orange     : #f7f6f5;
+$hilight_off_white            : #faf9f8;
 
 
 
@@ -57,6 +58,14 @@ $color_background_secondary   : $hubbard_blue;
 $color_util_1                 : $light_grey;
 $color_util_2                 : $medium_grey;
 $color_util_3                 : $dark_grey;
+$color_util_4                 : $hilight_off_white;
+
+
+
+// =====================================
+// Layout Variables
+// =====================================
+$minimumPageOffset           : 15px;
 
 
 
@@ -77,6 +86,8 @@ $font_lato              :   'Lato', $font_sans_serif;
 $font_din_regular       :   'DINCondensed-Regular', $font_sans_serif;
 $font_din_light         :   'DINCondensed-light', $font_sans_serif;
 $font_fontAwesome       :   'FontAwesome';
+
+
 
 
 

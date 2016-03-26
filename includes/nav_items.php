@@ -2,25 +2,25 @@
     <a href="/category_landing.php">Men</a>
     <ul class="nav_lvl_2">
         <li class="nav-1-1">
-            <a href="#">
+            <a href="/product_list.php">
                 <span></span>
                 <p>Go to Work Collection</p>
             </a>
         </li>
         <li class="nav-1-2">
-            <a href="#">
+            <a href="/product_list.php">
                 <span></span>
                 <p>Casual Collection</p>
             </a>
         </li>
         <li class="nav-1-3">
-            <a href="#">
+            <a href="/product_list.php">
                 <span></span>
                 <p>Limited Edition Collection</p>
             </a>
         </li>
         <li class="nav-1-4">
-            <a href="#">
+            <a href="/product_list.php">
                 <span></span>
                 <p>Offroad Collection</p>
             </a>

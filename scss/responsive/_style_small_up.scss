@@ -5,7 +5,7 @@
 
     h1.page_header { font-size: 32px; padding: 20px 0; }
 
-    hr.decorative_break { display: block; }
+    hr.decorative_break { max-width: 300px; }
 
     .category_banner { display: block; }
 
@@ -36,9 +36,9 @@
 
     #user_nav {
         padding: 0 20px; top: 10px;
-        #sign_in_link { display: inline-block; margin-right: 15px;}
-        #search_link {margin: 0;}
-        #search_link a {padding: 8px 15px;}
+        #sign_in_link { display: inline-block; margin-right: 15px; }
+        #search_link { margin: 0; }
+        #search_link a { padding: 8px 15px; }
     }
 
     #search_icon {
@@ -75,17 +75,31 @@
         li { display: inline-block; width: 50%; padding: 0 10px; }
     }
 
-    /* ---------------- Product Listing ------------------------------------------ */
+    /* ---------------- Product Listing --------------------------------- */
     /* ------------------------------------------------------------------ */
 
-    .prod_list_group {
-        margin-bottom: 50px;
-        .prod_list_group h2 { font-size: 22px; }
+    #product_filter_group_block { max-width: 500px; margin: 30px auto 10px auto;}
+
+    #reset_filters { right: -5; }
+
+    #filters_container { background: rgba(0, 0, 0, 0.05); padding: 10px; }
+
+    .filter_item_block {
+        position: relative; display: inline-block; width: calc(50% - 5px); margin: 0;
+        &:first-of-type { border-bottom: 1px solid rgba(0, 0, 0, 0.1); margin-right: 10px; }
     }
 
-    .prod_list_items {
-        margin-left: 0;
-        li { width: 33.33333%; margin: 0; }
+    .filter_list_items { position: absolute; width: 100%; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+
+    .product_list_header_row {
+        margin: 20px auto; max-width: 500px;
+        h2 { font-size: 22px; }
+        span { font-size: 14px; }
+    }
+
+    .product_list_items {
+        li { width: calc(100% / 3); padding-left: 20px; }
+        h3 {font-size: 12px;}
     }
 
     /* ---------------- Static Content Pages ------------------------------------------ */

@@ -5,8 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <link rel="stylesheet" type="text/css" href="css/application.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="js/jquery_noconflict.js"></script>
+        <script src="js/jQuery/noconflict.js"></script>
         <script src="js/hoverintent/jquery.hoverIntent.min.js"></script>
+        <script src="js/jQuery.bxslider.min.js"></script>
         <script src="js/enquire.min.js"></script>
         <script src="js/base.js"></script>
         <script src="js/responsive.js"></script>
@@ -60,7 +61,7 @@
             </div><!-- end site header inner -->
         </header><!-- end site header -->
         <section id="site_search">
-            <div id="search_bar" class="site_width">
+            <div id="search_bar">
                 <div id="search_bar_inner">
                     <input type="text" placeholder="Product Name or Part #">
                     <button type="button"><i class="fa fa-chevron-circle-right"></i></button>
@@ -84,3 +85,5 @@
                 <?php include 'social_links.php'; ?>
             </ul>
         </nav>
+
+        <div id="site_content_container">

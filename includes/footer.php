@@ -1,3 +1,5 @@
+</div><!-- end site content container -->
+
 <footer id="site_footer">
     <div id="site_footer_inner">
         <section class="footer_link_group">

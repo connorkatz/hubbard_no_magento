@@ -2,7 +2,7 @@
 // -------------------------
 %site_width { max-width: 1400px; margin: 0 auto; }
 
-%site_width_padded { @extend %site_width; padding: 0 10px; }
+%site_width_padded { @extend %site_width; padding: 0 $minimumPageOffset; }
 
 %border_title { font-weight: 300; text-transform: uppercase; border-top: 1px dotted rgba(0,0,0,0.2); border-bottom: 1px dotted rgba(0,0,0,0.2); padding: 10px 0; font-family: $font_din_regular;}
 
