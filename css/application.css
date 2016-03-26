@@ -2706,7 +2706,7 @@ hr.decorative_break {
   .filter_item_block li a {
     display: block;
     color: #808080;
-    padding: 10px 20px;
+    padding: 15px 20px;
     font-size: 14px; }
   .filter_item_block li a:active {
     background: rgba(0, 0, 0, 0.1); }
@@ -2861,8 +2861,8 @@ hr.decorative_break {
 #prod_title_group {
   position: absolute;
   top: 10px;
-  left: 10px;
-  width: calc(100% - 20px);
+  left: 0;
+  width: 100%;
   background: #ffffff;
   padding: 10px 0;
   text-align: center;
@@ -2909,27 +2909,44 @@ hr.decorative_break {
   #prod_color_swatches li.active {
     border-color: rgba(0, 0, 0, 0.3); }
 
-.prod_option {
+.prod_option_group {
   margin: 10px; }
-  .prod_option h5 {
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    color: #808080;
-    text-transform: uppercase; }
-  .prod_option ul {
-    font-size: 0;
-    text-align: center; }
-  .prod_option li {
-    display: inline-block;
+  .prod_option_group h5 {
     font-size: 12px;
-    padding: 8px 0;
-    text-align: center;
-    background: #faf9f8;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    margin: 0 2px 5px 2px;
-    width: calc(20% - 4px); }
+    color: #808080;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 5px;
+    padding-left: 15px; }
+
+.prod_option_select {
+  background: #ffffff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2); }
+  .prod_option_select span {
+    display: block;
+    padding: 15px; }
+  .prod_option_select span:after {
+    content: '\f107';
+    display: inline-block;
+    float: right;
+    width: 10px;
+    font-family: "FontAwesome";
+    font-size: 16px;
+    color: #999999; }
+  .prod_option_select ul {
+    display: none;
+    background: #f3f2f0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .prod_option_select li {
+    padding: 15px 20px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1); }
+
+#size_guide {
+  margin-left: 15px; }
+  #size_guide a {
+    display: inline-block;
+    padding: 5px;
+    color: #808080; }
 
 #atc_row button {
   display: inline-block;
@@ -3051,7 +3068,8 @@ hr.decorative_break {
     width: 200px; }
 
   #header_right {
-    width: 35%; }
+    width: 35%;
+    padding: 0; }
 
   #user_nav {
     padding: 0 20px;

@@ -26,7 +26,7 @@
 
         <section id="prod_details">
             <div id="prod_details_inner">
-                <div id="prod_title_group">
+                <section id="prod_title_group">
                     <h1>Hubbard Free</h1>
                     <div id="prod_price_review_block">
                         <div id="prod_price">$210</div>
@@ -38,9 +38,9 @@
                             <i class="fa fa-star"></i>
                         </div><!-- end prod review summary -->
                     </div><!-- end prod price review block -->
-                </div><!-- end prod title group -->
+                </section><!-- end prod title group -->
                 <div id="prod_details_lower">
-                    <div id="prod_color_swatches">
+                    <section id="prod_color_swatches">
                         <ul>
                             <li><img src="../images/swatches/swatch_1.png"></li>
                             <li><img src="../images/swatches/swatch_2.png"></li>
@@ -52,33 +52,39 @@
                             <li><img src="../images/swatches/swatch_8.png"></li>
 
                         </ul>
-                    </div><!-- end prod option -->
-                    <div class="prod_option">
+                    </section><!-- end prod option -->
+                    <section class="prod_option_group">
                         <h5>Width</h5>
-                        <ul>
-                            <li>Medium</li>
-                            <li>Wide</li>
-                        </ul>
-                    </div><!-- end prod option -->
-                    <div class="prod_option">
+                        <div class="prod_option_select">
+                        <span>Select Width</span>
+                            <ul class="prod_option_items">
+                                <li>Medium</li>
+                                <li>Wide</li>
+                            </ul>
+                        </div><!-- end prod option select -->
+                    </section><!-- end prod option -->
+                    <section class="prod_option_group">
                         <h5>Size</h5>
-                        <ul>
-                            <li>7</li>
-                            <li>7.5</li>
-                            <li>8</li>
-                            <li>8.5</li>
-                            <li>9</li>
-                            <li>9.5</li>
-                            <li>10</li>
-                            <li>10.5</li>
-                            <li>11</li>
-                            <li>11.5</li>
-                            <li>12</li>
-                            <li>13</li>
-                            <li>14</li>
-                        </ul>
-                    </div><!-- end prod option -->
-                    <div id="size_guide"><a href="#">Size Guide</a></div>
+                        <div class="prod_option_select">
+                            <span>Select Size</span>
+                            <ul class="prod_option_items">
+                                <li>7</li>
+                                <li>7.5</li>
+                                <li>8</li>
+                                <li>8.5</li>
+                                <li>9</li>
+                                <li>9.5</li>
+                                <li>10</li>
+                                <li>10.5</li>
+                                <li>11</li>
+                                <li>11.5</li>
+                                <li>12</li>
+                                <li>13</li>
+                                <li>14</li>
+                            </ul>
+                        </div><!-- end prod option select -->
+                    </section><!-- end prod option -->
+                    <div id="size_guide"><a href="#"><i class="fa fa-align-justify"></i> Size Guide</a></div>
                     <div id="atc_row">
                         <button type="submit">Add to Cart</button>
                     </div><!-- end atc row -->
