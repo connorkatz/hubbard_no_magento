@@ -25,7 +25,8 @@ function changeOptionText(optionGroup, optionText) {
 // Document Ready
 // -------------------------------------
 $j(document).ready(function() {
-    
+
+    // show option dropdown menus
     $j('.prod_option_select span').click(function() {
         var $this = $j(this);
         var optionList = $this.next();
@@ -38,6 +39,7 @@ $j(document).ready(function() {
 
     });
 
+    // swap option text
     $j('.prod_option_items li').click(function() {
         var $this = $j(this);
         var optionGroup = $this.parents('.prod_option_select');
@@ -49,6 +51,12 @@ $j(document).ready(function() {
         hideOptionItems(optionList);
     });
 
+    // setup option dropdown grid
     setupListGrid($j('.prod_option_items'));
+
+    // testimonials slider
+    $j('#testimonial_callouts > ul').bxSlider({
+
+    });
 
 }); // end document ready

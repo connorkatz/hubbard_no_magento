@@ -11,6 +11,10 @@
 
     .category_desc { font-size: 16px; }
 
+    #scroll_arrow {
+        background-size: 20px 20px; height: 50px;
+    }
+
     /* ---------------- Site Callout ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
@@ -148,6 +152,11 @@
 
     .prod_option_group {
         h5 { font-size: 14px; }
+    }
+
+    #social_share {
+        p {display: inline-block; font-size: 12px; vertical-align: middle; margin-right: 10px}
+        li {font-size: 40px; margin: 0 5px; color: $color_text_light;}
     }
 
     /* ---------------- Static Content Pages ---------------------------- */

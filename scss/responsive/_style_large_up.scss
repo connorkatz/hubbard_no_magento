@@ -50,6 +50,10 @@
     /* ---------------- Product Listing ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
+    #filters_container {cursor: pointer;}
+
+    #reset_filters {cursor: pointer}
+
     .product_list_header_row {
         h2 { font-size: 26px; }
         span { font-size: 16px; }
