@@ -2954,7 +2954,8 @@ hr.decorative_break {
   font-size: 12px;
   vertical-align: middle; }
   #prod_review_summary i {
-    color: #ffa400; }
+    color: #ffa400;
+    font-size: 14px; }
 
 #color_option_name {
   display: none;
@@ -3395,7 +3396,9 @@ hr.decorative_break {
     width: calc(100% - 80px);
     display: inline-block;
     padding: 10px 0;
-    text-align: center; }
+    text-align: right; }
+    #prod_review_summary i {
+      font-size: 20px; }
 
   #prod_details_lower {
     background: #faf9f8;

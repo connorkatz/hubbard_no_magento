@@ -368,7 +368,7 @@ hr.decorative_break { border: none; border-top: 1px dotted rgba(0, 0, 0, 0.2); m
 
 #prod_review_summary {
     display: inline-block; font-size: 12px; vertical-align: middle;
-    i { color: $color_brand_primary; }
+    i { color: $color_brand_primary; font-size: 14px;}
 }
 
 #prod_details_lower { }

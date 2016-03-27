@@ -64,7 +64,7 @@
             <div id="search_bar">
                 <div id="search_bar_inner">
                     <input type="text" placeholder="Product Name or Part #">
-                    <button type="button"><i class="fa fa-chevron-circle-right"></i></button>
+                    <button type="submit"><i class="fa fa-chevron-circle-right"></i></button>
                 </div><!-- end search bar inner -->
             </div><!-- end search bar -->
             <div id="search_utility_links">
