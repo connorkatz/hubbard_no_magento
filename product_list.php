@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-
+<?php include 'includes/scroll_arrow.php' ?>
     <section class="category_banner">
         Category Banner
     </section><!-- end category banner -->
@@ -24,9 +24,9 @@
                     <i class="fa fa-angle-down"></i>
                 </div><!-- end filter label -->
                 <ul class="filter_list_items">
-                    <li><a href="#" class="active">All</a></li>
-                    <li><a href="#">Medium</a></li>
-                    <li><a href="#">Wide</a></li>
+                    <li class="active">All</li>
+                    <li>Medium</li>
+                    <li>Wide</li>
                 </ul>
             </div><!-- end filter item block -->
             <div class="filter_item_block">
@@ -36,20 +36,20 @@
                     <i class="fa fa-angle-down"></i>
                 </div><!-- end filter label -->
                 <ul class="filter_list_items">
-                    <li><a href="#" class="active">All</a></li>
-                    <li><a href="#">7</a></li>
-                    <li><a href="#">7.5</a></li>
-                    <li><a href="#">8</a></li>
-                    <li><a href="#">8.5</a></li>
-                    <li><a href="#">9</a></li>
-                    <li><a href="#">9.5</a></li>
-                    <li><a href="#">10</a></li>
-                    <li><a href="#">10.5</a></li>
-                    <li><a href="#">11</a></li>
-                    <li><a href="#">11.5</a></li>
-                    <li><a href="#">12</a></li>
-                    <li><a href="#">13</a></li>
-                    <li><a href="#">14</a></li>
+                    <li class="active">All</li>
+                    <li>7</li>
+                    <li>7.5</li>
+                    <li>8</li>
+                    <li>8.5</li>
+                    <li>9</li>
+                    <li>9.5</li>
+                    <li>10</li>
+                    <li>10.5</li>
+                    <li>11</li>
+                    <li>11.5</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
                 </ul>
             </div><!-- end filter item block -->
         </div><!-- end filters container -->

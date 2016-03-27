@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-
+<?php include 'includes/scroll_arrow.php' ?>
     <section id="homepage_slideshow">
         <ul>
             <li>Homepage Hero Content</li>

@@ -3,8 +3,9 @@
 // =====================================
 $break_xsmall           :   '(min-width: 400px)';
 $break_small            :   '(min-width: 700px)';
-$break_medium           :   '(min-width: 1050px)';
-$break_large            :   '(min-width: 1500px)';
+$break_medium           :   '(min-width: 1000px)';
+$break_large            :   '(min-width: 1050px)';
+$break_x-large          :   '(min-width: 1500px)';
 
 
 
@@ -66,6 +67,7 @@ $color_util_4                 : $hilight_off_white;
 // Layout Variables
 // =====================================
 $minimumPageOffset           : 15px;
+$mediumPageOffset            : 50px;
 
 
 
@@ -85,6 +87,7 @@ $font_sans_serif        :   'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helv
 $font_lato              :   'Lato', $font_sans_serif;
 $font_din_regular       :   'DINCondensed-Regular', $font_sans_serif;
 $font_fontAwesome       :   'FontAwesome';
+$font_roboto            :   'Roboto Slab', $font_lato;
 
 
 

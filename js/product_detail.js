@@ -2,11 +2,19 @@
 // Functions
 // -------------------------------------
 function showOptionItems(optionList) {
-    optionList.slideDown();
+    hideOptionItems();
+    optionList.prev().addClass('active');
+    optionList.slideDown('fast');
 }
 
 function hideOptionItems(optionList) {
-    optionList.slideUp();
+    if(optionList) {
+        optionList.prev().removeClass('active');
+        optionList.slideUp('fast');
+    }
+    else {
+       $j('.prod_option_items').slideUp('fast').prev().removeClass('active');
+    }
 }
 
 function changeOptionText(optionGroup, optionText) {
@@ -17,19 +25,17 @@ function changeOptionText(optionGroup, optionText) {
 // Document Ready
 // -------------------------------------
 $j(document).ready(function() {
-
-    prodImagesSlider = $j('#prod_main_image_inner ul').bxSlider({
-        pagerSelector: '#prod_slider_pages',
-        nextText: '&#xf054;',
-        nextSelector: '#prod_slider_right',
-        prevText: '&#xf053;',
-        prevSelector: '#prod_slider_left',
-        oneToOneTouch: false
-    });
-
+    
     $j('.prod_option_select span').click(function() {
-        var optionList = $j(this).next();
-        showOptionItems(optionList);
+        var $this = $j(this);
+        var optionList = $this.next();
+        if($this.hasClass('active')) {
+            hideOptionItems(optionList);
+        }
+        else {
+            showOptionItems(optionList);
+        }
+
     });
 
     $j('.prod_option_items li').click(function() {
@@ -37,8 +43,12 @@ $j(document).ready(function() {
         var optionGroup = $this.parents('.prod_option_select');
         var optionList = $this.parent();
         var optionText = $this.text();
+        optionList.children().removeClass('active');
+        $this.addClass('active');
         changeOptionText(optionGroup,optionText);
         hideOptionItems(optionList);
     });
+
+    setupListGrid($j('.prod_option_items'));
 
 }); // end document ready

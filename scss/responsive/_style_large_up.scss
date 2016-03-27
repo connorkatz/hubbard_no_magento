@@ -2,26 +2,86 @@
 
     /* ---------------- Global ------------------------------------------ */
     /* ------------------------------------------------------------------ */
+    .category_desc { margin-bottom: 20px; }
 
-
+    hr.decorative_break { margin-bottom: 20px; }
 
     /* ---------------- Header ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
-    #logo_container { margin-left: 0; }
+    #mobile_nav_toggle { display: none }
 
-    #header_right { width: calc(100% - 250px); padding: 0; }
+    #logo_container {
+        width: 250px; padding: 10px 0; margin-left: 20px;
+        p { display: block; }
+    }
 
+    #logo { width: 100%; }
+
+    #header_right { width: calc(100% - 270px); padding: 0 10px 0 0; }
+
+    #user_nav {
+        padding: 0; margin: 15px 15px 0 0;
+        li.link { display: inline-block; }
+        li.link a:hover { color: #cccccc; }
+        a:hover { color: #cccccc; }
+        #sign_in_link { margin: 0; }
+        #support_link { display: inline-block; margin-right: 15px; }
+        #search_link span { }
+    }
+
+    #header_right { position: static; }
+
+    #cart_icon {
+        width: 35px; top: -1px;
+        span { top: 14px; }
+    }
 
     /* ---------------- Main Nav ------------------------------------------ */
     /* ------------------------------------------------------------------ */
-    #main_nav_items {
-        > li > a { font-size: 22px; }
+
+    #main_nav { display: block; }
+
+    /* ---------------- Mobile Nav ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+
+    #mobile_nav { display: none !important; }
+
+    /* ---------------- Product Listing ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+
+    .product_list_header_row {
+        h2 { font-size: 26px; }
+        span { font-size: 16px; }
     }
 
-    #main_nav_items .nav_lvl_2 {
-        > li a {font-size: 18px; font-weight: 300;}
+    .product_list_items {
+        li { width: calc(100% / 4); padding-left: 20px; }
     }
+
+    /* ---------------- Product Detail -- ------------------------------- */
+    /* ------------------------------------------------------------------ */
+    #prod_title_group {
+        h1 { font-size: 36px; padding: 15px 0;}
+    }
+
+    .prod_option_select {cursor: pointer;}
+
+    .prod_option_items { cursor: pointer; }
+
+    #size_guide {
+        margin-bottom: 5px;
+        a {padding: 10px;}
+    }
+
+    /* ---------------- Static Content Pages ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+
+    .static_title_block {
+        margin: 40px auto 35px auto;
+        .static_title_block h1 { font-size: 32px; }
+    }
+
 
 }
 

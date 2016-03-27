@@ -4,6 +4,16 @@
 
 %site_width_padded { @extend %site_width; padding: 0 $minimumPageOffset; }
 
+%content_margin_offset {
+    @extend %site_width; margin-left: $minimumPageOffset; margin-right: $minimumPageOffset;
+    @media #{$break_small} {
+        margin-left: $mediumPageOffset; margin-right: $mediumPageOffset;
+    }
+    @media #{$break_medium} {
+        margin-left: 15px; margin-right: 15px;
+    }
+}
+
 %border_title { font-weight: 300; text-transform: uppercase; border-top: 1px dotted rgba(0,0,0,0.2); border-bottom: 1px dotted rgba(0,0,0,0.2); padding: 10px 0; font-family: $font_din_regular;}
 
 %clearfix {

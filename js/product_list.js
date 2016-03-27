@@ -16,8 +16,8 @@ function hideFilterList(filterList) {
 
 function changeFilterTitle(selectedItem) {
     var $this = selectedItem;
-    var filterList = $this.parents('.filter_list_items');
-    var filterListLinks = filterList.find('a');
+    var filterList = $this.parent();
+    var filterListLinks = filterList.find('li');
     var filterValue = $this.text();
     var filterParent = $this.parents('.filter_item_block');
     var filterLabel = filterParent.find('.filter_label span');
@@ -31,7 +31,7 @@ function checkFilterReset() {
     var onFirstChild = 0;
     $j('.filter_list_items').each(function() {
         numFilters++
-        if($j(this).find('a').first().hasClass('active')) {
+        if($j(this).find('li').first().hasClass('active')) {
             onFirstChild++;
         }
     });
@@ -77,20 +77,20 @@ $j(document).ready(function() {
     });
 
     // change filter option
-    $j('.filter_list_items a').click(function() {
+    $j('.filter_list_items li').click(function() {
         var $this = $j(this);
-        var parentList = $this.parents('.filter_list_items');
+        var parentList = $this.parent();
         changeFilterTitle($this);
         hideFilterList(parentList);
         checkFilterReset();
-        return false;
     });
 
     // reset all filters
     $j('#reset_filters').click(function() {
         resetAllFilters();
         hideResetFilters();
-        return false;
     });
+
+    setupListGrid($j('.filter_list_items'));
 
 }); // end document ready

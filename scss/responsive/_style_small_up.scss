@@ -15,7 +15,7 @@
     /* ------------------------------------------------------------------ */
 
     #site_callout_inner {
-        padding: 10px 0;
+        padding: 12px 0;
         p:nth-of-type(1) { font-weight: 700; }
         p:nth-of-type(2) { display: inline-block; }
     }
@@ -48,6 +48,13 @@
 
     #search_quick_links {
         span { font-size: 12px; margin-bottom: 10px; }
+    }
+
+    /* ---------------- Breadcrumbs ------------------------------------- */
+    /* ------------------------------------------------------------------ */
+
+    #breadcrumbs {
+        display: block;
     }
 
     /* ---------------- Footer ------------------------------------------ */
@@ -105,7 +112,11 @@
     /* ---------------- Product Detail ---------------------------- */
     /* ------------------------------------------------------------------ */
 
-    #prod_content_container { padding-top: 85px; }
+    #prod_content_container { padding-top: 75px; }
+
+    #prod_detail_layout_block_1 {
+        p {font-size: 16px;}
+    }
 
     #prod_detail_left {
         p { font-size: 18px; }
@@ -118,20 +129,25 @@
     }
 
     #prod_slider_pages {
+        margin-bottom: 20px;
         .bx-pager-item { margin-left: 2px; margin-right: 2px; }
         .bx-pager-item a { width: 10px; height: 10px; }
     }
 
     #prod_title_group {
-        top: 15px; left: 20px; width: calc(100% - 40px); padding: 10px 0;
-        h1 { font-size: 28px; }
+        top: 5px; left: 20px; width: calc(100% - 40px); padding: 10px 0;
+        h1 { font-size: 30px; }
     }
 
     #prod_price { top: 20px; right: 25px; font-size: 26px; }
 
     #prod_color_swatches {
         margin: 0 20px;
-        li {display: inline-block; width: 20%; padding: 0 2px 5px 2px; border-bottom: 2px solid transparent; margin-bottom: 10px;}
+        li { padding: 0 2px 5px 2px; margin-bottom: 10px;}
+    }
+
+    .prod_option_group {
+        h5 { font-size: 14px; }
     }
 
     /* ---------------- Static Content Pages ---------------------------- */

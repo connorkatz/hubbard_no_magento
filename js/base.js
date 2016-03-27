@@ -1,5 +1,5 @@
 // -------------------------------------
-// Functions
+// Header/Nav Functions
 // -------------------------------------
 function showMobileNav() {
     $j('#mobile_nav').slideDown();
@@ -49,6 +49,21 @@ function showMainNavSubmenu() {
             $j(this).prev().removeClass('active')
         }
     );
+}
+
+
+// -------------------------------------
+// Global Utility Functions
+// -------------------------------------
+
+function setupListGrid(list) {
+    list.each(function() {
+        var optionItems = $j(this).children();
+        var numOptions = optionItems.length;
+        if(numOptions > 5) {
+            optionItems.addClass('grid');
+        }
+    });
 }
 
 
