@@ -268,9 +268,8 @@ hr.decorative_break { border: none; border-top: 1px dotted rgba(0, 0, 0, 0.2); m
 }
 
 #reset_filters {
-    position: absolute; top: 0; right: 10px; display: none; font-size: 12px;
+    position: absolute; top: 0; right: 10px; display: none; font-size: 12px; color: $color_text_light; padding: 5px;
     i { margin-right: 5px; }
-    a { color: $color_text_light; padding: 5px; }
 }
 
 #filters_container { font-size: 0; }
@@ -291,8 +290,8 @@ hr.decorative_break { border: none; border-top: 1px dotted rgba(0, 0, 0, 0.2); m
     display: none; background: #f3f2f0; border-top: 1px solid rgba(0, 0, 0, 0.1);
     li { display: block; color: $color_text_dark; padding: 15px 20px; font-size: 14px; border-bottom: 1px dotted rgba(0, 0, 0, 0.1); }
     li.active { background: $color_brand_secondary; color: $color_text_white; }
-    li.grid {display: inline-block; width: 50%; text-align: center; border-right: 1px solid rgba(0,0,0,0.1); border-bottom: 1px solid rgba(0,0,0,0.1); padding: 15px 0;}
-    li.grid:nth-child(2n) {border-right: none;}
+    li.grid {display: inline-block; width: calc(100% / 3); text-align: center; border-right: 1px solid rgba(0,0,0,0.1); border-bottom: 1px solid rgba(0,0,0,0.1); padding: 15px 0;}
+    li.grid:nth-child(3n) {border-right: none;}
 }
 
 #product_list_loader {

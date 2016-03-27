@@ -53,7 +53,7 @@ function hideResetFilters() {
 
 function resetAllFilters() {
     $j('.filter_list_items').each(function() {
-        var firstItem = $j(this).children().first().children();
+        var firstItem = $j(this).children().first();
         changeFilterTitle(firstItem);
     });
 }

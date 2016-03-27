@@ -2730,12 +2730,11 @@ hr.decorative_break {
   top: 0;
   right: 10px;
   display: none;
-  font-size: 12px; }
+  font-size: 12px;
+  color: #999999;
+  padding: 5px; }
   #reset_filters i {
     margin-right: 5px; }
-  #reset_filters a {
-    color: #999999;
-    padding: 5px; }
 
 #filters_container {
   font-size: 0; }
@@ -2786,12 +2785,12 @@ hr.decorative_break {
     color: #ffffff; }
   .filter_list_items li.grid {
     display: inline-block;
-    width: 50%;
+    width: calc(100% / 3);
     text-align: center;
     border-right: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 15px 0; }
-  .filter_list_items li.grid:nth-child(2n) {
+  .filter_list_items li.grid:nth-child(3n) {
     border-right: none; }
 
 #product_list_loader {

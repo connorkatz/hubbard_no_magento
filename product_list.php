@@ -12,9 +12,7 @@
     <section id="product_filter_group_block">
         <h6>Show Me</h6>
         <div id="reset_filters">
-            <a href="#">
-                <i class="fa fa-rotate-left"></i>Reset All
-            </a>
+            <i class="fa fa-rotate-left"></i>Reset All
         </div>
         <div id="filters_container">
             <div class="filter_item_block">
