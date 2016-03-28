@@ -3,7 +3,10 @@
     /* ---------------- Global ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
-    h1.page_header { font-size: 32px; padding: 20px 0; }
+    h1.page_header {
+        font-size: 32px; padding: 20px 0;
+        &.w_breadcrumbs {padding-top: 5px;}
+    }
 
     hr.decorative_break { max-width: 300px; }
 
@@ -152,6 +155,13 @@
 
     .prod_option_group {
         h5 { font-size: 14px; }
+    }
+
+    #out_of_stock_callout {
+        padding: 20px 150px;
+        label {font-size: 16px; padding-bottom: 20px;}
+        input {font-size: 14px;}
+        button {font-size: 14px;}
     }
 
     #social_share {

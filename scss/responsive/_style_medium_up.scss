@@ -45,7 +45,7 @@
         i {font-size: 20px;}
     }
 
-    #prod_details_lower {background: $color_util_4; border-top: 1px solid #ffffff; padding: 0 0 15px 0; border-radius: 0 0 5px 5px;}
+    #prod_details_lower {background: $color_util_4; border-top: 1px solid #ffffff; border-radius: 0 0 5px 5px;}
 
     #color_option_name {display: block;}
 
@@ -61,6 +61,14 @@
 
     .prod_option_items {position: absolute; z-index: 99; width: 100%; border: 1px solid rgba(0,0,0,0.1); box-shadow: 1px 1px 1px rgba(0,0,0,0.2);}
 
+    #atc_row {padding-bottom: 15px;}
+
+    #out_of_stock_callout {
+        padding: 20px 15px; border-radius: 0 0 5px 5px;
+        label {font-size: 16px; padding-bottom: 20px;}
+        input {font-size: 14px;}
+        button {font-size: 14px;}
+    }
 
 
 }
