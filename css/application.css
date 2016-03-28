@@ -3044,7 +3044,6 @@ hr.decorative_break {
     font-weight: 300; }
 
 #inventory_message {
-  display: none;
   background: #fff6e5;
   padding: 15px;
   margin-bottom: 10px;

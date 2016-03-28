@@ -110,8 +110,14 @@
                             What size am I ?
                         </a>
                     </div><!-- end size guide -->
-                    <div id="inventory_message"><i class="fa fa-exclamation-triangle"></i>Only 9 available in stock
-                    </div>
+                    <div id="inventory_message">
+                        <span class="low_stock">
+                            <i class="fa fa-exclamation-triangle"></i>Only 9 available in stock
+                        </span>
+                        <span class="no_stock">
+                            <i class="fa fa-exclamation-triangle"></i>Out of stock
+                        </span>
+                    </div><!-- end inventory message -->
                     <div id="atc_row">
                         <button type="submit">Add to Cart</button>
                     </div><!-- end atc row -->
