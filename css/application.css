@@ -2541,7 +2541,8 @@ hr.decorative_break {
     background-size: contain;
     padding-top: 70%; }
   #main_nav_items .nav_lvl_2 p {
-    margin: 10px 0 20px 0; }
+    margin: 10px 0 20px 0;
+    background: #faf9f8; }
 
 .nav-1-1 span {
   background: url("../images/category_image/category_go_to_work.jpg") no-repeat center center; }
@@ -3161,6 +3162,8 @@ hr.decorative_break {
   h1.page_header {
     font-size: 32px;
     padding: 20px 0; }
+    h1.page_header.w_breadcrumbs {
+      padding-top: 5px; }
 
   hr.decorative_break {
     max-width: 300px; }

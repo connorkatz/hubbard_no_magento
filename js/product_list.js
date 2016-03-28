@@ -6,12 +6,12 @@ function showFilterList(filterList) {
        hideFilterList($j(this));
     });
     filterList.prev().addClass('active');
-    filterList.slideDown();
+    filterList.slideDown('fast');
 }
 
 function hideFilterList(filterList) {
     filterList.prev().removeClass('active');
-    filterList.slideUp();
+    filterList.slideUp('fast');
 }
 
 function changeFilterTitle(selectedItem) {

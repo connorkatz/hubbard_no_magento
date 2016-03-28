@@ -3,7 +3,10 @@
     /* ---------------- Global ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
-    h1.page_header { font-size: 32px; padding: 20px 0; }
+    h1.page_header {
+        font-size: 32px; padding: 20px 0;
+        &.w_breadcrumbs {padding-top: 5px;}
+    }
 
     hr.decorative_break { max-width: 300px; }
 

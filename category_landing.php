@@ -4,7 +4,17 @@
     <section class="category_banner">
         Category Banner
     </section><!-- end category banner -->
-    <h1 class="page_header">Samuel Hubbard Men's Collections</h1>
+    <nav id="breadcrumbs">
+        <ul>
+            <li>
+                <a href="/"><i class="fa fa-home"></i></a>
+            </li>
+            <li>
+                <a href="/category_landing.php">Men</a>
+            </li>
+        </ul>
+    </nav><!-- end breacrumbs -->
+    <h1 class="page_header w_breadcrumbs">Samuel Hubbard Men's Collections</h1>
     <hr class="decorative_break">
     <section class="category_desc">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a sapien at elit lacinia posuere.

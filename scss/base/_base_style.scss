@@ -161,7 +161,7 @@ hr.decorative_break { border: none; border-top: 1px dotted rgba(0, 0, 0, 0.2); m
     > li a:hover { color: $color_text_medium; }
     > li a:active { color: $color_text_light; }
     span { display: block; background-size: contain; padding-top: 70%; }
-    p { @extend %border_title; margin: 10px 0 20px 0; }
+    p { @extend %border_title; margin: 10px 0 20px 0; background: $color_util_4;}
 }
 
 .nav-1-1 span { background: url("#{$path_image}category_image/category_go_to_work.jpg") no-repeat center center; }

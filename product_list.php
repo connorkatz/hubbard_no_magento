@@ -3,7 +3,20 @@
     <section class="category_banner">
         Category Banner
     </section><!-- end category banner -->
-    <h1 class="page_header">Un-Sneaker Collection</h1>
+    <nav id="breadcrumbs">
+        <ul>
+            <li>
+                <a href="/"><i class="fa fa-home"></i></a>
+            </li>
+            <li>
+                <a href="/category_landing.php">Men</a>
+            </li>
+            <li>
+                <a href="/product_list.php">Un-Sneaker Collection</a>
+            </li>
+        </ul>
+    </nav><!-- end breacrumbs -->
+    <h1 class="page_header w_breadcrumbs">Un-Sneaker Collection</h1>
     <hr class="decorative_break">
     <section class="category_desc">
         <p>Crafted from the finest leathers and materials from all over the world, the Un-Sneaker collection is designed for you, to move, walk, work, live and play. Remarkably light and ridiculously comfortable, they are the ideal everyday shoe. Enjoy!</p>
