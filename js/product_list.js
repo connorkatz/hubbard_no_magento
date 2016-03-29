@@ -11,7 +11,7 @@ function showFilterList(filterList) {
 
 function hideFilterList(filterList) {
     filterList.prev().removeClass('active');
-    filterList.slideUp('fast');
+    filterList.slideUp();
 }
 
 function changeFilterTitle(selectedItem) {
