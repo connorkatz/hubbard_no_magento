@@ -78,6 +78,10 @@
         a {padding: 10px;}
     }
 
+    #out_of_stock_callout {
+        button:hover {background: $color_brand_primary;}
+    }
+
     /* ---------------- Static Content Pages ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 

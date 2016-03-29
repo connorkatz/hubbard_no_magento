@@ -157,6 +157,13 @@
         h5 { font-size: 14px; }
     }
 
+    #out_of_stock_callout {
+        padding: 20px 150px;
+        label {font-size: 16px; padding-bottom: 20px;}
+        input {font-size: 14px;}
+        button {font-size: 14px;}
+    }
+
     #social_share {
         p {display: inline-block; font-size: 12px; vertical-align: middle; margin-right: 10px}
         li {font-size: 40px; margin: 0 5px; color: $color_text_light;}

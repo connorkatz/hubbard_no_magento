@@ -19,51 +19,55 @@
     <h1 class="page_header w_breadcrumbs">Un-Sneaker Collection</h1>
     <hr class="decorative_break">
     <section class="category_desc">
-        <p>Crafted from the finest leathers and materials from all over the world, the Un-Sneaker collection is designed for you, to move, walk, work, live and play. Remarkably light and ridiculously comfortable, they are the ideal everyday shoe. Enjoy!</p>
+        <p>Crafted from the finest leathers and materials from all over the world, the Un-Sneaker collection is designed
+            for you, to move, walk, work, live and play. Remarkably light and ridiculously comfortable, they are the
+            ideal everyday shoe. Enjoy!</p>
     </section><!-- end category desc -->
     <hr class="decorative_break">
     <section id="product_filter_group_block">
         <h6>Show Me</h6>
-        <div id="reset_filters">
-            <i class="fa fa-rotate-left"></i>Reset All
-        </div>
-        <div id="filters_container">
-            <div class="filter_item_block">
-                <div class="filter_label">
-                    <label>Width</label>
-                    <span>All</span>
-                    <i class="fa fa-angle-down"></i>
-                </div><!-- end filter label -->
-                <ul class="filter_list_items">
-                    <li class="active">All</li>
-                    <li>Medium</li>
-                    <li>Wide</li>
-                </ul>
-            </div><!-- end filter item block -->
-            <div class="filter_item_block">
-                <div class="filter_label">
-                    <label>Size</label>
-                    <span>All</span>
-                    <i class="fa fa-angle-down"></i>
-                </div><!-- end filter label -->
-                <ul class="filter_list_items">
-                    <li class="active">All</li>
-                    <li>7</li>
-                    <li>7.5</li>
-                    <li>8</li>
-                    <li>8.5</li>
-                    <li>9</li>
-                    <li>9.5</li>
-                    <li>10</li>
-                    <li>10.5</li>
-                    <li>11</li>
-                    <li>11.5</li>
-                    <li>12</li>
-                    <li>13</li>
-                    <li>14</li>
-                </ul>
-            </div><!-- end filter item block -->
-        </div><!-- end filters container -->
+        <form>
+            <div id="reset_filters">
+                <i class="fa fa-rotate-left"></i>Reset All
+            </div>
+            <div id="filters_container">
+                <div class="filter_item_block">
+                    <div class="filter_label">
+                        <label>Width</label>
+                        <span>All</span>
+                        <i class="fa fa-angle-down"></i>
+                    </div><!-- end filter label -->
+                    <ul class="filter_list_items">
+                        <li class="active">All</li>
+                        <li>Medium</li>
+                        <li>Wide</li>
+                    </ul>
+                </div><!-- end filter item block -->
+                <div class="filter_item_block">
+                    <div class="filter_label">
+                        <label>Size</label>
+                        <span>All</span>
+                        <i class="fa fa-angle-down"></i>
+                    </div><!-- end filter label -->
+                    <ul class="filter_list_items">
+                        <li class="active">All</li>
+                        <li>7</li>
+                        <li>7.5</li>
+                        <li>8</li>
+                        <li>8.5</li>
+                        <li>9</li>
+                        <li>9.5</li>
+                        <li>10</li>
+                        <li>10.5</li>
+                        <li>11</li>
+                        <li>11.5</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                    </ul>
+                </div><!-- end filter item block -->
+            </div><!-- end filters container -->
+        </form>
     </section><!-- end product filter block -->
 
     <section id="product_list_loader">
