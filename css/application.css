@@ -2158,7 +2158,7 @@ select {
   min-height: 100%; }
 
 #site_content_container {
-  background: #f7f6f5; }
+  background: #ffffff; }
 
 h1.page_header {
   font-size: 24px;
@@ -2377,7 +2377,7 @@ hr.decorative_break {
   position: absolute;
   z-index: 999;
   width: 100%;
-  background: #f7f6f5;
+  background: #ffffff;
   font-size: 0;
   border-top: 1px solid #ffffff;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -2442,7 +2442,7 @@ hr.decorative_break {
   height: 100%;
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  background: #f7f6f5;
+  background: #ffffff;
   display: none; }
 
 #mobile_nav_items li {
@@ -2517,7 +2517,7 @@ hr.decorative_break {
   width: 100%;
   left: 0;
   font-size: 0;
-  background: #f7f6f5;
+  background: #ffffff;
   text-align: center;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
   padding: 0 20px; }
