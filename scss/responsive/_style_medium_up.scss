@@ -1,7 +1,27 @@
 @media #{$break_medium} {
 
+    /* ---------------- Mobile Nav ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+
+    #mobile_nav_items {
+        > li > a { font-size: 20px; }
+    }
+
+    #mobile_nav_items .standard_categories {
+        > li { width: calc(100% / 3); }
+        span { display: inline-block; width: 150px; vertical-align: top; border-right: 1px solid #dfdede; }
+        span a { display: block; height: 95px; background-position: left top; }
+    }
+
+    #mobile_nav_items .menu_cat_links {
+        display: inline-block; width: calc(100% - 150px);
+    }
+
+    /* ---------------- Breadcrumbs ------------------------------------- */
+    /* ------------------------------------------------------------------ */
+
     #breadcrumbs {
-        ul {text-align: left;}
+        ul { text-align: left; }
     }
 
     /* ---------------- Footer ------------------------------------------ */
@@ -9,67 +29,79 @@
 
     .footer_link_group { width: 33.3%; }
 
-    #footer_email_group { width: 33.3%; display: inline-block; border-top: none; padding: 0; margin-top: 5px;}
+    #footer_email_group { width: 33.3%; display: inline-block; border-top: none; padding: 0; margin-top: 5px; }
 
     #social_links { margin: 20px 0 0 0; }
 
-
     /* ---------------- Product Detail -- ------------------------------- */
     /* ------------------------------------------------------------------ */
-    #prod_content_container {padding: 0;}
+    #prod_content_upper_container { padding: 0; margin-bottom: 20px; }
 
-    #prod_detail_layout_block_1 {display: inline-block; vertical-align: top; width: calc(70% - 10px); margin-right: 10px;}
+    #prod_detail_layout_block_1 { display: inline-block; vertical-align: top; width: calc(70% - 10px); margin-right: 10px; }
 
-    #prod_detail_layout_block_2 { display: inline-block; vertical-align: top; width: calc(30% - 20px);}
+    #prod_detail_layout_block_2 { display: inline-block; vertical-align: top; width: calc(30% - 20px); }
 
     #prod_slider_pages {
         .bx-pager-item { display: inline-block; margin-left: 2px; margin-right: 2px }
-        .bx-pager-item a { display: block; text-indent: 0; overflow: hidden; width: 100px; height: 70px; background: transparent; border-radius: 0; border-bottom: 2px solid transparent;}
-        .bx-pager-item a.active { border-color: rgba(0,0,0,0.2); background: transparent;}
-        .bx-pager-item img { display: inline;}
+        .bx-pager-item a { display: block; text-indent: 0; overflow: hidden; width: 100px; height: 70px; background: transparent; border-radius: 0; border: none; border-bottom: 2px solid transparent; }
+        .bx-pager-item a.active { border-color: rgba(0, 0, 0, 0.2); background: transparent; }
+        .bx-pager-item img { display: inline; }
     }
 
-    #prod_details {border-radius: 5px; margin-top: -20px; background: #ffffff; box-shadow: 0 0 3px rgba(0,0,0,0.2);}
+    #prod_details { border-radius: 5px; margin-top: -20px; background: #ffffff; box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
 
     #prod_title_group {
         position: static; width: 100%; top: auto; left: auto; padding: 0; background: transparent; border: none; text-align: left;
-        h1 { font-size: 30px; text-align: center; padding: 10px 0; margin: 0; background: $color_util_4; border-radius: 5px 5px 0 0; border-top: 1px solid #ffffff;}
+        h1 { font-size: 30px; text-align: center; padding: 10px 0; margin: 0; background: $color_util_4; border-radius: 5px 5px 0 0; border-top: 1px solid #ffffff; }
     }
 
-    #prod_price_review_block {background: #ffffff; text-align: left; border-top: 1px solid rgba(0,0,0,0.1); border-bottom: 1px solid rgba(0,0,0,0.1); padding: 10px 15px}
+    #prod_price_review_block { background: #ffffff; text-align: left; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding: 10px 15px }
 
-    #prod_price {position: static; top: auto; right: auto; display: inline-block; font-weight: 300; font-size: 24px; width: 80px;}
+    #prod_price { position: static; top: auto; right: auto; display: inline-block; font-weight: 300; font-size: 24px; width: 80px; }
 
     #prod_review_summary {
         width: calc(100% - 80px); display: inline-block; padding: 10px 0; text-align: right;
-        i {font-size: 20px;}
+        i { font-size: 20px; }
     }
 
-    #prod_details_lower {background: $color_util_4; border-top: 1px solid #ffffff; border-radius: 0 0 5px 5px;}
+    #prod_details_lower { border-top: 1px solid #ffffff; border-radius: 0 0 5px 5px; padding: 0; }
 
-    #color_option_name {display: block;}
+    #color_option_name { display: block; }
 
     #prod_color_swatches {
         margin: 10px 15px 0 15px;
-        ul {text-align: left; margin-bottom: 10px;}
-        li {width: 25%; margin-bottom: 5px;}
+        ul { text-align: left; margin-bottom: 10px; }
+        li { width: 25%; margin-bottom: 5px; }
     }
 
-    .prod_option_group {margin-top: 0; margin-bottom: 10px;}
+    .prod_option_group { margin-top: 0; margin-bottom: 10px; }
 
-    .prod_option_select {position: relative; box-shadow: 0 0 1px rgba(0,0,0,0.3);}
+    .prod_option_select { position: relative; box-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
 
-    .prod_option_items {position: absolute; z-index: 99; width: 100%; border: 1px solid rgba(0,0,0,0.1); box-shadow: 1px 1px 1px rgba(0,0,0,0.2);}
+    .prod_option_items { position: absolute; z-index: 99; width: 100%; border: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
 
-    #atc_row {padding-bottom: 15px;}
+    #atc_row { padding-bottom: 15px; }
 
     #out_of_stock_callout {
         padding: 20px 15px; border-radius: 0 0 5px 5px;
-        label {font-size: 16px; padding-bottom: 20px;}
-        input {font-size: 14px;}
-        button {font-size: 14px;}
+        label { font-size: 16px; padding-bottom: 20px; }
+        input { font-size: 14px; }
+        button { font-size: 14px; }
     }
 
+    #atc_row {
+        button { padding: 20px 0; font-size: 22px; }
+    }
+
+    #shipping_callout { background: transparent; }
+
+    /* ---------------- Cart Preview ------------------------------------ */
+    /* ------------------------------------------------------------------ */
+
+    #cart_preview_actions {
+        a { display: inline-block; font-size: 16px; width: auto; padding: 15px 25px; }
+        a:first-of-type { margin: 0 5px 0 0; }
+    }
 
 }
 

@@ -1,5 +1,5 @@
 // -------------------------------------
-// Header/Nav Functions
+// Mobile Nav Funcitons
 // -------------------------------------
 function showMobileNav() {
     $j('#mobile_nav').slideDown();
@@ -9,7 +9,54 @@ function showMobileNav() {
 function hideMobileNav() {
     $j('#mobile_nav').slideUp('fast');
     $j('#mobile_nav_toggle').removeClass('active');
+    $j('#mobile_nav_items .nav_lvl_1').each(function() {
+        $j(this).children('a.active').each(function() {
+            hideMobileSubnav($j(this));
+        })
+    });
 }
+
+function showMobileSubnav(parent) {
+    parent.addClass('active');
+    parent.next().slideDown();
+}
+
+function hideMobileSubnav(parent) {
+    parent.removeClass('active');
+    parent.next().slideUp('fast');
+}
+
+
+// -------------------------------------
+// Main Nav Functions
+// -------------------------------------
+
+function showMainNavSubmenu() {
+    $j('#main_nav_items li.nav_lvl_1').hoverIntent({
+        over: function() {
+            console.log('run');
+            jQuery(this).find('.nav_lvl_2').slideDown(200);
+        },
+        out: function() {
+            jQuery(this).find('.nav_lvl_2').slideUp(50);
+        },
+        timeout: 300
+    });
+    $j('#main_nav_items .nav_lvl_2').hover(
+        function() {
+            $j(this).addClass('active');
+            $j(this).prev().addClass('active')
+        },
+        function() {
+            $j(this).removeClass('active');
+            $j(this).prev().removeClass('active')
+        }
+    );
+}
+
+// -------------------------------------
+// Site Search Funcitons
+// -------------------------------------
 
 function showSiteSearch() {
     hideMobileNav();
@@ -29,28 +76,6 @@ function hideSiteSearch() {
     $searchIcon.addClass('fa-search');
 }
 
-function showMainNavSubmenu() {
-    $j('#main_nav_items li.nav_lvl_1').hoverIntent({
-        over: function() {
-            jQuery(this).find('ul.nav_lvl_2').slideDown(200);
-        },
-        out: function() {
-            jQuery(this).find('ul.nav_lvl_2').slideUp(50);
-        },
-        timeout: 300
-    });
-    $j('#main_nav_items .nav_lvl_2').hover(
-        function() {
-            $j(this).addClass('active');
-            $j(this).prev().addClass('active')
-        },
-        function() {
-            $j(this).removeClass('active');
-            $j(this).prev().removeClass('active')
-        }
-    );
-}
-
 
 // -------------------------------------
 // Global Utility Functions
@@ -63,6 +88,16 @@ function setupListGrid(list) {
         if(numOptions > 5) {
             optionItems.addClass('grid');
         }
+    });
+}
+
+function countCalloutCategories() {
+    $j('.nav_lvl_2').each(function() {
+        var $this = $j(this);
+        var calloutList = $this.children('.callout_categories');
+        var listItems = calloutList.find('ul > li');
+        var numItems = listItems.length;
+        listItems.addClass('length_' + numItems);
     });
 }
 
@@ -85,6 +120,21 @@ $j(document).ready(function() {
         return false;
     });
 
+    // hide/show mobile subnav items
+    $j('#mobile_nav_items .nav_lvl_1 > a').click(function() {
+        var $this = $j(this);
+        if($this.hasClass('active')) {
+            hideMobileSubnav($this);
+        }
+        else {
+            showMobileSubnav($this);
+        }
+        return false;
+    });
+
+    // count callout nav callout categories
+    countCalloutCategories();
+
     // hide/show site search
     $j('#search_link a').click(function() {
         var $parent = $j(this).parent();
@@ -92,12 +142,12 @@ $j(document).ready(function() {
             hideSiteSearch();
         }
         else {
+            $parent.removeClass('active');
             showSiteSearch();
         }
         return false;
     });
     
-
     // show main nav submenu
     showMainNavSubmenu();
 

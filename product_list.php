@@ -35,7 +35,6 @@
                     <div class="filter_label">
                         <label>Width</label>
                         <span>All</span>
-                        <i class="fa fa-angle-down"></i>
                     </div><!-- end filter label -->
                     <ul class="filter_list_items">
                         <li class="active">All</li>
@@ -47,7 +46,6 @@
                     <div class="filter_label">
                         <label>Size</label>
                         <span>All</span>
-                        <i class="fa fa-angle-down"></i>
                     </div><!-- end filter label -->
                     <ul class="filter_list_items">
                         <li class="active">All</li>

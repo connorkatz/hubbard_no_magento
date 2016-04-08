@@ -3,11 +3,17 @@
 
 html,body {height: 100%;}
 
-body {font-size: 14px; font-family: $font_lato; font-weight: 400; line-height: 1; color: $color_text_base; background: $color_brand_secondary;}
+body {font-size: 14px; font-family: $font_lato; font-weight: 400; line-height: 1; color: $color_text_base; background: $color_brand_secondary; -webkit-text-size-adjust: 100%;}
+
+h1,h2,h3,h4,h5,h6 {font-weight: 400;}
 
 /* Default Link Styles */
-a {color: $color_link; text-decoration: none;}
-a:hover {color: $color_link_hover;}
+a {
+    color: $color_link; text-decoration: none;
+    @media #{$break_large} {
+        color: $color_link_hover;
+    }
+}
 
 /* Default List Styles */
 ul, ol {list-style-type: none;}

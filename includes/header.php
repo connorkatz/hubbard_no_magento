@@ -67,22 +67,21 @@
                     <button type="submit"><i class="fa fa-chevron-circle-right"></i></button>
                 </div><!-- end search bar inner -->
             </div><!-- end search bar -->
-            <div id="search_utility_links">
-                <span>Quick Links:</span>
-                <ul>
-                    <li><a href="#">Find a Store</a></li>
-                    <li><a href="#">Hubbard Free</a></li>
-                    <li><a href="#">Un-Sneaker</a></li>
-                    <li><a href="#">Women's</a></li>
-                </ul>
-            </div><!-- end search quick links -->
+            <section id="search_util_links">
+                <div id="search_util_links_inner">
+                    <span>Quick Links:</span>
+                    <ul>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Hubbard Free</a></li>
+                        <li><a href="#">Un-Sneaker</a></li>
+                        <li><a href="#">Women's</a></li>
+                    </ul>
+                </div><!-- end search util links inner -->
+            </section><!-- end search util links -->
         </section><!-- end site search -->
         <nav id="mobile_nav">
             <ul id="mobile_nav_items">
                 <?php include 'nav_items.php'; ?>
-            </ul>
-            <ul id="mobile_social_links">
-                <?php include 'social_links.php'; ?>
             </ul>
         </nav>
 

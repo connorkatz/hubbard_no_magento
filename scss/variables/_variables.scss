@@ -1,7 +1,7 @@
 // =====================================
 // Media Query Variables
 // =====================================
-$break_xsmall           :   '(min-width: 400px)';
+$break_x-small          :   '(min-width: 400px)';
 $break_small            :   '(min-width: 700px)';
 $break_medium           :   '(min-width: 1000px)';
 $break_large            :   '(min-width: 1050px)';
@@ -19,13 +19,17 @@ $break_x-large          :   '(min-width: 1500px)';
 $white                        : #ffffff;
 $hubbard_blue                 : #022f59;
 $hubbard_yellow               : #ffa400;
-$light_grey                   : #999999;
-$medium_grey                  : #808080;
-$dark_grey                    : #4d4d4d;
-$dark_grey_blue               : #696A6D;
+
+$grey_neutral_light           : #f9f9f9;
+$grey_neutral_medium          : #808080;
+$grey_neutral_dark            : #4d4d4d;
+
+$grey_warm_light              : #f7f6f5;
+$grey_warm_medium             : #f2f1f0;
+
+$grey_cool_dark               : #696A6D;
 $light_grey_orange            : #cccac8;
 $almost_white_grey_orange     : #f7f6f5;
-$hilight_off_white            : #faf9f8;
 
 
 
@@ -36,16 +40,17 @@ $color_brand_secondary        : $hubbard_blue;
 
 // Link Colors
 // -------------------------------------
-$color_link                   : $hubbard_yellow;
-$color_link_hover             : $light_grey_orange;
+$color_link                   : $color_brand_secondary;
+$color_link_hover             : $color_brand_primary;
 
 // Text Colors
 // -------------------------------------
 $color_text_white             : $white;
-$color_text_light             : $light_grey;
-$color_text_base              : $dark_grey_blue;
-$color_text_medium            : $medium_grey;
-$color_text_dark              : $dark_grey;
+$color_text_light             : $grey_neutral_light;
+$color_text_medium            : $grey_neutral_medium;
+$color_text_dark              : $grey_neutral_dark;
+$color_text_base              : $grey_cool_dark;
+
 
 
 // Background Colors
@@ -56,10 +61,11 @@ $color_background_secondary   : $hubbard_blue;
 
 // Utility Colors
 // ------------------------------------
-$color_util_1                 : $light_grey;
-$color_util_2                 : $medium_grey;
-$color_util_3                 : $dark_grey;
-$color_util_4                 : $hilight_off_white;
+$color_util_1                 : $grey_neutral_light;
+$color_util_2                 : $grey_neutral_medium;
+$color_util_3                 : $grey_neutral_dark;
+$color_util_4                 : $grey_warm_light;
+$color_util_5                 : $grey_warm_medium;
 
 
 

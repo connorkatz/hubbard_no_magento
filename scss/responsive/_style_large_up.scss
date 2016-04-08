@@ -50,36 +50,59 @@
     /* ---------------- Product Listing ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
-    #filters_container {cursor: pointer;}
+    #filters_container { cursor: pointer; }
 
-    #reset_filters {cursor: pointer}
+    #reset_filters { cursor: pointer }
 
     .product_list_header_row {
         h2 { font-size: 26px; }
         span { font-size: 16px; }
     }
 
-    .product_list_items {
-        li { width: calc(100% / 4); padding-left: 20px; }
-    }
-
     /* ---------------- Product Detail -- ------------------------------- */
     /* ------------------------------------------------------------------ */
     #prod_title_group {
-        h1 { font-size: 36px; padding: 15px 0;}
+        h1 { font-size: 36px; padding: 15px 5px; }
     }
 
-    .prod_option_select {cursor: pointer;}
+    .prod_option_select { cursor: pointer; }
 
     .prod_option_items { cursor: pointer; }
 
     #size_guide {
         margin-bottom: 5px;
-        a {padding: 10px;}
+        a { padding: 10px; }
     }
 
     #out_of_stock_callout {
-        button:hover {background: $color_brand_primary;}
+        button:hover { background: $color_brand_primary; }
+    }
+
+    #social_share {display: block;}
+
+    #review_callouts {
+        &:hover #review_callout_stars { color: $color_brand_primary; }
+    }
+
+    #prod_overview { padding: 0 30px; }
+
+    #prod_higlights {
+        display: inline-block; width: 50%; vertical-align: top; padding: 0 10px;
+    }
+
+    #prod_description { display: inline-block; width: 50%; vertical-align: top; padding: 0 20px; }
+
+
+    /* ---------------- Cart Preview ------------------------------------ */
+    /* ------------------------------------------------------------------ */
+
+    #cart_preview_item_inner {
+        padding: 20px 50px;
+    }
+
+    #cart_preview_actions {
+        a:first-of-type:hover { background: $color_util_2; color: $color_text_white; }
+        a:nth-of-type(2):hover { background: $color_brand_primary; }
     }
 
     /* ---------------- Static Content Pages ------------------------------------------ */
@@ -89,7 +112,6 @@
         margin: 40px auto 35px auto;
         .static_title_block h1 { font-size: 32px; }
     }
-
 
 }
 
