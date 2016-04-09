@@ -1,5 +1,22 @@
-// Layout Extends
 // -------------------------
+// Buttons
+// -------------------------
+
+%button_primary {
+    font-family: $font_roboto; display: block; width: 100%; padding: 20px 0; text-align: center; background: $color_brand_secondary; border: none; color: $color_text_white; font-size: 22px; border-radius: 3px; cursor: pointer;
+    @media #{$break_large} {
+        &:hover { background: $color_brand_primary ; }
+    }
+}
+
+// -------------------------
+// Layout
+// -------------------------
+
+%clearfix {
+    &:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+}
+
 %site_width { max-width: 1400px; margin: 0 auto; }
 
 %site_width_padded { @extend %site_width; padding: 0 $minimumPageOffset; }
@@ -14,12 +31,18 @@
     }
 }
 
+// -------------------------
+// Product Grid
+// -------------------------
 
 %product_list_items {
     font-size: 0; margin: 10px 0 0 -20px; text-align: center; padding: 0 0 15px 0;
     li { display: inline-block; width: 50%; padding-left: 20px; margin-bottom: 10px; }
     img { max-width: 100%; }
-    h3 { font-size: 11px; font-weight: 300; text-align: center; margin: 5px 0 0 0; }
+    h3 {
+        font-size: 11px; font-weight: 300; text-align: center; margin: 5px 0 0 0;
+        span { display: block; font-weight: 700; margin-bottom: 5px; }
+    }
     a { color: $color_text_medium; }
     @media #{$break_small} {
         li { width: calc(100% / 3); margin-bottom: 20px; }
@@ -27,8 +50,15 @@
     }
     @media #{$break_large} {
         li { width: calc(100% / 4); }
+        a:hover {
+            h3 span { color: $color_text_dark; }
+        }
     }
 }
+
+// -------------------------
+// Content Slider
+// -------------------------
 
 %slider_pages {
     display: inline-block; text-align: center; vertical-align: middle; margin: 15px 0;
@@ -40,11 +70,16 @@
 %slider_nav_arrow {
     display: none; font-family: $font_fontAwesome; vertical-align: middle;
     a { display: block; color: $color_text_medium; font-size: 18px; padding: 5px; }
-    a.disabled { color: rgba(0, 0, 0, 0.05); }
+    a.disabled { color: $color_text_light; }
     @media #{$break_large} {
         display: inline-block;
     }
 }
+
+
+// -------------------------
+// Product Detail
+// -------------------------
 
 %prod_feature_section {
     text-align: center; margin: 15px auto 15px auto; max-width: 750px; padding: 0 30px;
@@ -54,6 +89,11 @@
     }
 }
 
-%clearfix {
-    &:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+// -------------------------
+// Shopping Cart
+// -------------------------
+
+%cart_item_section {
+    display: inline-block; vertical-align: middle; font-size: 12px;
 }
+

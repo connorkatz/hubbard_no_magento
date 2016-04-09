@@ -9,13 +9,11 @@
             </div><!-- end cart preview image -->
             <div id="cart_preview_qty">
                 <label>Qty</label>
-                <select>
-                    <option>1 Pair</option>
-                    <option>2 Pair</option>
-                    <option>3 Pair</option>
-                    <option>4 Pair</option>
-                    <option>5 Pair</option>
-                </select>
+                <div id="cp_qty_select">
+                    <span>1 Pair</span>
+                    <i id="cp_qty_plus" class="fa fa-plus"></i>
+                    <i id="cp_qty_minus" class="fa fa-minus"></i>
+                </div><!-- end cp qty select -->
             </div><!-- end cart preview qty -->
             <div id="cart_preview_actions">
                 <a href="#" id="cart_preview_continue">Continue Shopping</a>
@@ -31,25 +29,25 @@
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/boot_up_black_suede.jpg">
-                    <h3>Black Suede</h3>
+                    <h3><span>Boot-Up</span> Black Suede</h3>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_almost_black.jpg">
-                    <h3>Almost Black</h3>
+                    <h3><span>Hubbard Free </span> Almost Black</h3>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_cordovan.jpg">
-                    <h3>Cordovan</h3>
+                    <h3><span>Hubbard Free </span> Cordovan</h3>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_sand_suede.jpg">
-                    <h3>Sand Suede</h3>
+                    <h3><span>Hubbard Free </span> Sand Suede</h3>
                 </a>
             </li>
         </ul>

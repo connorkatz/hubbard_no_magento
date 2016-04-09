@@ -101,8 +101,21 @@
     }
 
     #cart_preview_actions {
-        a:first-of-type:hover { background: $color_util_2; color: $color_text_white; }
+        a:first-of-type:hover { background: $color_brand_primary; color: $color_text_white; }
         a:nth-of-type(2):hover { background: $color_brand_primary; }
+    }
+
+    /* ---------------- Shopping Cart ------------------------------------ */
+    /* ------------------------------------------------------------------ */
+
+    #cart_security_icons {
+        &:hover {
+            li {color: rgba(0,0,0,0.5);}
+        }
+    }
+
+    #cart_price_summary {
+        padding: 15px 25px;
     }
 
     /* ---------------- Static Content Pages ------------------------------------------ */

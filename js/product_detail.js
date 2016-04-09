@@ -106,7 +106,7 @@ $j(document).ready(function() {
         nextText: '&#xf105;',
         minSlides: 1,
         maxSlides: 4,
-        slideWidth: 500
+        slideWidth: 400
     });
 
     // show cart preview

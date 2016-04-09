@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5,h6 {font-weight: 400;}
 a {
     color: $color_link; text-decoration: none;
     @media #{$break_large} {
-        color: $color_link_hover;
+        &:hover {color: $color_link_hover;}
     }
 }
 

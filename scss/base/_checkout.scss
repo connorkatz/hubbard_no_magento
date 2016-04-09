@@ -1,0 +1,57 @@
+body#checkout {
+    background: $color_util_4;
+    #site_content_container {background: transparent;}
+    #site_header_inner {text-align: center;}
+}
+
+#checkout_steps {
+    display: none; color: $color_text_medium;
+    ul {font-size: 0; text-align: center; padding: 20px 0;}
+    li {display: inline-block; font-size: 14px;}
+    li:after {content: '\f105'; font-family: $font_fontAwesome; padding: 0 10px;}
+    li:last-of-type {
+        &:after {content: normal;}
+    }
+}
+
+#checkout_content_container {overflow: hidden;}
+
+#checkout_content_container {max-width: 1000px; margin: 0 auto;}
+
+#checkout_layout_block_1 {display: none;}
+
+#checkout_layout_block_2 {
+    padding: 10px 15px;
+    h2 {font-family: $font_din_regular; font-size: 22px; text-transform: uppercase; color: $color_text_dark; margin-bottom: 15px; padding: 10px 0; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.1); box-shadow: 0 1px 0 #ffffff;}
+    label {display: block; font-size: 14px; color: $color_text_medium; font-weight: 700; margin-bottom: 5px;}
+    button {@extend %button_primary;}
+}
+
+#login_prompt {
+    font-size: 14px; margin: -5px 0 5px 0;
+    a {display: inline-block; padding: 5px;}
+}
+
+.input-box {
+    margin-bottom: 10px;
+    input { width: 100%; padding: 10px; font-size: 14px; color: $color_text_medium; display: block; background: #ffffff; border: 2px solid rgba(0,0,0,0.2); border-radius: 5px; -webkit-appearance: none; }
+    input.validation-failed {border-color: #c82828; background: #f3d7d7;}
+    input.validation-failed:focus {border-color: #c82828; background: #f3d7d7;}
+    input:focus {border-color: $color_brand_secondary; box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);}
+    select { width: 100%; font-size: 14px; padding: 10px; height: 45px; color: $color_text_medium; display: block; background: #ffffff; border: 2px solid rgba(0,0,0,0.2); border-radius: 5px; -webkit-appearance: none; }
+}
+
+#save_information {
+    margin: 15px 0;
+    input {position: relative; width: 20px; height: 20px; box-shadow: 0 0 0 0 #1990c6 inset; outline: 0; border: 2px solid rgba(0,0,0,0.5); background: transparent; border-radius: 5px; vertical-align: middle; -webkit-appearance: none;}
+    input:checked {background: $color_brand_secondary; border-color: $color_brand_secondary;}
+    input:checked:after {position: absolute; top: calc(50% - 5px); left: calc(50% - 5px); content: '\f00c'; font-family: $font_fontAwesome; display: block; color: $color_text_white;}
+    label {display: inline-block; vert-align: middle; margin-left: 5px; font-weight: 400; font-size: 16px;}
+    p {margin-left: 27px; font-weight: 300; color: $color_text_medium; font-size: 14px;}
+}
+
+#checkout_previous_step {
+    margin: 5px 0; text-align: center;
+    a {display: inline-block; padding: 10px 25px; font-size: 14px; text-transform: uppercase;}
+    a:before {content: '\f104'; font-family: FontAwesome; font-size: 16px; margin-right: 10px;}
+}
