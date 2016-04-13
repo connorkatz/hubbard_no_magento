@@ -39,7 +39,7 @@
             <div class="ci_price">$210</div>
             <div class="ci_qty">
                 <i id="ci_qty_plus" class="fa fa-minus"></i>
-                <span>1 Pair</span>
+                <span>1 pair</span>
                 <i id="ci_qty_minus" class="fa fa-plus"></i>
             </div><!-- end cart item quantity -->
             <div class="ci_remove">
@@ -69,7 +69,7 @@
             <div class="ci_price">$210</div>
             <div class="ci_qty">
                 <i id="ci_qty_plus" class="fa fa-minus"></i>
-                <span>1 Pair</span>
+                <span>1 pair</span>
                 <i id="ci_qty_minus" class="fa fa-plus"></i>
             </div><!-- end cart item quantity -->
             <div class="ci_remove">
@@ -99,7 +99,7 @@
             <div class="ci_price">$210</div>
             <div class="ci_qty">
                 <i id="ci_qty_plus" class="fa fa-minus"></i>
-                <span>1 Pair</span>
+                <span>1 pair</span>
                 <i id="ci_qty_minus" class="fa fa-plus"></i>
             </div><!-- end cart item quantity -->
             <div class="ci_remove">

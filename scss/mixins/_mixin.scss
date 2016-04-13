@@ -1,4 +1,4 @@
-// Font Mixin
+// Fonts
 // ------------------------
 @mixin font-face($family, $file_path) {
     @font-face {
@@ -9,4 +9,15 @@
         url('#{$path_font}#{$file_path}.woff') format('woff'),
         url('#{$path_font}#{$file_path}.ttf') format('truetype');
     }
+}
+
+
+// Auto Prefix
+// ------------------------
+@mixin prefix-auto($cssProperty, $cssValue) {
+    -webkit-#{$cssProperty}: #{$cssValue};
+    -ms-#{$cssProperty}: #{$cssValue};
+    -moz-#{$cssProperty}: #{$cssValue};
+    -o-#{$cssProperty}: #{$cssValue};
+    #{$cssProperty}: #{$cssValue};
 }

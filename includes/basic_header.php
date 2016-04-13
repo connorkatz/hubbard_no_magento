@@ -11,14 +11,14 @@
         <script src="js/responsive.js"></script>
     </head>
 
-    <body id="checkout">
+    <body id="basic_page">
 
     <div id="site_container">
 
         <header id="checkout_header">
             <div id="checkout_header_inner">
                 <section id="logo_container">
-                    <a href="/cart.php">
+                    <a href="/">
                         <div id="logo">
                             <img src="images/samuel_hubbard_logo.svg" alt="Samuel Hubbard">
                         </div>
@@ -27,6 +27,4 @@
 
             </div><!-- end checkout header inner -->
         </header><!-- end checkout header -->
-
-        <div id="checkout_content_container">
 

@@ -20,6 +20,7 @@ $white                        : #ffffff;
 $hubbard_blue                 : #022f59;
 $hubbard_yellow               : #ffa400;
 
+$grey_neutral_x-light         : #fafafa;
 $grey_neutral_light           : #f9f9f9;
 $grey_neutral_medium          : #808080;
 $grey_neutral_dark            : #4d4d4d;
@@ -61,10 +62,12 @@ $color_background_secondary   : $hubbard_blue;
 
 // Utility Colors
 // ------------------------------------
+$color_util_0                 : $grey_neutral_x-light;
 $color_util_1                 : $grey_neutral_light;
 $color_util_2                 : $grey_neutral_medium;
 $color_util_3                 : $grey_neutral_dark;
 $color_util_4                 : $grey_warm_light;
+$color_util_5                 : $grey_warm_medium;
 $color_util_5                 : $grey_warm_medium;
 
 

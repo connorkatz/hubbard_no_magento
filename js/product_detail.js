@@ -120,4 +120,19 @@ $j(document).ready(function() {
         hideCartPreview();
         return false;
     });
+
+    // hide/show shoe care
+    $j('#shoe_care > a').click(function() {
+        var $parent = $j(this).parent();
+        var $careContent = $j('#shoe_care_content');
+        if($parent.hasClass('active')) {
+            $parent.removeClass('active');
+            $careContent.slideUp();
+        }
+       else {
+           $parent.addClass('active');
+            $careContent.slideDown();
+        }
+        return false;
+    });
 }); // end document ready

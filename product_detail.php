@@ -168,7 +168,7 @@
                             </span>
                         </section><!-- end inventory message -->
                         <div id="atc_row">
-                            <button type="submit">Add to Cart</button>
+                            <button type="submit"><i class="fa fa-refresh fa-spin"></i>Add to Cart</button>
                         </div><!-- end atc row -->
                     </form>
                     <div id="out_of_stock_callout">
@@ -183,7 +183,7 @@
                 </div><!-- end prod details lower -->
             </section><!-- end prod details -->
             <div id="shipping_callout">
-                <a href="#"><i class="fa fa-refresh"></i>Free Shipping &amp; Returns</a>
+                <a href="#"><i class="fa fa-thumbs-o-up"></i>Free Shipping &amp; Returns</a>
             </div><!-- end shipping callout -->
 
             <section id="social_share">
@@ -287,6 +287,15 @@
 
             <p>The performance elements of the Hubbard Free are inspired by athletic shoes, but the look is a classic
                 leather shoe.</p>
+            <div id="shoe_care">
+                <a href="#">Shoe Care</a>
+                <div id="shoe_care_content">
+                    <p>To clean full grain leathers just wipe them with a damp soft cotton cloth.</p>
+                    <p>For suede and nubuck shoes it's best to treat them periodically with a waterproof and/or stain resistant spray. To clean use a nubuck/suede brush.</p>
+                    <p>For more detailed information on the care and cleaning of our shoes, please check out <a href="#">SHOE CARE</a>.</p>
+                    <p>Samuel Hubbard shoes are constructed so that they can be nicely resoled. We have set up a program with Resole America. To find out more about resoling, go to <a href="#"> RESOLING</a>.</p>
+                </div><!-- end shoe care cotent -->
+            </div><!-- end shoe care -->
         </section><!-- end prod description -->
     </section><!-- end prod overview -->
     <section id="prod_reviews">

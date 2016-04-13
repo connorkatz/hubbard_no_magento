@@ -1,17 +1,16 @@
 </div><!-- end checkout content container -->
 
-<footer id="site_footer">
-    <div id="site_footer_inner">
+<footer id="checkout_footer">
+    <div id="checkout_footer_inner">
         <ul>
             <li><a href="#">Terms &amp; Conditions</a></li>
             <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Returns &amp; Exchanges</a></li>
-            <li><a href="#">Support</a></li>
+            <li><a href="#">Returns</a></li>
         </ul>
-    </div><!-- end site footer inner -->
-</footer>
+    </div><!-- end checkout footer inner -->
+</footer><!-- end checkout footer -->
 
-</div><!-- end site container -->
+</div><!-- end checkout container -->
 
 
 

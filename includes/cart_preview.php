@@ -10,7 +10,7 @@
             <div id="cart_preview_qty">
                 <label>Qty</label>
                 <div id="cp_qty_select">
-                    <span>1 Pair</span>
+                    <span>1 pair</span>
                     <i id="cp_qty_plus" class="fa fa-plus"></i>
                     <i id="cp_qty_minus" class="fa fa-minus"></i>
                 </div><!-- end cp qty select -->

@@ -283,13 +283,65 @@
 
     #cart_checkout { padding: 0; margin-top: 15px; }
 
+
+    /* ---------------- Checkout ------------------------------------ */
+    /* ------------------------------------------------------------------ */
+    #checkout_footer_inner {
+        padding: 0 20px; width: 60%;
+        ul {padding: 10px 0;}
+    }
+
+    .input-box { margin-bottom: 15px; }
+
+    .short_1 { display: inline-block; width: 49%; margin-right: 1%; }
+
+    .short_2 { display: inline-block; width: 49% }
+
+    /* ---------------- Checkout Breadcrumbs ------------------------------------ */
+    /* ------------------------------------------------------------------ */
+
+    #checkout_breadcrumbs { display: block; color: $color_text_medium; }
+
+    #checkout_layout_block_1 { width: 40%; float: right; padding: 10px 15px 30px 0;}
+
+    #checkout_layout_block_2 { width: 60%; padding: 0 20px 50px 20px; }
+
+
+    /* ------ Checkout Summary ---- */
+    #checkout_summary_details_container {display: block !important; border: none;}
+
+    #checkout_summary_items_container {box-shadow: 0 0 1px rgba(0,0,0,0.1); border-radius: 3px; overflow: hidden;}
+
+    #checkout_summary_header { display: none; }
+
+    #checkout_summary_coupon_code { padding: 15px 0; }
+
+    #checkout_summary_prices {
+        padding: 20px 0;
+        li {padding: 5px 0;}
+        li:last-of-type {background: transparent; padding: 15px 0 0 0;}
+    }
+
+    /* ------ Checkout Page Content ---- */
+    #checkout_layout_block_2 {
+        h2 {font-size: 28px; padding: 20px 0 10px 0;}
+    }
+
+    #mobile_coupon_code {display: none;}
+
+    .checkout_review_block {
+         width: 50%; vertical-align: top; display: inline-block; padding-right: 25px;
+    }
+
+    #place_order_top { margin: 10px 0 10px 0; }
+
+    #place_order_bottom { margin: 20px 0 20px 0; }
+
+    #mobile_review_total { display: none; }
+
     /* ---------------- Static Content Pages ---------------------------- */
     /* ------------------------------------------------------------------ */
 
-    .static_title_block {
-        margin: 35px auto 30px auto;
-        .static_title_block h1 { font-size: 28px; }
-    }
 
 }
 

@@ -81,22 +81,26 @@
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_tan_waxhide.jpg">
                     <h3>Tan Waxhide</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_almost_black.jpg">
                     <h3>Almost Black</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
-            <li>
+            <li class="out_of_stock">
                 <a href="/product_detail.php">
+                    <span class="stock_message">Pre-Order</span>
                     <img src="../images/product_images/hubbard_free_cordovan.jpg">
                     <h3>Cordovan</h3>
                 </a>
             </li>
-            <li>
+            <li class="out_of_stock preorder">
                 <a href="/product_detail.php">
+                    <span class="stock_message">Pre-Order</span>
                     <img src="../images/product_images/hubbard_free_navy_nubuck.jpg">
                     <h3>Navy Nubuck</h3>
                 </a>
@@ -105,12 +109,14 @@
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_rust_nubuck.jpg">
                     <h3>Rust Nubuck</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_sand_suede.jpg">
                     <h3>Sand Suede</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
         </ul>
@@ -126,13 +132,15 @@
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/boot_up_black_suede.jpg">
-                    <h3>Black Suded</h3>
+                    <h3>Black Suede</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/boot_up_espresso_brown.jpg">
                     <h3>Espresso Brown</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
             <li>
@@ -145,6 +153,7 @@
                 <a href="/product_detail.php">
                     <img src="../images/product_images/boot_up_saddle_tan.jpg">
                     <h3>Saddle Tan</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
         </ul>
@@ -161,36 +170,42 @@
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_tan_waxhide.jpg">
                     <h3>Tan Waxhide</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_almost_black.jpg">
                     <h3>Almost Black</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_cordovan.jpg">
                     <h3>Cordovan</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_navy_nubuck.jpg">
                     <h3>Navy Nubuck</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_rust_nubuck.jpg">
                     <h3>Rust Nubuck</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/hubbard_free_sand_suede.jpg">
                     <h3>Sand Suede</h3>
+                    <span class="stock_message">Pre-Order</span>
                 </a>
             </li>
         </ul>

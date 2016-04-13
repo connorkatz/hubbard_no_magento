@@ -1,57 +1,362 @@
-body#checkout {
-    background: $color_util_4;
-    #site_content_container {background: transparent;}
-    #site_header_inner {text-align: center;}
+/* ---------------- Global ------------------------------------------ */
+/* ------------------------------------------------------------------ */
+
+#checkout {
+    background: $color_util_0;
+    input[type="text"], input[type="password"], input[type="email"] {
+        @include prefix-auto(appearance, none);
+        width: 100%; padding: 10px; font-size: 14px; color: $color_text_medium; background: #ffffff; border: 2px solid rgba(0, 0, 0, 0.2); border-radius: 5px;
+    }
+    input.validation-failed { border-color: #c82828; }
+    input.validation-failed:focus { border-color: #c82828; }
+    input:focus { border-color: $color_brand_secondary; }
+    select {
+        @include prefix-auto(appearance, none);
+        width: 100%; font-size: 14px; padding: 10px; height: 45px; color: $color_text_medium; display: block; border: 2px solid rgba(0, 0, 0, 0.2); border-radius: 5px; background: #ffffff url('../images/select_arrows.png') no-repeat right 50%; background-size: 30px 20px;
+    }
+    input[type="checkbox"] {
+        @include prefix-auto(appearance, none);
+        position: relative; width: 20px; height: 20px; outline: 0; border: 2px solid rgba(0, 0, 0, 0.5); background: transparent; border-radius: 5px; margin-right: 10px; vertical-align: top;
+    }
+    input[type="checkbox"]:checked { background: $color_brand_secondary; border-color: $color_brand_secondary; }
+    input[type="checkbox"]:checked:after { position: absolute; top: calc(50% - 7px); left: calc(50% - 7px); content: '\f00c'; font-family: $font_fontAwesome; display: block; color: $color_text_white; }
+    input[type="radio"] {
+        @include prefix-auto(appearance, none);
+        width: 20px; height: 20px; outline: 0; border: 2px solid rgba(0, 0, 0, 0.5); background: transparent; border-radius: 50%; }
+    input[type="radio"]:checked { box-shadow: inset 0 0 0 7px $color_brand_secondary; outline: 0; border: none; }
+    label { font-size: 14px; }
 }
 
-#checkout_steps {
+#checkout_content_container { @extend %clearfix; }
+
+#checkout_content_container { @extend %checkout_width; }
+
+.checkout_address_static {
+    line-height: 1.5;
+    address { font-style: normal; margin-bottom: 10px; }
+}
+
+/* ---------------- Checkout Header -------------------------------- */
+/* ------------------------------------------------------------------ */
+
+#checkout_header { background: #ffffff; position: relative; z-index: 100; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+
+#checkout_header_inner { text-align: center; }
+
+/* ---------------- Checkout Footer -------------------------------- */
+/* ------------------------------------------------------------------ */
+
+#checkout_footer {
+    @extend %checkout_width;
+    margin: 0 auto; padding: 20px 0;
+}
+
+#checkout_footer_inner {
+    text-align: center; padding-top: 10px;
+    ul { border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    li { display: inline-block; font-size: 14px; }
+    a { color: $color_text_medium; display: block; padding: 15px 5px 5px 5px; font-size: 12px; }
+}
+
+/* ---------------- Checkout Breadcrumbs -------------------------------- */
+/* ------------------------------------------------------------------ */
+
+#checkout_breadcrumbs {
     display: none; color: $color_text_medium;
-    ul {font-size: 0; text-align: center; padding: 20px 0;}
-    li {display: inline-block; font-size: 14px;}
-    li:after {content: '\f105'; font-family: $font_fontAwesome; padding: 0 10px;}
+    ul { font-size: 0; text-align: center; padding: 25px 0 15px 0; }
+    li {
+        display: inline-block; font-size: 14px;
+        &.active { color: $color_text_dark; }
+    }
+    li:after { content: '\f105'; font-family: $font_fontAwesome; padding: 0 10px; color: $color_text_medium; }
     li:last-of-type {
-        &:after {content: normal;}
+        &:after { content: normal; }
     }
 }
 
-#checkout_content_container {overflow: hidden;}
+/* ---------------- Checkout Summary -------------------------------- */
+/* ------------------------------------------------------------------ */
 
-#checkout_content_container {max-width: 1000px; margin: 0 auto;}
+#checkout_layout_block_1 { }
 
-#checkout_layout_block_1 {display: none;}
-
-#checkout_layout_block_2 {
-    padding: 10px 15px;
-    h2 {font-family: $font_din_regular; font-size: 22px; text-transform: uppercase; color: $color_text_dark; margin-bottom: 15px; padding: 10px 0; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.1); box-shadow: 0 1px 0 #ffffff;}
-    label {display: block; font-size: 14px; color: $color_text_medium; font-weight: 700; margin-bottom: 5px;}
-    button {@extend %button_primary;}
+#checkout_summary_header {
+    padding: 15px 15px; font-size: 0; background: $color_util_5; border-bottom: 1px solid rgba(0, 0, 0, 0.1); font-weight: 700;
 }
 
-#login_prompt {
-    font-size: 14px; margin: -5px 0 5px 0;
-    a {display: inline-block; padding: 5px;}
+.order_summary_header {
+    width: 80%; display: none; font-size: 16px;
+    &:before { content: '\f290'; font-family: $font_fontAwesome; margin-right: 10px; vertical-align: top; font-weight: normal }
+    &.show:after { content: '\f107'; font-family: $font_fontAwesome; margin-left: 10px; font-weight: normal }
+    &.hide:after { content: '\f106'; font-family: $font_fontAwesome; margin-left: 10px; font-weight: normal }
+    &.active { display: inline-block; }
+}
+
+.order_summary_price { display: inline-block; width: 20%; font-size: 16px; text-align: right; }
+
+#checkout_summary_details_container {
+    display: none; border-bottom: 2px solid $color_brand_secondary;
+}
+
+
+.checkout_summary_item_block {
+    position: relative; font-size: 0; background: #ffffff; padding: 10px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    span { display: block; position: absolute; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.05); padding: 5px; text-align: center; font-size: 11px; color: $color_text_medium; }
+}
+
+.co_item_image {
+    display: inline-block; width: 70px; vertical-align: middle;
+}
+
+.co_item_details {
+    font-size: 14px; display: inline-block; width: calc(100% - 150px); vertical-align: middle; padding-left: 10px;
+    h5 { font-weight: 700; margin-bottom: 5px; font-size: 14px; color: $color_text_dark; }
+    ul { font-size: 12px; }
+    li { margin-bottom: 3px; }
+    span { display: none; }
+}
+
+.co_item_price { display: inline-block; width: 80px; font-size: 16px; color: $color_text_medium; text-align: right; vertical-align: middle; }
+
+#checkout_summary_coupon_code {
+    padding: 15px; font-size: 0; border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    input[type="text"].coupon_code_input { @extend %input_coupon_code; }
+    button {
+        @extend %button_coupon_code;
+        @extend %button_ajax_load;
+    }
+}
+
+#checkout_summary_prices {
+    padding-top: 15px;
+    ul { font-size: 0; color: $color_text_medium; }
+    li {
+        display: block; padding: 5px 15px;
+    }
+    label {
+        display: inline-block; width: 50%; font-size: 16px; text-align: left;
+        i { margin-left: 5px; font-size: 14px; }
+    }
+    span { display: inline-block; width: 50%; font-size: 16px; text-align: right; }
+    li:last-of-type {
+        border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 10px; margin-top: 15px; color: $color_text_dark; font-weight: 700; background: #ffffff;
+        label { font-size: 20px; }
+        span { font-size: 20px; }
+    }
+}
+
+/* ---------------- Checkout Page Content -------------------------------- */
+/* ------------------------------------------------------------------ */
+
+#checkout_layout_block_2 {
+    padding: 10px 15px 30px 15px;
+    h2 { font-family: $font_din_regular; font-size: 24px; text-transform: uppercase; color: $color_text_dark; margin-bottom: 15px; padding: 10px 0; text-align: left; border-bottom: 1px solid rgba(0, 0, 0, 0.1); box-shadow: 0 1px 0 #ffffff; }
+}
+
+.fieldset {
+    label { display: block; font-size: 14px; color: $color_text_dark;; font-weight: 700; margin-bottom: 5px; }
+    label span { font-weight: 300; }
+    input[type="text"], input[type="password"], input[type="email"] { display: block; width: 100%; }
 }
 
 .input-box {
     margin-bottom: 10px;
-    input { width: 100%; padding: 10px; font-size: 14px; color: $color_text_medium; display: block; background: #ffffff; border: 2px solid rgba(0,0,0,0.2); border-radius: 5px; -webkit-appearance: none; }
-    input.validation-failed {border-color: #c82828; background: #f3d7d7;}
-    input.validation-failed:focus {border-color: #c82828; background: #f3d7d7;}
-    input:focus {border-color: $color_brand_secondary; box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);}
-    select { width: 100%; font-size: 14px; padding: 10px; height: 45px; color: $color_text_medium; display: block; background: #ffffff; border: 2px solid rgba(0,0,0,0.2); border-radius: 5px; -webkit-appearance: none; }
+}
+
+.buttons-set {
+    margin-top: 20px; line-height: 1;
+    button {
+        @extend %button_primary;
+        @extend %button_ajax_load;
+        span:after { content: '\f105'; font-family: $font_fontAwesome; margin-left: 15px; }
+    }
+    p {
+        margin: 5px 0; text-align: center;
+        a { display: inline-block; padding: 10px 25px; font-size: 14px; text-transform: uppercase; }
+        a:before { content: '\f104'; font-family: $font_fontAwesome; margin-right: 10px; }
+    }
+}
+
+#checkout_login_password { display: none; }
+
+#checkout_login_button {
+    display: none; margin-bottom: 10px;
+    &.active { display: block; }
+    button { width: 100%; }
+}
+
+#checkout_forgot_password_link {
+    display: none; margin-left: -15px;
+    a { display: block; padding: 10px 15px; }
+    &.active { display: inline-block; }
+}
+
+#checkout_no_login_link {
+    display: none;
+    a { display: block; padding: 10px 15px; }
+    &.active { display: inline-block; }
+}
+
+#checkout_login_link {
+    display: none; font-size: 14px; margin: -5px 0 5px 0;
+    a { display: inline-block; padding: 5px; }
+    &.active { display: block; }
+}
+
+#customer_logged_in {
+    text-align: left;
+    p { font-size: 18px; margin-bottom: 5px; color: $color_text_dark; }
+    span { display: block; font-size: 16px; font-weight: 300; }
+    a { display: inline-block; padding: 10px; margin-left: -10px; }
+}
+
+#shipping_address_form {
+    display: none;
+    &.active { display: block; }
 }
 
 #save_information {
     margin: 15px 0;
-    input {position: relative; width: 20px; height: 20px; box-shadow: 0 0 0 0 #1990c6 inset; outline: 0; border: 2px solid rgba(0,0,0,0.5); background: transparent; border-radius: 5px; vertical-align: middle; -webkit-appearance: none;}
-    input:checked {background: $color_brand_secondary; border-color: $color_brand_secondary;}
-    input:checked:after {position: absolute; top: calc(50% - 5px); left: calc(50% - 5px); content: '\f00c'; font-family: $font_fontAwesome; display: block; color: $color_text_white;}
-    label {display: inline-block; vert-align: middle; margin-left: 5px; font-weight: 400; font-size: 16px;}
-    p {margin-left: 27px; font-weight: 300; color: $color_text_medium; font-size: 14px;}
+    label { display: inline-block; vert-align: middle; font-weight: 400; font-size: 16px; }
+    p { font-weight: 300; color: $color_text_medium; font-size: 14px; }
 }
 
-#checkout_previous_step {
-    margin: 5px 0; text-align: center;
-    a {display: inline-block; padding: 10px 25px; font-size: 14px; text-transform: uppercase;}
-    a:before {content: '\f104'; font-family: FontAwesome; font-size: 16px; margin-right: 10px;}
+/* ---- Shipping Method --- */
+#checkout-step-shipping_method {
+    @extend %checkout_shaded_section;
+    dt {
+        label {
+            @extend %clearfix; display: inline-block; width: calc(100% - 20px); font-size: 16px; vertical-align: middle; font-weight: 400; padding-left: 10px;
+            span { float: right; margin: 0; }
+        }
+    }
+}
+
+#mobile_coupon_code {
+    font-size: 0; margin-bottom: 10px;
+    input[type="text"].coupon_code_input { @extend %input_coupon_code }
+    button {
+        @extend %button_coupon_code;
+        @extend %button_ajax_load;
+    }
+}
+
+#mobile_coupon_code_details {
+    background: #ffffff; border: 1px solid rgba(0, 0, 0, 0.1); padding: 15px; border-radius: 5px; margin-top: 10px;
+    li { font-size: 0; color: $color_text_medium; }
+    label {
+        display: inline-block; width: 50%; font-size: 16px;
+        i { margin-left: 5px; font-size: 16px; }
+    }
+    span { display: inline-block; width: 50%; text-align: right; font-size: 14px; }
+}
+
+/* --- Payment Method --- */
+#checkout-step-payment {
+    @extend %checkout_shaded_section;
+    #card_number {
+        input[type="text"] { background: #ffffff url('../images/lock_icon.png') no-repeat right 50%; background-size: 35px 20px; }
+    }
+    #card_expiration {
+        font-size: 0;
+        select { display: inline-block; width: 49.5%; }
+        select:first-of-type { margin-right: 1%; }
+    }
+    #card_cvv {
+        input { width: 25%; display: inline-block; }
+        i { margin-left: 10px; color: $color_text_medium; font-size: 18px; }
+    }
+}
+
+#paypal_redirect {
+    font-size: 0; padding: 10px;
+    i { width: 30px; font-size: 20px; vertical-align: middle; }
+    span { display: inline-block; width: calc(100% - 30px); font-size: 16px; vertical-align: middle; }
+}
+
+/* ----- Billin Address ---- */
+#billing-address {
+    @extend %checkout_shaded_section;
+}
+
+/* ----- Place Order ----- */
+.place_order {
+    button {
+        @extend %button_primary;
+        @extend %button_ajax_load;
+        span:before { content: '\f023'; font-family: $font_fontAwesome; margin-right: 10px; }
+    }
+}
+
+#place_order_top { margin: 10px 0 10px 0; }
+
+#place_order_bottom { margin: 5px 0 15px 0; }
+
+#checkout_order_review { font-size: 0; }
+
+.checkout_review_block {
+    padding: 10px 0 20px 0;
+    h6 { font-size: 14px; font-weight: 700; color: $color_text_dark; margin-bottom: 5px;  padding: 0 0 5px 0; border-bottom: 1px dotted rgba(0,0,0,0.2);}
+    address, p { font-style: normal; font-size: 14px; line-height: 1.5; }
+    a { display: block; margin-top: 5px; font-size: 12px; padding: 5px 0; }
+}
+
+#mobile_review_total {
+    font-size: 0; color: $color_text_dark; border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 20px 0; text-transform: uppercase;
+    label { display: inline-block; width: 50%; font-size: 20px; font-weight: 700; }
+    span { display: inline-block; width: 50%; font-size: 20px; font-weight: 700; text-align: right; }
+}
+
+
+/* ---------------- Thank You Page -------------------------------- */
+/* ------------------------------------------------------------------ */
+#order_thank_you_content {
+    h1 { font-size: 28px; margin: 20px auto; }
+}
+
+
+#account_activate {
+    background: $color_util_5; margin: 20px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    h2 { font-family: $font_din_regular;  font-size: 24px; text-transform: uppercase; margin-bottom: 20px; padding: 20px 0; color: $color_text_white; background: $color_brand_secondary; text-align: center;}
+}
+
+#account_activate_inner {
+    @extend %site_width_small; text-align: center; padding-bottom: 25px;
+    p {font-size: 16px; margin-bottom: 5px; font-weight: 300; line-height: 1.2; padding: 0 30px;}
+    p:first-of-type {font-weight: 700;}
+}
+
+#account_activate_input {
+    font-size: 0; margin: 20px auto 0 auto; max-width: 300px;
+    input {width: calc(100% - 100px); padding: 10px;}
+    button {
+        @extend %button_basic;
+        @extend %button_ajax_load;
+        background: rgba(0,0,0,0.1); width: 100px; height: 38px; color: $color_text_medium;
+    }
+}
+
+#order_followup {
+    @extend %order_thank_you_section;
+    ul {max-width: 600px; margin: 20px auto; padding: 0 25px;}
+    li {
+        font-size: 0; margin-bottom: 20px; line-height: 1.5;
+        i {width: 30px; padding-right: 15px; vertical-align: top; font-size: 22px; color: $color_brand_secondary; margin-top: 3px;}
+        span {display: inline-block; width: calc(100% - 50px); font-size: 16px; font-weight: 300;}
+    }
+}
+
+#order_social_links {
+    @extend %order_thank_you_section;
+    ul {font-size: 0; text-align: center;}
+    li {display: inline-block; padding: 0 10px;}
+    a {font-size: 50px; color: $color_text_medium;}
+}
+
+#order_continue_shopping {
+    @extend %order_thank_you_section;
+}
+
+#order_continue_shopping_link {
+    padding: 0 25px;
+    a {@extend %button_primary;}
 }
