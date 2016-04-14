@@ -5,10 +5,10 @@ function checkoutAsUser() {
     $j('#checkout_login_link').removeClass('active');
     $j('#shipping_address_form').removeClass('active');
     $j('#checkout_login_password').slideDown(
-      function() {
-          $j('#checkout_forgot_password_link, #checkout_no_login_link').addClass('active');
-          $j('#checkout_login_button').addClass('active');
-      }
+        function() {
+            $j('#checkout_forgot_password_link, #checkout_no_login_link').addClass('active');
+            $j('#checkout_login_button').addClass('active');
+        }
     );
 
 }
@@ -54,5 +54,12 @@ $j(document).ready(function() {
         }
         $j('.order_summary_header').toggleClass('active');
     });
+
+    $j('#cvv_info_toggle').click(function() {
+        $j('#cvv_info').toggleClass('active');
+    });
+
+    $j('#checkout_footer_inner a').simpleModal();
+
     
 });

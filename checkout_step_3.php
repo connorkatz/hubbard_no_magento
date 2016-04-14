@@ -22,6 +22,8 @@
     </div><!-- end mobile coupon code -->
 
     <h2>Payment Method</h2>
+    <p id="payment_secruity_notice">All transactions are secure and encrypted. Credit card information is never
+        stored.</p>
     <form>
         <div id="checkout-step-payment">
             <dl>
@@ -52,12 +54,17 @@
                             <option>Month</option>
                         </select>
                         <select id="authorizenet_expiration_yr">
-                        <option>Year</option>
+                            <option>Year</option>
                         </select>
                     </div><!-- end card expiration -->
                     <div id="card_cvv">
                         <label for="authorizenet_cc_cid">CVV</label>
-                        <input type="text"><i class="fa fa-question-circle"></i>
+                        <input type="text">
+                        <i id="cvv_info_toggle" class="fa fa-question-circle">
+                            <div id="cvv_info">
+                                <p>Credit Card Security Code</p>
+                            </div><!-- end cvv info -->
+                        </i><!-- end c
                     </div><!-- end card cvv -->
                 </dd>
                 <dt>
@@ -103,30 +110,30 @@
                                 <input type="text">
                             </div>
                         </div><!-- end lastname -->
-                        <div class="shipping-company">
+                        <div class="billing-company">
                             <label>Company</label>
                             <div class="input-box">
                                 <input type="text" placeholder="(optional)">
                             </div>
                         </div><!-- end company -->
-                        <div class="shipping-street-1 short_1">
+                        <div class="billing-street-1 short_1">
                             <label>Address</label>
                             <div class="input-box">
                                 <input type="text">
                             </div>
                         </div><!-- end street 1 -->
-                        <div class="shipping-street-2 short_2">
+                        <div class="billing-street-2 short_2">
                             <div class="input-box">
                                 <input type="text" placeholder="Apt, Suite, etc. (optional)">
                             </div>
                         </div><!-- end street 2 -->
-                        <div class="shipping-city">
+                        <div class="billing-city">
                             <label>City</label>
                             <div class="input-box">
                                 <input type="text">
                             </div>
                         </div><!-- end city -->
-                        <div class="shipping-region short_1">
+                        <div class="billing-region short_1">
                             <label>State</label>
                             <div class="input-box">
                                 <select>
@@ -134,7 +141,7 @@
                                 </select>
                             </div>
                         </div><!-- end state -->
-                        <div class="shipping-postcode short_2">
+                        <div class="billing-postcode short_2">
                             <label>Zipcode</label>
                             <div class="input-box">
                                 <div class="input-box">
@@ -142,7 +149,7 @@
                                 </div>
                             </div>
                         </div><!-- end zipcode -->
-                        <div class="shipping-country">
+                        <div class="billing-country">
                             <label>Country</label>
                             <div class="input-box">
                                 <select>
@@ -150,7 +157,7 @@
                                 </select>
                             </div>
                         </div><!-- end zipcode -->
-                        <div class="shipping-telephone">
+                        <div class="billing-telephone">
                             <label>Phone</label>
                             <div class="input-box">
                                 <div class="input-box">

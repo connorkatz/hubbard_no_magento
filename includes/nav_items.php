@@ -1,5 +1,5 @@
 <li class="nav_lvl_1">
-    <a href="/category_landing.php">Men</a>
+    <a href="/product_list.php">Men</a>
     <div class="nav_lvl_2">
         <div class="callout_categories">
             <ul>

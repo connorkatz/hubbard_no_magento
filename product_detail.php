@@ -1,6 +1,6 @@
 <?php include 'includes/header.php'; ?>
-<?php include 'includes/scroll_arrow.php' ?>
 <?php include 'includes/cart_preview.php' ?>
+<?php include 'includes/scroll_arrow.php' ?>
     <nav id="breadcrumbs" xmlns="http://www.w3.org/1999/html">
         <ul>
             <li>
@@ -108,55 +108,7 @@
                             </div><!-- end prod option select -->
                         </section><!-- end prod option -->
                         <section id="size_guide">
-                            <a href="#">
-                                What Size Am I ?
-                            </a>
-                            <i id="size_guide_close" class="fa fa-close"></i>
-                            <div id="size_guide_details">
-                                <p>Cut true to size</p>
-                                <ul>
-                                    <li><span>Medium:</span> D Width</li>
-                                    <li><span>Wide:</span> EE Width</li>
-                                </ul>
-                                <a href="#" id="foot_measure_tool">Foot Measurement Tool</a>
-                                <div id="size_conversion_chart">
-                                    <ul>
-                                        <li>US</li>
-                                        <li>7</li>
-                                        <li>7.5</li>
-                                        <li>8</li>
-                                        <li>8.5</li>
-                                        <li>9</li>
-                                        <li>9.5</li>
-                                        <li>10</li>
-                                        <li>10.5</li>
-                                        <li>11</li>
-                                        <li>11.5</li>
-                                        <li>12</li>
-                                        <li>12.5</li>
-                                        <li>13</li>
-                                        <li>14</li>
-                                    </ul>
-                                    <ul>
-                                        <li>EU</li>
-                                        <li>40</li>
-                                        <li>40.5</li>
-                                        <li>41-41.5</li>
-                                        <li>42</li>
-                                        <li>42.5</li>
-                                        <li>43-43.5</li>
-                                        <li>44</li>
-                                        <li>44.5</li>
-                                        <li>45-45.5</li>
-                                        <li>46</li>
-                                        <li>46.5</li>
-                                        <li>47</li>
-                                        <li>47.5-48</li>
-                                        <li>48.5-49</li>
-                                    </ul>
-                                </div><!-- end size conversion chart -->
-                                <a href="#" id="size_guide_continue">Continue Shopping</a>
-                            </div><!-- end size guide details -->
+                            <a href="#what_size">What Size Am I ?</a>
                         </section><!-- end size guide -->
 
                         <section id="inventory_message">
@@ -167,17 +119,19 @@
                                 Out of stock
                             </span>
                         </section><!-- end inventory message -->
-                        <div id="atc_row">
+                        <div id="atc_row" class="active">
                             <button type="submit"><i class="fa fa-refresh fa-spin"></i>Add to Cart</button>
                         </div><!-- end atc row -->
                     </form>
                     <div id="out_of_stock_callout">
                         <form>
-                            <label>Please notify me when this item is available in stock</label>
+                            <h6>Pre-Order</h6>
+                            <p>I want to be one of the first to know when this item is available.</p>
                             <div id="stock_email_input">
                                 <input type="email" placeholder="Your Email Address">
                             </div>
-                            <button type="submit">Submit</button>
+                            <button type="submit"><i class="fa fa-refresh fa-spin"></i>Submit</button>
+                            <a href="#">Show me other styles available in this size</a>
                         </form>
                     </div><!-- end out of stock callout -->
                 </div><!-- end prod details lower -->
@@ -200,7 +154,7 @@
 
     </section><!-- end prod content upper container -->
 
-
+    <a name="page_jump"></a>
     <section id="lifestyle_images">
         <div id="lifestyle_images_inner">
             <ul>
@@ -253,7 +207,7 @@
         <div id="review_nav_pages"></div>
         <div class="review_nav_arrow next"></div>
         <div id="more_reviews">
-            <a href="#" id="more_reviews">Read More Reviews</a>
+            <a href="#">Read More Reviews</a>
         </div><!-- end more reviews -->
     </section><!-- end review callouts -->
 
@@ -262,9 +216,9 @@
             <h2>Features</h2>
             <hr class="decorative_break_2">
             <ul id="prod_features">
-                <li><span>Vibram Moreflex Sole</span></li>
-                <li><span>Full Glove Leather Lining for ultimate comfort</span></li>
-                <li><span>Easy removeable insole, seamlessly accomidates custom orthotic.</span></li>
+                <li><i class="fa fa-check-circle-o"></i><span>Vibram Moreflex Sole</span></li>
+                <li><i class="fa fa-check-circle-o"></i><span>Full Glove Leather Lining for ultimate comfort</span></li>
+                <li><i class="fa fa-check-circle-o"></i><span>Easy removeable insole, seamlessly accomidates custom orthotic.</span></li>
             </ul><!-- end prod features -->
             <ul id="prod_logos">
                 <li><img src="../images/product_features/apma_accepted.jpg"</li>
@@ -287,24 +241,99 @@
 
             <p>The performance elements of the Hubbard Free are inspired by athletic shoes, but the look is a classic
                 leather shoe.</p>
-            <div id="shoe_care">
-                <a href="#">Shoe Care</a>
-                <div id="shoe_care_content">
-                    <p>To clean full grain leathers just wipe them with a damp soft cotton cloth.</p>
-                    <p>For suede and nubuck shoes it's best to treat them periodically with a waterproof and/or stain resistant spray. To clean use a nubuck/suede brush.</p>
-                    <p>For more detailed information on the care and cleaning of our shoes, please check out <a href="#">SHOE CARE</a>.</p>
-                    <p>Samuel Hubbard shoes are constructed so that they can be nicely resoled. We have set up a program with Resole America. To find out more about resoling, go to <a href="#"> RESOLING</a>.</p>
-                </div><!-- end shoe care cotent -->
+            <div id="shoe_care_toggle">
+                <a href="#shoe_care">Shoe Care</a>
             </div><!-- end shoe care -->
         </section><!-- end prod description -->
     </section><!-- end prod overview -->
     <section id="prod_reviews">
         <h2>Customer Reviews</h2>
+        <a name="customer_reviews"></a>
         <hr class="decorative_break_2">
         <div id="yotpo_reviews_block">
-
+            Yotpo reviews
         </div><!-- end yotpo reviews block -->
     </section><!-- end prod reviews -->
+
+
+    <section id="product_detail_modals" class="modals_background">
+
+        <div id="what_size" class="modal">
+            <div class="modal_inner">
+                <div class="modal_header">
+                    <h5>What Size am I?<i class="fa fa-times-circle-o close_modal"></i></h5>
+                </div><!-- end modal header -->
+                <div class="modal_content">
+                    <div class="modal_content_inner">
+                        <div id="size_guide_details">
+                            <p>Cut true to size</p>
+                            <ul>
+                                <li><span>Medium:</span> D Width</li>
+                                <li><span>Wide:</span> EE Width</li>
+                            </ul>
+                            <a href="#" id="foot_measure_tool">Foot Measurement Tool</a>
+                            <p id="print_warning">Print at 100% ACTUAL SIZE. Do not use "Fit to Page".</p>
+                            <div id="size_conversion_chart">
+                                <ul>
+                                    <li>US</li>
+                                    <li>7</li>
+                                    <li>7.5</li>
+                                    <li>8</li>
+                                    <li>8.5</li>
+                                    <li>9</li>
+                                    <li>9.5</li>
+                                    <li>10</li>
+                                    <li>10.5</li>
+                                    <li>11</li>
+                                    <li>11.5</li>
+                                    <li>12</li>
+                                    <li>12.5</li>
+                                    <li>13</li>
+                                    <li>14</li>
+                                </ul>
+                                <ul>
+                                    <li>EU</li>
+                                    <li>40</li>
+                                    <li>40.5</li>
+                                    <li>41-41.5</li>
+                                    <li>42</li>
+                                    <li>42.5</li>
+                                    <li>43-43.5</li>
+                                    <li>44</li>
+                                    <li>44.5</li>
+                                    <li>45-45.5</li>
+                                    <li>46</li>
+                                    <li>46.5</li>
+                                    <li>47</li>
+                                    <li>47.5-48</li>
+                                    <li>48.5-49</li>
+                                </ul>
+                            </div><!-- end size conversion chart -->
+                        </div><!-- end size guide details -->
+                    </div><!-- end modal content inner -->
+                </div><!-- end modal content -->
+            </div><!-- end modal inner -->
+        </div><!-- end modal -->
+
+        <div id="shoe_care" class="modal">
+            <div class="modal_inner">
+                <div class="modal_header">
+                    <h5>Shoe Care<i class="fa fa-times-circle-o close_modal"></i></h5>
+                </div><!-- end modal header -->
+                <div class="modal_content">
+                    <div class="modal_content_inner">
+                        <div id="shoe_care_content">
+                            <p>To clean full grain leathers just wipe them with a damp soft cotton cloth.</p>
+                            <p>For suede and nubuck shoes it's best to treat them periodically with a waterproof and/or stain resistant spray. To clean use a nubuck/suede brush.</p>
+                            <p>For more detailed information on the care and cleaning of our shoes, please check out <a href="#">SHOE CARE</a>.</p>
+                            <p>Samuel Hubbard shoes are constructed so that they can be nicely resoled. We have set up a program with Resole America. To find out more about resoling, go to <a href="#"> RESOLING</a>.</p>
+                        </div><!-- end shoe care cotent -->
+                    </div><!-- end modal content inner -->
+                </div><!-- end modal content -->
+            </div><!-- end modal inner -->
+        </div><!-- end modal -->
+
+    </section><!-- end modals background -->
 
 
     <script src="../js/product_detail.js"></script>

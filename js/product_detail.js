@@ -21,13 +21,6 @@ function changeOptionText(optionGroup, optionText) {
     optionGroup.children('span').text(optionText);
 }
 
-function showSizeGuideDetails() {
-    $j('#size_guide').addClass('active');
-}
-
-function hideSizeGuideDetails() {
-    $j('#size_guide').removeClass('active');
-}
 
 function showCartPreview() {
     $j('html,body').animate({scrollTop: 0}, '500', function() {
@@ -70,19 +63,8 @@ $j(document).ready(function() {
     });
 
     // setup option dropdown grid
-    setupListGrid($j('.prod_option_items'));
+    setupOptionListGrid($j('.prod_option_items'));
 
-    // show size guide details
-    $j('#size_guide > a').click(function() {
-        showSizeGuideDetails();
-        return false;
-    });
-
-    // close size guide details
-    $j('#size_guide_close, #size_guide_continue').click(function() {
-        hideSizeGuideDetails();
-        return false;
-    });
 
     // testimonials slider
     $j('#review_callouts > ul').bxSlider({
@@ -111,6 +93,7 @@ $j(document).ready(function() {
 
     // show cart preview
     $j('#atc_row button').click(function() {
+        hideScrollArrow();
         showCartPreview();
         return false;
     });
@@ -120,19 +103,14 @@ $j(document).ready(function() {
         hideCartPreview();
         return false;
     });
-
-    // hide/show shoe care
-    $j('#shoe_care > a').click(function() {
-        var $parent = $j(this).parent();
-        var $careContent = $j('#shoe_care_content');
-        if($parent.hasClass('active')) {
-            $parent.removeClass('active');
-            $careContent.slideUp();
-        }
-       else {
-           $parent.addClass('active');
-            $careContent.slideDown();
-        }
+    
+    // go to customer reviews
+    $j('#more_reviews a, #prod_review_summary').click(function() {
+        scrollToAnchor('customer_reviews');
         return false;
     });
+    
+    $j('#size_guide a, #shoe_care_toggle a').simpleModal();
+
+
 }); // end document ready

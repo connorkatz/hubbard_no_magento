@@ -1,31 +1,7 @@
 /* ---------------- Global ------------------------------------------ */
 /* ------------------------------------------------------------------ */
 
-#checkout {
-    background: $color_util_0;
-    input[type="text"], input[type="password"], input[type="email"] {
-        @include prefix-auto(appearance, none);
-        width: 100%; padding: 10px; font-size: 14px; color: $color_text_medium; background: #ffffff; border: 2px solid rgba(0, 0, 0, 0.2); border-radius: 5px;
-    }
-    input.validation-failed { border-color: #c82828; }
-    input.validation-failed:focus { border-color: #c82828; }
-    input:focus { border-color: $color_brand_secondary; }
-    select {
-        @include prefix-auto(appearance, none);
-        width: 100%; font-size: 14px; padding: 10px; height: 45px; color: $color_text_medium; display: block; border: 2px solid rgba(0, 0, 0, 0.2); border-radius: 5px; background: #ffffff url('../images/select_arrows.png') no-repeat right 50%; background-size: 30px 20px;
-    }
-    input[type="checkbox"] {
-        @include prefix-auto(appearance, none);
-        position: relative; width: 20px; height: 20px; outline: 0; border: 2px solid rgba(0, 0, 0, 0.5); background: transparent; border-radius: 5px; margin-right: 10px; vertical-align: top;
-    }
-    input[type="checkbox"]:checked { background: $color_brand_secondary; border-color: $color_brand_secondary; }
-    input[type="checkbox"]:checked:after { position: absolute; top: calc(50% - 7px); left: calc(50% - 7px); content: '\f00c'; font-family: $font_fontAwesome; display: block; color: $color_text_white; }
-    input[type="radio"] {
-        @include prefix-auto(appearance, none);
-        width: 20px; height: 20px; outline: 0; border: 2px solid rgba(0, 0, 0, 0.5); background: transparent; border-radius: 50%; }
-    input[type="radio"]:checked { box-shadow: inset 0 0 0 7px $color_brand_secondary; outline: 0; border: none; }
-    label { font-size: 14px; }
-}
+#checkout { background: $color_util_0; }
 
 #checkout_content_container { @extend %clearfix; }
 
@@ -80,7 +56,7 @@
 #checkout_layout_block_1 { }
 
 #checkout_summary_header {
-    padding: 15px 15px; font-size: 0; background: $color_util_5; border-bottom: 1px solid rgba(0, 0, 0, 0.1); font-weight: 700;
+    padding: 15px 15px; font-size: 0; background: $color_util_5; color: $color_text_dark; border-bottom: 1px solid rgba(0, 0, 0, 0.1); font-weight: 700;
 }
 
 .order_summary_header {
@@ -153,9 +129,11 @@
 }
 
 .fieldset {
+    font-size: 0;
     label { display: block; font-size: 14px; color: $color_text_dark;; font-weight: 700; margin-bottom: 5px; }
     label span { font-weight: 300; }
     input[type="text"], input[type="password"], input[type="email"] { display: block; width: 100%; }
+    a {font-size: 14px;}
 }
 
 .input-box {
@@ -251,6 +229,8 @@
 }
 
 /* --- Payment Method --- */
+#payment_secruity_notice {margin-bottom: 15px; line-height: 1.3;}
+
 #checkout-step-payment {
     @extend %checkout_shaded_section;
     #card_number {
@@ -263,8 +243,14 @@
     }
     #card_cvv {
         input { width: 25%; display: inline-block; }
-        i { margin-left: 10px; color: $color_text_medium; font-size: 18px; }
+        i { margin-left: 10px; color: $color_text_medium; font-size: 18px; position: relative;}
     }
+}
+
+#cvv_info {
+    display: none; position: absolute; top: -8px; left: 30px; font-family: $font_lato; font-size: 12px; width: 175px; background: rgba(0,0,0,0.6); padding: 10px; color: $color_text_white; text-align: center; border-radius: 5px; line-height: 1.3; font-weight: 700;
+    &:before {position: absolute; left: -16px; top: 11px; content: ''; width: 0; height: 0; border: 6px solid transparent; border-right: 10px solid rgba(0,0,0,0.6);}
+    &.active {display: block;}
 }
 
 #paypal_redirect {
@@ -307,6 +293,10 @@
 }
 
 
+/* ---------------- Footer Modals -------------------------------- */
+/* ------------------------------------------------------------------ */
+#checkout_modals .modal_content_inner {padding-bottom: 200px;}
+
 /* ---------------- Thank You Page -------------------------------- */
 /* ------------------------------------------------------------------ */
 #order_thank_you_content {
@@ -327,21 +317,19 @@
 
 #account_activate_input {
     font-size: 0; margin: 20px auto 0 auto; max-width: 300px;
-    input {width: calc(100% - 100px); padding: 10px;}
+    input {width: calc(100% - 105px); padding: 10px; vertical-align: middle; margin-right: 5px;}
     button {
         @extend %button_basic;
         @extend %button_ajax_load;
-        background: rgba(0,0,0,0.1); width: 100px; height: 38px; color: $color_text_medium;
+        background: rgba(0,0,0,0.1); width: 100px; height: 38px; color: $color_text_medium; border-radius: 5px; vertical-align: middle;
     }
 }
 
 #order_followup {
     @extend %order_thank_you_section;
-    ul {max-width: 600px; margin: 20px auto; padding: 0 25px;}
-    li {
-        font-size: 0; margin-bottom: 20px; line-height: 1.5;
-        i {width: 30px; padding-right: 15px; vertical-align: top; font-size: 22px; color: $color_brand_secondary; margin-top: 3px;}
-        span {display: inline-block; width: calc(100% - 50px); font-size: 16px; font-weight: 300;}
+    ul {
+        @extend %list_checklist;
+        max-width: 600px; margin: 20px auto; padding: 0 25px;
     }
 }
 

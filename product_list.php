@@ -1,7 +1,12 @@
 <?php include 'includes/header.php'; ?>
-<?php include 'includes/scroll_arrow.php' ?>
-    <section class="category_banner">
-        Category Banner
+<?php include 'includes/scroll_arrow.php'; ?>
+    <section id="men-unskeaker" class="category_banner">
+        <ul>
+            <li><a href="/product_detail.php"></a></li>
+            <li><a href="/product_detail.php"></a></li>
+            <li><a href="/product_detail.php"></a></li>
+            <li><a href="/product_detail.php"></a></li>
+        </ul>
     </section><!-- end category banner -->
     <nav id="breadcrumbs">
         <ul>
@@ -71,7 +76,7 @@
     <section id="product_list_loader">
         <img src="../images/dots_loader.gif">
     </section>
-
+    <a name="page_jump"></a>
     <section class="product_list_group_block">
         <div class="product_list_header_row">
             <h2>Hubbard Free</h2>

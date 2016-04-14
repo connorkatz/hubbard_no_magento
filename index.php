@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-<?php include 'includes/scroll_arrow.php' ?>
+<?php include 'includes/scroll_arrow.php'?>
     <section id="homepage_slideshow">
         <ul>
             <li>Homepage Hero Content</li>
@@ -14,6 +14,7 @@
             <li><img src="../images/ad_logos/golf.svg"></li>
         </ul>
     </section><!-- end publication logos -->
+    <a name="page_jump"></a>
     <section class="homepage_feature_block">
         Homepage Feature content
     </section><!-- end homepage feature -->

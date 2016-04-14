@@ -8,6 +8,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/jQuery/noconflict.js"></script>
         <script src="js/hoverintent/jquery.hoverIntent.min.js"></script>
+        <script src="js/debounce/jquery.ba-throttle-debounce.min.js"></script>
+        <script src="js/scroll_lock/jquery.scrollLock.simple.js"></script>
+        <script src="js/simple_modal/simple_modal.js"></script>
         <script src="js/jQuery.bxslider.min.js"></script>
         <script src="js/enquire.min.js"></script>
         <script src="js/base.js"></script>
@@ -48,9 +51,9 @@
                     <section id="user_nav">
                         <ul>
                             <li id="search_link" class="link"><a href="#"><i class="fa fa-search"></i><span>Search</span></a></li>
-                            <li id="sign_in_link" class="link"><a href="#">Sign In</a></li>
+                            <li id="sign_in_link" class="link"><a href="/customer_login.php">Sign In</a></li>
                             <li id="support_link" class="link"><a href="#">Support</a></li>
-                            <li id="cart_link"><a href="#" id="cart_icon"><span>0</span></a></li>
+                            <li id="cart_link"><a href="/cart.php" id="cart_icon"><span>0</span></a></li>
                         </ul>
                     </section><!-- end user nav -->
                     <nav id="main_nav">

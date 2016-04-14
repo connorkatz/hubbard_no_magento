@@ -91,6 +91,6 @@ $j(document).ready(function() {
         hideResetFilters();
     });
 
-    setupListGrid($j('.filter_list_items'));
+    setupOptionListGrid($j('.filter_list_items'));
 
 }); // end document ready

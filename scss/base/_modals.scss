@@ -1,0 +1,27 @@
+.modals_background {
+    display: none; position: fixed; z-index: 9999; top: 0; left: 0; background: rgba(0,0,0,0.8); width: 100%; height: 100%; overflow: hidden;
+    &.active {display: block;}
+}
+
+.modal {
+    display: none; height: 100%; max-width: 750px; margin: 50px auto 0 auto;
+    &.active {display: block;}
+}
+
+.modal_inner {position: relative;}
+
+.modal_header {
+    h5 {position: absolute; top: 0; left: 0; width: 100%; font-family: $font_din_regular; color: $color_text_dark; font-size: 30px; text-transform: uppercase; border-bottom: 2px solid rgba(0,0,0,0.2); padding: 20px; margin: 0 auto; background: #ffffff; }
+    i {position: absolute; top: 15px; right: 10px; font-size: 40px; color: $color_text_medium;}
+}
+
+.modal_content {
+    background: #ffffff; max-height: 100%; overflow: scroll;
+}
+
+.modal_content_inner {
+    padding: 90px 20px 30px 20px; font-size: 16px; line-height: 1.6; text-align: justify;
+    p {margin-bottom: 15px;}
+}
+
+

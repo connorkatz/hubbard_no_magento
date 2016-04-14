@@ -80,7 +80,7 @@ function hideSiteSearch() {
 // Global Utility Functions
 // -------------------------------------
 
-function setupListGrid(list) {
+function setupOptionListGrid(list) {
     list.each(function() {
         var optionItems = $j(this).children();
         var numOptions = optionItems.length;
@@ -100,6 +100,33 @@ function countCalloutCategories() {
     });
 }
 
+function scrollToAnchor(anchorID) {
+    var anchorID = $j("a[name='" + anchorID + "']");
+    $j('html,body').animate({scrollTop: anchorID.offset().top}, 'slow');
+}
+
+function scrollArrowSetup() {
+    if($j('#scroll_arrow').length && $j('a[name=page_jump]').length) {
+        var $scrollArrow = $j('#scroll_arrow');
+        setTimeout(function() {
+            $scrollArrow.addClass('active');
+        }, 1000);
+        $scrollArrow.click(function() {
+            scrollToAnchor('page_jump');
+            hideScrollArrow();
+        });
+        var pageJumpPosition = $j('a[name=page_jump]').offset().top;
+        $j(window).scroll($j.throttle( 500, function() {
+            if($j(window).scrollTop() >= pageJumpPosition) {
+               hideScrollArrow();
+            }
+        }));
+    }
+}
+
+function hideScrollArrow() {
+    $j('#scroll_arrow').removeClass('active');
+}
 
 // -------------------------------------
 // Document Ready
@@ -146,8 +173,11 @@ $j(document).ready(function() {
         }
         return false;
     });
-    
+
     // show main nav submenu
     showMainNavSubmenu();
+
+    // setup scroll arrow
+    scrollArrowSetup();
 
 }); // end document ready

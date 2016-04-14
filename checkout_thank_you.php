@@ -21,11 +21,11 @@
         <h3>Here is what to expect</h3>
         <ul>
             <li><i class="fa fa-check-circle-o"></i><span>You will immediately receive an order confirmation email with all your order details.</span></li>
-            <li><i class="fa fa-check-circle-o"></i><span>Once your order ships, usually within one business day, you will receive a confirmation email with your tracking information.</span></li>
-            <li><i class="fa fa-check-circle-o"></i><span>Tracking information may not be available immediately via UPS, but will be available within few hours after your receive shipping confirmation.</span></li>
-            <li><i class="fa fa-check-circle-o"></i><span>Your Samuel Hubbard order will arrive via UPS. If no one is available at the delivery location. Your order will br left at your usual UPS location.</span></li>
-            <li><i class="fa fa-check-circle-o"></i><span>If you have any questions, simply give us a call at 844.482.4800 8-5 pacific time M-F . Or if you prefer email just write to <a href="mailto:susan@samuelhubbard.com">susan@samuelhubbard.com</a></span></li>
-            <li><i class="fa fa-check-circle-o"></i><span>Thank you again for your order, we look forward to hearing from you again soon.</span></li>
+            <li><i class="fa fa-check-circle-o"></i><span>Once your order ships, usually within one business day, you will receive a shipping confirmation email with your tracking information.</span></li>
+            <li><i class="fa fa-check-circle-o"></i><span>Tracking information may not be available immediately via UPS, but will be available within a few hours after receiving your shipping confirmation.</span></li>
+            <li><i class="fa fa-check-circle-o"></i><span>Your Samuel Hubbard order will arrive via UPS. If no one is available at the delivery location, your order will be left in the usual delivery location, for instance your front door or porch.</span></li>
+            <li><i class="fa fa-check-circle-o"></i><span>If you have any questions, simply give us a call at 844.482.4800 8-5 pacific time M-F. Or, if you prefer email, just write to <a href="mailto:susan@samuelhubbard.com">susan@samuelhubbard.com</a></span></li>
+            <li><i class="fa fa-check-circle-o"></i><span>Thank you again for your order, we look forward to hearing from you soon, enjoy your Hubbards!</span></li>
         </ul>
     </section><!-- end order followup -->
 

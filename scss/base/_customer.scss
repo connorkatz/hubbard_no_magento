@@ -1,0 +1,26 @@
+#customer_content {}
+
+#customer_account_choice {
+    ul {max-width: 850px; font-size: 0; margin: 0 auto; padding: 10px 20px 20px 20px;}
+    li {
+        @extend %customer_section;
+        font-size: 14px; padding-bottom: 20px;
+    }
+    li:first-child {margin-bottom: 20px;}
+    h2 {font-size: 24px; color: $color_text_dark; background: #ffffff; font-family: $font_din_regular; text-transform: uppercase; padding: 10px; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.1);}
+}
+
+.customer_account_choice_content {
+    padding: 20px; border-top: 1px solid #ffffff; text-align: center;
+    p {line-height: 1.6; margin-bottom: 20px; text-align: left;}
+    label {text-align: left;}
+    a.forgot_password {display: inline-block; margin-top: 15px;}
+}
+
+#forgot_password { padding: 0 20px 20px 20px; }
+
+#forgot_password_inner {
+    @extend %customer_section;
+    max-width: 500px; margin: 0 auto; padding: 20px;
+
+}

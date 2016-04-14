@@ -7,7 +7,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="js/jQuery/noconflict.js"></script>
         <script src="js/enquire.min.js"></script>
-        <script src="js/checkout.js"></script>
         <script src="js/responsive.js"></script>
     </head>
 
