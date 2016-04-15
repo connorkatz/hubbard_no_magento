@@ -14,7 +14,7 @@
                     $('.modal').removeClass('active');
                     $('.modals_background').removeClass('active');
                     $.scrollLock(false);
-                    event.stopPropagation();
+                    return false;
                 });
             }
             return false;
