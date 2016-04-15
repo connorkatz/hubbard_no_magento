@@ -5,7 +5,6 @@
         var $triggers = $(this);
         $triggers.click(function() {
             var modalID = $(this).attr('href');
-            console.log(modalID);
             if($(modalID).length) {
                 $.scrollLock(true);
                 $('.modals_background').addClass('active');

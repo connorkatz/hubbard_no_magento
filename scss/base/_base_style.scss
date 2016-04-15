@@ -1,5 +1,6 @@
 /* ---------------- Global ------------------------------------------ */
 /* ------------------------------------------------------------------ */
+.schema_hidden_data {display: none;}
 
 #site_container { position: relative; min-height: 100%; }
 
@@ -32,7 +33,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 
 #scroll_arrow {
     @include prefix-auto(transition, bottom 1s);
-    position: fixed; z-index: 999; bottom: -50; left: calc(50% - 50px); text-align: center; width: 100px; height: 30px; font-size: 30px; background: url('#{$path_image}chevron_down_blue.svg') #ffffff center 10px no-repeat; background-size: 15px 15px; color: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px 10px 0 0; box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    position: fixed; z-index: 999; bottom: -50; cursor: pointer; left: calc(50% - 50px); text-align: center; width: 100px; height: 40px; font-size: 20px; background: #ffffff center 10px no-repeat; color: $color_background_secondary; padding: 5px 0 0 0; text-align: center; border-radius: 10px 10px 0 0; box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
     &.active {bottom: 0;}
 }
 

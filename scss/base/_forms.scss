@@ -4,11 +4,13 @@ input[type="text"], input[type="password"], input[type="email"] {
     width: 100%; padding: 10px; font-size: 14px; color: $color_text_medium; background: #ffffff; border: 2px solid rgba(0, 0, 0, 0.2); border-radius: 5px;
 }
 
-input.validation-failed { border-color: #c82828; }
-
-input.validation-failed:focus { border-color: #c82828; }
-
 input:focus { border-color: $color_brand_secondary; }
+
+input.validation-failed { border-color: $color_alert_error; }
+
+input.validation-failed:focus { border-color: $color_alert_error; }
+
+.validation-advice {color: $color_alert_error;}
 
 select {
     @include prefix-auto(appearance, none);
@@ -17,7 +19,7 @@ select {
 
 input[type="checkbox"] {
     @include prefix-auto(appearance, none);
-    position: relative; width: 20px; height: 20px; outline: 0; border: 2px solid rgba(0, 0, 0, 0.5); background: transparent; border-radius: 5px; margin-right: 10px; vertical-align: top;
+    position: relative; width: 20px; height: 20px; outline: 0; border: 2px solid rgba(0, 0, 0, 0.5); background: transparent; border-radius: 5px; margin-right: 10px; vertical-align: middle;
 }
 
 input[type="checkbox"]:checked { background: $color_brand_secondary; border-color: $color_brand_secondary; }

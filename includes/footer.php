@@ -7,7 +7,7 @@
                 <li><a href="#">Order Status</a></li>
                 <li><a href="#">Returns</a></li>
                 <li><a href="#">Support</a></li>
-                <li><a href="#">My Account</a></li>
+                <li><a href="/customer_account.php">My Account</a></li>
             </ul>
         </section><!-- end footer group -->
         <section class="footer_link_group">

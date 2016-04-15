@@ -1,1 +1,1 @@
-<div id="scroll_arrow"></div>
+<div id="scroll_arrow"><i class="fa fa-chevron-down"></i></div>

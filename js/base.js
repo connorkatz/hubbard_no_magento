@@ -128,6 +128,13 @@ function hideScrollArrow() {
     $j('#scroll_arrow').removeClass('active');
 }
 
+function changeTab(target, tabNav, tabGroup) {
+    tabNav.removeClass('active');
+    tabGroup.removeClass('active');
+    tabNav.filter('[href='+target+']').addClass('active');
+    $j(target).addClass('active');
+};
+
 // -------------------------------------
 // Document Ready
 // -------------------------------------

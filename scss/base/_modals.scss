@@ -15,8 +15,10 @@
     i {position: absolute; top: 15px; right: 10px; font-size: 40px; color: $color_text_medium;}
 }
 
+.modal_close {cursor: pointer;}
+
 .modal_content {
-    background: #ffffff; max-height: 100%; overflow: scroll;
+    background: #ffffff; height: 100%; overflow: scroll;
 }
 
 .modal_content_inner {

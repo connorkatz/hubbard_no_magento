@@ -1,0 +1,14 @@
+%customer_section {
+    box-shadow: 0 0 2px rgba(0,0,0,0.2); background: $color_util_4;
+    label {display: block; font-weight: 700; margin-bottom: 5px;}
+    p {margin-bottom: 20px; line-height: 1.6;}
+    button, a.button {@extend %button_primary;}
+}
+
+%customer_section_small_container {padding: 0 20px 20px 20px;}
+
+%customer_section_small {
+    @extend %customer_section;
+    max-width: 500px; margin: 0 auto; padding: 20px; border-radius: 5px;
+    p {font-size: 16px;}
+}

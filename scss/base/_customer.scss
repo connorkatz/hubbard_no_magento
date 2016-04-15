@@ -1,26 +1,96 @@
-#customer_content {}
+#customer_content { }
 
 #customer_account_choice {
-    ul {max-width: 850px; font-size: 0; margin: 0 auto; padding: 10px 20px 20px 20px;}
+    ul { max-width: 850px; font-size: 0; margin: 0 auto; padding: 10px 20px 20px 20px; }
     li {
         @extend %customer_section;
-        font-size: 14px; padding-bottom: 20px;
+        font-size: 14px;
     }
-    li:first-child {margin-bottom: 20px;}
-    h2 {font-size: 24px; color: $color_text_dark; background: #ffffff; font-family: $font_din_regular; text-transform: uppercase; padding: 10px; text-align: center; border-bottom: 1px solid rgba(0,0,0,0.1);}
+    li:first-child { margin-bottom: 20px; }
+    h2 { font-size: 24px; color: $color_text_dark; background: #ffffff; font-family: $font_din_regular; text-transform: uppercase; padding: 10px; text-align: center; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 }
 
 .customer_account_choice_content {
     padding: 20px; border-top: 1px solid #ffffff; text-align: center;
-    p {line-height: 1.6; margin-bottom: 20px; text-align: left;}
-    label {text-align: left;}
-    a.forgot_password {display: inline-block; margin-top: 15px;}
+    p { text-align: left; }
+    label { text-align: left; }
+    a.forgot_password { display: inline-block; margin-top: 15px; }
 }
 
-#forgot_password { padding: 0 20px 20px 20px; }
+#basic_form_box { @extend %customer_section_small_container; }
 
-#forgot_password_inner {
-    @extend %customer_section;
-    max-width: 500px; margin: 0 auto; padding: 20px;
+#basic_form_box_inner {
+    @extend %customer_section_small;
+    h2 {font-family: $font_din_regular; color: $color_text_dark; text-transform: uppercase; font-size: 24px; margin: 20px 0 15px 0; padding-bottom: 5px; border-bottom: 1px solid rgba(0,0,0,0.1); box-shadow: 0 1px 0 #ffffff;}
+    h2:first-of-type {margin-top: 0;}
+}
+
+#customer_account { }
+
+#customer_account_nav {
+    background: $color_util_4;
+    ul {font-size: 0; text-align: center; padding-top: 1px;}
+    li {
+        display: inline-block; font-size: 14px; width: calc(100% / 3); max-width: 200px;
+        a {
+            display: block; padding: 15px; text-transform: uppercase; color: $color_text_medium; border-bottom: 3px solid transparent;
+            &.active {color: $color_brand_secondary; border-color: $color_brand_primary; background: #ffffff;}
+        }
+        a:before {font-family: $font_fontAwesome; display: block; font-size: 20px;}
+        span {display: block; margin-top: 5px;}
+    }
+    li:nth-child(1) a:before {content: '\f007';}
+    li:nth-child(2) a:before {content: '\f041';}
+    li:nth-child(3) a:before {content: '\f08b';}
 
 }
+
+.customer_account_block {
+    @extend %site_width;
+    display: none; padding: 15px;
+    h2 {font-family: $font_din_regular; color: $color_text_dark; font-size: 20px; text-transform: uppercase; border-bottom: 1px solid rgba(0,0,0,0.1); padding: 0 0 10px 0; margin-bottom: 15px;}
+    h3 {font-size: 14px; text-transform: uppercase; font-weight: 300; margin-bottom: 10px;}
+    &.active {display: block;}
+}
+
+.customer_account_static_content {
+    font-size: 16px; line-height: 1.5; margin-bottom: 10px;
+    a {display: block; padding: 10px 0; font-size: 14px;}
+}
+
+#customer_account_orders {
+    overflow: scroll;
+    table {border-collapse: collapse; width: 100%;}
+    th {font-size: 11px; text-transform: uppercase; text-align: left; min-width: 70px; white-space: nowrap; padding: 10px 5px; font-weight: 400;}
+    td {font-size: 11px; text-align: left; white-space: nowrap; padding: 10px 5px;}
+    tbody tr:nth-child(odd) {background: $color_util_4;}
+}
+
+#customer_addresses_group {font-size: 0;}
+
+.customer_address_item {
+    margin-bottom: 20px; line-height: 1.5; font-size: 0; font-size: 14px;
+    b {font-weight: bold; display: block; margin-bottom: 5px;}
+    address {font-style: normal; }
+    span {display: block; margin-top: 5px;}
+    a {display: block; padding: 10px 0;}
+}
+
+#customer_add_new_address {
+    padding-bottom: 15px;
+    a {display: inline-block; background: $color_util_4; padding: 10px 25px;}
+    a:before {content: '\f234'; font-family: $font_fontAwesome; margin-right: 10px;}
+}
+
+#customer_update_password_option {
+    label {
+        font-weight: 400; display: block; padding-bottom: 15px;
+        &:before {display: inline-block; content: '\f096'; font-family: $font_fontAwesome; font-size: 20px; vertical-align: middle; width: 25px;}
+        &.active {
+            &:before {content: '\f046';}
+        }
+    }
+
+}
+
+#customer_edit_password { display: none; }

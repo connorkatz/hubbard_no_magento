@@ -1,6 +1,0 @@
-%customer_section {
-    box-shadow: 0 0 2px rgba(0,0,0,0.2); background: $color_util_4;
-    label {display: block; font-weight: 700; margin-bottom: 5px;}
-    p {margin-bottom: 20px;}
-    button, a.button {@extend %button_primary;}
-}

@@ -32,6 +32,8 @@ $grey_cool_dark               : #696A6D;
 $light_grey_orange            : #cccac8;
 $almost_white_grey_orange     : #f7f6f5;
 
+$error_red                    : #c82828;
+
 
 
 // Brand Colors
@@ -51,6 +53,11 @@ $color_text_light             : $grey_neutral_light;
 $color_text_medium            : $grey_neutral_medium;
 $color_text_dark              : $grey_neutral_dark;
 $color_text_base              : $grey_cool_dark;
+
+
+// Alert Colors
+// -------------------------------------
+$color_alert_error            : $error_red;
 
 
 

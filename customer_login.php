@@ -18,7 +18,7 @@
                             <div class="input-box">
                                 <input type="password" id="pass">
                             </div>
-                            <button type="submit">Login</button>
+                            <button type="button" onclick="window.location.href = '/customer_account.php'">Login</button>
                             <a href="/customer_forgot_password.php" class="forgot_password">Forgot Your Password?</a>
                         </div><!-- end customer choice content -->
                     </div><!-- end form list -->

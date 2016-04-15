@@ -1,0 +1,46 @@
+%checkout_shaded_section {
+    background: #ffffff; box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); border-radius: 5px; margin-bottom: 20px;
+    dt {
+        font-size: 0; border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding: 15px 20px;
+        label {
+            padding-left: 10px; display: inline-block; vertical-align: middle;
+            span {display: inline-block; margin-bottom: 5px; font-weight: 700;}
+            img { max-width: 100px; }
+            ul {font-size: 0;}
+            li {display: inline-block; width: 50px; margin-right: 5px; border-radius: 3px;}
+        }
+    }
+    dd {
+        display: none; background: $color_util_5; padding: 10px 15px; border-top: 1px solid rgba(0, 0, 0, 0.02); border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        &.active {display: block;}
+        label { display: block; margin-bottom: 5px; }
+    }
+    input[type="radio"] { display: inline-block; vertical-align: middle; }
+
+    input[type="text"], select { margin-bottom: 10px; }
+    @media #{$break_medium} {
+        dd {padding: 20px;}
+    }
+}
+
+// -------------------------
+// Checkout
+// -------------------------
+%checkout_width {max-width: 1000px; margin: 0 auto;}
+
+%button_coupon_code { display: inline-block; font-size: 14px; width: 100px; height: 40px; vertical-align: middle; background: rgba(0,0,0,0.15); border: none; color: $color_text_white; border-radius: 5px; }
+
+%input_coupon_code {
+    display: inline-block; font-size: 14px; width: calc(100% - 105px); margin-right: 5px; vertical-align: middle; background: $color_util_5;
+    &:focus {background: #ffffff;}
+
+}
+
+// -------------------------
+// Order Thank You
+// -------------------------
+%order_thank_you_section {
+    @extend %site_width_small;
+    padding-bottom: 25px;
+    h3 {font-family: $font_din_regular; font-size: 20px; text-transform: uppercase; text-align: center; color: $color_text_dark; padding: 15px 0; border-top: 1px dotted rgba(0,0,0,0.2); border-bottom: 1px dotted rgba(0,0,0,0.2); max-width: 400px; margin: 0 auto 20px auto;}
+}

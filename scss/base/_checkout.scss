@@ -194,6 +194,7 @@
 
 #save_information {
     margin: 15px 0;
+    input[type="checkbox"] {vertical-align: top;}
     label { display: inline-block; vert-align: middle; font-weight: 400; font-size: 16px; }
     p { font-weight: 300; color: $color_text_medium; font-size: 14px; }
 }
