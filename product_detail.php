@@ -142,7 +142,7 @@
                     </div><!-- end prod details lower -->
                 </section><!-- end prod details -->
                 <div id="shipping_callout">
-                    <a href="#"><i class="fa fa-thumbs-o-up"></i>Shipping &amp; Returns are Free. And Easy.</a>
+                    <a href="#">Shipping &amp; Returns are Free. And Easy.</a>
                 </div><!-- end shipping callout -->
 
                 <section id="social_share">

@@ -301,7 +301,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 
 #publication_logos {
     padding: 5px 5px 10px 5px; text-align: center;
-    p { display: inline-block; text-transform: uppercase; font-size: 10px; margin-bottom: 5px; color: $color_text_light; }
+    p { display: inline-block; text-transform: uppercase; font-size: 10px; margin-bottom: 5px; color: $color_text_medium; }
     ul { font-size: 0; text-align: center; }
     li { display: inline-block; width: 30%; margin-left: 3%; max-width: 175px; vertical-align: middle; }
     li img { width: 100%; opacity: 0.5; }
@@ -382,26 +382,14 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 .product_list_group_block { @extend %site_width_padded; }
 
 .product_list_header_row {
-    max-width: 400px; margin: 10px auto; text-align: center; border-top: 1px dotted rgba(0, 0, 0, 0.2); border-bottom: 1px dotted rgba(0, 0, 0, 0.2); padding: 10px 0; background: transparent;
+    position: relative; max-width: 400px; margin: 10px auto; text-align: center; border-top: 1px dotted rgba(0, 0, 0, 0.2); border-bottom: 1px dotted rgba(0, 0, 0, 0.2); padding: 10px 0; background: transparent;
     h2 { display: inline-block; font-size: 18px; font-family: $font_din_regular, sans-serif; text-transform: uppercase; color: $color_text_dark; vertical-align: middle; }
     span { display: inline-block; vertical-align: middle; color: $color_text_medium; margin-left: 10px; font-weight: 300; border-left: 1px solid rgba(0, 0, 0, 0.1); padding: 5px 0 5px 10px; }
+    strong {position: absolute; top: calc(50% - 5px); right: 5px; font-size: 12px; font-weight: 700; text-transform: uppercase; color: $color_text_dark;}
 }
 
 .product_list_items {
     @extend %product_list_items;
-    li {
-        &.out_of_stock {
-            img {opacity: 0.3;}
-        }
-        &.out_of_stock.preorder {
-            position: relative;
-            .stock_message {display: block;}
-        }
-
-    }
-    .stock_message {
-        display: none; position: absolute; z-index: 99; display: inline-block; bottom: 20px; left: calc(50% - 40px); width: 100px; text-align: center; display: block; background: #ffffff; padding: 5px 0; color: $color_brand_secondary; font-size: 12px; border-radius: 3px; box-shadow: 0 0 2px rgba(0,0,0,0.2);
-    }
 }
 
 /* ---------------- Product Detail ------------------------------------------ */
@@ -466,7 +454,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 #prod_color_swatches {
     margin: 0 5px;
     ul { font-size: 0; text-align: center; }
-    li { display: inline-block; width: 25%; padding: 0 2px 3px 2px; border-bottom: 2px solid transparent; margin-bottom: 5px; }
+    li { display: inline-block; width: 25%; max-width: 150px; padding: 0 2px 3px 2px; border-bottom: 2px solid transparent; margin-bottom: 5px; }
     li.active { border-color: rgba(0, 0, 0, 0.3); }
 }
 
@@ -554,8 +542,6 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 
 #shipping_callout {
     background: $color_util_4; color: $color_brand_secondary; font-weight: 300; padding: 15px; text-align: center;
-    i { color: $color_text_medium; margin-right: 10px; }
-    a { color: $color_brand_secondary; }
 }
 
 #lifestyle_images { margin-bottom: 15px; }
