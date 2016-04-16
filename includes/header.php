@@ -6,15 +6,15 @@
         <meta name="format-detection" content="telephone=no">
         <link rel="stylesheet" type="text/css" href="css/application.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="js/jQuery/noconflict.js"></script>
-        <script src="js/hoverintent/jquery.hoverIntent.min.js"></script>
-        <script src="js/debounce/jquery.ba-throttle-debounce.min.js"></script>
-        <script src="js/scroll_lock/jquery.scrollLock.simple.js"></script>
-        <script src="js/simple_modal/simple_modal.js"></script>
-        <script src="js/jQuery.bxslider.min.js"></script>
-        <script src="js/enquire.min.js"></script>
-        <script src="js/base.js"></script>
-        <script src="js/responsive.js"></script>
+        <script src="../js/jQuery/noconflict.js"></script>
+        <script src="../js/hoverintent/jquery.hoverIntent.min.js"></script>
+        <script src="../js/debounce/jquery.ba-throttle-debounce.min.js"></script>
+        <script src="../js/scroll_lock/jquery.scrollLock.simple.js"></script>
+        <script src="../js/simple_modal/simple_modal.js"></script>
+        <script src="../js/bxSlider/jquery.bxslider.min.js"></script>
+        <script src="../js/enquire.min.js"></script>
+        <script src="../js/base.js"></script>
+        <script src="../js/responsive.js"></script>
     </head>
 
     <body>
@@ -42,7 +42,7 @@
                 <section id="logo_container">
                     <a href="/">
                         <div id="logo">
-                            <img src="images/samuel_hubbard_logo.svg" alt="Samuel Hubbard">
+                            <img src="../images/samuel_hubbard_logo.svg" alt="Samuel Hubbard">
                         </div>
                         <p>Shoemakers Since 1930</p>
                     </a>
@@ -53,7 +53,7 @@
                             <li id="search_link" class="link"><a href="#"><i class="fa fa-search"></i><span>Search</span></a></li>
                             <li id="sign_in_link" class="link"><a href="/customer_login.php">Sign In</a></li>
                             <li id="support_link" class="link"><a href="#">Support</a></li>
-                            <li id="cart_link"><a href="/cart.php" id="cart_icon"><span>0</span></a></li>
+                            <li id="cart_link"><a href="/cart.php" id="cart_icon" class="has_items"><span>1</span></a></li>
                         </ul>
                     </section><!-- end user nav -->
                     <nav id="main_nav">

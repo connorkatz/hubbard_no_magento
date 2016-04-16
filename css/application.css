@@ -2570,8 +2570,10 @@ hr.decorative_break_2 {
     font-size: 0; }
   .category_banner li {
     display: inline-block;
-    width: calc(100% / 3);
-    padding-top: 25%;
+    width: calc(100% / 3); }
+  .category_banner a {
+    display: block;
+    padding-top: 100%;
     background-repeat: no-repeat;
     background-size: contain; }
   .category_banner li:nth-of-type(n+4) {
@@ -2739,15 +2741,16 @@ hr.decorative_break_2 {
   color: #808080; }
 #user_nav #sign_in_link, #user_nav #support_link {
   display: none; }
-#user_nav #search_link a {
-  padding: 8px 10px; }
 #user_nav #search_link {
-  margin-right: 10px; }
-#user_nav #search_link i {
-  font-size: 18px; }
-#user_nav #search_link span {
   display: none;
-  margin-left: 10px; }
+  margin-right: 10px; }
+  #user_nav #search_link a {
+    padding: 8px 10px; }
+  #user_nav #search_link i {
+    font-size: 18px; }
+  #user_nav #search_link span {
+    display: none;
+    margin-left: 10px; }
 
 #cart_icon {
   display: block;
@@ -2766,6 +2769,10 @@ hr.decorative_break_2 {
     width: 100%;
     text-align: center;
     color: rgba(255, 255, 255, 0.5); }
+  #cart_icon.has_items {
+    background-image: url("../images/cart_icon_on.svg"); }
+    #cart_icon.has_items span {
+      color: #ffffff; }
 
 /* ---------------- Site Search ------------------------------------------ */
 /* ------------------------------------------------------------------ */
@@ -3668,14 +3675,8 @@ hr.decorative_break_2 {
     margin-right: 5px; }
   #inventory_message .low_stock {
     background: #fff6e5; }
-  #inventory_message .low_stock:before {
-    content: '\f071';
-    color: rgba(255, 164, 0, 0.5); }
   #inventory_message .no_stock {
     background: #ffe5e5; }
-  #inventory_message .no_stock:before {
-    content: '\f06a';
-    color: rgba(255, 0, 0, 0.5); }
 
 #atc_row {
   display: none; }
@@ -3937,7 +3938,7 @@ hr.decorative_break_2 {
   background: #ffffff; }
   #cart_preview_crossell h6 {
     font-family: "DINCondensed-Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     text-transform: uppercase;
     color: #4d4d4d;
     padding: 10px 0; }
@@ -4721,7 +4722,7 @@ hr.decorative_break_2 {
 /* ----- Billin Address ---- */
 /* ----- Place Order ----- */
 .place_order button span:before {
-  content: '\f023';
+  content: '\f046';
   font-family: "FontAwesome";
   margin-right: 10px; }
 
@@ -4846,14 +4847,14 @@ hr.decorative_break_2 {
 #basic_page {
   background: #fafafa; }
 
-#men-unskeaker li:nth-of-type(1) {
-  background-image: url("../images/cat_banner_fill_1.jpg"); }
-#men-unskeaker li:nth-of-type(2) {
-  background-image: url("../images/cat_banner_fill_1.jpg"); }
-#men-unskeaker li:nth-of-type(3) {
-  background-image: url("../images/cat_banner_fill_1.jpg"); }
-#men-unskeaker li:nth-of-type(4) {
-  background-image: url("../images/cat_banner_fill_1.jpg"); }
+#men-unskeaker li:nth-of-type(1) a {
+  background-image: url("../images/cat_banner_fill_square.jpg"); }
+#men-unskeaker li:nth-of-type(2) a {
+  background-image: url("../images/cat_banner_fill_square.jpg"); }
+#men-unskeaker li:nth-of-type(3) a {
+  background-image: url("../images/cat_banner_fill_square.jpg"); }
+#men-unskeaker li:nth-of-type(4) a {
+  background-image: url("../images/cat_banner_fill_square.jpg"); }
 
 .modals_background {
   display: none;
@@ -4942,9 +4943,6 @@ hr.decorative_break_2 {
     padding: 20px 0; }
     h1.page_header.w_breadcrumbs {
       padding-top: 5px; }
-
-  .category_banner {
-    display: block; }
 
   .category_desc {
     font-size: 16px; }
@@ -5238,7 +5236,7 @@ hr.decorative_break_2 {
       width: 80%; }
 
   #cart_preview_crossell h6 {
-    font-size: 26px;
+    font-size: 30px;
     padding: 15px 0; }
 
   /* ---------------- Shopping Cart ------------------------------------ */
@@ -5371,6 +5369,11 @@ hr.decorative_break_2 {
 
   #mobile_review_total {
     display: none; }
+
+  /* ---------------- Thank You Page -------------------------------- */
+  /* ------------------------------------------------------------------ */
+  #order_thank_you_content h1 {
+    font-size: 36px; }
 
   /* ---------------- Customer ---------------------------- */
   /* ------------------------------------------------------------------ */
@@ -5515,7 +5518,6 @@ hr.decorative_break_2 {
     top: auto;
     right: auto;
     display: inline-block;
-    font-weight: 300;
     font-size: 24px;
     width: 80px; }
 
@@ -5696,8 +5698,7 @@ hr.decorative_break_2 {
     margin-bottom: 20px; }
 
   .category_banner li {
-    width: 25%;
-    padding-top: 19%; }
+    width: 25%; }
   .category_banner li:nth-child(n+4) {
     display: inline-block; }
 

@@ -270,7 +270,7 @@
     button {
         @extend %button_primary;
         @extend %button_ajax_load;
-        span:before { content: '\f023'; font-family: $font_fontAwesome; margin-right: 10px; }
+        span:before { content: '\f046'; font-family: $font_fontAwesome; margin-right: 10px; }
     }
 }
 

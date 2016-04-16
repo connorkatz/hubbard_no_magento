@@ -123,9 +123,6 @@
                             <span class="low_stock">
                                 9 available in stock
                             </span>
-                            <span class="no_stock">
-                                Out of stock
-                            </span>
                             </section><!-- end inventory message -->
                             <div id="atc_row" class="active">
                                 <button type="submit"><i class="fa fa-refresh fa-spin"></i>Add to Cart</button>
@@ -133,7 +130,7 @@
                         </form>
                         <div id="out_of_stock_callout">
                             <form>
-                                <h6>Pre-Order</h6>
+                                <h6>Waitlist</h6>
                                 <p>I want to be one of the first to know when this item is available.</p>
                                 <div id="stock_email_input">
                                     <input type="email" placeholder="Your Email Address">
@@ -145,7 +142,7 @@
                     </div><!-- end prod details lower -->
                 </section><!-- end prod details -->
                 <div id="shipping_callout">
-                    <a href="#"><i class="fa fa-thumbs-o-up"></i>Free Shipping &amp; Returns</a>
+                    <a href="#"><i class="fa fa-thumbs-o-up"></i>Shipping &amp; Returns are Free. And Easy.</a>
                 </div><!-- end shipping callout -->
 
                 <section id="social_share">

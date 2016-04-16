@@ -8,8 +8,6 @@
         &.w_breadcrumbs { padding-top: 5px; }
     }
 
-    .category_banner { display: block; }
-
     .category_desc {
         font-size: 16px;
         p { margin-bottom: 20px; }
@@ -242,7 +240,7 @@
     }
 
     #cart_preview_crossell {
-        h6 { font-size: 26px; padding: 15px 0; }
+        h6 { font-size: 30px; padding: 15px 0; }
     }
 
     /* ---------------- Shopping Cart ------------------------------------ */
@@ -332,6 +330,12 @@
     #place_order_bottom { margin: 20px 0 2px 0; }
 
     #mobile_review_total { display: none; }
+
+    /* ---------------- Thank You Page -------------------------------- */
+    /* ------------------------------------------------------------------ */
+    #order_thank_you_content {
+        h1 { font-size: 36px; }
+    }
 
     /* ---------------- Customer ---------------------------- */
     /* ------------------------------------------------------------------ */
