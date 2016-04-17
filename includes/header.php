@@ -12,9 +12,7 @@
         <script src="../js/scroll_lock/jquery.scrollLock.simple.js"></script>
         <script src="../js/simple_modal/simple_modal.js"></script>
         <script src="../js/bxSlider/jquery.bxslider.min.js"></script>
-        <script src="../js/enquire.min.js"></script>
         <script src="../js/base.js"></script>
-        <script src="../js/responsive.js"></script>
     </head>
 
     <body>
