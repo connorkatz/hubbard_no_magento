@@ -2482,7 +2482,7 @@ select {
   width: 100%;
   font-size: 14px;
   padding: 10px;
-  height: 44px;
+  height: 41px;
   color: #808080;
   display: block;
   border: 2px solid rgba(0, 0, 0, 0.2);
@@ -5123,6 +5123,7 @@ hr.decorative_break_2 {
 
   .filter_list_items {
     position: absolute;
+    z-index: 99;
     width: 100%;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
 

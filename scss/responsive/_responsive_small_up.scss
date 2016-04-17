@@ -133,7 +133,7 @@
         &:first-of-type { border-bottom: 1px solid rgba(0, 0, 0, 0.1); margin-right: 10px; }
     }
 
-    .filter_list_items { position: absolute; width: 100%; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
+    .filter_list_items { position: absolute; z-index: 99; width: 100%; box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); }
 
     .product_list_header_row {
         margin: 20px auto; max-width: 500px;
