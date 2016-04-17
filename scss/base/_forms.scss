@@ -14,7 +14,7 @@ input.validation-failed:focus { border-color: $color_alert_error; }
 
 select {
     @include prefix-auto(appearance, none);
-    width: 100%; font-size: 14px; padding: 10px; height: 44px; color: $color_text_medium; display: block; border: 2px solid rgba(0, 0, 0, 0.2); border-radius: 5px; background: #ffffff url('../images/select_arrows.png') no-repeat right 50%; background-size: 30px 20px;
+    width: 100%; font-size: 14px; padding: 10px; height: 41px; color: $color_text_medium; display: block; border: 2px solid rgba(0, 0, 0, 0.2); border-radius: 5px; background: #ffffff url('../images/select_arrows.png') no-repeat right 50%; background-size: 30px 20px;
 }
 
 input[type="checkbox"] {
