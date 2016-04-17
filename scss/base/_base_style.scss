@@ -385,7 +385,10 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
     position: relative; max-width: 400px; margin: 10px auto; text-align: center; border-top: 1px dotted rgba(0, 0, 0, 0.2); border-bottom: 1px dotted rgba(0, 0, 0, 0.2); padding: 10px 0; background: transparent;
     h2 { display: inline-block; font-size: 18px; font-family: $font_din_regular, sans-serif; text-transform: uppercase; color: $color_text_dark; vertical-align: middle; }
     span { display: inline-block; vertical-align: middle; color: $color_text_medium; margin-left: 10px; font-weight: 300; border-left: 1px solid rgba(0, 0, 0, 0.1); padding: 5px 0 5px 10px; }
-    strong {position: absolute; top: calc(50% - 5px); right: 5px; font-size: 12px; font-weight: 700; text-transform: uppercase; color: $color_text_dark;}
+    strong {
+        position: absolute; top: calc(50% - 8px); right: 0; font-size: 12px; font-weight: 400; padding: 3px 5px 3px 5px; text-transform: uppercase; color: $color_text_white; background: $color_background_secondary;
+        &:before { content: ''; display: block; position: absolute; right: 100%; top: 0; height: 0; border-style: solid; border-width: 18px 0 0 8px; border-color: $color_background_secondary transparent transparent transparent; }
+    }
 }
 
 .product_list_items {
@@ -541,7 +544,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 }
 
 #shipping_callout {
-    background: $color_util_4; color: $color_brand_secondary; padding: 15px; text-align: center;
+    background: $color_util_4; color: $color_brand_secondary; font-weight: 300; padding: 15px; text-align: center;
 }
 
 #lifestyle_images { margin-bottom: 15px; }

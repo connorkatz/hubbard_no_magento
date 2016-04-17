@@ -18,9 +18,5 @@ Thumbs.db
 #####################
 *.sass-cache
 
-# Ignore Sass' cache
+# Ignore Sass cache
 /.sass-cache
-
-# Ignore CSS & Map File
-*.css
-*.map
