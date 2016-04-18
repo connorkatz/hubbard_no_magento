@@ -3479,7 +3479,7 @@ hr.decorative_break_2 {
   .product_list_header_row strong {
     position: absolute;
     top: calc(50% - 10px);
-    right: 0;
+    left: 0;
     font-size: 11px;
     font-weight: 400;
     padding: 4px 5px 4px 5px;
@@ -3490,11 +3490,11 @@ hr.decorative_break_2 {
       content: '';
       display: block;
       position: absolute;
-      right: 100%;
+      left: 100%;
       top: 0;
       height: 0;
       border-style: solid;
-      border-width: 18px 0 0 8px;
+      border-width: 18px 8px 0 0;
       border-color: #4d4d4d transparent transparent transparent; }
 
 /* ---------------- Product Detail ------------------------------------------ */
