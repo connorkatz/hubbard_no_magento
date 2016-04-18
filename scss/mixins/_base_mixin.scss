@@ -36,8 +36,17 @@
         .bx-pager-item a { display: block; width: 10px; height: 10px; border-radius: 10px; border: 1px solid $color_util_2; font-size: 0; text-indent: -9999px; }
         .bx-pager-item a.active { background: $color_util_2; }
     }
+    .full_width_slide_arrow {
+        display: none; position: absolute; top: calc(50% - 25px); font-family: $font_fontAwesome;
+        a {font-size: 50px; color: $color_text_white; display: block; padding: 10px;}
+        &.prev {left: 10px;}
+        &.next {right: 10px;}
+    }
     @media #{$break_medium} {
         .full_width_slideshow {padding-top: $height_desktop;}
         .slide_item {padding-top: $height_desktop;}
+    }
+    @media #{$break_large} {
+        .full_width_slide_arrow {display: block;}
     }
 }

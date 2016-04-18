@@ -30,7 +30,7 @@
     </section><!-- end category desc -->
     <hr class="decorative_break">
     <section id="product_filter_group_block">
-        <h6>Show Me</h6>
+        <h6>Show Me Available In</h6>
         <form>
             <div id="reset_filters">
                 <i class="fa fa-rotate-left"></i>Reset All
