@@ -142,6 +142,10 @@
     color: #022f59;
     text-transform: uppercase;
     font-size: 12px; }
+    .product_list_items .stock_message:before, #cart_preview_crossell ul .stock_message:before {
+      content: '\f14d';
+      font-family: "FontAwesome";
+      margin-right: 5px; }
   @media (min-width: 700px) {
     .product_list_items li, #cart_preview_crossell ul li {
       width: calc((100% / 3) - 10px);
