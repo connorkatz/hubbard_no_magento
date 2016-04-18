@@ -84,7 +84,7 @@
         </div><!-- end header row -->
         <ul class="product_list_items">
             <li>
-                <strong>New</strong>
+                <strong>Gore-Tex</strong>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_tan_waxhide.jpg">
                     <h3>Tan Waxhide</h3>
@@ -113,7 +113,7 @@
                 </a>
             </li>
             <li>
-                <strong>New</strong>
+                <strong>Bestseller</strong>
                 <a href="/product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_rust_nubuck.jpg">
                     <h3>Rust Nubuck</h3>
@@ -133,7 +133,7 @@
 
     <section class="product_list_group_block">
         <div class="product_list_header_row">
-            <strong>Gore-Tex</strong>
+            <strong>New</strong>
             <h2>Boot-Up</h2>
             <span>$220</span>
         </div><!-- end header row -->

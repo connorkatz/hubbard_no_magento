@@ -3477,7 +3477,7 @@ hr.decorative_break_2 {
     padding: 5px 0 5px 10px; }
   .product_list_header_row strong {
     position: absolute;
-    top: calc(50% - 8px);
+    top: calc(50% - 10px);
     right: 0;
     font-size: 11px;
     font-weight: 400;

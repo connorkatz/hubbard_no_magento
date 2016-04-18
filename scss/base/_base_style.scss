@@ -392,7 +392,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
     h2 { display: inline-block; font-size: 18px; font-family: $font_din_regular, sans-serif; text-transform: uppercase; color: $color_text_dark; vertical-align: middle; }
     span { display: inline-block; vertical-align: middle; color: $color_text_medium; margin-left: 10px; font-weight: 300; border-left: 1px solid rgba(0, 0, 0, 0.1); padding: 5px 0 5px 10px; }
     strong {
-        position: absolute; top: calc(50% - 8px); right: 0; font-size: 11px; font-weight: 400; padding: 4px 5px 4px 5px; text-transform: uppercase; color: $color_text_white; background: $color_util_3;
+        position: absolute; top: calc(50% - 10px); right: 0; font-size: 11px; font-weight: 400; padding: 4px 5px 4px 5px; text-transform: uppercase; color: $color_text_white; background: $color_util_3;
         &:before { content: ''; display: block; position: absolute; right: 100%; top: 0; height: 0; border-style: solid; border-width: 18px 0 0 8px; border-color: $color_util_3 transparent transparent transparent; }
     }
 }
