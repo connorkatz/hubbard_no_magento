@@ -8,7 +8,10 @@
         label { display: block; }
     }
 
-    #logo_container { width: calc(100% - 175px); text-align: center; }
+    #logo_container {
+        width: calc(100% - 135px); text-align: center;
+        &.no_search {width: calc(100% - 135px);}
+    }
 
 
     /* ---------------- Product Listing --------------------------------- */

@@ -138,14 +138,14 @@
             <span>$220</span>
         </div><!-- end header row -->
         <ul class="product_list_items">
-            <li class="out_of_stock">
+            <li class="no_stock">
                 <a href="/product_detail.php">
                     <img src="../images/product_images/off_white/boot_up_black_suede.jpg">
                     <h3>Black Suede</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
-            <li class="out_of_stock waitlist">
+            <li class="waitlist">
                 <a href="/product_detail.php">
                     <img src="../images/product_images/off_white/boot_up_espresso_brown.jpg">
                     <h3>Espresso Brown</h3>
@@ -189,14 +189,14 @@
                     <h3>Almost Black</h3>
                 </a>
             </li>
-            <li class="out_of_stock">
+            <li class="no_stock">
                 <a href="/product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_cordovan.jpg">
                     <h3>Cordovan</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
-            <li class="out_of_stock waitlist">
+            <li class="waitlist">
                 <a href="/product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_navy_nubuck.jpg">
                     <h3>Navy Nubuck</h3>

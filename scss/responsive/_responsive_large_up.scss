@@ -18,6 +18,7 @@
 
     #logo_container {
         width: 250px; padding: 10px 0; margin-left: 20px;
+        &.no_search {width: 250px;}
         p { display: block; }
     }
 

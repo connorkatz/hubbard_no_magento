@@ -30,7 +30,10 @@
         label { font-size: 16px; top: -6px; }
     }
 
-    #logo_container { padding: 10px 0 15px 0; width: 30%; }
+    #logo_container {
+        padding: 10px 0 15px 0; width: 30%;
+        &.no_search {width: 30%;}
+    }
 
     #logo {
         width: 200px;

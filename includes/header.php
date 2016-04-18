@@ -37,7 +37,7 @@
                         <label>Menu</label>
                     </a>
                 </section><!-- end mobile nav toggle -->
-                <section id="logo_container">
+                <section id="logo_container" class="no_search">
                     <a href="/">
                         <div id="logo">
                             <img src="../images/samuel_hubbard_logo.svg" alt="Samuel Hubbard">

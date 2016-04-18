@@ -72,6 +72,7 @@
                     <div id="prod_details_lower">
                         <form>
                             <span id="color_option_name">Tan Waxhide</span>
+                            <span id="size_close"><a href="#">Showing &mdash; Wide 10</a></span>
                             <section id="prod_color_swatches">
                                 <ul>
                                     <li><img src="../images/swatches/swatch_1.png"></li>

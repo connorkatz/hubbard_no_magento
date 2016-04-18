@@ -4,7 +4,7 @@
     ul { max-width: 850px; font-size: 0; margin: 0 auto; padding: 10px 20px 20px 20px; }
     li {
         @extend %customer_section;
-        font-size: 14px;
+        font-size: 14px; border-radius: 3px; overflow: hidden;
     }
     li:first-child { margin-bottom: 20px; }
     h2 { font-size: 24px; color: $color_text_dark; background: #ffffff; font-family: $font_din_regular; text-transform: uppercase; padding: 10px; text-align: center; border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
