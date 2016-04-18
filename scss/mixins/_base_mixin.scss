@@ -21,3 +21,23 @@
     -o-#{$cssProperty}: #{$cssValue};
     #{$cssProperty}: #{$cssValue};
 }
+
+
+// Full Width Slideshow
+// ------------------------
+@mixin full-width-slideshow($height_mobile, $height_desktop) {
+    .full_width_slideshow {position: relative; overflow: hidden; padding-top: $height_mobile;}
+    .full_width_slideshow_inner { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; }
+    .slide_item { position: relative; padding-top: $height_mobile;}
+    .slide_content { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-size: cover; background-repeat: no-repeat;}
+    .slideshow_nav_pages {
+        position: absolute; bottom: 15px; margin: 0; width: 100%; text-align: center;
+        .bx-pager-item {display: inline-block; margin: 0 3px;}
+        .bx-pager-item a { display: block; width: 10px; height: 10px; border-radius: 10px; border: 1px solid $color_util_2; font-size: 0; text-indent: -9999px; }
+        .bx-pager-item a.active { background: $color_util_2; }
+    }
+    @media #{$break_medium} {
+        .full_width_slideshow {padding-top: $height_desktop;}
+        .slide_item {padding-top: $height_desktop;}
+    }
+}

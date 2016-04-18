@@ -34,7 +34,7 @@ function hideMobileSubnav(parent) {
 function showMainNavSubmenu() {
     $j('#main_nav_items li.nav_lvl_1').hoverIntent({
         over: function() {
-            jQuery(this).find('.nav_lvl_2').slideDown(200);
+            jQuery(this).find('.nav_lvl_2').slideDown(100);
         },
         out: function() {
             jQuery(this).find('.nav_lvl_2').slideUp(50);

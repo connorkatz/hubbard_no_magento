@@ -28,25 +28,25 @@
         <ul>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/boot_up_black_suede.jpg">
+                    <img src="../images/product_images/off_white/boot_up_black_suede.jpg">
                     <h3><span>Boot-Up</span> Black Suede</h3>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_almost_black.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_almost_black.jpg">
                     <h3><span>Hubbard Free </span> Almost Black</h3>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_cordovan.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_cordovan.jpg">
                     <h3><span>Hubbard Free </span> Cordovan</h3>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_sand_suede.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_sand_suede.jpg">
                     <h3><span>Hubbard Free </span> Sand Suede</h3>
                 </a>
             </li>

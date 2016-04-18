@@ -2,10 +2,10 @@
 <?php include 'includes/scroll_arrow.php'; ?>
     <section id="men-unskeaker" class="category_banner">
         <ul>
-            <li><a href="/product_detail.php"></a></li>
-            <li><a href="/product_detail.php"></a></li>
-            <li><a href="/product_detail.php"></a></li>
-            <li><a href="/product_detail.php"></a></li>
+            <li class="item_1"><a href="/product_detail.php"></a></li>
+            <li class="item_2"><a href="/product_detail.php"></a></li>
+            <li class="item_3"><a href="/product_detail.php"></a></li>
+            <li class="item_4"><a href="/product_detail.php"></a></li>
         </ul>
     </section><!-- end category banner -->
     <nav id="breadcrumbs">
@@ -86,28 +86,28 @@
             <li>
                 <strong>New</strong>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_tan_waxhide.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_tan_waxhide.jpg">
                     <h3>Tan Waxhide</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_almost_black.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_almost_black.jpg">
                     <h3>Almost Black</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_cordovan.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_cordovan.jpg">
                     <h3>Cordovan</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_navy_nubuck.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_navy_nubuck.jpg">
                     <h3>Navy Nubuck</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
@@ -115,14 +115,14 @@
             <li>
                 <strong>New</strong>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_rust_nubuck.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_rust_nubuck.jpg">
                     <h3>Rust Nubuck</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_sand_suede.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_sand_suede.jpg">
                     <h3>Sand Suede</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
@@ -140,28 +140,28 @@
         <ul class="product_list_items">
             <li class="out_of_stock">
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/boot_up_black_suede.jpg">
+                    <img src="../images/product_images/off_white/boot_up_black_suede.jpg">
                     <h3>Black Suede</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li class="out_of_stock waitlist">
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/boot_up_espresso_brown.jpg">
+                    <img src="../images/product_images/off_white/boot_up_espresso_brown.jpg">
                     <h3>Espresso Brown</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/boot_up_sand_suede.jpg">
+                    <img src="../images/product_images/off_white/boot_up_sand_suede.jpg">
                     <h3>Sand Suede</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/boot_up_saddle_tan.jpg">
+                    <img src="../images/product_images/off_white/boot_up_saddle_tan.jpg">
                     <h3>Saddle Tan</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
@@ -178,41 +178,41 @@
         <ul class="product_list_items">
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_tan_waxhide.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_tan_waxhide.jpg">
                     <h3>Tan Waxhide</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_almost_black.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_almost_black.jpg">
                     <h3>Almost Black</h3>
                 </a>
             </li>
             <li class="out_of_stock">
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_cordovan.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_cordovan.jpg">
                     <h3>Cordovan</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li class="out_of_stock waitlist">
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_navy_nubuck.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_navy_nubuck.jpg">
                     <h3>Navy Nubuck</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_rust_nubuck.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_rust_nubuck.jpg">
                     <h3>Rust Nubuck</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
                 <a href="/product_detail.php">
-                    <img src="../images/product_images/hubbard_free_sand_suede.jpg">
+                    <img src="../images/product_images/off_white/hubbard_free_sand_suede.jpg">
                     <h3>Sand Suede</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>

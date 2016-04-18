@@ -1,6 +1,7 @@
 <?php include 'includes/header.php'; ?>
 <?php include 'includes/cart_preview.php' ?>
 <?php include 'includes/scroll_arrow.php' ?>
+
     <nav id="breadcrumbs" xmlns="http://www.w3.org/1999/html">
         <ul>
             <li>
@@ -146,7 +147,7 @@
                 </div><!-- end shipping callout -->
 
                 <section id="social_share">
-                    <p>Share:</p>
+                    <p>Share</p>
                     <ul>
                         <li><i class="fa fa-envelope-square"></i></li>
                         <li><i class="fa fa-facebook-square"></i></li>

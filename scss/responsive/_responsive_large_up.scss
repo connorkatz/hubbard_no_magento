@@ -30,9 +30,6 @@
         li.link { display: inline-block; }
         li.link a:hover { color: #cccccc; }
         a:hover { color: #cccccc; }
-        #sign_in_link { margin: 0; }
-        #support_link { display: inline-block; margin-right: 15px; }
-        #search_link span { }
     }
 
     #header_right { position: static; }
@@ -55,7 +52,7 @@
     /* ---------------- Product Listing ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
-    #filters_container { cursor: pointer; }
+    #filters_container { cursor: pointer; border-radius: 3px;}
 
     #reset_filters { cursor: pointer }
 

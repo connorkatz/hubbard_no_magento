@@ -1,0 +1,32 @@
+#homepage_hero {
+    .item_1 .slide_content {
+        background-image: url('../images/homepage_hero/homepage_slide_fill_small_1.jpg');
+        @media #{$break_small} {
+            background-image: url('../images/homepage_hero/homepage_slide_fill_medium_1.jpg');
+        }
+        @media #{$break_medium} {
+            background-image: url('../images/homepage_hero/homepage_slide_fill_large_1.jpg');
+        }
+    }
+
+    .item_2 .slide_content {
+        background-image: url('../images/homepage_hero/homepage_slide_fill_small_2.jpg');
+        @media #{$break_small} {
+            background-image: url('../images/homepage_hero/homepage_slide_fill_medium_2.jpg');
+        }
+        @media #{$break_medium} {
+            background-image: url('../images/homepage_hero/homepage_slide_fill_large_2.jpg');
+        }
+    }
+
+    .item_3 .slide_content {
+        background-image: url('../images/homepage_hero/homepage_slide_fill_small_3.jpg');
+        @media #{$break_small} {
+            background-image: url('../images/homepage_hero/homepage_slide_fill_medium_3.jpg');
+        }
+        @media #{$break_medium} {
+            background-image: url('../images/homepage_hero/homepage_slide_fill_large_3.jpg');
+        }
+    }
+
+}

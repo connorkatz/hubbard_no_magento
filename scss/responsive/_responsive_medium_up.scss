@@ -1,5 +1,11 @@
 @media #{$break_medium} {
 
+    /* ---------------- Header ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+    #user_nav {
+        #sign_in_link { display: inline-block; }
+    }
+
     /* ---------------- Mobile Nav ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
@@ -33,6 +39,14 @@
 
     #social_links { margin: 20px 0 0 0; }
 
+    /* ---------------- Homepage ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+
+    #publication_logos {
+        padding-bottom: 10px;
+        ul {padding: 5px;}
+    }
+
     /* ---------------- Product Detail -- ------------------------------- */
     /* ------------------------------------------------------------------ */
     #prod_content_upper_container { padding: 0; margin-bottom: 20px; }
@@ -48,11 +62,11 @@
         .bx-pager-item img { display: inline; }
     }
 
-    #prod_details { border-radius: 5px; margin-top: -20px; background: #ffffff; box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
+    #prod_details { border-radius: 3px; margin-top: -20px; background: #ffffff; box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
 
     #prod_title_group {
         position: static; width: 100%; top: auto; left: auto; padding: 0; background: transparent; border: none; text-align: left;
-        h1 { font-size: 30px; text-align: center; padding: 10px 0; margin: 0; background: $color_util_4; border-radius: 5px 5px 0 0; border-top: 1px solid #ffffff; }
+        h1 { font-size: 30px; text-align: center; padding: 10px 0; margin: 0; background: $color_util_4; border-radius: 3px 3px 0 0; }
     }
 
     #prod_price_review_block { background: #ffffff; text-align: left; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.1); padding: 10px 15px }
@@ -64,7 +78,7 @@
         i { font-size: 20px; }
     }
 
-    #prod_details_lower { border-top: 1px solid #ffffff; border-radius: 0 0 5px 5px; padding: 0; }
+    #prod_details_lower { border-top: 1px solid #ffffff; border-radius: 0 0 3px 3px; padding: 0; }
 
     #color_option_name { display: block; }
 
