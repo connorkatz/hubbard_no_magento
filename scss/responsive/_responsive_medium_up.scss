@@ -80,10 +80,12 @@
 
     #prod_details_lower { border-top: 1px solid #ffffff; border-radius: 0 0 3px 3px; padding: 0; }
 
-    #color_option_name { display: inline-block; margin-right: 10px;}
+    #color_size_container {padding: 15px 15px 0 15px;}
+
+    #color_option_name { display: inline-block; width: 50%;}
 
     #size_close {
-        display: inline-block; margin: 0;
+        display: inline-block; margin: 0; width: 50%; text-align: right;
         a {border-radius: 0; font-size: 12px; padding: 5px 8px; border-radius: 10px;}
     }
 

@@ -3620,10 +3620,13 @@ hr.decorative_break_2 {
   padding-top: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
+#color_size_container {
+  font-size: 0; }
+
 #color_option_name {
   display: none;
-  margin: 15px 0 5px 15px;
-  color: #808080; }
+  color: #808080;
+  font-size: 14px; }
 
 #size_close {
   display: block;
@@ -5701,13 +5704,18 @@ hr.decorative_break_2 {
     border-radius: 0 0 3px 3px;
     padding: 0; }
 
+  #color_size_container {
+    padding: 15px 15px 0 15px; }
+
   #color_option_name {
     display: inline-block;
-    margin-right: 10px; }
+    width: 50%; }
 
   #size_close {
     display: inline-block;
-    margin: 0; }
+    margin: 0;
+    width: 50%;
+    text-align: right; }
     #size_close a {
       border-radius: 0;
       font-size: 12px;

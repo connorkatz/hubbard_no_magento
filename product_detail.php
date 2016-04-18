@@ -71,8 +71,10 @@
                     </section><!-- end prod title group -->
                     <div id="prod_details_lower">
                         <form>
-                            <span id="color_option_name">Tan Waxhide</span>
-                            <span id="size_close"><a href="#">Showing &mdash; Wide 10</a></span>
+                            <div id="color_size_container">
+                                <span id="color_option_name">Tan Waxhide</span>
+                                <span id="size_close"><a href="#">Showing &mdash; Wide 10</a></span>
+                            </div><!-- end color size container -->
                             <section id="prod_color_swatches">
                                 <ul>
                                     <li><img src="../images/swatches/swatch_1.png"></li>
