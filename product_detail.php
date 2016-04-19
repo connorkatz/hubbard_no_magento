@@ -73,7 +73,7 @@
                         <form>
                             <div id="color_size_container">
                                 <span id="color_option_name">Tan Waxhide</span>
-                                <span id="size_close"><a href="#">Showing &mdash; Wide 10</a></span>
+                                <span id="size_close"><a href="#"><span>Showing &mdash; </span>Wide 10</a></span>
                             </div><!-- end color size container -->
                             <section id="prod_color_swatches">
                                 <ul>

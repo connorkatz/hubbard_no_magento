@@ -68,6 +68,10 @@
         h1 { font-size: 36px; padding: 15px 5px; }
     }
 
+    #size_close {
+        span {display: inline;}
+    }
+
     .prod_option_select { cursor: pointer; }
 
     .prod_option_items { cursor: pointer; }
