@@ -52,7 +52,7 @@
                 </div><!-- end street 1 -->
                 <div class="shipping-street-2">
                     <div class="input-box">
-                        <input type="text">
+                        <input type="text" placeholder="Apt, Suite, etc. (optional)">
                     </div>
                 </div><!-- end street 2 -->
                 <div class="shipping-city">
@@ -77,7 +77,15 @@
                         </div>
                     </div>
                 </div><!-- end zipcode -->
-                <div class="shipping-telephone">
+                <div class="shipping-country short_1">
+                    <label>Country</label>
+                    <div class="input-box">
+                        <select>
+                            <option>United States</option>
+                        </select>
+                    </div>
+                </div><!-- end zipcode -->
+                <div class="shipping-telephone short_2">
                     <label>Phone</label>
                     <div class="input-box">
                         <div class="input-box">

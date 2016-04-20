@@ -138,7 +138,7 @@
             <span>$220</span>
         </div><!-- end header row -->
         <ul class="product_list_items">
-            <li class="no_stock">
+            <li class="not_available">
                 <a href="/product_detail.php">
                     <img src="../images/product_images/off_white/boot_up_black_suede.jpg">
                     <h3>Black Suede</h3>
@@ -189,7 +189,7 @@
                     <h3>Almost Black</h3>
                 </a>
             </li>
-            <li class="no_stock">
+            <li class="not_available">
                 <a href="/product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_cordovan.jpg">
                     <h3>Cordovan</h3>

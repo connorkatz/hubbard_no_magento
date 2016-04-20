@@ -93,8 +93,8 @@
     margin: 10px 0 0 10px;
     padding: 10px 5px;
     overflow: hidden; }
-    .product_list_items li.no_stock img, #cart_preview_crossell ul li.no_stock img {
-      opacity: 0.3; }
+    .product_list_items li.not_available, #cart_preview_crossell ul li.not_available {
+      display: none; }
     .product_list_items li.waitlist .stock_message, #cart_preview_crossell ul li.waitlist .stock_message {
       display: block; }
   .product_list_items strong, #cart_preview_crossell ul strong {
@@ -3648,7 +3648,9 @@ hr.decorative_break_2 {
     border-bottom: 2px solid transparent;
     margin-bottom: 5px; }
   #prod_color_swatches li.active {
-    border-color: rgba(0, 0, 0, 0.3); }
+    border-color: #808080; }
+  #prod_color_swatches li.not_available {
+    display: none; }
 
 .prod_option_group {
   margin-top: 5px;

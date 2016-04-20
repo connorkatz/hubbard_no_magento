@@ -474,7 +474,8 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
     margin: 0 5px;
     ul { font-size: 0; text-align: center; }
     li { display: inline-block; width: 25%; max-width: 150px; padding: 0 2px 3px 2px; border-bottom: 2px solid transparent; margin-bottom: 5px; }
-    li.active { border-color: rgba(0, 0, 0, 0.3); }
+    li.active { border-color: $color_util_2; }
+    li.not_available {display: none;}
 }
 
 .prod_option_group {

@@ -149,7 +149,7 @@
                                 </div>
                             </div>
                         </div><!-- end zipcode -->
-                        <div class="billing-country">
+                        <div class="billing-country short_1">
                             <label>Country</label>
                             <div class="input-box">
                                 <select>
@@ -157,7 +157,7 @@
                                 </select>
                             </div>
                         </div><!-- end zipcode -->
-                        <div class="billing-telephone">
+                        <div class="billing-telephone short_2">
                             <label>Phone</label>
                             <div class="input-box">
                                 <div class="input-box">

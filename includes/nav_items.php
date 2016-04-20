@@ -59,5 +59,5 @@
 </li>
 <li><a href="#">Accessories</a></li>
 <li><a href="#">Locations</a></li>
-<li><a href="#">Reviews</a></li>
-<li><a href="#">About</a></li>
+<li><a href="#">Story</a></li>
+<li><a href="#">Blog</a></li>

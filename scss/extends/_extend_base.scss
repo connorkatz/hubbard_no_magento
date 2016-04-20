@@ -62,9 +62,7 @@
     font-size: 0; margin: 10px 0 0 -10px; text-align: center; padding: 0 0 15px 0;
     li {
         position: relative; display: inline-block; background: $color_util_4; border-radius: 3px; width: calc(50% - 10px); margin: 10px 0 0 10px; padding: 10px 5px; overflow: hidden;
-        &.no_stock {
-            img { opacity: 0.3; }
-        }
+        &.not_available { display: none; }
         &.waitlist {
             .stock_message { display: block; }
         }

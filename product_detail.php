@@ -78,7 +78,7 @@
                             <section id="prod_color_swatches">
                                 <ul>
                                     <li><img src="../images/swatches/swatch_1.png"></li>
-                                    <li><img src="../images/swatches/swatch_2.png"></li>
+                                    <li class="not_available"><img src="../images/swatches/swatch_2.png"></li>
                                     <li class="active"><img src="../images/swatches/swatch_3.png"></li>
                                     <li><img src="../images/swatches/swatch_4.png"></li>
                                     <li><img src="../images/swatches/swatch_5.png"></li>

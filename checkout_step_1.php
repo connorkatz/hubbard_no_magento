@@ -80,7 +80,7 @@
                         </div>
                     </div>
                 </div><!-- end zipcode -->
-                <div class="shipping-country">
+                <div class="shipping-country short_1">
                     <label>Country</label>
                     <div class="input-box">
                         <select>
@@ -88,7 +88,7 @@
                         </select>
                     </div>
                 </div><!-- end zipcode -->
-                <div class="shipping-telephone">
+                <div class="shipping-telephone short_2">
                     <label>Phone</label>
                     <div class="input-box">
                         <div class="input-box">
