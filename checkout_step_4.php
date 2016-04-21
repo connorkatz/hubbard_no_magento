@@ -9,6 +9,12 @@
     </div><!-- end place order top -->
 
     <h2>Order Review</h2>
+
+    <section id="mobile_review_total">
+        <label>Order Total</label>
+        <span>$583.75</span>
+    </section><!-- end mobile review total-->
+
     <section id="checkout_order_review">
         <section class="checkout_review_block">
             <h6>Customer Information</h6>
@@ -52,10 +58,6 @@
 
     </section><!-- end order review -->
 
-    <section id="mobile_review_total">
-        <label>Order Total</label>
-        <span>$583.75</span>
-    </section><!-- end mobile review total-->
 
     <div id="place_order_bottom" class="place_order">
         <button type="button" onclick="window.location.href = '/checkout_thank_you.php'"><i class="fa fa-refresh fa-spin"></i><span>Place Order</span></button>

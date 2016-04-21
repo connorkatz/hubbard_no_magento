@@ -288,7 +288,7 @@
 }
 
 #mobile_review_total {
-    font-size: 0; color: $color_text_dark; border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 20px 0; text-transform: uppercase;
+    font-size: 0; color: $color_text_dark; padding: 20px 15px; margin-bottom: 10px; text-transform: uppercase; background: #ffffff; box-shadow: 0 0 1px rgba(0,0,0,0.2);
     label { display: inline-block; width: 50%; font-size: 20px; font-weight: 700; }
     span { display: inline-block; width: 50%; font-size: 20px; font-weight: 700; text-align: right; }
 }
