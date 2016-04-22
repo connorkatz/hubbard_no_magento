@@ -281,7 +281,40 @@
                 <div class="modal_content">
                     <div class="modal_content_inner">
                         <div id="size_guide_details">
-                            <p>Cut true to size</p>
+                            <h4>Cut true to size</h4>
+                            <a href="#" id="size_guide_more_info_toggle">More Information</a>
+                            <div id="size_guide_more_info">
+                                <p>Samuel Hubbard strives to produce shoes that are true to size.</p>
+                                <p>Many people ask us why shoes from different brands fit differently.</p>
+                                <p>To begin with, many shoe manufacturers rush to market every season with new styles
+                                    and don't take the time to perfect the fit. Generally at Hubbard we lean towards a
+                                    roomy, generous fit. We use tall toe boxes to allow wiggle room for the toes and
+                                    allow better air circulation around the feet. The greater comfort of our shoes is in
+                                    part created by building on 'relaxed fit' lasts (the form on which the shoes are
+                                    shaped).</p>
+
+                                <h5>What size do I wear?</h5>
+
+                                <p>If you are not sure what size you wear, we recommend that you print out and use our
+                                    <a href="#">Foot Measuring Tool</a>.</p>
+                                <p>Print out the measuring tool and piece the two pages together using the alignment
+                                    arrows. You can also carefully trace your
+                                    foot on paper and look up your size on the same chart in either inches or
+                                    centimeters. Make sure you are standing, wearing the socks you will wear with your
+                                    new shoes. Finding your size is explained on the tool itself.</p>
+                                <p>This is useful to do because then you will know what size you really should wear.
+                                    Because many shoe stores don't carry wide widths they encourage people to buy a
+                                    longer shoe to make room for what is a wider foot and not a longer foot. When these
+                                    people measure their feet and then order one of our wide width shoes they find out
+                                    that they fit correctly for the first time.</p>
+                                <h5>European vs American size scale</h5>
+                                <p>Samuel Hubbard shoes are made using the American size scale. Some companies have
+                                    begun to use the European size scale, but there are fewer sizes in that scale. By
+                                    using the American size scale, we can achieve a more accurate fit. If your current
+                                    footwear is are marked in European sizes, you can use our size conversion chart
+                                    below to find your American size. Or, use the <a href="#">Foot Measuring Tool</a>.
+
+                            </div><!-- end size guide more info -->
                             <ul>
                                 <li><span>Medium:</span> D Width</li>
                                 <li><span>Wide:</span> EE Width</li>

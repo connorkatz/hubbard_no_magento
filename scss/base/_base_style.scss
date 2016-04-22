@@ -508,7 +508,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 
 #size_guide_details {
     padding: 0 2px; text-align: center;
-    p { font-size: 16px; margin-bottom: 10px; color: $color_text_dark; }
+    h4 {color: $color_text_dark; font-size: 16px; font-weight: 700;}
     p#print_warning { font-size: 14px; font-weight: 300; }
     > ul { font-size: 0; font-weight: 300; }
     > ul li { display: inline-block; font-size: 16px; padding: 5px 10px; }
@@ -516,6 +516,12 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
     a#foot_measure_tool { display: block; padding: 10px; max-width: 250px; margin: 10px auto; color: $color_text_white; background: $color_brand_secondary; border-radius: 5px; }
     a#foot_measure_tool:before { content: '\f02f'; font-family: $font_fontAwesome; margin-right: 10px; }
     > a { display: inline-block; padding: 10px; }
+}
+
+#size_guide_more_info {
+    display: none; text-align: justify;
+    p {font-size: 14px;}
+    h5 {text-align: center; font-family: $font_din_regular; color: $color_text_dark; text-transform: uppercase; border-bottom: 1px solid rgba(0,0,0,0.1); margin-bottom: 15px; font-size: 22px;}
 }
 
 #size_conversion_chart {

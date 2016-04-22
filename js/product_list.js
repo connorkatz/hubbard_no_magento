@@ -3,7 +3,7 @@
 // -------------------------------------
 function showFilterList(filterList) {
     $j('.filter_list_items').each(function() {
-       hideFilterList($j(this));
+        hideFilterList($j(this));
     });
     filterList.prev().addClass('active');
     filterList.slideDown('fast');
@@ -58,6 +58,21 @@ function resetAllFilters() {
     });
 }
 
+function setupProductListGrid() {
+    var numItemGroups = $j('.product_list_group_block').length;
+    var shortList = 0;
+    $j('.product_list_items').each(function() {
+        var numItems =  $j(this).children().length;
+        var shortListThreshold = 3;
+        if(numItems <= shortListThreshold) {
+            shortList++;
+        }
+    });
+    if(numItemGroups == shortList) {
+        $j('.product_list_items').addClass('short_list');
+    }
+}
+
 // -------------------------------------
 // Document Ready
 // -------------------------------------
@@ -92,5 +107,7 @@ $j(document).ready(function() {
     });
 
     setupOptionListGrid($j('.filter_list_items'));
+
+    setupProductListGrid();
 
 }); // end document ready

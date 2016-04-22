@@ -92,6 +92,9 @@
         .stock_message { font-size: 12px; }
     }
     @media #{$break_large} {
+        &.short_list {
+            li {width: calc((100% / 3) - 10px);}
+        }
         li { width: calc((100% / 4) - 10px); }
         a:hover {
             h3 span { color: $color_text_dark; }

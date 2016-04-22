@@ -77,6 +77,12 @@ $j(document).ready(function() {
         nextText: '&#xf105;'
     });
 
+    $j('#size_guide_more_info_toggle').click(function() {
+        console.log('test');
+        $j('#size_guide_more_info').slideDown();
+        return false;
+    });
+
     // lifestyle images slider
     var lifestyleSlider = $j('#lifestyle_images_inner > ul').bxSlider({
         oneToOneTouch: false,

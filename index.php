@@ -46,5 +46,6 @@
     <section class="homepage_feature_block">
         Homepage Feature content
     </section><!-- end homepage feature -->
+    <script src="../js/get_url_param.js"></script>
     <script src="../js/homepage.js"></script>
 <?php include 'includes/footer.php'; ?>
