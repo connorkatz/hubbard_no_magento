@@ -17,7 +17,7 @@
                     <div class="menu_cat_links">
                         <a href="/product_list.php">Go to Work</a>
                         <ul>
-                            <li><a href="/product_list.php">View Collection ></a></li>
+                            <li><a href="/product_list.php">View Collection</a></li>
                             <li><a href="/product_detail.php">Market Cap</a></li>
                             <li><a href="/product_detail.php">Founder</a></li>
                             <li><a href="/product_detail.php">Tipping Point</a></li>
@@ -31,7 +31,7 @@
                     <div class="menu_cat_links">
                         <a href="/product_list.php">Un-Sneaker</a>
                         <ul>
-                            <li><a href="/product_list.php">View Collection ></a></li>
+                            <li><a href="/product_list.php">View Collection</a></li>
                             <li><a href="/product_detail.php">Hubbard Free</a></li>
                             <li><a href="/product_detail.php">Getaway</a></li>
                             <li><a href="/product_detail.php">Boot-Up</a></li>
@@ -44,7 +44,7 @@
                     <div class="menu_cat_links">
                         <a href="/product_list.php">Limited Edition</a>
                         <ul>
-                            <li><a href="/product_list.php">View Collection ></a></li>
+                            <li><a href="/product_list.php">View Collection</a></li>
                             <li><a href="/product_detail.php">Hubbard Free</a></li>
                         </ul>
                     </div>

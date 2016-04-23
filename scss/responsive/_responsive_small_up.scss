@@ -80,13 +80,13 @@
     }
 
     #mobile_nav_items .menu_cat_links {
-        width: calc(100% - 190px); font-size: 14px; vertical-align: middle; padding: 0 0 0 15px;
+        width: calc(100% - 190px); text-align: left; font-size: 14px; vertical-align: middle; padding: 0 0 0 15px;
         > a { font-size: 22px; height: auto; padding: 5px; }
         li {
             display: inline-block; padding: 5px;
         }
         li:first-of-type {
-            a { color: $color_text_medium; font-weight: 400; }
+            a {font-weight: 400; }
         }
     }
 
