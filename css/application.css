@@ -2905,33 +2905,31 @@ hr.decorative_break_2 {
   vertical-align: middle;
   width: calc(100% - 240px); }
 
-#main_nav_items {
-  text-align: center; }
-  #main_nav_items > li {
-    display: inline-block; }
-  #main_nav_items > li > a {
-    display: inline-block;
-    font-size: 22px;
-    color: #4d4d4d;
-    text-transform: uppercase;
-    padding: 15px;
-    font-family: "DINCondensed-Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased; }
-  #main_nav_items > li.active > a {
-    color: #ffa400; }
-  #main_nav_items .nav_lvl_1 > a:after {
-    display: inline-block;
-    font-family: "FontAwesome";
-    position: relative;
-    top: -2px;
-    margin-left: 10px;
-    content: '\f107';
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.3);
-    vertical-align: middle;
-    color: rgba(0, 0, 0, 0.4); }
-  #main_nav_items .nav_lvl_1.active > a:after {
-    content: '\f106'; }
+#main_nav_items > li {
+  display: inline-block; }
+#main_nav_items > li > a {
+  display: inline-block;
+  font-size: 22px;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  padding: 15px;
+  font-family: "DINCondensed-Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased; }
+#main_nav_items > li.active > a {
+  color: #ffa400; }
+#main_nav_items .nav_lvl_1 > a:after {
+  display: inline-block;
+  font-family: "FontAwesome";
+  position: relative;
+  top: -2px;
+  margin-left: 10px;
+  content: '\f107';
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.4); }
+#main_nav_items .nav_lvl_1.active > a:after {
+  content: '\f106'; }
 
 #main_nav_items .nav_lvl_2 {
   display: none;
@@ -3317,7 +3315,7 @@ hr.decorative_break_2 {
     vertical-align: middle; }
     #publication_logos li img {
       width: 100%;
-      opacity: 0.5; }
+      opacity: 0.6; }
   #publication_logos li:first-of-type {
     margin: 0; }
   #publication_logos li:last-of-type {
@@ -3344,7 +3342,7 @@ hr.decorative_break_2 {
 
 #homepage_review_callout_stars {
   margin: 10px 0;
-  color: #ffa400;
+  color: #4d4d4d;
   font-size: 20px; }
 
 /* ---------------- Breadcrumbs ------------------------------------- */

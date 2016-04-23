@@ -148,7 +148,6 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 #main_nav { display: none; margin-top: 8px; padding-left: 25px; vertical-align: middle; width: calc(100% - 240px);}
 
 #main_nav_items {
-    text-align: center;
     > li { display: inline-block; }
     > li > a { display: inline-block; font-size: 22px; color: $color_text_dark; text-transform: uppercase; padding: 15px; font-family: $font_din_regular; -webkit-font-smoothing: antialiased; }
     > li.active > a { color: $color_brand_primary; }
@@ -314,7 +313,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
     ul { font-size: 0; text-align: center; padding: 15px 10px 10px 10px; }
     li {
         display: inline-block; width: calc(100% / 3); padding: 0 5px; max-width: 225px; vertical-align: middle;
-        img { width: 100%; opacity: 0.5; }
+        img { width: 100%; opacity: 0.6; }
     }
     li:first-of-type { margin: 0; }
     li:last-of-type { display: none; }
@@ -330,7 +329,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
     footer { margin: 10px 0 0 0; font-style: italic; }
 }
 
-#homepage_review_callout_stars { margin: 10px 0; color: $color_brand_primary; font-size: 20px; }
+#homepage_review_callout_stars { margin: 10px 0; color: $color_text_dark; font-size: 20px; }
 
 #homepage_review_nav_pages {
     @extend %slider_pages;
