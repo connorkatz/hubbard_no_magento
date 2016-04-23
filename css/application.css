@@ -3283,9 +3283,9 @@ hr.decorative_break_2 {
       right: 10px; }
   @media (min-width: 1000px) {
     #homepage_hero .full_width_slideshow {
-      padding-top: 35%; }
+      padding-top: 40%; }
     #homepage_hero .slide_item {
-      padding-top: 35%; } }
+      padding-top: 40%; } }
   @media (min-width: 1050px) {
     #homepage_hero .full_width_slide_arrow {
       display: block; } }
