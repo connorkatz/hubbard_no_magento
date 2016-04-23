@@ -112,7 +112,7 @@
         padding-bottom: 15px;
         p { margin-bottom: 0px; font-size: 10px; }
         li {
-            width: 25%; padding: 0 2%; max-height: none;
+            width: calc(25% - 40px); padding: 0 20px; max-height: none;
             img { height: auto; }
         }
         li:last-of-type { display: inline-block; }

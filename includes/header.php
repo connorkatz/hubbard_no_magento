@@ -46,6 +46,11 @@
                     </a>
                 </section><!-- end logo container -->
                 <section id="header_right">
+                    <nav id="main_nav">
+                        <ul id="main_nav_items">
+                            <?php include 'nav_items.php'; ?>
+                        </ul>
+                    </nav><!-- end main nav -->
                     <section id="user_nav">
                         <ul>
                             <li id="search_link" class="link"><a href="#"><i class="fa fa-search"></i><span>Search</span></a></li>
@@ -54,11 +59,6 @@
                             <li id="cart_link"><a href="/cart.php" id="cart_icon" class="has_items"><span>3</span></a></li>
                         </ul>
                     </section><!-- end user nav -->
-                    <nav id="main_nav">
-                        <ul id="main_nav_items">
-                            <?php include 'nav_items.php'; ?>
-                        </ul>
-                    </nav><!-- end main nav -->
                 </section><!-- end header right -->
             </div><!-- end site header inner -->
         </header><!-- end site header -->

@@ -17,7 +17,7 @@
     #mobile_nav_toggle { display: none }
 
     #logo_container {
-        width: 250px; padding: 10px 0; margin-left: 20px;
+        width: 250px; padding: 10px 0; margin-left: 20px; vertical-align: middle;
         &.no_search {width: 250px;}
         p { display: block; }
     }
@@ -27,13 +27,13 @@
     #header_right { width: calc(100% - 270px); padding: 0 10px 0 0; }
 
     #user_nav {
-        padding: 0; margin: 15px 15px 0 0;
+        width: 300px; display: inline-block; padding: 0 15px 0 0; vertical-align: middle; margin-top: 25px;
         li.link { display: inline-block; }
         li.link a:hover { color: #cccccc; }
         a:hover { color: #cccccc; }
     }
 
-    #header_right { position: static; }
+    #header_right { position: static;}
 
     #cart_icon {
         width: 35px; top: -1px;
@@ -43,7 +43,7 @@
     /* ---------------- Main Nav ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
-    #main_nav { display: block; }
+    #main_nav { display: inline-block; }
 
     /* ---------------- Mobile Nav ------------------------------------------ */
     /* ------------------------------------------------------------------ */

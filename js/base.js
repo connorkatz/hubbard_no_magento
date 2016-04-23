@@ -31,26 +31,16 @@ function hideMobileSubnav(parent) {
 // Main Nav Functions
 // -------------------------------------
 
-function showMainNavSubmenu() {
-    $j('#main_nav_items li.nav_lvl_1').hoverIntent({
-        over: function() {
-            jQuery(this).find('.nav_lvl_2').slideDown(100);
-        },
-        out: function() {
-            jQuery(this).find('.nav_lvl_2').slideUp(50);
-        },
-        timeout: 300
-    });
-    $j('#main_nav_items .nav_lvl_2').hover(
-        function() {
-            $j(this).addClass('active');
-            $j(this).prev().addClass('active')
-        },
-        function() {
-            $j(this).removeClass('active');
-            $j(this).prev().removeClass('active')
-        }
-    );
+function showMainSubnav(parent) {
+    hideMainSubnav();
+    parent.addClass('active');
+    parent.children('.nav_lvl_2').slideDown('100');
+}
+
+function hideMainSubnav() {
+    var mainNavItems = $j('#main_nav_items li');
+    mainNavItems.removeClass('active');
+    mainNavItems.find('.nav_lvl_2').hide();
 }
 
 // -------------------------------------
@@ -182,7 +172,16 @@ $j(document).ready(function() {
     });
 
     // show main nav submenu
-    showMainNavSubmenu();
+    $j('#main_nav_items .nav_lvl_1 > a').click(function() {
+        var $parent = $j(this).parent();
+        if($parent.hasClass('active')) {
+            hideMainSubnav();
+        }
+        else {
+            showMainSubnav($parent);
+        }
+        return false;
+    });
 
     // setup scroll arrow
     scrollArrowSetup();
