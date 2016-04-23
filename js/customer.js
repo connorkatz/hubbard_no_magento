@@ -1,6 +1,19 @@
 // -------------------------------------
 // Document Ready
 // -------------------------------------
+function hideOrderDetails(item) {
+    item.removeClass('active');
+    item.children('.customer_orders_details').hide();
+}
+
+function showOrderDetails(item) {
+    item.addClass('active');
+    item.children('.customer_orders_details').slideDown('fast');
+}
+
+// -------------------------------------
+// Document Ready
+// -------------------------------------
 $j(document).ready(function() {
 
     $j('#customer_account_nav a').click(function() {
@@ -23,6 +36,16 @@ $j(document).ready(function() {
         else {
             $this.addClass('active');
             passwordContent.slideDown();
+        }
+    });
+
+    $j('.customer_orders_item > ul').click(function() {
+        var $parent = $j(this).parent();
+        if($parent.hasClass('active')) {
+            hideOrderDetails($parent);
+        }
+        else {
+            showOrderDetails($parent);
         }
     });
 

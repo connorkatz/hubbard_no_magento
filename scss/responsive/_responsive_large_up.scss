@@ -115,8 +115,13 @@
     /* ---------------- Shopping Cart ------------------------------------ */
     /* ------------------------------------------------------------------ */
 
-    #cart_price_summary {
-        padding: 15px 25px;
+    #cart_price_summary { padding: 15px 25px; }
+
+
+    /* ---------------- Customer ---------------------------- */
+    /* ------------------------------------------------------------------ */
+    .customer_orders_item {
+        > ul:hover {background: $color_background_secondary; color: $color_text_white; cursor: pointer;}
     }
 
     /* ---------------- Static Content Pages ------------------------------------------ */

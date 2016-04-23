@@ -5,7 +5,7 @@
 %button_basic { background: $color_util_2; color: $color_text_white; text-align: center; border: none; font-size: 12px; text-transform: uppercase; }
 
 %button_primary {
-    font-family: $font_roboto; display: block; width: 100%; padding: 20px 0; text-align: center; background: $color_brand_secondary; border: none; color: $color_text_white; font-size: 22px; border-radius: 3px; cursor: pointer;
+    font-family: $font_roboto; display: block; width: 100%; padding: 20px 0; text-align: center; background: $color_brand_secondary; border: none; color: $color_text_white; font-size: 22px; border-radius: 3px; cursor: pointer; line-height: 1;
     @media #{$break_large} {
         &:hover { background: $color_brand_primary; }
     }
@@ -134,8 +134,6 @@
 // Shopping Cart
 // -------------------------
 
-%cart_item_section {
-    display: inline-block; vertical-align: middle; font-size: 12px;
-}
+%cart_item_section { display: inline-block; vertical-align: middle; font-size: 12px; }
 
 
