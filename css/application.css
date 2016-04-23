@@ -166,38 +166,39 @@
     .product_list_items a:hover h3 span, #cart_preview_crossell ul a:hover h3 span {
       color: #4d4d4d; } }
 
-#lifestyle_nav_pages, #review_nav_pages {
+#homepage_review_nav_pages, #lifestyle_nav_pages, #review_nav_pages {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
   margin: 15px 0; }
-  #lifestyle_nav_pages .bx-pager-item, #review_nav_pages .bx-pager-item {
+  #homepage_review_nav_pages .bx-pager-item, #lifestyle_nav_pages .bx-pager-item, #review_nav_pages .bx-pager-item {
     display: inline-block;
     margin: 0 3px; }
-  #lifestyle_nav_pages .bx-pager-item a, #review_nav_pages .bx-pager-item a {
+  #homepage_review_nav_pages .bx-pager-item a, #lifestyle_nav_pages .bx-pager-item a, #review_nav_pages .bx-pager-item a {
     display: block;
     width: 10px;
     height: 10px;
     border-radius: 10px;
-    border: 1px solid #808080;
+    border: 1px solid #cdcdcd;
     font-size: 0;
     text-indent: -9999px; }
-  #lifestyle_nav_pages .bx-pager-item a.active, #review_nav_pages .bx-pager-item a.active {
-    background: #808080; }
+  #homepage_review_nav_pages .bx-pager-item a.active, #lifestyle_nav_pages .bx-pager-item a.active, #review_nav_pages .bx-pager-item a.active {
+    background: #cdcdcd;
+    border-color: #b3b3b3; }
 
-.lifestyle_nav_arrow, .review_nav_arrow {
+.homepage_review_nav_arrow, .lifestyle_nav_arrow, .review_nav_arrow {
   display: none;
   font-family: "FontAwesome";
   vertical-align: middle; }
-  .lifestyle_nav_arrow a, .review_nav_arrow a {
+  .homepage_review_nav_arrow a, .lifestyle_nav_arrow a, .review_nav_arrow a {
     display: block;
-    color: #808080;
+    color: rgba(0, 0, 0, 0.3);
     font-size: 18px;
     padding: 5px; }
-  .lifestyle_nav_arrow a.disabled, .review_nav_arrow a.disabled {
+  .homepage_review_nav_arrow a.disabled, .lifestyle_nav_arrow a.disabled, .review_nav_arrow a.disabled {
     color: #f9f9f9; }
   @media (min-width: 1050px) {
-    .lifestyle_nav_arrow, .review_nav_arrow {
+    .homepage_review_nav_arrow, .lifestyle_nav_arrow, .review_nav_arrow {
       display: inline-block; } }
 
 #review_callouts, #prod_higlights, #prod_description, #prod_reviews {
@@ -3060,7 +3061,6 @@ hr.decorative_break_2 {
 #mobile_nav_items .nav_lvl_2 {
   display: none;
   background: #ffffff;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 #mobile_nav_items .callout_categories {
@@ -3224,7 +3224,8 @@ hr.decorative_break_2 {
 /* ---------------- Homepage ----------------------------------------- */
 /* ------------------------------------------------------------------ */
 #homepage_hero {
-  background: #f7f6f5; }
+  background: #f7f6f5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
   #homepage_hero .full_width_slideshow {
     position: relative;
     overflow: hidden;
@@ -3292,12 +3293,14 @@ hr.decorative_break_2 {
 #publication_logos {
   padding-bottom: 10px;
   text-align: center;
-  background: #f7f6f5; }
+  background: #f2f1f0;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05); }
   #publication_logos p {
     display: inline-block;
     text-transform: uppercase;
     font-size: 9px;
-    color: #808080; }
+    color: #b3b3b3; }
   #publication_logos ul {
     font-size: 0;
     text-align: center;
@@ -3306,7 +3309,7 @@ hr.decorative_break_2 {
     display: inline-block;
     width: calc(100% / 3);
     padding: 0 1%;
-    max-width: 250px;
+    max-width: 225px;
     max-height: 4%;
     vertical-align: middle; }
     #publication_logos li img {
@@ -3317,6 +3320,30 @@ hr.decorative_break_2 {
     margin: 0; }
   #publication_logos li:last-of-type {
     display: none; }
+
+#homepage_review_callouts {
+  background: #f9f9f9;
+  border-top: 1px solid #ffffff; }
+
+#homepage_review_callouts_inner {
+  padding: 10px 15px;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #808080;
+  text-align: center; }
+  #homepage_review_callouts_inner blockquote {
+    line-height: 1.5;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: 300; }
+  #homepage_review_callouts_inner footer {
+    margin: 10px 0 0 0;
+    font-style: italic; }
+
+#homepage_review_callout_stars {
+  margin: 10px 0;
+  color: #ffa400;
+  font-size: 20px; }
 
 /* ---------------- Breadcrumbs ------------------------------------- */
 /* ------------------------------------------------------------------ */
@@ -3883,12 +3910,12 @@ hr.decorative_break_2 {
 #review_callouts blockquote {
   text-align: center;
   line-height: 1.5;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 300; }
 #review_callouts footer {
   text-align: center;
   margin: 10px 0 0 0;
-  font-style: italic;
-  font-weight: 300; }
+  font-style: italic; }
 
 #review_callout_stars {
   text-align: center;
@@ -5072,21 +5099,21 @@ hr.decorative_break_2 {
   background: #fafafa; }
 
 #homepage_hero .item_1 .slide_content {
-  background-image: url("../images/homepage_hero/homepage_slide_fill_small_1.jpg"); }
+  background-image: url("../images/homepage_hero/hero_go-to-work_v2.jpg"); }
   @media (min-width: 700px) {
     #homepage_hero .item_1 .slide_content {
-      background-image: url("../images/homepage_hero/homepage_slide_fill_medium_1.jpg"); } }
+      background-image: url("../images/homepage_hero/hero_go-to-work_v2.jpg"); } }
   @media (min-width: 1000px) {
     #homepage_hero .item_1 .slide_content {
-      background-image: url("../images/homepage_hero/homepage_slide_fill_large_1.jpg"); } }
+      background-image: url("../images/homepage_hero/hero_go-to-work_v2.jpg"); } }
 #homepage_hero .item_2 .slide_content {
-  background-image: url("../images/homepage_hero/homepage_slide_fill_small_2.jpg"); }
+  background-image: url("../images/homepage_hero/hero_go-to-work_v3.jpg"); }
   @media (min-width: 700px) {
     #homepage_hero .item_2 .slide_content {
-      background-image: url("../images/homepage_hero/homepage_slide_fill_medium_2.jpg"); } }
+      background-image: url("../images/homepage_hero/hero_go-to-work_v3.jpg"); } }
   @media (min-width: 1000px) {
     #homepage_hero .item_2 .slide_content {
-      background-image: url("../images/homepage_hero/homepage_slide_fill_large_2.jpg"); } }
+      background-image: url("../images/homepage_hero/hero_go-to-work_v3.jpg"); } }
 #homepage_hero .item_3 .slide_content {
   background-image: url("../images/homepage_hero/homepage_slide_fill_small_3.jpg"); }
   @media (min-width: 700px) {
@@ -5269,7 +5296,8 @@ hr.decorative_break_2 {
   #mobile_nav_items .callout_categories li:nth-child(n+6) {
     display: none; }
   #mobile_nav_items .callout_categories a {
-    padding: 20px 20px; }
+    padding: 20px 20px;
+    font-size: 18px; }
 
   #mobile_nav_items .standard_categories > li {
     padding: 15px 25px; }
@@ -5772,7 +5800,7 @@ hr.decorative_break_2 {
   #publication_logos {
     padding-bottom: 10px; }
     #publication_logos ul {
-      padding: 5px; }
+      padding: 10px 5px 5px 5px; }
 
   /* ---------------- Product Detail -- ------------------------------- */
   /* ------------------------------------------------------------------ */

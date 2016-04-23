@@ -25,7 +25,7 @@
                     <a href="/returns">Free Shipping &amp; Returns</a>
                 </p>
                 <p>
-                    <span><a href="/support">Call Us (844) 482-4800</a></span>
+                    <span><a href="/support">Call Us &nbsp; 844.482.4800</a></span>
                 </p>
             </div><!-- end site callout inner -->
         </section><!-- end site callout -->

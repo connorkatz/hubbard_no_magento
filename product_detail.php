@@ -180,7 +180,7 @@
         </section><!-- end lifestyle images -->
 
         <section id="review_callouts">
-            <hr class="decorative_break_2">
+            <hr class="decorative_break">
             <div id="review_callout_stars">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>

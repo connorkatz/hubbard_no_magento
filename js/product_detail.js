@@ -78,7 +78,6 @@ $j(document).ready(function() {
     });
 
     $j('#size_guide_more_info_toggle').click(function() {
-        console.log('test');
         $j('#size_guide_more_info').slideDown();
         return false;
     });

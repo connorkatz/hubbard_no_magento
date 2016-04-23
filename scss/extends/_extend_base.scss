@@ -105,13 +105,13 @@
 %slider_pages {
     display: inline-block; text-align: center; vertical-align: middle; margin: 15px 0;
     .bx-pager-item { display: inline-block; margin: 0 3px; }
-    .bx-pager-item a { display: block; width: 10px; height: 10px; border-radius: 10px; border: 1px solid $color_util_2; font-size: 0; text-indent: -9999px; }
-    .bx-pager-item a.active { background: $color_util_2; }
+    .bx-pager-item a { display: block; width: 10px; height: 10px; border-radius: 10px; border: 1px solid #cdcdcd; font-size: 0; text-indent: -9999px; }
+    .bx-pager-item a.active { background: #cdcdcd; border-color: #b3b3b3;}
 }
 
 %slider_nav_arrow {
     display: none; font-family: $font_fontAwesome; vertical-align: middle;
-    a { display: block; color: $color_text_medium; font-size: 18px; padding: 5px; }
+    a { display: block; color: rgba(0,0,0,0.3); font-size: 18px; padding: 5px; }
     a.disabled { color: $color_text_light; }
     @media #{$break_large} {
         display: inline-block;
