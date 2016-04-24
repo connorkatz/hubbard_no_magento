@@ -1,0 +1,55 @@
+#locations_container {
+    h1 {
+        &:before { content: '\f041'; font-family: $font_fontAwesome; margin-right: 10px}
+    }
+}
+
+#location_results_container {
+    @extend %site_width;
+    @extend %clearfix;
+    padding-bottom: 20px;
+}
+
+#locations_search {
+    @extend %site_width;
+    padding: 0 15px;
+}
+
+#locations_search_inner {
+    padding: 0 15px 10px 15px; margin-bottom: 10px; background: $color_util_5; padding: 15px; border: 1px solid rgba(0,0,0,0.1); border-radius: 5px; overflow: hidden;
+    input {margin-bottom: 5px; padding: 15px 10px;}
+    button {
+        @extend %button_primary;
+        padding: 15px 0;
+    }
+}
+
+#locations_map {
+    @extend %site_width;
+    display: none; height: 400px; margin-bottom: 10px;
+}
+
+#map {
+    img {width: 100%; height: 100%;}
+}
+
+#locations_map_inner { padding: 0 15px; height: 100%;}
+
+#locations_items_container {
+    ul {padding: 5px 15px; font-size: 0;}
+    li {background: $color_util_1; border: 1px solid rgba(0,0,0,0.1); padding: 15px; margin-bottom: 5px; font-weight: 300; border-radius: 3px; font-size: 14px;}
+    h3 {font-size: 14px; font-weight: 700; margin-bottom: 5px; color: $color_text_dark;}
+    address {font-style: normal; line-height: 1.3; font-size: 13px;}
+    span {
+        display: block; margin-top: 10px; font-size: 13px;
+        &:before {font-family: $font_fontAwesome; margin-right: 5px;}
+        &.phone {
+            &:before {content: '\f095';}
+        }
+        &.location {
+            &:before {content: '\f041';}
+        }
+        strong {font-weight: 300;}
+    }
+    a {color: $color_text_base;}
+}

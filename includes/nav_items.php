@@ -55,9 +55,9 @@
     </div><!-- end nav lvl 2 -->
 </li>
 <li>
-    <a href="/product_list.php.php">Women</a>
+    <a href="/product_list.php">Women</a>
 </li>
-<li><a href="#">Accessories</a></li>
-<li><a href="#">Locations</a></li>
+<li><a href="/product_list.php">Accessories</a></li>
+<li><a href="/locations.php">Locations</a></li>
 <li><a href="#">Story</a></li>
 <li><a href="#">Blog</a></li>

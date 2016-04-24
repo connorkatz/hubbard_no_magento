@@ -8,7 +8,7 @@
   font-size: 12px;
   text-transform: uppercase; }
 
-#basic_form_box_inner button, #customer_account_choice li button, #basic_form_box_inner a.button, #customer_account_choice li a.button, #atc_row button, #cart_checkout button, .buttons-set button, .place_order button, #order_continue_shopping_link a {
+#basic_form_box_inner button, #customer_account_choice li button, #basic_form_box_inner a.button, #customer_account_choice li a.button, #atc_row button, #cart_checkout button, .buttons-set button, .place_order button, #order_continue_shopping_link a, #locations_search_inner button {
   font-family: "Roboto Slab", "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
   width: 100%;
@@ -22,7 +22,7 @@
   cursor: pointer;
   line-height: 1; }
   @media (min-width: 1150px) {
-    #basic_form_box_inner button:hover, #customer_account_choice li button:hover, #basic_form_box_inner a.button:hover, #customer_account_choice li a.button:hover, #atc_row button:hover, #cart_checkout button:hover, .buttons-set button:hover, .place_order button:hover, #order_continue_shopping_link a:hover {
+    #basic_form_box_inner button:hover, #customer_account_choice li button:hover, #basic_form_box_inner a.button:hover, #customer_account_choice li a.button:hover, #atc_row button:hover, #cart_checkout button:hover, .buttons-set button:hover, .place_order button:hover, #order_continue_shopping_link a:hover, #locations_search_inner button:hover {
       background: #ffa400; } }
 
 #atc_row button i, #out_of_stock_callout button i, #checkout_summary_coupon_code button i, .buttons-set button i, #mobile_coupon_code button i, .place_order button i, #account_activate_input button i {
@@ -49,7 +49,7 @@
     font-size: 16px;
     font-weight: 300; }
 
-#checkout_content_container:after, #checkout-step-shipping_method dt label:after {
+#checkout_content_container:after, #checkout-step-shipping_method dt label:after, #location_results_container:after {
   visibility: hidden;
   display: block;
   font-size: 0;
@@ -57,7 +57,7 @@
   clear: both;
   height: 0; }
 
-#category_items_block, .product_list_group_block, .prod_option_group, #inventory_message, #atc_row, .category_banner, #site_callout_inner, #site_header_inner, #search_bar, #search_util_links_inner, #main_nav_items .callout_categories ul, #main_nav_items .standard_categories, #site_footer_inner, #breadcrumbs, #prod_content_upper_container, #lifestyle_images_inner, #prod_overview, #cart_preview_item_inner, #cart_preview_crossell, #cart_content_container, .customer_account_block {
+#category_items_block, .product_list_group_block, .prod_option_group, #inventory_message, #atc_row, .category_banner, #site_callout_inner, #site_header_inner, #search_bar, #search_util_links_inner, #main_nav_items .callout_categories ul, #main_nav_items .standard_categories, #site_footer_inner, #breadcrumbs, #prod_content_upper_container, #lifestyle_images_inner, #prod_overview, #cart_preview_item_inner, #cart_preview_crossell, #cart_content_container, .customer_account_block, #location_results_container, #locations_search, #locations_map {
   max-width: 1400px;
   margin: 0 auto; }
 
@@ -2938,7 +2938,7 @@ hr.decorative_break_2 {
   width: 100%;
   z-index: 999;
   left: 0;
-  top: 97px;
+  top: 103px;
   font-size: 0;
   background: #ffffff;
   text-align: center;
@@ -5191,6 +5191,80 @@ hr.decorative_break_2 {
   .modal_content_inner p {
     margin-bottom: 15px; }
 
+#locations_container h1:before {
+  content: '\f041';
+  font-family: "FontAwesome";
+  margin-right: 10px; }
+
+#location_results_container {
+  padding-bottom: 20px; }
+
+#locations_search {
+  padding: 0 15px; }
+
+#locations_search_inner {
+  padding: 0 15px 10px 15px;
+  margin-bottom: 10px;
+  background: #f2f1f0;
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden; }
+  #locations_search_inner input {
+    margin-bottom: 5px;
+    padding: 15px 10px; }
+  #locations_search_inner button {
+    padding: 15px 0; }
+
+#locations_map {
+  display: none;
+  height: 400px;
+  margin-bottom: 10px; }
+
+#map img {
+  width: 100%;
+  height: 100%; }
+
+#locations_map_inner {
+  padding: 0 15px;
+  height: 100%; }
+
+#locations_items_container ul {
+  padding: 5px 15px;
+  font-size: 0; }
+#locations_items_container li {
+  background: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  border-radius: 3px;
+  font-size: 14px; }
+#locations_items_container h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #4d4d4d; }
+#locations_items_container address {
+  font-style: normal;
+  line-height: 1.3;
+  font-size: 13px; }
+#locations_items_container span {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px; }
+  #locations_items_container span:before {
+    font-family: "FontAwesome";
+    margin-right: 5px; }
+  #locations_items_container span.phone:before {
+    content: '\f095'; }
+  #locations_items_container span.location:before {
+    content: '\f041'; }
+  #locations_items_container span strong {
+    font-weight: 300; }
+#locations_items_container a {
+  color: #696A6D; }
+
 @media (min-width: 400px) {
   /* ---------------- Header ------------------------------------------ */
   /* ------------------------------------------------------------------ */
@@ -5745,7 +5819,19 @@ hr.decorative_break_2 {
     width: calc(100% - 100px);
     text-align: right; }
   #customer_order_items_summary span {
-    width: 100px; } }
+    width: 100px; }
+
+  /* ---------------- Locations --------------------------------- */
+  /* ------------------------------------------------------------------ */
+  #locations_map {
+    display: block; }
+
+  #locations_items_container li {
+    display: inline-block;
+    width: 49.5%;
+    margin-bottom: 10px; }
+    #locations_items_container li:nth-child(odd) {
+      margin-right: 1%; } }
 /* end media query */
 @media (min-width: 1000px) {
   /* ---------------- Header ------------------------------------------ */
@@ -6047,7 +6133,6 @@ hr.decorative_break_2 {
     width: 70%;
     padding: 0 25px 100px 15px; }
 
-  /* ------ Checkout Page Conetnt ---- */
   .buttons-set {
     overflow: hidden;
     border-top: 1px dotted rgba(0, 0, 0, 0.1);
@@ -6058,7 +6143,54 @@ hr.decorative_break_2 {
     .buttons-set p {
       float: left;
       width: 30%;
-      margin-top: 20px; } }
+      margin-top: 20px; }
+
+  /* ---------------- Locations --------------------------------- */
+  /* ------------------------------------------------------------------ */
+  #location_results_container {
+    padding-bottom: 50px; }
+
+  #locations_search_inner input {
+    width: 400px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    padding: 17px 10px;
+    vertical-align: middle; }
+  #locations_search_inner button {
+    width: 250px;
+    display: inline-block;
+    vertical-align: middle; }
+
+  #locations_map {
+    width: calc(100% - 300px);
+    height: 600px;
+    float: right;
+    position: relative;
+    padding-left: 15px; }
+
+  #locations_map_inner {
+    padding: 0 15px 0 0; }
+
+  #locations_gradient_overlay {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../images/white_transparent_gradient.png") bottom left repeat-x; }
+
+  #locations_items_container {
+    width: 300px;
+    float: left;
+    position: relative; }
+    #locations_items_container ul {
+      padding: 0 1px 0 15px;
+      height: 600px;
+      overflow: scroll; }
+    #locations_items_container li {
+      display: block;
+      width: 100%;
+      margin-bottom: 5px; } }
 /* end media query */
 @media (min-width: 1150px) {
   /* ---------------- Global ------------------------------------------ */
@@ -6240,13 +6372,6 @@ hr.decorative_break_2 {
   /* ------------------------------------------------------------------ */
   #main_nav_items > li > a {
     font-size: 24px; }
-
-  #main_nav_items .menu_cat_links {
-    font-size: 16px; }
-    #main_nav_items .menu_cat_links li {
-      margin-bottom: 8px; }
-    #main_nav_items .menu_cat_links > a {
-      font-size: 24px; }
 
   /* ---------------- Cart Preview ------------------------------------ */
   /* ------------------------------------------------------------------ */

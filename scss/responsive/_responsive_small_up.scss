@@ -409,6 +409,16 @@
         span {width: 100px;}
     }
 
+    /* ---------------- Locations --------------------------------- */
+    /* ------------------------------------------------------------------ */
+    #locations_map {display: block;}
+
+    #locations_items_container {
+        li {
+            display: inline-block; width: 49.5%; margin-bottom: 10px;
+            &:nth-child(odd) {margin-right: 1%}
+        }
+    }
 }
 
 /* end media query */

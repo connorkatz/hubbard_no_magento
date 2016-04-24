@@ -183,13 +183,41 @@
 
     #checkout_layout_block_2 { width: 70%; padding: 0 25px 100px 15px; }
 
-
-    /* ------ Checkout Page Conetnt ---- */
     .buttons-set {
         overflow: hidden; border-top: 1px dotted rgba(0, 0, 0, 0.1); padding: 20px 0 0 0;
         button { float: right; width: 70%; }
         p { float: left; width: 30%; margin-top: 20px; }
     }
+
+    /* ---------------- Locations --------------------------------- */
+    /* ------------------------------------------------------------------ */
+
+    #location_results_container {
+        padding-bottom: 50px;
+    }
+
+    #locations_search_inner {
+        input {width: 400px; display: inline-block; margin: 0 5px 0 0; padding: 17px 10px; vertical-align: middle;}
+        button {width: 250px; display: inline-block; vertical-align: middle;}
+    }
+
+    #locations_map {width: calc(100% - 300px); height: 600px; float: right; position: relative; padding-left: 15px;}
+
+    #locations_map_inner { padding: 0 15px 0 0;}
+
+    #locations_gradient_overlay {
+        position: absolute; left: 0; bottom: 0; width: 100%; height: 100px; background: url('../images/white_transparent_gradient.png') bottom left repeat-x;
+    }
+
+    #locations_items_container {
+        width: 300px; float: left; position: relative;
+        ul {padding: 0 1px 0 15px; height: 600px; overflow: scroll;}
+        li {
+            display: block; width: 100%;
+            margin-bottom: 5px;
+        }
+    }
+
 }
 
 /* end media query */
