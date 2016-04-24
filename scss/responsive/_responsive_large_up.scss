@@ -18,16 +18,16 @@
 
     #logo_container {
         width: 225px; padding: 10px 0; margin-left: 20px; vertical-align: middle;
-        &.no_search {width: 225px;}
+        &.no_search {width: 250px;}
         p { display: block; }
     }
 
     #logo { width: 100%; }
 
-    #header_right { width: calc(100% - 260px); padding: 0 0; }
+    #header_right { width: calc(100% - 295px); padding: 0 0; }
 
     #user_nav {
-        width: 240px; display: inline-block; padding: 0; vertical-align: middle; margin-top: 8px;
+        width: 240px; display: inline-block; padding: 0; vertical-align: middle; margin-top: 10px;
         li.link { display: inline-block; }
         li.link a:hover { color: #cccccc; }
         a:hover { color: #cccccc; }

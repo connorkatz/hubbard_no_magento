@@ -34,7 +34,7 @@ function hideMobileSubnav(parent) {
 function showMainSubnav(parent) {
     hideMainSubnav();
     parent.addClass('active');
-    parent.children('.nav_lvl_2').slideDown('100');
+    parent.children('.nav_lvl_2').fadeIn(100);
 }
 
 function hideMainSubnav() {
