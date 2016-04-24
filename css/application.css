@@ -2910,7 +2910,7 @@ hr.decorative_break_2 {
 #main_nav_items > li > a {
   display: inline-block;
   font-size: 22px;
-  color: #808080;
+  color: #4d4d4d;
   text-transform: uppercase;
   padding: 15px;
   font-family: "DINCondensed-Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -3047,7 +3047,7 @@ hr.decorative_break_2 {
   padding: 15px 20px;
   font-family: "DINCondensed-Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  color: #808080;
+  color: #4d4d4d;
   text-transform: uppercase; }
 #mobile_nav_items .nav_lvl_1 > a:after {
   display: inline-block;

@@ -149,7 +149,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 
 #main_nav_items {
     > li { display: inline-block; }
-    > li > a { display: inline-block; font-size: 22px; color: $color_text_medium; text-transform: uppercase; padding: 15px; font-family: $font_din_regular; -webkit-font-smoothing: antialiased; }
+    > li > a { display: inline-block; font-size: 22px; color: $color_text_dark; text-transform: uppercase; padding: 15px; font-family: $font_din_regular; -webkit-font-smoothing: antialiased; }
     > li.active > a { color: $color_brand_primary; }
     .nav_lvl_1 {
         & > a:after { display: inline-block; font-family: $font_fontAwesome; position: relative; top: -2px; margin-left: 10px; content: '\f107'; font-size: 20px; color: rgba(0, 0, 0, 0.3); vertical-align: middle; color: rgba(0,0,0,0.4); }
@@ -210,7 +210,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 #mobile_nav_items {
     > li { border-top: 1px solid rgba(255, 255, 255, 0.8); border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
     > li:first-child { border-top-color: #ffffff; }
-    > li > a { display: block; padding: 15px 20px; font-family: $font_din_regular; font-size: 18px; color: $color_text_medium; text-transform: uppercase; }
+    > li > a { display: block; padding: 15px 20px; font-family: $font_din_regular; font-size: 18px; color: $color_text_dark; text-transform: uppercase; }
     .nav_lvl_1 > a:after { display: inline-block; float: right; position: relative; top: -1px; font-family: $font_fontAwesome; content: '\f107'; font-size: 20px; color: rgba(0, 0, 0, 0.3); color: $color_text_medium; }
     .nav_lvl_1 > a.active:after { content: '\f106'; }
 }

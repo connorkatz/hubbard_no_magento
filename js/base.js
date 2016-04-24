@@ -2,12 +2,12 @@
 // Mobile Nav Funcitons
 // -------------------------------------
 function showMobileNav() {
-    $j('#mobile_nav').slideDown();
+    $j('#mobile_nav').fadeIn(100);
     $j('#mobile_nav_toggle').addClass('active');
 }
 
 function hideMobileNav() {
-    $j('#mobile_nav').slideUp('fast');
+    $j('#mobile_nav').fadeOut(50);
     $j('#mobile_nav_toggle').removeClass('active');
     $j('#mobile_nav_items .nav_lvl_1').each(function() {
         $j(this).children('a.active').each(function() {
@@ -18,12 +18,12 @@ function hideMobileNav() {
 
 function showMobileSubnav(parent) {
     parent.addClass('active');
-    parent.next().slideDown();
+    parent.next().slideDown(100);
 }
 
 function hideMobileSubnav(parent) {
     parent.removeClass('active');
-    parent.next().slideUp('fast');
+    parent.next().slideUp(100);
 }
 
 
@@ -40,7 +40,7 @@ function showMainSubnav(parent) {
 function hideMainSubnav() {
     var mainNavItems = $j('#main_nav_items li');
     mainNavItems.removeClass('active');
-    mainNavItems.find('.nav_lvl_2').hide();
+    mainNavItems.find('.nav_lvl_2').fadeOut(50);
 }
 
 // -------------------------------------
