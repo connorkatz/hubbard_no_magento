@@ -6,13 +6,14 @@
             <ul>
                 <li><a href="/customer_account.php">My Account</a></li>
                 <li><a href="#">Returns</a></li>
-                <li><a href="#">Order Status</a></li>
-                <li><a href="#">Support</a></li>
+                <li><a href="/customer_order_status.php">Order Status</a></li>
+                <li><a href="/static_support.php">Support</a></li>
+                <li><a href="/customer_order_status.php">Resoling</a></li>
             </ul>
         </section><!-- end footer group -->
         <section class="footer_link_group">
             <ul>
-                <li><a href="#">Find a Store</a></li>
+                <li><a href="/locations.php">Find a Store</a></li>
                 <li><a href="#">Payments &amp; Shipping</a></li>
                 <li><a href="#">Terms &amp; Conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>

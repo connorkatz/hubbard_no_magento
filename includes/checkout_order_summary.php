@@ -1,7 +1,7 @@
 <section id="checkout_layout_block_1">
     <div id="checkout_summary_header">
-        <span class="order_summary_header show active">Show order Summary</span>
-        <span class="order_summary_header hide">Hide order Summary</span>
+        <span class="order_summary_header show active">Show Order Summary</span>
+        <span class="order_summary_header hide">Hide Order Summary</span>
         <span class="order_summary_price">$630</span>
     </div><!-- end checkout summary header -->
 

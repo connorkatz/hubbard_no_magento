@@ -63,6 +63,8 @@
                         <i id="cvv_info_toggle" class="fa fa-question-circle">
                             <div id="cvv_info">
                                 <p>Credit Card Security Code</p>
+                                <p>3 digits, usually found on back of the card</p>
+                                <p>American Express has 4 digits on the front</p>
                             </div><!-- end cvv info -->
                         </i><!-- end c
                     </div><!-- end card cvv -->

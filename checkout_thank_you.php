@@ -1,4 +1,4 @@
-<?php include 'includes/basic_header.php' ?>
+<?php include 'includes/checkout_header.php' ?>
 
 <section id="order_thank_you_content">
 
@@ -18,14 +18,52 @@
     </section><!-- end account activate password -->
 
     <section id="order_followup">
-        <h3>Here is what to expect</h3>
-        <ul>
-            <li><i class="fa fa-check-circle-o"></i><span>You will immediately receive an order confirmation email with all your order details.</span></li>
-            <li><i class="fa fa-check-circle-o"></i><span>Once your order ships, usually within one business day, you will receive a shipping confirmation email with your tracking information.</span></li>
-            <li><i class="fa fa-check-circle-o"></i><span>Your Samuel Hubbard order will arrive via UPS. If no one is available at the delivery location, your order will be left at your usual drop point, for instance your front door, or porch.</span></li>
-            <li><i class="fa fa-check-circle-o"></i><span>If you have any questions, simply give us a call at 844.482.4800 8-5 pacific time M-F. Or, if you prefer email, just write to <a href="mailto:susan@samuelhubbard.com">susan@samuelhubbard.com</a></span></li>
-            <li><i class="fa fa-check-circle-o"></i><span>Thank you again for your order, we look forward to hearing from you again soon. Enjoy your Hubbards!</span></li>
-        </ul>
+        <h3>By the Way<span>How did you hear about us?</span></h3>
+        <form>
+            <ul>
+                <li>
+                    <input type="radio" id="mag_newspaper" name="order_followup">
+                    <label for="mag_newspaper">Magazine/Newspaper Ad</label>
+                    <div class="order_followup_details">
+                        <select>
+                            <option>Please select Magazine/Newspaper</option>
+                        </select>
+                    </div><!-- en followup details -->
+                </li>
+                <li>
+                    <input type="radio" id="press" name="order_followup">
+                    <label for="press">Press (Article, Blog)</label>
+                </li>
+                <li>
+                    <input type="radio" id="friend" name="order_followup">
+                    <label for="friend">Friend/Family</label>
+                </li>
+                <li>
+                    <input type="radio" id="online_ad" name="order_followup">
+                    <label for="online_ad">Online Ad</label>
+                </li>
+                <li>
+                    <input type="radio" id="retail" name="order_followup">
+                    <label for="retail">Retail Store</label>
+                </li>
+                <li>
+                    <input type="radio" id="social" name="order_followup">
+                    <label for="social">Social Media</label>
+                </li>
+                <li>
+                    <input type="radio" id="catalog" name="order_followup">
+                    <label for="catalog">Catalog</label>
+                </li>
+                <li>
+                    <input type="radio" id="other" name="order_followup">
+                    <label for="other">Other</label>
+                    <div class="order_followup_details">
+                        <textarea placeholder="Please Describe"></textarea>
+                    </div><!-- en followup details -->
+                </li>
+            </ul>
+            <button type="submit">Submit</button>
+        </form>
     </section><!-- end order followup -->
 
     <section id="order_social_links">

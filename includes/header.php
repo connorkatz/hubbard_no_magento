@@ -54,7 +54,7 @@
                         <ul>
                             <li id="search_link" class="link"><a href="#"><i class="fa fa-search"></i><span>Search</span></a></li>
                             <li id="sign_in_link" class="link"><a href="/customer_login.php">Sign In</a></li>
-                            <li id="support_link" class="link"><a href="#">Support</a></li>
+                            <li id="support_link" class="link"><a href="/static_support.php">Support</a></li>
                             <li id="cart_link"><a href="/cart.php" id="cart_icon" class="has_items"><span>3</span></a></li>
                         </ul>
                     </section><!-- end user nav -->
@@ -83,6 +83,8 @@
         <nav id="mobile_nav">
             <ul id="mobile_nav_items">
                 <?php include 'nav_items.php'; ?>
+                <li id="mobile_support_link"><a href="/static_support.php">Support</a></li>
+                <li id="mobile_account_link"><a href="/customer_login.php">Sign In</a></li>
             </ul>
         </nav>
 

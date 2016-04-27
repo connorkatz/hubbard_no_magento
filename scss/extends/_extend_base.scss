@@ -40,7 +40,19 @@
 
 %site_width { max-width: 1400px; margin: 0 auto; }
 
-%site_width_padded { @extend %site_width; padding: 0 $minimumPageOffset; }
+%site_width_padded {
+    @extend %site_width;
+    padding: 0 15px;
+    @media #{$break_small} {
+        padding: 0 25px;
+    }
+    @media #{$break_medium} {
+        padding: 0 50px;
+    }
+    @media #{$break_x-large} {
+        padding: 0;
+    }
+}
 
 %site_width_small { max-width: 750px; margin: 0 auto; }
 
@@ -93,7 +105,7 @@
     }
     @media #{$break_large} {
         &.short_list {
-            li {width: calc((100% / 3) - 10px);}
+            li { width: calc((100% / 3) - 10px); }
         }
         li { width: calc((100% / 4) - 10px); }
         a:hover {
@@ -104,14 +116,14 @@
 
 %slider_pages {
     display: inline-block; text-align: center; vertical-align: middle; margin: 15px 0;
-    .bx-pager-item { display: inline-block; margin: 0 3px; }
+    .bx-pager-item { display: inline-block; margin: 0 2px; }
     .bx-pager-item a { display: block; width: 10px; height: 10px; border-radius: 10px; border: 1px solid #cdcdcd; font-size: 0; text-indent: -9999px; }
-    .bx-pager-item a.active { background: #cdcdcd; border-color: #b3b3b3;}
+    .bx-pager-item a.active { background: #cdcdcd; border-color: #b3b3b3; }
 }
 
 %slider_nav_arrow {
     display: none; font-family: $font_fontAwesome; vertical-align: middle;
-    a { display: block; color: rgba(0,0,0,0.3); font-size: 18px; padding: 5px; }
+    a { display: block; color: rgba(0, 0, 0, 0.3); font-size: 18px; padding: 5px; }
     a.disabled { color: $color_text_light; }
     @media #{$break_large} {
         display: inline-block;
@@ -135,5 +147,20 @@
 // -------------------------
 
 %cart_item_section { display: inline-block; vertical-align: middle; font-size: 12px; }
+
+// -------------------------
+// Static Content
+// -------------------------
+%static_content {
+    font-weight: 300; line-height: 1.6; font-size: 16px; vertical-align: top;
+    h2 { font-size: 22px; font-family: $font_din_regular; text-transform: uppercase; color: $color_text_dark; text-align: center; padding: 15px 0 10px 0; line-height: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.1); max-width: 400px; margin: 0 auto 15px auto; }
+
+    p { padding-bottom: 15px; }
+    ul {
+        margin-bottom: 10px;
+        i { color: rgba(0, 0, 0, 0.3); margin-right: 10px; vertical-align: middle; }
+    }
+    li { margin-bottom: 10px; font-size: 18px; }
+}
 
 

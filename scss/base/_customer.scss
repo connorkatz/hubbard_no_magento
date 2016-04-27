@@ -3,7 +3,7 @@
 #customer_account_choice {
     ul { max-width: 850px; font-size: 0; margin: 0 auto; padding: 10px 20px 20px 20px; }
     li {
-        @extend %customer_section;
+        @extend %customer_form;
         font-size: 14px; border-radius: 3px; overflow: hidden;
     }
     li:first-child { margin-bottom: 20px; }
@@ -17,10 +17,21 @@
     a.forgot_password { display: inline-block; margin-top: 15px; }
 }
 
+#basic_form_intro {
+    @extend %customer_section_small;
+    padding: 0 15px 20px 15px; text-align: center; font-weight: 300;
+    h6 {font-size: 16px; margin-bottom: 5px; font-weight: 700;}
+    p {
+        font-size: 16px; line-height: 1.3;
+        &.padded {margin-bottom: 10px;}
+    }
+}
+
 #basic_form_box { @extend %customer_section_small_container; }
 
 #basic_form_box_inner {
     @extend %customer_section_small;
+    @extend %customer_form;
     h2 {font-family: $font_din_regular; color: $color_text_dark; text-transform: uppercase; font-size: 24px; margin: 20px 0 15px 0; padding-bottom: 5px; border-bottom: 1px solid rgba(0,0,0,0.1); box-shadow: 0 1px 0 #ffffff;}
     h2:first-of-type {margin-top: 0;}
 }
@@ -89,6 +100,12 @@
         display: inline-block; font-size: 12px; margin-right: 5px; font-style: normal;
         &:before {font-family: $font_fontAwesome; content: '\f06e'; }
     }
+}
+
+#guest_order {
+    @extend %site_width;
+    padding: 20px 15px; display: block; border: none; font-size: 0;
+    a {display: inline;}
 }
 
 .customer_orders_details { display: none; background: #ffffff; border: 2px solid $color_background_secondary; border-top: none; padding: 15px; color: $color_text_base;}

@@ -282,7 +282,7 @@
                     <div class="modal_content_inner">
                         <div id="size_guide_details">
                             <h4>Cut true to size</h4>
-                            <a href="#" id="size_guide_more_info_toggle">More Information</a>
+                            <a href="#" id="size_guide_more_info_toggle">Learn More</a>
                             <div id="size_guide_more_info">
                                 <p>Samuel Hubbard strives to produce shoes that are true to size.</p>
                                 <p>Many people ask us why shoes from different brands fit differently.</p>
@@ -395,7 +395,7 @@
         $j(document).ready(function() {
 
             // see bxslider.com/options and bxslider.com/examples/thumbnail-pager-2
-            prodImagesSlider = $j('#prod_main_image_inner ul').bxSlider({
+            prodImagesSlider = $j('#prod_main_image_inner > ul').bxSlider({
                 pagerSelector: '#prod_slider_pages',
                 nextText: '&#xf105;',
                 nextSelector: '#prod_slider_right',

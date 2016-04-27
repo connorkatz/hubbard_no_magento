@@ -55,10 +55,23 @@ $j(document).ready(function() {
         $j('.order_summary_header').toggleClass('active');
     });
 
+    // show CVV details
     $j('#cvv_info_toggle').click(function() {
         $j('#cvv_info').toggleClass('active');
     });
 
+    // show order followup options
+    $j('#order_followup input[type="radio"]').change(function() {
+        console.log("run");
+        $j('.order_followup_details').removeClass('active');
+        var $parent = $j(this).parent();
+        var $parentDetails = $parent.children('.order_followup_details')
+        if($parentDetails) {
+            $parentDetails.addClass('active');
+        }
+    });
+
+    // checkout modals
     $j('#checkout_footer_inner a').simpleModal();
 
     

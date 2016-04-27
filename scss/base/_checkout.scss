@@ -70,7 +70,7 @@
 .order_summary_price { display: inline-block; width: 20%; font-size: 16px; text-align: right; }
 
 #checkout_summary_details_container {
-    display: none; border-bottom: 2px solid $color_brand_secondary;
+    display: none; border-bottom: 2px solid $color_util_3;
 }
 
 
@@ -114,7 +114,7 @@
     }
     span { display: inline-block; width: 50%; font-size: 16px; text-align: right; }
     li:last-of-type {
-        border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 10px; margin-top: 15px; color: $color_text_dark; font-weight: 700; background: #ffffff;
+        border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 15px 10px; margin-top: 15px; color: $color_text_dark; font-weight: 700; background: #ffffff;
         label { font-size: 20px; }
         span { font-size: 20px; }
     }
@@ -248,15 +248,16 @@
 }
 
 #cvv_info {
-    display: none; position: absolute; top: -8px; left: 30px; font-family: $font_lato; font-size: 12px; width: 175px; background: rgba(0,0,0,0.6); padding: 10px; color: $color_text_white; text-align: center; border-radius: 5px; line-height: 1.3; font-weight: 700;
-    &:before {position: absolute; left: -16px; top: 11px; content: ''; width: 0; height: 0; border: 6px solid transparent; border-right: 10px solid rgba(0,0,0,0.6);}
+    display: none; position: absolute; top: -8px; left: 30px; font-family: $font_lato; font-size: 12px; width: 175px; background: #606060; padding: 10px; color: $color_text_white; text-align: center; border-radius: 5px; line-height: 1.3; font-weight: 700;
+    p {margin-bottom: 5px;}
+    &:before {position: absolute; left: -16px; top: 11px; content: ''; width: 0; height: 0; border: 6px solid transparent; border-right: 10px solid #606060;}
     &.active {display: block;}
 }
 
 #paypal_redirect {
     font-size: 0; padding: 10px;
     i { width: 30px; font-size: 20px; vertical-align: middle; }
-    span { display: inline-block; width: calc(100% - 30px); font-size: 16px; vertical-align: middle; }
+    span { display: inline-block; width: calc(100% - 30px); font-size: 16px; vertical-align: middle; font-weight: 300;}
 }
 
 /* ----- Billin Address ---- */
@@ -283,11 +284,11 @@
     padding: 10px 0 20px 0;
     h6 { font-size: 14px; font-weight: 700; color: $color_text_dark; margin-bottom: 5px;  padding: 0 0 5px 0; border-bottom: 1px dotted rgba(0,0,0,0.2);}
     address, p { font-style: normal; font-size: 14px; line-height: 1.5; }
-    a { display: block; margin-top: 5px; font-size: 12px; padding: 5px 0; }
+    a { display: block; margin-top: 5px; font-size: 13px; padding: 5px 0; }
 }
 
 #mobile_review_total {
-    font-size: 0; color: $color_text_dark; padding: 20px 15px; margin-bottom: 10px; text-transform: uppercase; background: #ffffff; box-shadow: 0 0 1px rgba(0,0,0,0.2);
+    font-size: 0; color: $color_text_dark; padding: 20px 15px; margin-bottom: 10px; text-transform: uppercase; background: #ffffff; box-shadow: 0 0 1px rgba(0,0,0,0.2); border-radius: 3px;
     label { display: inline-block; width: 50%; font-size: 20px; font-weight: 700; }
     span { display: inline-block; width: 50%; font-size: 20px; font-weight: 700; text-align: right; }
 }
@@ -300,12 +301,18 @@
 /* ---------------- Thank You Page -------------------------------- */
 /* ------------------------------------------------------------------ */
 #order_thank_you_content {
-    h1 { font-size: 28px; margin: 20px auto; }
+    h1 { font-size: 28px; margin: 25px auto 0 auto; }
+}
+
+#order_thank_you_confirm {
+    @extend %site_width_padded;
+    text-align: center; font-size: 16px; margin-bottom: 30px; font-weight: 300;
+    p {line-height: 1.6;}
 }
 
 
 #account_activate {
-    background: $color_util_5; margin: 20px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: $color_util_5; margin: 20px 0;
     h2 { font-family: $font_din_regular;  font-size: 24px; text-transform: uppercase; margin-bottom: 20px; padding: 20px 0; color: $color_text_white; background: $color_brand_secondary; text-align: center;}
 }
 
@@ -327,15 +334,24 @@
 
 #order_followup {
     @extend %order_thank_you_section;
-    ul {
-        @extend %list_checklist;
-        max-width: 600px; margin: 20px auto; padding: 0 25px;
+    max-width: 400px;
+    h3 {
+        span {display: block; font-family: $font-lato; font-size: 16px; font-weight: 300; margin-top: 5px; text-transform: none;}
     }
+    ul {margin-bottom: 20px;}
+    li {margin: 15px 0; font-size: 16px; text-align: left;}
+    input[type="radio"] {vertical-align: middle; margin-right: 5px;}
+    label {display: inline-block; vertical-align: middle; font-size: 16px;}
+    .order_followup_details {
+        display: none; padding: 10px 0;
+        &.active {display: block;}
+    }
+    button {@extend %button_primary;}
 }
 
 #order_social_links {
     @extend %order_thank_you_section;
-    ul {font-size: 0; text-align: center;}
+    ul {font-size: 0;}
     li {display: inline-block; padding: 0 10px;}
     a {font-size: 50px; color: $color_text_medium;}
 }
@@ -345,6 +361,6 @@
 }
 
 #order_continue_shopping_link {
-    padding: 0 25px;
-    a {@extend %button_primary;}
+    @extend %order_thank_you_section;
+    padding: 0 0 50px 0; font-size: 18px;
 }

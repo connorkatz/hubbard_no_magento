@@ -75,6 +75,10 @@
         h1 { font-size: 36px; padding: 15px 5px; }
     }
 
+    #prod_slider_pages {
+        .bx-pager-item a {width: 115px; height: 78px;}
+    }
+
     #size_close {
         span {display: inline;}
     }

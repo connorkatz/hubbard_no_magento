@@ -90,6 +90,8 @@
         }
     }
 
+    #mobile_support_link {display: none;}
+
     /* ---------------- Breadcrumbs ------------------------------------- */
     /* ------------------------------------------------------------------ */
 
@@ -112,7 +114,7 @@
         padding-bottom: 15px;
         p { margin-bottom: 0px; font-size: 10px; }
         li {
-            width: calc(25% - 40px); padding: 0 20px; max-height: none;
+            width: 25%; padding: 0 20px; max-height: none;
             img { height: auto; }
         }
         li:last-of-type { display: inline-block; }
@@ -324,6 +326,10 @@
 
     #mobile_coupon_code { display: none; }
 
+    #cvv_info {
+        width: 275px;
+    }
+
     .checkout_review_block {
         width: 50%; vertical-align: top; display: inline-block; padding-right: 25px;
     }
@@ -418,6 +424,13 @@
             display: inline-block; width: 49.5%; margin-bottom: 10px;
             &:nth-child(odd) {margin-right: 1%}
         }
+    }
+
+    /* ---------------- Support ------------------------------------------ */
+    /* ------------------------------------------------------------------ */
+
+    #support_content {
+        h2 {font-size: 24px; text-align: left; border: none; max-width: none; margin: 0 0 5px 0;}
     }
 }
 

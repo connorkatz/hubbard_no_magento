@@ -6,7 +6,7 @@
 
 #site_content_container { background: $color_background_main; }
 
-h1.page_header { font-size: 24px; max-width: 500px; text-align: center; margin: 0 auto; font-family: $font_din_regular; text-transform: uppercase; letter-spacing: -.03em; color: $color_text_dark; padding: 15px 20px; }
+h1.page_header { font-size: 24px; max-width: 500px; text-align: center; margin: 0 auto; font-family: $font_din_regular; text-transform: uppercase; color: $color_text_dark; padding: 15px 20px; letter-spacing: -.02em;}
 
 h2.page_subhead { font-size: 18px; font-weight: 300; text-align: center; margin: 10px 0; }
 
@@ -303,7 +303,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 /* ------------------------------------------------------------------ */
 
 #homepage_hero {
-    @include full-width-slideshow(100%, 40%);
+    @include full-width-slideshow(80%, 40%);
     background: $color_util_4; border-bottom: 1px solid #ffffff;
 }
 
@@ -651,7 +651,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 
 #prod_description {
     @extend %prod_feature_section;
-    p { margin-bottom: 20px; text-align: justify; font-size: 16px; line-height: 1.6; }
+    p { margin-bottom: 20px; text-align: justify; font-size: 16px; line-height: 1.6; font-weight: 300;}
 }
 
 #shoe_care_toggle {
@@ -820,17 +820,21 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
     a:before { content: '\f104'; font-family: $font_fontAwesome; margin-right: 10px; }
 }
 
-/* ---------------- Static Content Pages ------------------------------------------ */
+/* ---------------- Support ------------------------------------------ */
 /* ------------------------------------------------------------------ */
 
-.full_width_image_block { }
+#support {
+    max-width: 1000px; padding: 0 20px; margin: 0 auto;
+    font-size: 0; vertical-align: top;
+}
 
-.full_width_image_block img { width: 100%; }
+#support_topics {
+    font-size: 14px;
+    background: $color_util_4; margin-bottom: 10px;
+    li {border-bottom: 1px solid #ffffff;}
+    a {display: block; padding: 15px 20px; font-size: 16px;}
+}
 
-.static_title_block { max-width: 600px; margin: 20px auto; text-align: center; }
-
-.static_title_block h1 { font-size: 24px; font-family: $font_din_regular, sans-serif; border-top: 1px dotted rgba(0, 0, 0, 0.2); border-bottom: 1px dotted rgba(0, 0, 0, 0.2); padding: 20px 0; text-transform: uppercase; }
-
-.static_content_block { font-size: 16px; line-height: 1.6; max-width: 600px; margin: 15px auto; padding: 0 30px; }
-
-.static_content_block p { margin-bottom: 20px; }
+#support_content {
+    @extend %static_content;
+}
