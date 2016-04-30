@@ -12,7 +12,7 @@
 
 .customer_account_choice_content {
     padding: 20px; border-top: 1px solid #ffffff; text-align: center;
-    p { text-align: left; min-height: 100px;}
+    p { text-align: left; min-height: 100px; font-weight: 300;}
     label { text-align: left; }
     a.forgot_password { display: inline-block; margin-top: 15px; }
 }
@@ -140,7 +140,7 @@
 #customer_add_new_address {
     padding-bottom: 15px;
     a {
-        display: inline-block; background: $color_util_4; width: 100%; text-align: center; padding: 10px 25px;
+        display: inline-block; background: $color_util_4; width: 100%; text-align: center; padding: 15px 25px;
         &:before {content: '\f234'; font-family: $font_fontAwesome; margin-right: 10px;}
     }
 }

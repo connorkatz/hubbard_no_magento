@@ -225,9 +225,12 @@
         padding-top: 20px;
     }
 
+    #support_content_inner {height: 100%; overflow: scroll;}
+
     #support_topics {
         display: inline-block; width: 300px; background: transparent;
-        li {border-bottom: 1px solid rgba(0,0,0,0.1);}
+        ul {border: none;}
+        li {border-color: rgba(0,0,0,0.1);}
         li:last-of-type {border: none;}
         a {padding: 15px 5px;}
     }

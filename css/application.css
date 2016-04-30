@@ -232,12 +232,12 @@
   vertical-align: middle;
   font-size: 12px; }
 
-#support_content {
+#support_content, #basic_static_content {
   font-weight: 300;
   line-height: 1.6;
   font-size: 16px;
   vertical-align: top; }
-  #support_content h2 {
+  #support_content h2, #basic_static_content h2 {
     font-size: 22px;
     font-family: "DINCondensed-Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -248,15 +248,15 @@
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: 0 auto 15px auto; }
-  #support_content p {
+  #support_content p, #basic_static_content p {
     padding-bottom: 15px; }
-  #support_content ul {
+  #support_content ul, #basic_static_content ul {
     margin-bottom: 10px; }
-    #support_content ul i {
+    #support_content ul i, #basic_static_content ul i {
       color: rgba(0, 0, 0, 0.3);
       margin-right: 10px;
       vertical-align: middle; }
-  #support_content li {
+  #support_content li, #basic_static_content li {
     margin-bottom: 10px;
     font-size: 18px; }
 
@@ -4323,15 +4323,18 @@ hr.decorative_break_2 {
 
 #support_topics {
   font-size: 14px;
-  background: #f7f6f5;
   margin-bottom: 10px; }
+  #support_topics ul {
+    border-top: 1px solid rgba(0, 0, 0, 0.1); }
   #support_topics li {
-    border-bottom: 1px solid #ffffff; }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
   #support_topics a {
     display: block;
-    padding: 15px 20px;
+    padding: 15px 5px;
     font-size: 16px; }
 
+/* ---------------- Static Basic Page ----------------------------------- */
+/* ------------------------------------------------------------------ */
 #customer_account_choice ul {
   max-width: 850px;
   font-size: 0;
@@ -4359,7 +4362,8 @@ hr.decorative_break_2 {
   text-align: center; }
   .customer_account_choice_content p {
     text-align: left;
-    min-height: 100px; }
+    min-height: 100px;
+    font-weight: 300; }
   .customer_account_choice_content label {
     text-align: left; }
   .customer_account_choice_content a.forgot_password {
@@ -4591,7 +4595,7 @@ hr.decorative_break_2 {
     background: #f7f6f5;
     width: 100%;
     text-align: center;
-    padding: 10px 25px; }
+    padding: 15px 25px; }
     #customer_add_new_address a:before {
       content: '\f234';
       font-family: "FontAwesome";
@@ -6308,12 +6312,18 @@ hr.decorative_break_2 {
   #support {
     padding-top: 20px; }
 
+  #support_content_inner {
+    height: 100%;
+    overflow: scroll; }
+
   #support_topics {
     display: inline-block;
     width: 300px;
     background: transparent; }
+    #support_topics ul {
+      border: none; }
     #support_topics li {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+      border-color: rgba(0, 0, 0, 0.1); }
     #support_topics li:last-of-type {
       border: none; }
     #support_topics a {

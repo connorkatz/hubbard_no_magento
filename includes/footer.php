@@ -14,7 +14,7 @@
         <section class="footer_link_group">
             <ul>
                 <li><a href="/locations.php">Find a Store</a></li>
-                <li><a href="#">Payments &amp; Shipping</a></li>
+                <li><a href="/static_payments.php">Payments &amp; Shipping</a></li>
                 <li><a href="#">Terms &amp; Conditions</a></li>
                 <li><a href="#">Privacy Policy</a></li>
             </ul>

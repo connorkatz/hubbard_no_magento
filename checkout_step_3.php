@@ -26,7 +26,7 @@
         stored.</p>
     <form>
         <div id="checkout-step-payment">
-            <dl>
+            <dl class="checkout_option_group">
                 <dt>
                     <input type="radio" id="p_method_1" checked name="shipping_method_type">
                     <label for="p_method_1">
@@ -85,7 +85,7 @@
         </div><!-- end shipping methods -->
         <h2>Billing Address</h2>
         <div id="billing-address">
-            <dl>
+            <dl class="checkout_option_group">
                 <dt>
                     <input type="radio" id="billing:use_shipping_yes" checked name="billing_address">
                     <label for="billing:use_shipping_yes">
