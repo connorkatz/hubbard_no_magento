@@ -21,7 +21,7 @@
         <section id="site_callout">
             <div id="site_callout_inner">
                 <p>
-                    <a href="/returns">Free Shipping &amp; Returns</a>
+                    <a href="/static_return_policy.php">Free Shipping &amp; Returns</a>
                 </p>
                 <p>
                     <span><a href="/support">Need Help? &nbsp; 844.482.4800</a></span>
@@ -53,9 +53,9 @@
                     <section id="user_nav">
                         <ul>
                             <li id="search_link" class="link"><a href="#"><i class="fa fa-search"></i><span>Search</span></a></li>
-                            <li id="sign_in_link" class="link"><a href="/customer_login.php">Sign In</a></li>
+                            <li id="account_link" class="link"><a href="/customer_login.php">Sign In</a></li>
                             <li id="support_link" class="link"><a href="/static_support.php">Support</a></li>
-                            <li id="cart_link"><a href="/cart.php" id="cart_icon" class="has_items"><span>3</span></a></li>
+                            <li id="cart_link"><a href="/checkout_cart.php" id="cart_icon" class="has_items"><span>3</span></a></li>
                         </ul>
                     </section><!-- end user nav -->
                 </section><!-- end header right -->

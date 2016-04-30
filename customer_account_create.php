@@ -3,8 +3,8 @@
 
     <h1 class="page_header">Create Your Account</h1>
     <hr class="decorative_break_2">
-    <section id="basic_form_box">
-        <div id="basic_form_box_inner">
+    <section class="basic_form_box">
+        <div class="basic_form_box_inner">
             <form>
                 <label for="firstname">First Name</label>
                 <div class="input-box">

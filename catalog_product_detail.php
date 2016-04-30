@@ -11,7 +11,7 @@
                 <a href="/category_landing.php">Men</a>
             </li>
             <li>
-                <a href="/product_list.php">Un-Sneaker Collection</a>
+                <a href="/catalog_product_list.php">Un-Sneaker Collection</a>
             </li>
             <li>
                 <a href="#">Hubbard Free</a>
@@ -42,7 +42,7 @@
                     <div id="prod_slider_left" class="prod_slider_nav"></div>
                     <div id="prod_slider_right" class="prod_slider_nav"></div>
                 </section><!-- end prod main image block -->
-                <p>Tan Waxhide / White Outsole</p>
+                <p>Tan Waxhide&nbsp;&mdash; White Outsole</p>
                 <div id="prod_slider_pages"></div>
 
 
@@ -146,7 +146,7 @@
                     </div><!-- end prod details lower -->
                 </section><!-- end prod details -->
                 <div id="shipping_callout">
-                    <a href="#">Shipping &amp; Returns are Free. And Easy.</a>
+                    <a href=/static_return_policy.php">Shipping &amp; Returns are Free. And Easy.</a>
                 </div><!-- end shipping callout -->
 
                 <section id="social_share">

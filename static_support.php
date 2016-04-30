@@ -1,7 +1,7 @@
 <?php include 'includes/header.php'; ?>
-    <h1 class="page_header">How Can we Help?</h1>
-    <hr class="decorative_break_2">
     <section id="support">
+        <h1 class="page_header">How Can we Help?</h1>
+        <hr class="decorative_break_2">
         <section id="support_topics">
             <ul>
                 <li><a href="contact">Contact Us</a></li>
@@ -21,9 +21,9 @@
             <div class="support_content_item">
                 <a name="contact"></a>
                 <h2>Contact Us</h2>
-                <ul>
+                <ul class="contact_list">
                     <li><i class="fa fa-phone-square fa-2x"></i>(844) 482-4800</li>
-                    <li><a href="mailto:info@samuelhubbard.com"><i class="fa fa-2x fa-envelope-square"></i>info@samuelhubbard.com</a>
+                    <li><a href="mailto:support@samuelhubbard.com"><i class="fa fa-2x fa-envelope-square"></i>support@samuelhubbard.com</a>
                     </li>
                 </ul>
                 <p>If you have any issues with your shoes we want to hear from you.</p>
@@ -38,7 +38,7 @@
                     your new shoes can get to know each other better. If it's within an hour of placing an order, we may
                     be able to change or cancel, so please call us as soon as possible and we'll see what we can do. Our
                     business hours are 9am &ndash; 5pm Pacific Time, Monday through Friday, not including holidays.
-                    (844) 482-4800 or <a href="mailto:weborders@samuelhubbard.com">weborders@samuelhubbard.com</a>.</p>
+                    (844) 482-4800 or <a href="mailto:support@samuelhubbard.com">support@samuelhubbard.com</a>.</p>
             </div><!-- end support content item -->
             <div class="support_content_item">
                 <a name="sizing"></a>

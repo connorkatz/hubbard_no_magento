@@ -1,5 +1,5 @@
 <li class="nav_lvl_1">
-    <a href="/product_list.php">Men</a>
+    <a href="/catalog_product_list.php">Men</a>
     <div class="nav_lvl_2">
         <div class="callout_categories">
             <ul>
@@ -13,39 +13,39 @@
         <div class="standard_categories">
             <ul>
                 <li class="cat_standard_1-1">
-                    <span><a href="/product_list.php"></a></span>
+                    <span><a href="/catalog_product_list.php"></a></span>
                     <div class="menu_cat_links">
-                        <a href="/product_list.php">Go to Work</a>
+                        <a href="/catalog_product_list.php">Go to Work</a>
                         <ul>
-                            <li><a href="/product_list.php">View Collection</a></li>
-                            <li><a href="/product_detail.php">Market Cap</a></li>
-                            <li><a href="/product_detail.php">Founder</a></li>
-                            <li><a href="/product_detail.php">Tipping Point</a></li>
-                            <li><a href="/product_detail.php">Frequent Traveler</a></li>
-                            <li><a href="/product_detail.php">24 seven</a></li>
+                            <li><a href="/catalog_product_list.php">View Collection</a></li>
+                            <li><a href="/catalog_product_detail.php">Market Cap</a></li>
+                            <li><a href="/catalog_product_detail.php">Founder</a></li>
+                            <li><a href="/catalog_product_detail.php">Tipping Point</a></li>
+                            <li><a href="/catalog_product_detail.php">Frequent Traveler</a></li>
+                            <li><a href="/catalog_product_detail.php">24 seven</a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="cat_standard_1-2">
-                    <span><a href="/product_list.php"></a></span>
+                    <span><a href="/catalog_product_list.php"></a></span>
                     <div class="menu_cat_links">
-                        <a href="/product_list.php">Un-Sneaker</a>
+                        <a href="/catalog_product_list.php">Un-Sneaker</a>
                         <ul>
-                            <li><a href="/product_list.php">View Collection</a></li>
-                            <li><a href="/product_detail.php">Hubbard Free</a></li>
-                            <li><a href="/product_detail.php">Getaway</a></li>
-                            <li><a href="/product_detail.php">Boot-Up</a></li>
-                            <li><a href="/product_detail.php">Get-up Lace-Up</a></li>
+                            <li><a href="/catalog_product_list.php">View Collection</a></li>
+                            <li><a href="/catalog_product_detail.php">Hubbard Free</a></li>
+                            <li><a href="/catalog_product_detail.php">Getaway</a></li>
+                            <li><a href="/catalog_product_detail.php">Boot-Up</a></li>
+                            <li><a href="/catalog_product_detail.php">Get-up Lace-Up</a></li>
                         </ul>
                     </div>
                 </li>
                 <li class="cat_standard_1-3">
-                    <span><a href="/product_list.php"></a></span>
+                    <span><a href="/catalog_product_list.php"></a></span>
                     <div class="menu_cat_links">
-                        <a href="/product_list.php">Limited Edition</a>
+                        <a href="/catalog_product_list.php">Limited Edition</a>
                         <ul>
-                            <li><a href="/product_list.php">View Collection</a></li>
-                            <li><a href="/product_detail.php">Hubbard Free</a></li>
+                            <li><a href="/catalog_product_list.php">View Collection</a></li>
+                            <li><a href="/catalog_product_detail.php">Hubbard Free</a></li>
                         </ul>
                     </div>
                 </li>
@@ -55,9 +55,9 @@
     </div><!-- end nav lvl 2 -->
 </li>
 <li>
-    <a href="/product_list.php">Women</a>
+    <a href="/catalog_product_list.php">Women</a>
 </li>
-<li><a href="/product_list.php">Accessories</a></li>
+<li><a href="/catalog_product_list.php">Accessories</a></li>
 <li><a href="/locations.php">Locations</a></li>
 <li><a href="#">Story</a></li>
 <li><a href="#">Blog</a></li>

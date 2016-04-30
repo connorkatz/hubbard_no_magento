@@ -3,7 +3,7 @@
     /* ---------------- Header ------------------------------------------ */
     /* ------------------------------------------------------------------ */
     #user_nav {
-        #sign_in_link { display: inline-block; }
+        #support_link { display: inline-block; }
     }
 
     /* ---------------- Mobile Nav ------------------------------------------ */
@@ -186,9 +186,9 @@
     #checkout_layout_block_2 { width: 70%; padding: 0 25px 100px 15px; }
 
     .buttons-set {
-        overflow: hidden; border-top: 1px dotted rgba(0, 0, 0, 0.1); padding: 20px 0 0 0;
+        overflow: hidden; border-top: 1px solid rgba(0, 0, 0, 0.1); padding: 20px 0 0 0;
         button { float: right; width: 70%; }
-        p { float: left; width: 30%; margin-top: 20px; }
+        p { float: left; width: 30%; margin-top: 15px; }
     }
 
     /* ---------------- Locations --------------------------------- */
@@ -222,7 +222,7 @@
     /* ------------------------------------------------------------------ */
 
     #support {
-        padding-top: 20px;
+        hr {display: block;}
     }
 
     #support_content_inner {height: 100%; overflow: scroll;}

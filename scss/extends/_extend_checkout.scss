@@ -10,9 +10,10 @@
             ul {font-size: 0;}
             li {display: inline-block; width: 50px; margin-right: 5px; border-radius: 3px;}
         }
+        &:last-of-type {border: none;}
     }
     dd {
-        display: none; background: $color_util_5; padding: 15px; border-top: 1px solid rgba(0, 0, 0, 0.02); border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        display: none; background: $color_util_5; padding: 15px; border-top: 1px solid rgba(0, 0, 0, 0.05); border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         &.active {display: block;}
         label { display: block; margin-bottom: 5px;}
     }
@@ -32,7 +33,7 @@
 %button_coupon_code { display: inline-block; font-size: 14px; width: 100px; height: 40px; vertical-align: middle; background: rgba(0,0,0,0.15); border: none; color: $color_text_white; border-radius: 5px; }
 
 %input_coupon_code {
-    display: inline-block; font-size: 14px; width: calc(100% - 105px); margin-right: 5px; vertical-align: middle; background: $color_util_5;
+    display: inline-block; font-size: 14px; width: calc(100% - 105px); margin-right: 5px; vertical-align: middle; background: $color_util_4;
     &:focus {background: #ffffff;}
 
 }

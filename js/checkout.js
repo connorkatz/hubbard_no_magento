@@ -4,29 +4,18 @@
 function checkoutAsUser() {
     $j('#checkout_login_link').removeClass('active');
     $j('#shipping_address_form').removeClass('active');
-    $j('#checkout_login_password').slideDown(
-        function() {
-            $j('#checkout_forgot_password_link, #checkout_no_login_link').addClass('active');
-            $j('#checkout_login_button').addClass('active');
-        }
-    );
+    $j('#checkout_login_user').addClass('active');
 
 }
 
 function checkoutAsGuest() {
-    $j('#checkout_login_link').addClass('active');
-    $j('#checkout_login_button').removeClass('active');
-    $j('#checkout_login_password').slideUp(
-        function() {
-            $j('#shipping_address_form').addClass('active');
-        }
-    );
-    $j('#checkout_forgot_password_link, #checkout_no_login_link').removeClass('active');
+    $j('#checkout_login_user').removeClass('active');
+    $j('#shipping_address_form').addClass('active');
     $j('#checkout_login_link').addClass('active');
 }
 
 function changeCheckoutOptions() {
-    $j('.checkout_option_group input[type="radio"]').change(function() {
+    $j('.checkout_option_group dt input[type="radio"]').change(function() {
         var $this = $j(this);
         var $parent = $this.parent();
         var $parentGroup = $this.parents('dl');

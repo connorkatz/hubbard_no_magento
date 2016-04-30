@@ -92,7 +92,7 @@ function countCalloutCategories() {
 
 function scrollToAnchor(anchorID) {
     var anchorID = $j("a[name='" + anchorID + "']");
-    $j('html,body').animate({scrollTop: anchorID.offset().top});
+    $j('html,body').animate({scrollTop: anchorID.offset().top}, 'slow');
 }
 
 function scrollArrowSetup() {

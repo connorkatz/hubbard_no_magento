@@ -20,12 +20,12 @@
         <section class="cart_item_block">
             <div class="ci_image_title_group">
                 <div class="ci_image">
-                    <a href="/product_detail.php">
+                    <a href="/catalog_product_detail.php">
                         <img src="../images/product_images/hubbard_free_tan_waxhide.jpg">
                     </a>
                 </div><!-- end cart item image -->
                 <div class="ci_title_group">
-                    <h3><a href="/product_detail.php">Hubbard Free</a></h3>
+                    <h3><a href="/catalog_product_detail.php">Hubbard Free</a></h3>
                     <ul>
                         <li>
                             <span>Width&nbsp;&nbsp;&mdash;&nbsp;&nbsp;</span>Medium
@@ -50,12 +50,12 @@
         <section class="cart_item_block">
             <div class="ci_image_title_group">
                 <div class="ci_image">
-                    <a href="/product_detail.php">
+                    <a href="/catalog_product_detail.php">
                         <img src="../images/product_images/hubbard_free_tan_waxhide.jpg">
                     </a>
                 </div><!-- end cart item image -->
                 <div class="ci_title_group">
-                    <h3><a href="/product_detail.php">Hubbard Free</a></h3>
+                    <h3><a href="/catalog_product_detail.php">Hubbard Free</a></h3>
                     <ul>
                         <li>
                             <span>Width&nbsp;&nbsp;&mdash;&nbsp;&nbsp;</span>Medium
@@ -80,12 +80,12 @@
         <section class="cart_item_block">
             <div class="ci_image_title_group">
                 <div class="ci_image">
-                    <a href="/product_detail.php">
+                    <a href="/catalog_product_detail.php">
                         <img src="../images/product_images/hubbard_free_tan_waxhide.jpg">
                     </a>
                 </div><!-- end cart item image -->
                 <div class="ci_title_group">
-                    <h3><a href="/product_detail.php">Hubbard Free</a></h3>
+                    <h3><a href="/catalog_product_detail.php">Hubbard Free</a></h3>
                     <ul>
                         <li>
                             <span>Width&nbsp;&nbsp;&mdash;&nbsp;&nbsp;</span>Medium

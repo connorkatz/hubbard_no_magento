@@ -3,10 +3,10 @@
 
     <h1 class="page_header">Edit Your Account</h1>
     <hr class="decorative_break_2">
-    <section id="basic_form_box">
-        <div id="basic_form_box_inner">
+    <section class="basic_form_box">
+        <div class="basic_form_box_inner">
             <form>
-                <h2>Profile</h2>
+                <h3>Profile</h3>
                 <label for="firstname">First Name</label>
                 <div class="input-box">
                     <input type="text" id="firstname">
@@ -23,7 +23,7 @@
                     <label for="update_password">Update Password</label>
                 </div><!-- end update password option -->
                 <div id="customer_edit_password">
-                    <h2>Password</h2>
+                    <h3>Password</h3>
                     <label for="current_password">Current Password</label>
                     <div class="input-box">
                         <input type="password" id="current_password">

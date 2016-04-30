@@ -73,7 +73,7 @@
 %product_list_items {
     font-size: 0; margin: 10px 0 0 -10px; text-align: center; padding: 0 0 15px 0;
     li {
-        position: relative; display: inline-block; background: $color_util_4; border-radius: 3px; width: calc(50% - 10px); margin: 10px 0 0 10px; padding: 10px 5px; overflow: hidden;
+        position: relative; display: inline-block; background: $color_util_1; border-radius: 3px; width: calc(50% - 10px); margin: 10px 0 0 10px; padding: 10px 5px; overflow: hidden;
         &.not_available { display: none; }
         &.waitlist {
             .stock_message { display: block; }
@@ -154,13 +154,21 @@
 %static_content {
     font-weight: 300; line-height: 1.6; font-size: 16px; vertical-align: top;
     h2 { font-size: 22px; font-family: $font_din_regular; text-transform: uppercase; color: $color_text_dark; text-align: center; padding: 15px 0 10px 0; line-height: 1; border-bottom: 2px solid rgba(0, 0, 0, 0.1); max-width: 400px; margin: 0 auto 15px auto; }
-
     p { padding-bottom: 15px; }
-    ul {
-        margin-bottom: 10px;
-        i { color: rgba(0, 0, 0, 0.3); margin-right: 10px; vertical-align: middle; }
+    ul { padding: 15px 0 25px 25px; list-style-type: square; }
+    li { padding: 0 0 10px 0; }
+    a { text-decoration: underline }
+    address { display: block; font-weight: 300; font-style: normal; padding-bottom: 15px; }
+    ul.contact_list {
+        margin-bottom: 10px; list-style-type: none; padding: 0;
+        i { color: rgba(0, 0, 0, 0.3); margin-right: 10px; vertical-align: middle; font-size: 28px;}
+        li { padding-bottom: 10px; }
+        a {text-decoration: none;}
     }
-    li { margin-bottom: 10px; font-size: 18px; }
+    @media #{$break_small} {
+        h2 { font-size: 24px; text-align: left; border: none; max-width: none; margin: 0 0 5px 0; }
+        p { padding-bottom: 15px; }
+    }
 }
 
 

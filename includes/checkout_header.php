@@ -18,7 +18,7 @@
         <header id="checkout_header">
             <div id="checkout_header_inner">
                 <section id="logo_container">
-                    <a href="/cart.php">
+                    <a href="/checkout_cart.php">
                         <div id="logo">
                             <img src="images/samuel_hubbard_logo.svg" alt="Samuel Hubbard">
                         </div>
@@ -28,5 +28,4 @@
             </div><!-- end checkout header inner -->
         </header><!-- end checkout header -->
 
-        <div id="checkout_content_container">
 

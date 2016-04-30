@@ -2,10 +2,10 @@
 <?php include 'includes/scroll_arrow.php'; ?>
     <section id="men-unskeaker" class="category_banner">
         <ul>
-            <li class="item_1"><a href="/product_detail.php"></a></li>
-            <li class="item_2"><a href="/product_detail.php"></a></li>
-            <li class="item_3"><a href="/product_detail.php"></a></li>
-            <li class="item_4"><a href="/product_detail.php"></a></li>
+            <li class="item_1"><a href="/catalog_product_detail.php"></a></li>
+            <li class="item_2"><a href="/catalog_product_detail.php"></a></li>
+            <li class="item_3"><a href="/catalog_product_detail.php"></a></li>
+            <li class="item_4"><a href="/catalog_product_detail.php"></a></li>
         </ul>
     </section><!-- end category banner -->
     <nav id="breadcrumbs">
@@ -17,7 +17,7 @@
                 <a href="/category_landing.php">Men</a>
             </li>
             <li>
-                <a href="/product_list.php">Un-Sneaker Collection</a>
+                <a href="/catalog_product_list.php">Un-Sneaker Collection</a>
             </li>
         </ul>
     </nav><!-- end breacrumbs -->
@@ -85,28 +85,28 @@
         <ul class="product_list_items">
             <li>
                 <strong>Gore-Tex</strong>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_tan_waxhide.jpg">
                     <h3>Tan Waxhide</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_almost_black.jpg">
                     <h3>Almost Black</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_cordovan.jpg">
                     <h3>Cordovan</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_navy_nubuck.jpg">
                     <h3>Navy Nubuck</h3>
                     <span class="stock_message">Waitlist</span>
@@ -114,14 +114,14 @@
             </li>
             <li>
                 <strong>Bestseller</strong>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_rust_nubuck.jpg">
                     <h3>Rust Nubuck</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_sand_suede.jpg">
                     <h3>Sand Suede</h3>
                     <span class="stock_message">Waitlist</span>
@@ -139,28 +139,28 @@
         </div><!-- end header row -->
         <ul class="product_list_items">
             <li class="not_available">
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/boot_up_black_suede.jpg">
                     <h3>Black Suede</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li class="waitlist">
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/boot_up_espresso_brown.jpg">
                     <h3>Espresso Brown</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/boot_up_sand_suede.jpg">
                     <h3>Sand Suede</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/boot_up_saddle_tan.jpg">
                     <h3>Saddle Tan</h3>
                     <span class="stock_message">Waitlist</span>
@@ -177,41 +177,41 @@
         </div><!-- end header row -->
         <ul class="product_list_items">
             <li>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_tan_waxhide.jpg">
                     <h3>Tan Waxhide</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_almost_black.jpg">
                     <h3>Almost Black</h3>
                 </a>
             </li>
             <li class="not_available">
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_cordovan.jpg">
                     <h3>Cordovan</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li class="waitlist">
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_navy_nubuck.jpg">
                     <h3>Navy Nubuck</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_rust_nubuck.jpg">
                     <h3>Rust Nubuck</h3>
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
             <li>
-                <a href="/product_detail.php">
+                <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_sand_suede.jpg">
                     <h3>Sand Suede</h3>
                     <span class="stock_message">Waitlist</span>

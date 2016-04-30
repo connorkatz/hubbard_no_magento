@@ -1,4 +1,4 @@
-</div><!-- end checkout content container -->
+
 
 <footer id="checkout_footer">
     <div id="checkout_footer_inner">

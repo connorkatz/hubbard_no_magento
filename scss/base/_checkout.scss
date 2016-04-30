@@ -3,9 +3,10 @@
 
 #checkout { background: $color_util_0; }
 
-#checkout_content_container { @extend %clearfix; }
-
-#checkout_content_container { @extend %checkout_width; }
+#checkout_content_container {
+    @extend %clearfix;
+    @extend %checkout_width;
+}
 
 .checkout_address_static {
     line-height: 1.5;
@@ -75,23 +76,23 @@
 
 
 .checkout_summary_item_block {
-    position: relative; font-size: 0; background: #ffffff; padding: 10px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative; font-size: 0; background: #ffffff; padding: 15px 10px; border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     span { display: block; position: absolute; bottom: 0; left: 0; background: rgba(0, 0, 0, 0.05); padding: 5px; text-align: center; font-size: 11px; color: $color_text_medium; }
 }
 
 .co_item_image {
-    display: inline-block; width: 70px; vertical-align: middle;
+    display: inline-block; width: 70px; vertical-align: top;
 }
 
 .co_item_details {
-    font-size: 14px; display: inline-block; width: calc(100% - 150px); vertical-align: middle; padding-left: 10px;
-    h5 { font-weight: 700; margin-bottom: 5px; font-size: 14px; color: $color_text_dark; }
-    ul { font-size: 12px; }
+    font-size: 12px; display: inline-block; width: calc(100% - 150px); vertical-align: top; padding-left: 10px;
+    h5 { margin-bottom: 5px; font-size: 14px; color: $color_text_dark; }
+    ul { font-size: 12px; font-weight: 300;}
     li { margin-bottom: 3px; }
     span { display: none; }
 }
 
-.co_item_price { display: inline-block; width: 80px; font-size: 16px; color: $color_text_medium; text-align: right; vertical-align: middle; }
+.co_item_price { display: inline-block; width: 80px; font-size: 16px; color: $color_text_medium; text-align: right; vertical-align: top; }
 
 #checkout_summary_coupon_code {
     padding: 15px; font-size: 0; border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -154,22 +155,25 @@
     }
 }
 
-#checkout_login_password { display: none; }
+#checkout_login_user{
+    display: none;
+    &.active {display: block;}
+}
 
 #checkout_login_button {
-    display: none; margin-bottom: 10px;
+    margin-bottom: 10px;
     &.active { display: block; }
     button { width: 100%; }
 }
 
 #checkout_forgot_password_link {
-    display: none; margin-left: -15px;
+    display: inline-block; margin-left: -15px;
     a { display: block; padding: 10px 15px; }
     &.active { display: inline-block; }
 }
 
 #checkout_no_login_link {
-    display: none;
+    display: inline-block;
     a { display: block; padding: 10px 15px; }
     &.active { display: inline-block; }
 }
@@ -193,7 +197,7 @@
 }
 
 #save_information {
-    margin: 15px 0;
+    padding: 10px 0 5px 0;
     label { display: inline-block; vertical-align: middle; font-weight: 400; font-size: 16px; }
     p { font-weight: 300; color: $color_text_medium; font-size: 14px; margin-top: 3px;}
 }
@@ -255,9 +259,9 @@
 }
 
 #paypal_redirect {
-    font-size: 0; padding: 10px;
+    font-size: 0; padding: 10px; color: $color_text_dark;
     i { width: 30px; font-size: 20px; vertical-align: middle; }
-    span { display: inline-block; width: calc(100% - 30px); font-size: 16px; vertical-align: middle; font-weight: 300;}
+    span { display: inline-block; width: calc(100% - 30px); font-size: 16px; vertical-align: middle;}
 }
 
 /* ----- Billin Address ---- */
@@ -284,7 +288,7 @@
     padding: 10px 0 20px 0;
     h6 { font-size: 14px; font-weight: 700; color: $color_text_dark; margin-bottom: 5px;  padding: 0 0 5px 0; border-bottom: 1px dotted rgba(0,0,0,0.2);}
     address, p { font-style: normal; font-size: 14px; line-height: 1.5; }
-    a { display: block; margin-top: 5px; font-size: 13px; padding: 5px 0; }
+    a { display: block; margin-top: 5px; font-size: 13px; padding: 5px 0;}
 }
 
 #mobile_review_total {

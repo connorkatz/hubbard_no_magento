@@ -2,7 +2,6 @@
 
     <div id="locations_container">
         <h1 class="page_header">Samuel Hubbard Locations</h1>
-        <hr class="decorative_break_2">
         <section id="locations_search">
             <div id="locations_search_inner">
                 <input type="text" placeholder="City and State or Zip">
