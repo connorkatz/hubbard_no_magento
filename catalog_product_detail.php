@@ -146,7 +146,7 @@
                     </div><!-- end prod details lower -->
                 </section><!-- end prod details -->
                 <div id="shipping_callout">
-                    <a href=/static_return_policy.php">Shipping &amp; Returns are Free. And Easy.</a>
+                    <a href="/static_return_policy.php">Shipping &amp; Returns are Free. And Easy.</a>
                 </div><!-- end shipping callout -->
 
                 <section id="social_share">
