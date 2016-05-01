@@ -42,7 +42,7 @@
                     <div id="prod_slider_left" class="prod_slider_nav"></div>
                     <div id="prod_slider_right" class="prod_slider_nav"></div>
                 </section><!-- end prod main image block -->
-                <p>Tan Waxhide&nbsp;&mdash; White Outsole</p>
+                <p>Tan Waxhide / White Outsole</p>
                 <div id="prod_slider_pages"></div>
 
 
