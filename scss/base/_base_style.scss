@@ -853,12 +853,12 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
         line-height: 1;
         p {padding: 0;}
     }
-}
-
-#return_form_button {
-    padding: 15px 0;
-    a {
-        @extend %button_primary;
-        text-decoration: none;
+    .button_utility {
+        padding: 15px 0; text-align: center;
+        a {
+            @extend %button_primary;
+            display: inline-block; max-width: 400px; text-decoration: none;
+        }
     }
 }
+

@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-    <h1 class="page_header">Terms and Conditions</h1>
+    <h1 class="page_header">Terms &amp; Conditions</h1>
     <hr class="decorative_break_2">
     <section id="basic_static_content">
 
@@ -10,7 +10,7 @@
         <p><strong>ACCESSING, BROWSING OR OTHERWISE USING THE SITE INDICATES YOUR AGREEMENT TO ALL THE TERMS OF
                 USE.</strong></p>
 
-        <h2>USE OF SITE</h2>
+        <h2>Use of Site</h2>
         <p>You represent and warrant that you are at least 18 years old or visiting the Site under the supervision of a
             parent or guardian.</p>
         <p>Subject to the terms and conditions below, we grant you a limited, revocable, non-transferable and
@@ -66,8 +66,7 @@
 
         <h2>Privacy Policy</h2>
         <p>Please review our <a href="/static_privacy.php">Privacy Policy</a>, which also governs your visit to this Site, to
-            understand our practices. Our Privacy Policy is available at <a href="/static_privacy.php">
-                www.samuelhubbard.com/privacy</a>.
+            understand our practices. Our Privacy Policy is available at <a href="/static_privacy.php">www.samuelhubbard.com/privacy</a>.
         </p>
 
         <h2>Termination and Effect of Termination</h2>

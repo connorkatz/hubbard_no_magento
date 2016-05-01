@@ -8,7 +8,7 @@
   font-size: 12px;
   text-transform: uppercase; }
 
-#customer_account_choice li button, .basic_form_box_inner button, #customer_account_choice li a.button, .basic_form_box_inner a.button, #atc_row button, #cart_checkout button, #return_form_button a, .buttons-set button, .place_order button, #order_followup button, #locations_search_inner button {
+#customer_account_choice li button, .basic_form_box_inner button, #customer_account_choice li a.button, .basic_form_box_inner a.button, #atc_row button, #cart_checkout button, #basic_static_content .button_utility a, .buttons-set button, .place_order button, #order_followup button, #locations_search_inner button {
   font-family: "Roboto Slab", "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: block;
   width: 100%;
@@ -22,7 +22,7 @@
   cursor: pointer;
   line-height: 1; }
   @media (min-width: 1150px) {
-    #customer_account_choice li button:hover, .basic_form_box_inner button:hover, #customer_account_choice li a.button:hover, .basic_form_box_inner a.button:hover, #atc_row button:hover, #cart_checkout button:hover, #return_form_button a:hover, .buttons-set button:hover, .place_order button:hover, #order_followup button:hover, #locations_search_inner button:hover {
+    #customer_account_choice li button:hover, .basic_form_box_inner button:hover, #customer_account_choice li a.button:hover, .basic_form_box_inner a.button:hover, #atc_row button:hover, #cart_checkout button:hover, #basic_static_content .button_utility a:hover, .buttons-set button:hover, .place_order button:hover, #order_followup button:hover, #locations_search_inner button:hover {
       background: #ffa400; } }
 
 #atc_row button i, #out_of_stock_callout button i, #checkout_summary_coupon_code button i, .buttons-set button i, #mobile_coupon_code button i, .place_order button i, #account_activate_input button i {
@@ -233,7 +233,6 @@
   font-size: 12px; }
 
 #support_content, #basic_static_content {
-  font-weight: 300;
   line-height: 1.6;
   font-size: 16px;
   vertical-align: top; }
@@ -284,6 +283,9 @@
       margin: 0 0 5px 0; }
     #support_content p, #basic_static_content p {
       padding-bottom: 15px; } }
+  @media (min-width: 1150px) {
+    #support_content, #basic_static_content {
+      font-weight: 300; } }
 
 .basic_form_box {
   padding: 0 20px 20px 20px; }
@@ -4374,11 +4376,13 @@ hr.decorative_break_2 {
     line-height: 1; }
     #basic_static_content .basic_form_box_inner p {
       padding: 0; }
-
-#return_form_button {
-  padding: 15px 0; }
-  #return_form_button a {
-    text-decoration: none; }
+  #basic_static_content .button_utility {
+    padding: 15px 0;
+    text-align: center; }
+    #basic_static_content .button_utility a {
+      display: inline-block;
+      max-width: 400px;
+      text-decoration: none; }
 
 #customer_account_choice ul {
   max-width: 850px;
@@ -5992,15 +5996,7 @@ hr.decorative_break_2 {
     width: 49.5%;
     margin-bottom: 10px; }
     #locations_items_container li:nth-child(odd) {
-      margin-right: 1%; }
-
-  /* ---------------- Static Basic Page --------------------------------- */
-  /* ------------------------------------------------------------------ */
-  #return_form_button {
-    text-align: center; }
-    #return_form_button a {
-      display: inline-block;
-      width: 250px; } }
+      margin-right: 1%; } }
 /* end media query */
 @media (min-width: 1000px) {
   /* ---------------- Header ------------------------------------------ */
