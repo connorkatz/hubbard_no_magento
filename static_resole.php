@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-    <h1 class="page_header">Resoleing &amp; Refurbishment</h1>
+    <h1 class="page_header">Resoling &amp; Refurbishment</h1>
     <hr class="decorative_break_2">
     <section id="basic_static_content">
         <div class="button_utility">
