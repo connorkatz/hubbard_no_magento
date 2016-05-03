@@ -145,7 +145,7 @@
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
-            <li class="waitlist">
+            <li class="Waitlist">
                 <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/boot_up_espresso_brown.jpg">
                     <h3>Espresso Brown</h3>
@@ -196,7 +196,7 @@
                     <span class="stock_message">Waitlist</span>
                 </a>
             </li>
-            <li class="waitlist">
+            <li class="Waitlist">
                 <a href="/catalog_product_detail.php">
                     <img src="../images/product_images/off_white/hubbard_free_navy_nubuck.jpg">
                     <h3>Navy Nubuck</h3>

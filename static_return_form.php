@@ -4,7 +4,7 @@
     <section id="basic_static_content">
         <p>You will need your order number in order to complete the return form and receive a prepaid shipping
             label.</p>
-        <p>You can find your order number on your packing slip, email that you received from Samuel Hubbard when your
+        <p>You can find your order number on your packing slip, or the email that you received from Samuel Hubbard when your
             order shipped, or in <a href="/customer_login.php">your account</a> if you created one previously.</p>
         <p>Otherwise contact us and we will locate your order number for you.</p>
         <ul class="contact_list">

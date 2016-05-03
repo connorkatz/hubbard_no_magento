@@ -6,7 +6,7 @@
     <section class="basic_form_box">
         <div class="basic_form_box_inner">
             <form>
-                <h2>Contact Information</h2>
+                <h3>Contact Information</h3>
                 <label for="firstname">First Name</label>
                 <div class="input-box">
                     <input type="text" id="firstname">
@@ -23,7 +23,7 @@
                 <div class="input-box">
                     <input type="password" id="phone">
                 </div>
-                <h2>Address</h2>
+                <h3>Address</h3>
                 <label for="address">Address</label>
                 <div class="input-box">
                     <input type="text" id="address">

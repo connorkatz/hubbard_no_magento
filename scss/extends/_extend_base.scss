@@ -67,13 +67,27 @@
 }
 
 // -------------------------
+// Reviews
+// -------------------------
+%review_block {
+    color: $color_text_medium; text-align: center;
+    blockquote { line-height: 1.5; font-weight: 300; font-size: 16px; padding-bottom: 10px; }
+    footer { text-align: center; margin: 10px 0 0 0; font-style: normal; font-size: 14px; font-weight: 400; }
+    i { text-align: center; margin: 10px 0; color: $color_brand_primary; font-size: 20px; }
+    @media #{$break_small} {
+        blockquote {font-size: 18px;}
+        footer {font-size: 16px;}
+    }
+}
+
+// -------------------------
 // Product Grid
 // -------------------------
 
 %product_list_items {
     font-size: 0; margin: 10px 0 0 -10px; text-align: center; padding: 0 0 15px 0;
     li {
-        position: relative; display: inline-block; background: $color_util_1; border-radius: 3px; width: calc(50% - 10px); margin: 10px 0 0 10px; padding: 10px 5px; overflow: hidden;
+        position: relative; display: inline-block; background: $color_util_1; border-radius: 3px; width: calc(50% - 10px); margin: 10px 0 0 10px; padding: 15px 5px; overflow: hidden;
         &.not_available { display: none; }
         &.waitlist {
             .stock_message { display: block; }
@@ -90,8 +104,8 @@
     }
     a { display: block; color: $color_text_medium; }
     .stock_message {
-        display: none; position: absolute; z-index: 99; top: 0; right: 0; text-align: center; padding: 10px; color: $color_text_dark; text-transform: uppercase; font-size: 10px;
-        &:before { content: '\f14d'; font-family: $font_fontAwesome; margin-right: 5px; }
+        display: none; position: absolute; z-index: 99; top: 0; right: 0; text-align: center; padding: 10px; text-transform: uppercase; color: $color_text_dark; font-size: 10px;
+        &:before { content: '\f044'; font-family: $font_fontAwesome; margin-right: 5px;}
     }
     @media #{$break_small} {
         li { width: calc((100% / 3) - 10px); padding: 15px 10px; }
@@ -101,7 +115,10 @@
         }
 
         h3 { font-size: 12px; }
-        .stock_message { font-size: 12px; }
+        .stock_message {
+            font-size: 12px;
+            &:before {font-size: 14px;}
+        }
     }
     @media #{$break_large} {
         &.short_list {
@@ -161,9 +178,9 @@
     address { display: block; font-weight: 300; font-style: normal; padding-bottom: 15px; }
     ul.contact_list {
         margin-bottom: 10px; list-style-type: none; padding: 0;
-        i { color: rgba(0, 0, 0, 0.3); margin-right: 10px; vertical-align: middle; font-size: 28px;}
+        i { color: rgba(0, 0, 0, 0.3); margin-right: 10px; vertical-align: middle; font-size: 28px; }
         li { padding-bottom: 10px; }
-        a {text-decoration: none;}
+        a { text-decoration: none; }
     }
     @media #{$break_small} {
         h2 { font-size: 24px; text-align: left; border: none; max-width: none; margin: 0 0 5px 0; }

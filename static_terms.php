@@ -74,25 +74,14 @@
             terminate these Terms or Use or revoke any or all of your rights granted. You shall immediately cease all
             access to and use of the website and we shall, in addition to any other legal or equitable remedies,
             immediately revoke all password(s) and account identification issued to you and deny your access to and use
-            of this Site in whole or in part.  Such termination shall not affect the respective rights and obligations
+            of this Site in whole or in part. Such termination shall not affect the respective rights and obligations
             (including without limitation, payment obligations) of the parties arising before the date of
             termination.</p>
 
         <h2>Disclaimers and Limitations of Liability</h2>
-        <p>This site, the products offered for sale on it and the transactions conducted through it are provided by us
-            on an "as is" basis. We make no representations or warranties of any kind, express or implied, as to the
-            operation of the site or the information, content, materials, or products included on this site. To the full
-            extent permissible by applicable law, we disclaim all warranties, express or implied, including, but not
-            limited to, implied warranties of merchantability and fitness for a particular purpose, noninfringement,
-            title, quiet enjoyment, data accuracy and system integration. This site may include inaccuracies, mistakes
-            or typographical errors. We do not warrant that the content will be uninterrupted or error free.
+        <p>THIS SITE, THE PRODUCTS OFFERED FOR SALE ON IT AND THE TRANSACTIONS CONDUCTED THROUGH IT ARE PROVIDED BY US ON AN "AS IS" BASIS. WE MAKE NO REPRESENTATIONS OR WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED, AS TO THE OPERATION OF THE SITE OR THE INFORMATION, CONTENT, MATERIALS, OR PRODUCTS INCLUDED ON THIS SITE. TO THE FULL EXTENT PERMISSIBLE BY APPLICABLE LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT, TITLE, QUIET ENJOYMENT, DATA ACCURACY AND SYSTEM INTEGRATION. THIS SITE MAY INCLUDE INACCURACIES, MISTAKES OR TYPOGRAPHICAL ERRORS. WE DO NOT WARRANT THAT THE CONTENT WILL BE UNINTERRUPTED OR ERROR FREE.
         </p>
-        <p> 
-            To the maximum extent permitted by law, we will not be liable for any damages of any kind arising from the
-            use of this site, including, but not limited to indirect, incidental, punitive, exemplary, special or
-            consequential damages. To the maximum extent permitted by applicable law, our total liability to you for any
-            damages (regardless of the foundation for the action) shall not exceed in the aggregate the amount actually
-            paid by you to us during the month immediately preceding the act allegedly giving rise to our liability.</p>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE WILL NOT BE LIABLE FOR ANY DAMAGES OF ANY KIND ARISING FROM THE USE OF THIS SITE, INCLUDING, BUT NOT LIMITED TO INDIRECT, INCIDENTAL, PUNITIVE, EXEMPLARY, SPECIAL OR CONSEQUENTIAL DAMAGES. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, OUR TOTAL LIABILITY TO YOU FOR ANY DAMAGES (REGARDLESS OF THE FOUNDATION FOR THE ACTION) SHALL NOT EXCEED IN THE AGGREGATE THE AMOUNT ACTUALLY PAID BY YOU TO US DURING THE MONTH IMMEDIATELY PRECEDING THE ACT ALLEGEDLY GIVING RISE TO OUR LIABILITY.</p>
 
         <h2>Typographical Errors</h2>
         <p>In the event a product is listed at an incorrect price or with incorrect information due to typographical

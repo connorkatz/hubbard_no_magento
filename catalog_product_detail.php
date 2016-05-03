@@ -193,14 +193,14 @@
                     <blockquote>
                         <p>"These are amazing shoes. Perfect fit and look great too. When shoes feel like no shoes or
                             slippers, then the ultimate is achieved!"</p>
-                        <footer>&mdash; Brian Wells</footer>
+                        <footer>Brian Wells</footer>
                     </blockquote>
                 </li>
                 <li>
                     <blockquote>
                         <p>"My husband absolutely loves them and says they are the most comfortable shoes he has ever
                             owned. That is saying a lot, because he has long had trouble with his feet."</p>
-                        <footer>&mdash; Roberta Almeza</footer>
+                        <footer>Roberta Almeza</footer>
                     </blockquote>
                 </li>
                 <li>
@@ -208,7 +208,7 @@
                         <p>"I've now rugged road tested my Hubbards and have the evidence to crown them as most
                             comfortable shoes on the planet. My feet are as comfortable in these shoes
                             on the last day as they were in the first few minutes I put them on."</p>
-                        <footer>&mdash; David Portsmith</footer>
+                        <footer>David Portsmith</footer>
                     </blockquote>
                 </li>
             </ul>

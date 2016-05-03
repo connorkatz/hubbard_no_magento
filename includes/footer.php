@@ -31,7 +31,10 @@
             <ul id="footer_social_links">
                 <?php include 'social_links.php' ?>
             </ul><!-- end footer social links -->
-            <address class="copyright">&copy; <?php echo date("Y") ?> Samuel Hubbard, LLC.</address>
+            <div class="legal">
+                &copy; <?php echo date("Y") ?> Samuel Hubbard, LLC.<br>
+                Samuel Hubbard&reg; and The Un-Sneaker are trademarks of Samuel Hubbard Shoe Co.
+            </div>
         </section><!-- end footer group -->
     </div><!-- end site footer inner -->
 </footer>

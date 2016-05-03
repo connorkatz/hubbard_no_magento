@@ -38,13 +38,12 @@
             statistical analysis, provide you with email and/or postal mail, help prevent fraud, deliver support, and
             arrange for deliveries to be made. Those third parties shall be strictly prohibited from making use of your
             personal information, other than to deliver those services.</p>
-        <p>We do not now, nor will we in the future, sell, rent or lease any customer lists and/or names to any third
-            parties.</p>
+
         <p>We may disclose your personal information, without prior notice to you, only if required to do so pursuant to
             applicable laws and/or in a good faith belief that such action is deemed necessary to:</p>
         <ul>
             <li>Conform to decrees, laws and/or statutes or in an effort to comply with any subpoena or legal
-                process<;/li>
+                process</li>
             <li>Safeguard and/or preserve all the rights and/or property of our company; and</li>
             <li>Provide for the personal safety of users of www.samuelhubbard.com and/or the general public.</li>
         </ul>
