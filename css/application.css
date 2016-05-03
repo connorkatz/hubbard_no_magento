@@ -3290,9 +3290,8 @@ hr.decorative_break_2 {
     margin-bottom: 10px; }
   #footer_email_group .legal {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.8);
-    margin: 15px 0 0 0;
-    line-height: 1.5; }
+    color: rgba(255, 255, 255, 0.5);
+    margin: 15px 0 0 0; }
 
 #footer_email_input {
   display: inline-block;
@@ -4005,7 +4004,8 @@ hr.decorative_break_2 {
   padding: 10px 25px;
   font-size: 13px;
   color: #808080;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 300; }
 
 #prod_overview {
   font-size: 0; }
@@ -4290,8 +4290,7 @@ hr.decorative_break_2 {
 
 #cart_price_summary {
   padding: 10px 20px;
-  color: #808080;
-  border-radius: 5px; }
+  color: #808080; }
   #cart_price_summary li {
     font-size: 0;
     padding: 5px 0; }
@@ -6085,10 +6084,10 @@ hr.decorative_break_2 {
     display: inline; }
 
   #prod_details {
-    border-radius: 3px;
+    border-radius: 8px;
     margin-top: -20px;
     background: #ffffff;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2); }
+    border: 2px solid rgba(0, 0, 0, 0.1); }
 
   #prod_title_group {
     position: static;
@@ -6105,7 +6104,7 @@ hr.decorative_break_2 {
       padding: 10px 0;
       margin: 0;
       background: #f7f6f5;
-      border-radius: 3px 3px 0 0; }
+      border-radius: 6px 6px 0 0; }
 
   #prod_price_review_block {
     background: #ffffff;
@@ -6132,7 +6131,7 @@ hr.decorative_break_2 {
 
   #prod_details_lower {
     border-top: 1px solid #ffffff;
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 6px 6px;
     padding: 0; }
 
   #color_size_container {
@@ -6304,6 +6303,10 @@ hr.decorative_break_2 {
       float: left;
       width: 30%;
       margin-top: 15px; }
+
+  #cart_price_summary {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.1); }
 
   /* ---------------- Locations --------------------------------- */
   /* ------------------------------------------------------------------ */
