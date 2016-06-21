@@ -32,7 +32,7 @@
                 <?php include 'social_links.php' ?>
             </ul><!-- end footer social links -->
             <div class="legal">
-                &copy; <?php echo date("Y") ?> Samuel Hubbard, LLC.<br>
+                &copy; <?php echo date("Y") ?> Samuel Hubbard Shoe Company LLC.<br>
                 Samuel Hubbard&reg; and The Un-Sneaker are trademarks of Samuel Hubbard Shoe Co.
             </div>
         </section><!-- end footer group -->

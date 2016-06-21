@@ -23,9 +23,8 @@ function changeOptionText(optionGroup, optionText) {
 
 
 function showCartPreview() {
-    $j('html,body').animate({scrollTop: 0}, '500', function() {
-        $j('#cart_preview').slideDown();
-    });
+    $j('html,body').scrollTop(0),
+    $j('#cart_preview').show();
 }
 
 function hideCartPreview() {
