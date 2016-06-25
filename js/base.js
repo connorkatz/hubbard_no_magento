@@ -135,29 +135,31 @@ function setupFeatureDetails(linkElement) {
     featureItemLinks.removeClass('active');
     $this.addClass('active');
     $j('.fd_item').removeClass('active');
-    switch (linkTitle) {
-        case '#fd_heel':
-            linkPositionTop += 45;
-            linkPositionLeft -= 10;
-            break;
-        case '#fd_toe':
-            linkPositionTop -= 100;
-            linkPositionLeft -= 160;
-            break;
-        case '#fd_insole':
-            linkPositionTop -= 120;
-            linkPositionLeft -= 105;
-            break;
-        case '#fd_tongue':
-            linkPositionTop += 45;
-            linkPositionLeft -= 100;
-            break;
-        case '#fd_sole':
-            linkPositionTop -= 125;
-            linkPositionLeft -= 105;
-            break;
+    if($j(window).width() >= 700) {
+        switch(linkTitle) {
+            case '#fd_heel':
+                linkPositionTop += 45;
+                linkPositionLeft -= 10;
+                break;
+            case '#fd_toe':
+                linkPositionTop -= 100;
+                linkPositionLeft -= 160;
+                break;
+            case '#fd_insole':
+                linkPositionTop -= 120;
+                linkPositionLeft -= 105;
+                break;
+            case '#fd_tongue':
+                linkPositionTop += 45;
+                linkPositionLeft -= 100;
+                break;
+            case '#fd_sole':
+                linkPositionTop -= 125;
+                linkPositionLeft -= 105;
+                break;
+        }
+        $j(linkTitle).css({top: linkPositionTop, left: linkPositionLeft});
     }
-    $j(linkTitle).css({top: linkPositionTop, left: linkPositionLeft});
     $j(linkTitle).addClass('active');
 }
 
@@ -222,15 +224,12 @@ $j(document).ready(function() {
 
     // setup scroll arrow
     scrollArrowSetup();
-    
-    if($j(window).width() >= 700 ) {
-        setupFeatureDetails($j('#feature_items_block a.active'));
 
-        $j('#feature_items_block a').click(function() {
-            setupFeatureDetails($j(this));
-            return false;
-        });
-    }
+    setupFeatureDetails($j('#feature_items_block a.active'));
 
+    $j('#feature_items_block a').click(function() {
+        setupFeatureDetails($j(this));
+        return false;
+    });
 
 }); // end document ready
