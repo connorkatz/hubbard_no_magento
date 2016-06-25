@@ -35,12 +35,11 @@
 
     <section id="publication_logos" class="site_width">
         <ul>
-            <li><img src="../images/ad_logos/ny_times.svg"></li>
-            <li><img src="../images/ad_logos/forbes.svg"></li>
-            <li><img src="../images/ad_logos/rolling_stone.svg"></li>
-            <li><img src="../images/ad_logos/golf.svg"></li>
+            <li><img src="../images/ad_logos/ny_times.png"></li>
+            <li><img src="../images/ad_logos/forbes.png" class="forbes"></li>
+            <li><img src="../images/ad_logos/rolling_stone.png" class="rolling_stone"></li>
+            <li><img src="../images/ad_logos/golf.png"></li>
         </ul>
-        <p>As Advertised In</p>
     </section><!-- end publication logos -->
     <section id="homepage_review_callouts">
         <div id="homepage_review_callouts_inner">
@@ -81,9 +80,52 @@
         </div><!-- end review callout inner -->
     </section><!-- end review callout -->
     <a name="page_jump"></a>
-    <section class="homepage_feature_block">
-        Homepage Feature content
-    </section><!-- end homepage feature -->
+    <div class="center_breaker">
+        <div class="center_breaker_inner">
+            <h2>
+                <span>Anatomy of A Hubbard</span>
+            </h2>
+        </div><!-- end center breaker inner -->
+    </div><!-- end center breaker -->
+    <section id="feature_block_ingredients" class="feature_block">
+        <section class="feature_block_text">
+            <div class="feature_block_text_inner">
+                <h3>Handmade From the Finest Ingredients</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed odio gravida, consequat enim
+                    eu,
+                    tempor nisi. Aenean non est vitae justo ultricies dapibus. Cras sit amet hendrerit ante. Nullam
+                    tincidunt est diam. Aenean vitae dolor luctus, rhoncus tortor a, lobortis lacus.</p>
+            </div><!-- end feature block text inner -->
+        </section><!-- end feature block text -->
+        <section class="feature_block_image"></section>
+    </section><!-- end feature block -->
+    <section id="feature_block_inside" class="feature_block">
+        <section class="feature_block_text">
+            <h3>As Beautiful on the Inside as the Outside</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed odio gravida, consequat enim eu,
+                tempor nisi. Aenean non est vitae justo ultricies dapibus. Cras sit amet hendrerit ante. Nullam
+                tincidunt est diam. Aenean vitae dolor luctus, rhoncus tortor a, lobortis lacus.</p>
+        </section><!-- end feature block text -->
+        <section class="feature_block_image"></section>
+    </section><!-- end feature block -->
+    <section id="feature_block_size" class="feature_block">
+        <section class="feature_block_text">
+            <h3>Yes, Size Matters</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed odio gravida, consequat enim eu,
+                tempor nisi. Aenean non est vitae justo ultricies dapibus. Cras sit amet hendrerit ante. Nullam
+                tincidunt est diam. Aenean vitae dolor luctus, rhoncus tortor a, lobortis lacus.</p>
+        </section><!-- end feature block text -->
+        <section class="feature_block_image"></section>
+    </section><!-- end feature block -->
+    <section id="feature_block_resole" class="feature_block">
+        <section class="feature_block_text">
+            <h3>Replaceable Vibram<sup>&reg;</sup> Sole</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed odio gravida, consequat enim eu,
+                tempor nisi. Aenean non est vitae justo ultricies dapibus. Cras sit amet hendrerit ante. Nullam
+                tincidunt est diam. Aenean vitae dolor luctus, rhoncus tortor a, lobortis lacus.</p>
+        </section><!-- end feature block text -->
+        <section class="feature_block_image"></section>
+    </section><!-- end feature block -->
     <script src="../js/get_url_param.js"></script>
     <script src="../js/homepage.js"></script>
 <?php include 'includes/footer.php'; ?>

@@ -57,7 +57,15 @@
 <li>
     <a href="/catalog_product_list.php">Women</a>
 </li>
-<li><a href="/catalog_product_list.php">Accessories</a></li>
 <li><a href="/locations.php">Locations</a></li>
-<li><a href="#">Story</a></li>
-<li><a href="#">Blog</a></li>
+<li class="nav_lvl_1">
+    <a href="#">Story</a>
+    <div class="nav_lvl_2">
+        <div class="callout_categories">
+            <ul>
+                <li><a href="/static_approach.php">Our Approach</a></li>
+                <li><a href="/static_story.php">Our Story</a></li>
+            </ul>
+        </div><!-- end callout categories -->
+    </div><!-- end nav lvl 2 -->
+</li>

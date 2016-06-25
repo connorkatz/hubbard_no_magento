@@ -38,6 +38,48 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
     &.active { bottom: 0; }
 }
 
+/* ---------------- Feature Blocks ------------------------------------- */
+/* ------------------------------------------------------------------ */
+.center_breaker {
+    overflow: hidden; max-width: 800px; margin: 0 auto; padding: 30px 0 10px 0;
+}
+.center_breaker_inner {
+    border-bottom: 2px solid rgba(0,0,0,0.1); border-top: 1px solid #ffffff; margin: 0 25px;
+    h2 {
+        float: left; display: inline-block; position: relative; left: 50%;  font-family: $font_din_regular; color: $color_text_dark; font-size: 24px; text-transform: uppercase;
+        span { position: relative; top: -10px; left: -50%; padding: 10px 20px; background: #ffffff;}
+    }
+}
+
+.feature_block {
+    border-bottom: 1px solid #ffffff;
+    .feature_block_text {
+        padding: 25px 20px; font-size: 16px; line-height: 1.6; font-weight: 300; text-align: center; color: $color_text_medium;
+        h3 {font-family: $font_din_regular; color: $color_text_dark; text-align: center; text-transform: uppercase; font-size: 20px; line-height: 1.2; margin-bottom: 10px;}
+    }
+}
+
+#feature_block_ingredients {
+    .feature_block_text {background: url('/images/feature_boxes/feature_ingredients_top.jpg') no-repeat center bottom #f7f7f7; background-size: 100% 68px;}
+    .feature_block_image {padding-top: 100%; background: url('/images/feature_boxes/feature_ingredients.jpg') no-repeat; background-size: cover;}
+}
+
+#feature_block_inside {
+    background: #f1f1f1;
+    .feature_block_image {padding-top: 53%; background: url('/images/feature_boxes/feature_inside.jpg') no-repeat; background-size: contain;}
+}
+
+#feature_block_size {
+    background: #ebebed;
+    .feature_block_image {padding-top: 36%; background: url('/images/feature_boxes/feature_size.jpg') no-repeat; background-size: contain;}
+}
+
+#feature_block_resole {
+    background: #ffffff;
+    .feature_block_image {padding-top: 46%; background: url('/images/feature_boxes/feature_resole.jpg') no-repeat; background-size: contain;}
+    sup {font-size: 12px; font-family: $font_lato; font-weight: 400;}
+}
+
 /* ---------------- Site Callout ------------------------------------------ */
 /* ------------------------------------------------------------------ */
 
@@ -303,20 +345,23 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 /* ------------------------------------------------------------------ */
 
 #homepage_hero {
-    @include full-width-slideshow(80%, 40%);
+    @include full-width-slideshow(100%, 40%);
     background: $color_util_4; border-bottom: 1px solid #ffffff;
 }
 
 #publication_logos {
-    padding-bottom: 10px; text-align: center; background: $color_util_5;
+    text-align: center; background: $color_util_5;
     p { display: inline-block; text-transform: uppercase; font-size: 9px; color: #b3b3b3; }
-    ul { font-size: 0; text-align: center; padding: 15px 10px 10px 10px; }
+    ul { font-size: 0; text-align: center; padding: 0; }
     li {
-        display: inline-block; width: calc(100% / 3); padding: 0 5px; max-width: 225px; vertical-align: middle;
-        img { width: 100%; opacity: 0.5; }
+        position: relative; display: inline-block; width: calc(100% / 3); padding: 10% 15px 0 15px; max-width: 250px; vertical-align: middle; border-right: 1px solid #ffffff;
+        img {
+            position: absolute; display: block; top: 0; right: 0; left: 0; bottom: 0; margin: auto; max-width: 80%; max-height: 20px; opacity: 0.4;
+        }
+
     }
-    li:first-of-type { margin: 0; }
-    li:last-of-type { display: none; }
+    li:first-of-type { margin: 0; border-left: 1px solid #ffffff;}
+    li:last-of-type { display: none;}
 }
 
 #homepage_review_callouts {
@@ -335,6 +380,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 .homepage_review_nav_arrow {
     @extend %slider_nav_arrow;
 }
+
 
 /* ---------------- Breadcrumbs ------------------------------------- */
 /* ------------------------------------------------------------------ */

@@ -13,6 +13,36 @@
         p { margin-bottom: 20px; }
     }
 
+
+    /* ---------------- Feature Blocks ------------------------------------- */
+    /* ------------------------------------------------------------------ */
+    .center_breaker_inner {
+        h2 { font-size: 30px; }
+    }
+
+    .feature_block {
+        .feature_block_text {
+            h3 { font-size: 24px; }
+        }
+    }
+
+    #feature_block_ingredients {
+        .feature_block_text {padding: 25px 50px; }
+    }
+
+    #feature_block_inside {
+        .feature_block_text {padding: 25px 50px; }
+    }
+
+    #feature_block_size {
+        .feature_block_text {padding: 25px 50px; max-width: 800px; margin: 0 auto;}
+    }
+
+    #feature_block_resole {
+        .feature_block_text {padding: 25px 50px; max-width: 800px; margin: 0 auto;}
+    }
+
+
     /* ---------------- Site Callout ------------------------------------------ */
     /* ------------------------------------------------------------------ */
 
@@ -112,11 +142,10 @@
     /* ------------------------------------------------------------------ */
 
     #publication_logos {
-        padding-bottom: 15px;
         p { margin-bottom: 0px; font-size: 10px; }
         li {
-            width: 25%; padding: 0 20px; max-height: none;
-            img { height: auto; }
+            width: 25%;
+            img {max-height: 30px; }
         }
         li:last-of-type { display: inline-block; }
     }
