@@ -123,7 +123,7 @@
                     Triple density, memory foam, leather insoles mold to the unique shape of your foot and provide silky smooth feel.
                 </div><!-- end feature detail item -->
                 <div id="fd_tongue" class="fd_item">
-                    Leather lined and softly-padded tongue evenly distributes lace tension across the instep.
+                    Leather lined and softly padded tongue evenly distributes lace tension across the instep.
                 </div><!-- end feature detail item -->
                 <div id="fd_sole" class="fd_item">
                     Custom Vibram<sup>&reg;</sup> soles put a spring in your stride and provide all day support for hours on your feet.

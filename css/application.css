@@ -5636,6 +5636,10 @@ hr.decorative_break_2 {
 
   #feature_block_features .feature_block_image {
     position: relative; }
+  #feature_block_features .feature_block_text {
+    padding: 25px 50px;
+    max-width: 800px;
+    margin: 0 auto; }
 
   #feature_block_inside .feature_block_text {
     padding: 25px 50px; }
@@ -6288,6 +6292,11 @@ hr.decorative_break_2 {
   .feature_block .feature_block_text {
     font-size: 18px; }
 
+  #feature_block_resole .feature_block_text {
+    padding: 25px 50px;
+    max-width: 800px;
+    margin: 0 auto; }
+
   #feature_block_ingredients {
     overflow: hidden;
     position: relative;
@@ -6312,6 +6321,9 @@ hr.decorative_break_2 {
       width: 55%;
       float: left; }
 
+  #feature_block_features .feature_block_text {
+    padding: 50px 50px; }
+
   #feature_block_inside {
     overflow: hidden;
     position: relative; }
@@ -6325,6 +6337,12 @@ hr.decorative_break_2 {
       width: 80%;
       padding-top: 42%;
       float: right; }
+
+  #feature_block_size .feature_block_text {
+    padding: 50px 50px; }
+
+  #feature_block_resole .feature_block_text {
+    padding: 50px 50px; }
 
   /* ---------------- Header ------------------------------------------ */
   /* ------------------------------------------------------------------ */
