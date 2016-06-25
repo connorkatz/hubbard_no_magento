@@ -106,9 +106,9 @@ function scrollArrowSetup() {
             hideScrollArrow();
         });
         var pageJumpPosition = $j('a[name=page_jump]').offset().top;
-        $j(window).scroll($j.throttle( 500, function() {
+        $j(window).scroll($j.throttle(500, function() {
             if($j(window).scrollTop() >= pageJumpPosition) {
-               hideScrollArrow();
+                hideScrollArrow();
             }
         }));
     }
@@ -121,9 +121,46 @@ function hideScrollArrow() {
 function changeTab(target, tabNav, tabGroup) {
     tabNav.removeClass('active');
     tabGroup.removeClass('active');
-    tabNav.filter('[href='+target+']').addClass('active');
+    tabNav.filter('[href=' + target + ']').addClass('active');
     $j(target).addClass('active');
 };
+
+function setupFeatureDetails(linkElement) {
+    var featureItemLinks = $j('#feature_items_block a');
+    var $this = linkElement;
+    var linkPosition = $this.position();
+    var linkPositionTop = linkPosition.top;
+    var linkPositionLeft = linkPosition.left;
+    var linkTitle = $this.attr('href');
+    featureItemLinks.removeClass('active');
+    $this.addClass('active');
+    $j('.fd_item').removeClass('active');
+    switch (linkTitle) {
+        case '#fd_heel':
+            linkPositionTop += 45;
+            linkPositionLeft -= 10;
+            break;
+        case '#fd_toe':
+            linkPositionTop -= 100;
+            linkPositionLeft -= 160;
+            break;
+        case '#fd_insole':
+            linkPositionTop -= 120;
+            linkPositionLeft -= 105;
+            break;
+        case '#fd_tongue':
+            linkPositionTop += 45;
+            linkPositionLeft -= 100;
+            break;
+        case '#fd_sole':
+            linkPositionTop -= 125;
+            linkPositionLeft -= 105;
+            break;
+    }
+    $j(linkTitle).css({top: linkPositionTop, left: linkPositionLeft});
+    $j(linkTitle).addClass('active');
+}
+
 
 // -------------------------------------
 // Document Ready
@@ -185,5 +222,15 @@ $j(document).ready(function() {
 
     // setup scroll arrow
     scrollArrowSetup();
+    
+    if($j(window).width() >= 700 ) {
+        setupFeatureDetails($j('#feature_items_block a.active'));
+
+        $j('#feature_items_block a').click(function() {
+            setupFeatureDetails($j(this));
+            return false;
+        });
+    }
+
 
 }); // end document ready

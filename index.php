@@ -91,38 +91,67 @@
         <section class="feature_block_text">
             <div class="feature_block_text_inner">
                 <h3>Handmade From the Finest Ingredients</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed odio gravida, consequat enim
-                    eu,
-                    tempor nisi. Aenean non est vitae justo ultricies dapibus. Cras sit amet hendrerit ante. Nullam
-                    tincidunt est diam. Aenean vitae dolor luctus, rhoncus tortor a, lobortis lacus.</p>
+                <p>Designed in Mill Valley, CA and metiuculously handcrafted in Portugal, using only the finest European
+                    leathers and materials to the highest standards of quality and attention to detail.</p>
             </div><!-- end feature block text inner -->
         </section><!-- end feature block text -->
         <section class="feature_block_image"></section>
     </section><!-- end feature block -->
+    <section id="feature_block_features" class="feature_block">
+        <section class="feature_block_text">
+            <h3>Elements of Ridiculous Comfort</h3>
+            <p>Hubbards are designed around function first and foremost, to Move, Walk, Work, Live &amp; Play.</p>
+        </section><!-- end feature block text -->
+        <section class="feature_block_image">
+            <div class="feature_block_image_inner">
+                <div id="feature_items_block">
+                    <a href="#fd_heel" class="fi_heel active"><i class="fa fa-plus"></i></a>
+                    <a href="#fd_toe" class="fi_toe"><i class="fa fa-plus"></i></a>
+                    <a href="#fd_insole" class="fi_insole"><i class="fa fa-plus"></i></a>
+                    <a href="#fd_tongue" class="fi_tongue"><i class="fa fa-plus"></i></a>
+                    <a href="#fd_sole" class="fi_sole"><i class="fa fa-plus"></i></a>
+                </div><!-- end feature items -->
+            </div><!-- end feature block image inner -->
+            <div class="feature_details_block">
+                <div id="fd_heel" class="fd_item active">
+                    Hidden padded color means no hard points around the ankle.
+                </div><!-- end feature detail item -->
+                <div id="fd_toe" class="fd_item">
+                    Generously cut toe-box provides ample wiggle room for toes.
+                </div><!-- end feature detail item -->
+                <div id="fd_insole" class="fd_item">
+                    Triple density, memory foam, leather insoles mold to the unique shape of your foot and provide silky smooth feel.
+                </div><!-- end feature detail item -->
+                <div id="fd_tongue" class="fd_item">
+                    Leather lined and softly-padded tongue evenly distributes lace tension across the instep.
+                </div><!-- end feature detail item -->
+                <div id="fd_sole" class="fd_item">
+                    Custom Vibram<sup>&reg;</sup> soles put a spring in your stride and provide all day support for hours on your feet.
+                </div><!-- end feature detail item -->
+            </div><!-- end feature details -->
+        </section><!-- end feature block image -->
+    </section><!-- end feature block -->
     <section id="feature_block_inside" class="feature_block">
         <section class="feature_block_text">
             <h3>As Beautiful on the Inside as the Outside</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed odio gravida, consequat enim eu,
-                tempor nisi. Aenean non est vitae justo ultricies dapibus. Cras sit amet hendrerit ante. Nullam
-                tincidunt est diam. Aenean vitae dolor luctus, rhoncus tortor a, lobortis lacus.</p>
+            <p>Full glove leather lining all the way to the toe, delivers butter soft feel and eliminates pressure
+                points. The lightweight Kevlar shank provides sturdy arch support.</p>
         </section><!-- end feature block text -->
         <section class="feature_block_image"></section>
     </section><!-- end feature block -->
     <section id="feature_block_size" class="feature_block">
         <section class="feature_block_text">
             <h3>Yes, Size Matters</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed odio gravida, consequat enim eu,
-                tempor nisi. Aenean non est vitae justo ultricies dapibus. Cras sit amet hendrerit ante. Nullam
-                tincidunt est diam. Aenean vitae dolor luctus, rhoncus tortor a, lobortis lacus.</p>
+            <p>One size does not fit all. Hubbards undergo extensive fit trials in every size and width to
+                ensure an uncanny, true to size, custom fit feel &mdash; using standard U.S. shoe sizing.</p>
         </section><!-- end feature block text -->
         <section class="feature_block_image"></section>
     </section><!-- end feature block -->
     <section id="feature_block_resole" class="feature_block">
         <section class="feature_block_text">
             <h3>Replaceable Vibram<sup>&reg;</sup> Sole</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed odio gravida, consequat enim eu,
-                tempor nisi. Aenean non est vitae justo ultricies dapibus. Cras sit amet hendrerit ante. Nullam
-                tincidunt est diam. Aenean vitae dolor luctus, rhoncus tortor a, lobortis lacus.</p>
+            <p>Designed and constructed to be seamlessly resoled for years of comfort.</p>
+            <p><a href="#">Resole Program</a></p>
         </section><!-- end feature block text -->
         <section class="feature_block_image"></section>
     </section><!-- end feature block -->

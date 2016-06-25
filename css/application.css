@@ -2828,6 +2828,14 @@ hr.decorative_break_2 {
   background: url("/images/feature_boxes/feature_ingredients.jpg") no-repeat;
   background-size: cover; }
 
+#feature_block_features {
+  background: #ffffff; }
+  #feature_block_features .feature_block_image_inner {
+    position: relative;
+    padding-top: 52%;
+    background: url("/images/feature_boxes/feature_features.jpg") no-repeat;
+    background-size: contain; }
+
 #feature_block_inside {
   background: #f1f1f1; }
   #feature_block_inside .feature_block_image {
@@ -2838,7 +2846,7 @@ hr.decorative_break_2 {
 #feature_block_size {
   background: #ebebed; }
   #feature_block_size .feature_block_image {
-    padding-top: 36%;
+    padding-top: 35.5%;
     background: url("/images/feature_boxes/feature_size.jpg") no-repeat;
     background-size: contain; }
 
@@ -2852,6 +2860,75 @@ hr.decorative_break_2 {
     font-size: 12px;
     font-family: "Lato", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400; }
+
+#feature_items_block a {
+  position: absolute;
+  display: block;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  padding: 5px; }
+  #feature_items_block a i {
+    background: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+    display: block;
+    padding: 5px 6px;
+    border-radius: 50px;
+    font-size: 12px; }
+#feature_items_block a.active {
+  background: rgba(255, 164, 0, 0.5); }
+  #feature_items_block a.active i {
+    background: #ffa400;
+    color: #ffffff; }
+#feature_items_block .fi_heel {
+  top: 30%;
+  left: 10%; }
+#feature_items_block .fi_toe {
+  top: 38%;
+  right: 16%; }
+#feature_items_block .fi_insole {
+  top: 66%;
+  left: 25%; }
+#feature_items_block .fi_tongue {
+  top: 1%;
+  left: 35%; }
+#feature_items_block .fi_sole {
+  top: 77%;
+  right: 30%; }
+
+.feature_details_block .fd_item {
+  display: none;
+  margin: 0 25px 25px 25px;
+  position: relative;
+  background: #f9f9f9;
+  padding: 15px 25px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  color: #808080;
+  font-size: 16px;
+  line-height: 1.2;
+  border-radius: 5px;
+  font-weight: 300; }
+  .feature_details_block .fd_item.active {
+    display: block; }
+  .feature_details_block .fd_item:before {
+    position: absolute;
+    left: -9px;
+    top: 17px;
+    content: '';
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ffd280; }
+  .feature_details_block .fd_item:after {
+    position: absolute;
+    left: -5px;
+    top: 21px;
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ffa400; }
 
 /* ---------------- Site Callout ------------------------------------------ */
 /* ------------------------------------------------------------------ */
@@ -5557,6 +5634,9 @@ hr.decorative_break_2 {
   #feature_block_ingredients .feature_block_text {
     padding: 25px 50px; }
 
+  #feature_block_features .feature_block_image {
+    position: relative; }
+
   #feature_block_inside .feature_block_text {
     padding: 25px 50px; }
 
@@ -5569,6 +5649,92 @@ hr.decorative_break_2 {
     padding: 25px 50px;
     max-width: 800px;
     margin: 0 auto; }
+
+  .feature_details_block .fd_item {
+    position: absolute;
+    width: 250px;
+    padding: 15px;
+    margin: 0;
+    background: #f9f9f9;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+    .feature_details_block .fd_item:before {
+      position: absolute;
+      left: 13px;
+      top: -13px;
+      width: 0;
+      height: 0;
+      border-radius: 0;
+      background: transparent;
+      border-top: none;
+      border-right: 10px solid transparent;
+      border-bottom: 12px solid rgba(0, 0, 0, 0.2);
+      border-left: 10px solid transparent; }
+    .feature_details_block .fd_item:after {
+      position: absolute;
+      left: 15px;
+      top: -10px;
+      width: 0;
+      height: 0;
+      border-radius: 0;
+      background: transparent;
+      border-top: none;
+      border-right: 8px solid transparent;
+      border-bottom: 10px solid #f9f9f9;
+      border-left: 8px solid transparent; }
+  .feature_details_block #fd_toe:before {
+    left: 163px;
+    top: auto;
+    bottom: -12px;
+    border-top: 10px solid rgba(0, 0, 0, 0.1);
+    border-right: 10px solid transparent;
+    border-bottom: none;
+    border-left: 10px solid transparent; }
+  .feature_details_block #fd_toe:after {
+    left: 165px;
+    top: auto;
+    bottom: -10px;
+    border-top: 10px solid #f9f9f9;
+    border-right: 8px solid transparent;
+    border-bottom: none;
+    border-left: 8px solid transparent; }
+  .feature_details_block #fd_insole:before {
+    left: 113px;
+    top: auto;
+    bottom: -12px;
+    border-top: 10px solid rgba(0, 0, 0, 0.1);
+    border-right: 10px solid transparent;
+    border-bottom: none;
+    border-left: 10px solid transparent; }
+  .feature_details_block #fd_insole:after {
+    left: 111px;
+    top: auto;
+    bottom: -10px;
+    border-top: 10px solid #f9f9f9;
+    border-right: 8px solid transparent;
+    border-bottom: none;
+    border-left: 8px solid transparent; }
+  .feature_details_block #fd_tongue:before {
+    left: 104px;
+    top: -13px; }
+  .feature_details_block #fd_tongue:after {
+    left: 106px;
+    top: -10px; }
+  .feature_details_block #fd_sole:before {
+    left: 109px;
+    top: auto;
+    bottom: -12px;
+    border-top: 10px solid rgba(0, 0, 0, 0.1);
+    border-right: 10px solid transparent;
+    border-bottom: none;
+    border-left: 10px solid transparent; }
+  .feature_details_block #fd_sole:after {
+    left: 111px;
+    top: auto;
+    bottom: -10px;
+    border-top: 10px solid #f9f9f9;
+    border-right: 8px solid transparent;
+    border-bottom: none;
+    border-left: 8px solid transparent; }
 
   /* ---------------- Site Callout ------------------------------------------ */
   /* ------------------------------------------------------------------ */
@@ -6118,6 +6284,9 @@ hr.decorative_break_2 {
     font-size: 34px; }
     .center_breaker_inner h2 span {
       top: -15px; }
+
+  .feature_block .feature_block_text {
+    font-size: 18px; }
 
   #feature_block_ingredients {
     overflow: hidden;

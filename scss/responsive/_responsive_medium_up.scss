@@ -11,6 +11,12 @@
         }
     }
 
+    .feature_block {
+        .feature_block_text {
+           font-size: 18px;
+        }
+    }
+
     #feature_block_ingredients {
         overflow: hidden; position: relative; font-size: 0; background: #e3e3e3;
         .feature_block_text { position: absolute; top: 50%; right: 50px; background: transparent; display: block; width: calc(45% - 50px); padding: 0; }

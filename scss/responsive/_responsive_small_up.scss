@@ -30,6 +30,10 @@
         .feature_block_text {padding: 25px 50px; }
     }
 
+    #feature_block_features {
+        .feature_block_image {position: relative; }
+    }
+
     #feature_block_inside {
         .feature_block_text {padding: 25px 50px; }
     }
@@ -41,6 +45,32 @@
     #feature_block_resole {
         .feature_block_text {padding: 25px 50px; max-width: 800px; margin: 0 auto;}
     }
+
+    .feature_details_block {
+        .fd_item {
+            position: absolute; width: 250px; padding: 15px; margin: 0; background: $color_util_1; box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            &:before { position: absolute; left: 13px; top: -13px; width: 0; height: 0; border-radius: 0; background: transparent; border-top: none; border-right: 10px solid transparent; border-bottom: 12px solid rgba(0,0,0,0.2); border-left: 10px solid transparent; }
+            &:after { position: absolute; left: 15px; top: -10px; width: 0; height: 0; border-radius: 0; background: transparent; border-top: none; border-right: 8px solid transparent; border-bottom: 10px solid $color_util_1; border-left: 8px solid transparent;  }
+        }
+        #fd_heel {}
+        #fd_toe {
+            &:before { left: 163px; top: auto; bottom: -12px; border-top: 10px solid rgba(0,0,0,0.1); border-right: 10px solid transparent; border-bottom: none; border-left: 10px solid transparent; }
+            &:after { left: 165px; top: auto; bottom: -10px; border-top: 10px solid $color_util_1;; border-right: 8px solid transparent; border-bottom: none; border-left: 8px solid transparent;  }
+        }
+        #fd_insole {
+            &:before { left: 113px; top: auto; bottom: -12px; border-top: 10px solid rgba(0,0,0,0.1); border-right: 10px solid transparent; border-bottom: none; border-left: 10px solid transparent; }
+            &:after { left: 111px; top: auto; bottom: -10px; border-top: 10px solid $color_util_1;; border-right: 8px solid transparent; border-bottom: none; border-left: 8px solid transparent;  }
+        }
+        #fd_tongue {
+            &:before { left: 104px; top: -13px; }
+            &:after { left: 106px; top: -10px; }
+        }
+        #fd_sole {
+            &:before { left: 109px; top: auto; bottom: -12px; border-top: 10px solid rgba(0,0,0,0.1); border-right: 10px solid transparent; border-bottom: none; border-left: 10px solid transparent; }
+            &:after { left: 111px; top: auto; bottom: -10px; border-top: 10px solid $color_util_1;; border-right: 8px solid transparent; border-bottom: none; border-left: 8px solid transparent;  }
+        }
+    }
+
 
 
     /* ---------------- Site Callout ------------------------------------------ */
