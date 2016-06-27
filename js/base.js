@@ -153,19 +153,19 @@ function setupFeatureDetails(linkElement) {
             }
             $j(linkTitle).css({top: linkPositionTop, left: linkPositionLeft});
         }
-        if($j(window).width() >= 1000) {
+        if($j(window).width() >= 1150) {
             switch(linkTitle) {
                 case '#fd_heel':
-                    linkPositionTop += 52;
-                    linkPositionLeft +=0;
+                    linkPositionTop += 75;
+                    linkPositionLeft +=10;
                     break;
                 case '#fd_tongue':
-                    linkPositionTop += 50;
-                    linkPositionLeft += 2;
+                    linkPositionTop += 70;
+                    linkPositionLeft += 12;
                     break;
                 case '#fd_sole':
                     linkPositionTop += 50;
-                    linkPositionLeft += 3;
+                    linkPositionLeft += 10;
                     break;
             }
             $j(linkTitle).css({top: linkPositionTop, left: linkPositionLeft});
