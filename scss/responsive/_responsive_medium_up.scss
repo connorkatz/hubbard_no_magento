@@ -26,7 +26,7 @@
 
     #feature_block_features {
         overflow: hidden; position: relative;
-        .feature_block_text {position: absolute; top: 41%; left: 50px; background: transparent; display: block; width: calc(40% - 100px); padding: 0; text-align: left;}
+        .feature_block_text {position: absolute; top: 41%; left: 100px; background: transparent; display: block; width: calc(40% - 150px); padding: 0; text-align: left;}
         .feature_block_image {width: 60%; float: right; padding-top: 50px;}
         .feature_block_image_inner { padding-top: 73%;}
     }
