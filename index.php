@@ -106,8 +106,6 @@
             <div class="feature_block_image_inner">
                 <div id="feature_items_block">
                     <a href="#fd_heel" class="fi_heel active"><i class="fa fa-plus"></i></a>
-                    <a href="#fd_toe" class="fi_toe"><i class="fa fa-plus"></i></a>
-                    <a href="#fd_insole" class="fi_insole"><i class="fa fa-plus"></i></a>
                     <a href="#fd_tongue" class="fi_tongue"><i class="fa fa-plus"></i></a>
                     <a href="#fd_sole" class="fi_sole"><i class="fa fa-plus"></i></a>
                 </div><!-- end feature items -->

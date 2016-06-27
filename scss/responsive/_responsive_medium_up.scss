@@ -17,26 +17,18 @@
         }
     }
 
-
-    #feature_block_resole {
-        .feature_block_text {padding: 25px 50px; max-width: 800px; margin: 0 auto;}
-    }
-
     #feature_block_ingredients {
         overflow: hidden; position: relative; font-size: 0; background: #e3e3e3;
-        .feature_block_text { position: absolute; top: 50%; right: 50px; background: transparent; display: block; width: calc(45% - 50px); padding: 0; }
+        .feature_block_text { position: absolute; top: 55%; right: 50px; background: transparent; display: block; width: calc(40% - 50px); padding: 0; text-align: left;}
         .feature_block_text_inner { position: relative; top: -100px; }
-        .feature_block_image { padding-top: 55%; background: url('/images/feature_boxes/feature_ingredients.jpg') no-repeat center center; background-size: contain; display: block; width: 55%; float: left; }
+        .feature_block_image { padding-top: 39%; background: url('/images/feature_boxes/feature_ingredients.jpg') no-repeat top center; background-size: cover; display: block; width: 60%; float: left; }
     }
 
     #feature_block_features {
-        .feature_block_text {padding: 50px 50px; }
-    }
-
-    #feature_block_inside {
         overflow: hidden; position: relative;
-        .feature_block_text { position: absolute; top: 10%; left: 50px; width: 40%; padding: 0; }
-        .feature_block_image { width: 80%; padding-top: 42%; float: right; }
+        .feature_block_text {position: absolute; top: 41%; left: 50px; background: transparent; display: block; width: calc(40% - 100px); padding: 0; text-align: left;}
+        .feature_block_image {width: 60%; float: right; padding-top: 50px;}
+        .feature_block_image_inner { padding-top: 73%;}
     }
 
     #feature_block_size {
@@ -44,7 +36,17 @@
     }
 
     #feature_block_resole {
-        .feature_block_text {padding: 50px 50px;}
+        .feature_block_text {padding: 50px 50px 10px 50px; max-width: 800px; margin: 0 auto;}
+        .feature_block_image {padding-top: 40%;}
+    }
+
+    #feature_items_block {
+        a {
+            i { border-color: $color_brand_primary;}
+        }
+        .fi_heel { top: 31%; left: 18%; }
+        .fi_tongue { top: 4%; left: 48%; }
+        .fi_sole { top: 72%; left: 30%; }
     }
 
     /* ---------------- Header ------------------------------------------ */

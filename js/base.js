@@ -126,41 +126,52 @@ function changeTab(target, tabNav, tabGroup) {
 };
 
 function setupFeatureDetails(linkElement) {
-    var featureItemLinks = $j('#feature_items_block a');
-    var $this = linkElement;
-    var linkPosition = $this.position();
-    var linkPositionTop = linkPosition.top;
-    var linkPositionLeft = linkPosition.left;
-    var linkTitle = $this.attr('href');
-    featureItemLinks.removeClass('active');
-    $this.addClass('active');
-    $j('.fd_item').removeClass('active');
-    if($j(window).width() >= 700) {
-        switch(linkTitle) {
-            case '#fd_heel':
-                linkPositionTop += 45;
-                linkPositionLeft -= 10;
-                break;
-            case '#fd_toe':
-                linkPositionTop -= 100;
-                linkPositionLeft -= 160;
-                break;
-            case '#fd_insole':
-                linkPositionTop -= 120;
-                linkPositionLeft -= 105;
-                break;
-            case '#fd_tongue':
-                linkPositionTop += 45;
-                linkPositionLeft -= 100;
-                break;
-            case '#fd_sole':
-                linkPositionTop -= 125;
-                linkPositionLeft -= 105;
-                break;
+    if($j('#feature_block_features').length) {
+        var featureItemLinks = $j('#feature_items_block a');
+        var $this = linkElement;
+        var linkPosition = $this.position();
+        var linkPositionTop = linkPosition.top;
+        var linkPositionLeft = linkPosition.left;
+        var linkTitle = $this.attr('href');
+        featureItemLinks.removeClass('active');
+        $this.addClass('active');
+        $j('.fd_item').removeClass('active');
+        if($j(window).width() >= 700) {
+            switch(linkTitle) {
+                case '#fd_heel':
+                    linkPositionTop += 48;
+                    linkPositionLeft -= 6;
+                    break;
+                case '#fd_tongue':
+                    linkPositionTop += 45;
+                    linkPositionLeft += 65;
+                    break;
+                case '#fd_sole':
+                    linkPositionTop -= 125;
+                    linkPositionLeft -= 105;
+                    break;
+            }
+            $j(linkTitle).css({top: linkPositionTop, left: linkPositionLeft});
         }
-        $j(linkTitle).css({top: linkPositionTop, left: linkPositionLeft});
+        if($j(window).width() >= 1000) {
+            switch(linkTitle) {
+                case '#fd_heel':
+                    linkPositionTop += 50;
+                    linkPositionLeft -= 1;
+                    break;
+                case '#fd_tongue':
+                    linkPositionTop += 55;
+                    linkPositionLeft -= 98;
+                    break;
+                case '#fd_sole':
+                    linkPositionTop += 50;
+                    linkPositionLeft += 3;
+                    break;
+            }
+            $j(linkTitle).css({top: linkPositionTop, left: linkPositionLeft});
+        }
+        $j(linkTitle).addClass('active');
     }
-    $j(linkTitle).addClass('active');
 }
 
 

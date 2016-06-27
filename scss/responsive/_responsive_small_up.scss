@@ -36,7 +36,7 @@
     }
 
     #feature_block_inside {
-        .feature_block_text {padding: 25px 50px; }
+        .feature_block_text {padding: 25px 50px 0 50px; }
     }
 
     #feature_block_size {
@@ -44,7 +44,7 @@
     }
 
     #feature_block_resole {
-        .feature_block_text {padding: 25px 50px; max-width: 800px; margin: 0 auto;}
+        .feature_block_text {padding: 25px 50px 0 50px; max-width: 800px; margin: 0 auto;}
     }
 
     .feature_details_block {
@@ -63,8 +63,8 @@
             &:after { left: 111px; top: auto; bottom: -10px; border-top: 10px solid $color_util_1;; border-right: 8px solid transparent; border-bottom: none; border-left: 8px solid transparent;  }
         }
         #fd_tongue {
-            &:before { left: 104px; top: -13px; }
-            &:after { left: 106px; top: -10px; }
+            &:before { left: 40px; top: -13px; }
+            &:after { left: 42px; top: -10px; }
         }
         #fd_sole {
             &:before { left: 109px; top: auto; bottom: -12px; border-top: 10px solid rgba(0,0,0,0.1); border-right: 10px solid transparent; border-bottom: none; border-left: 10px solid transparent; }

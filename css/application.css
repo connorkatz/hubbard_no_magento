@@ -2814,7 +2814,6 @@ hr.decorative_break_2 {
     .feature_block .feature_block_text h3 {
       font-family: "DINCondensed-Regular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #4d4d4d;
-      text-align: center;
       text-transform: uppercase;
       font-size: 20px;
       line-height: 1.2;
@@ -2832,19 +2831,19 @@ hr.decorative_break_2 {
   background: #ffffff; }
   #feature_block_features .feature_block_image_inner {
     position: relative;
-    padding-top: 52%;
-    background: url("/images/feature_boxes/feature_features.jpg") no-repeat;
+    padding-top: 60%;
+    background: url("/images/feature_boxes/feature_features_crop.jpg") no-repeat top right;
     background-size: contain; }
 
 #feature_block_inside {
   background: #f1f1f1; }
   #feature_block_inside .feature_block_image {
     padding-top: 53%;
-    background: url("/images/feature_boxes/feature_inside.jpg") no-repeat;
+    background: url("/images/feature_boxes/feature_inside.jpg") no-repeat center center;
     background-size: contain; }
 
 #feature_block_size {
-  background: #ebebed; }
+  background: #ffffff; }
   #feature_block_size .feature_block_image {
     padding-top: 35.5%;
     background: url("/images/feature_boxes/feature_size.jpg") no-repeat;
@@ -2854,7 +2853,7 @@ hr.decorative_break_2 {
   background: #ffffff; }
   #feature_block_resole .feature_block_image {
     padding-top: 46%;
-    background: url("/images/feature_boxes/feature_resole.jpg") no-repeat;
+    background: url("/images/feature_boxes/feature_resole.jpg") no-repeat center center;
     background-size: contain; }
   #feature_block_resole sup {
     font-size: 12px;
@@ -2873,15 +2872,16 @@ hr.decorative_break_2 {
     display: block;
     padding: 5px 6px;
     border-radius: 50px;
-    font-size: 12px; }
+    font-size: 12px;
+    border: 2px solid transparent; }
 #feature_items_block a.active {
   background: rgba(255, 164, 0, 0.5); }
   #feature_items_block a.active i {
     background: #ffa400;
     color: #ffffff; }
 #feature_items_block .fi_heel {
-  top: 30%;
-  left: 10%; }
+  top: 31%;
+  left: 22%; }
 #feature_items_block .fi_toe {
   top: 38%;
   right: 16%; }
@@ -2889,11 +2889,11 @@ hr.decorative_break_2 {
   top: 66%;
   left: 25%; }
 #feature_items_block .fi_tongue {
-  top: 1%;
-  left: 35%; }
+  top: 4%;
+  left: 53%; }
 #feature_items_block .fi_sole {
   top: 77%;
-  right: 30%; }
+  left: 30%; }
 
 .feature_details_block .fd_item {
   display: none;
@@ -5640,7 +5640,7 @@ hr.decorative_break_2 {
     padding: 25px 50px; }
 
   #feature_block_inside .feature_block_text {
-    padding: 25px 50px; }
+    padding: 25px 50px 0 50px; }
 
   #feature_block_size .feature_block_text {
     padding: 25px 50px;
@@ -5648,7 +5648,7 @@ hr.decorative_break_2 {
     margin: 0 auto; }
 
   #feature_block_resole .feature_block_text {
-    padding: 25px 50px;
+    padding: 25px 50px 0 50px;
     max-width: 800px;
     margin: 0 auto; }
 
@@ -5716,10 +5716,10 @@ hr.decorative_break_2 {
     border-bottom: none;
     border-left: 8px solid transparent; }
   .feature_details_block #fd_tongue:before {
-    left: 104px;
+    left: 40px;
     top: -13px; }
   .feature_details_block #fd_tongue:after {
-    left: 106px;
+    left: 42px;
     top: -10px; }
   .feature_details_block #fd_sole:before {
     left: 109px;
@@ -6290,11 +6290,6 @@ hr.decorative_break_2 {
   .feature_block .feature_block_text {
     font-size: 18px; }
 
-  #feature_block_resole .feature_block_text {
-    padding: 25px 50px;
-    max-width: 800px;
-    margin: 0 auto; }
-
   #feature_block_ingredients {
     overflow: hidden;
     position: relative;
@@ -6302,45 +6297,64 @@ hr.decorative_break_2 {
     background: #e3e3e3; }
     #feature_block_ingredients .feature_block_text {
       position: absolute;
-      top: 50%;
+      top: 55%;
       right: 50px;
       background: transparent;
       display: block;
-      width: calc(45% - 50px);
-      padding: 0; }
+      width: calc(40% - 50px);
+      padding: 0;
+      text-align: left; }
     #feature_block_ingredients .feature_block_text_inner {
       position: relative;
       top: -100px; }
     #feature_block_ingredients .feature_block_image {
-      padding-top: 55%;
-      background: url("/images/feature_boxes/feature_ingredients.jpg") no-repeat center center;
-      background-size: contain;
+      padding-top: 39%;
+      background: url("/images/feature_boxes/feature_ingredients.jpg") no-repeat top center;
+      background-size: cover;
       display: block;
-      width: 55%;
+      width: 60%;
       float: left; }
 
-  #feature_block_features .feature_block_text {
-    padding: 50px 50px; }
-
-  #feature_block_inside {
+  #feature_block_features {
     overflow: hidden;
     position: relative; }
-    #feature_block_inside .feature_block_text {
+    #feature_block_features .feature_block_text {
       position: absolute;
-      top: 10%;
+      top: 41%;
       left: 50px;
-      width: 40%;
-      padding: 0; }
-    #feature_block_inside .feature_block_image {
-      width: 80%;
-      padding-top: 42%;
-      float: right; }
+      background: transparent;
+      display: block;
+      width: calc(40% - 100px);
+      padding: 0;
+      text-align: left; }
+    #feature_block_features .feature_block_image {
+      width: 60%;
+      float: right;
+      padding-top: 50px; }
+    #feature_block_features .feature_block_image_inner {
+      padding-top: 73%; }
 
   #feature_block_size .feature_block_text {
     padding: 50px 50px; }
 
   #feature_block_resole .feature_block_text {
-    padding: 50px 50px; }
+    padding: 50px 50px 10px 50px;
+    max-width: 800px;
+    margin: 0 auto; }
+  #feature_block_resole .feature_block_image {
+    padding-top: 40%; }
+
+  #feature_items_block a i {
+    border-color: #ffa400; }
+  #feature_items_block .fi_heel {
+    top: 31%;
+    left: 18%; }
+  #feature_items_block .fi_tongue {
+    top: 4%;
+    left: 48%; }
+  #feature_items_block .fi_sole {
+    top: 72%;
+    left: 30%; }
 
   /* ---------------- Header ------------------------------------------ */
   /* ------------------------------------------------------------------ */
@@ -6739,6 +6753,23 @@ hr.decorative_break_2 {
     width: 25%; }
   .category_banner li:nth-child(n+4) {
     display: inline-block; }
+
+  /* ---------------- Feature Blocks ------------------------------------- */
+  /* ------------------------------------------------------------------ */
+  #feature_block_inside {
+    overflow: hidden;
+    position: relative; }
+    #feature_block_inside .feature_block_text {
+      position: absolute;
+      top: 15%;
+      left: 50px;
+      width: 32%;
+      padding: 0;
+      text-align: left; }
+    #feature_block_inside .feature_block_image {
+      width: 100%;
+      padding-top: 42%;
+      margin-top: 50px; }
 
   /* ---------------- Header ------------------------------------------ */
   /* ------------------------------------------------------------------ */
