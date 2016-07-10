@@ -57,6 +57,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
     .feature_block_text {
         padding: 25px 20px; font-size: 16px; line-height: 1.6; font-weight: 300; text-align: center; color: $color_text_medium;
         h3 { font-family: $font_din_regular; color: $color_text_dark; text-transform: uppercase; font-size: 20px; line-height: 1.2; margin-bottom: 10px; }
+        a {white-space: nowrap;}
     }
 }
 
@@ -78,7 +79,7 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 
 #feature_block_size {
     background: #f1f1f1;
-    .feature_block_image { padding-top: 35.5%; background: url('/images/feature_boxes/feature_size.jpg') no-repeat; background-size: contain; }
+    .feature_block_image { padding-top: 35.8%; background: url('/images/feature_boxes/feature_size.jpg') no-repeat; background-size: contain; }
 }
 
 #feature_block_resole {
@@ -90,15 +91,16 @@ hr.decorative_break_2 { border: none; border-top: 2px solid rgba(0, 0, 0, 0.1); 
 #feature_items_block {
     a {
         position: absolute; display: block; background: rgba(0, 0, 0, 0.2); border-radius: 50%; padding: 5px;
-        i { background: rgba(0, 0, 0, 0.5); color: #ffffff; display: block; padding: 5px 6px; border-radius: 50px; font-size: 12px; border: 3px solid transparent;}
+        i { background: rgba(0, 0, 0, 0.5); color: #ffffff; display: block; padding: 5px 6px; border-radius: 50px; font-size: 12px; }
     }
     a.active {
         background: rgba(255, 164, 0, 0.5);
         i { background: $color_brand_primary; color: $color_text_white; }
     }
     .fi_heel { top: 31%; left: 22%; }
-    .fi_tongue { top: -2%; left: 48%; }
-    .fi_sole { top: 75%; left: 30%; }
+    .fi_tongue { top: 1%; left: 50%; }
+    .fi_sole { top: 75%; left: 25%; }
+    .fi_shank { top: 70%; left: 50%; }
 }
 
 .feature_details_block {

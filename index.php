@@ -91,16 +91,15 @@
         <section class="feature_block_text">
             <div class="feature_block_text_inner">
                 <h3>Handmade From the Finest Ingredients</h3>
-                <p>Designed in Mill Valley, CA and metiuculously handcrafted in Portugal, using only the finest European
-                    leathers and materials to the highest standards of quality and attention to detail.</p>
+                <p>Designed in Mill Valley, CA and meticulously crafted in Portugal. We use only the finest European leathers and materials, and strive to perfect every detail.</p>
             </div><!-- end feature block text inner -->
         </section><!-- end feature block text -->
         <section class="feature_block_image"></section>
     </section><!-- end feature block -->
     <section id="feature_block_features" class="feature_block">
         <section class="feature_block_text">
-            <h3>Elements of Ridiculous Comfort</h3>
-            <p>Hubbards are designed around function first and foremost, to Move, Walk, Work, Live &amp; Play.</p>
+            <h3>The Elements of Comfort</h3>
+            <p>How does the world's most comfortable shoe get that way? We focus on function &mdash; to make every point of contact wonderfully soft and smooth. </p>
         </section><!-- end feature block text -->
         <section class="feature_block_image">
             <div class="feature_block_image_inner">
@@ -108,6 +107,7 @@
                     <a href="#fd_heel" class="fi_heel active"><i class="fa fa-plus"></i></a>
                     <a href="#fd_tongue" class="fi_tongue"><i class="fa fa-plus"></i></a>
                     <a href="#fd_sole" class="fi_sole"><i class="fa fa-plus"></i></a>
+                    <a href="#fd_shank" class="fi_shank"><i class="fa fa-plus"></i></a>
                 </div><!-- end feature items -->
             </div><!-- end feature block image inner -->
             <div class="feature_details_block">
@@ -126,30 +126,30 @@
                 <div id="fd_sole" class="fd_item">
                     Custom Vibram<sup>&reg;</sup> soles put a spring in your stride and provide all day support for hours on your feet.
                 </div><!-- end feature detail item -->
+                <div id="fd_shank" class="fd_item">
+                    Lightweight Kevlar shank provides sturdy arch support.
+                </div><!-- end feature detail item -->
             </div><!-- end feature details -->
         </section><!-- end feature block image -->
     </section><!-- end feature block -->
     <section id="feature_block_inside" class="feature_block">
         <section class="feature_block_text">
-            <h3>As Beautiful on the Inside as the Outside</h3>
-            <p>Full glove leather lining all the way to the toe, delivers butter soft feel and eliminates pressure
-                points. The lightweight Kevlar shank provides sturdy arch support.</p>
+            <h3>Just As Beautiful on the Inside</h3>
+            <p>Glove leather lining from heel to toe delivers a buttery soft feel and eliminates pressure points. Leather&ndash;topped removable insoles provide even more comfort &mdash; or the option to use your own orthotics.</p>
         </section><!-- end feature block text -->
         <section class="feature_block_image"></section>
     </section><!-- end feature block -->
     <section id="feature_block_size" class="feature_block">
         <section class="feature_block_text">
-            <h3>Yes, Size Matters</h3>
-            <p>One size does not fit all. Hubbards undergo extensive fit trials in every size and width to
-                ensure an uncanny, true to size, custom fit feel &mdash; using standard U.S. shoe sizing.</p>
+            <h3>Every Size is Special</h3>
+            <p>Hubbards undergo extensive fit trials in every size and width, ensuring an uncanny, true-to-size, custom fit.</p>
         </section><!-- end feature block text -->
         <section class="feature_block_image"></section>
     </section><!-- end feature block -->
     <section id="feature_block_resole" class="feature_block">
         <section class="feature_block_text">
             <h3>Replaceable Vibram<sup>&reg;</sup> Sole</h3>
-            <p>Designed and constructed to be seamlessly resoled for years of comfort.</p>
-            <p><a href="#">Resole Program</a></p>
+            <p>Hubbard comfort never quits. Our Vibram soles are designed and constructed for easy replacement, to cushion your every step for years to come. Learn more about our <a href="#"> Resole Program</a>.</p>
         </section><!-- end feature block text -->
         <section class="feature_block_image"></section>
     </section><!-- end feature block -->

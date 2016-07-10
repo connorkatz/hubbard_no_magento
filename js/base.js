@@ -144,11 +144,15 @@ function setupFeatureDetails(linkElement) {
                     break;
                 case '#fd_tongue':
                     linkPositionTop += 50;
-                    linkPositionLeft -= 35;
+                    linkPositionLeft -= 32;
                     break;
                 case '#fd_sole':
                     linkPositionTop -= 125;
                     linkPositionLeft -= 105;
+                    break;
+                case '#fd_shank':
+                    linkPositionTop -= 85;
+                    linkPositionLeft -= 25;
                     break;
             }
             $j(linkTitle).css({top: linkPositionTop, left: linkPositionLeft});
@@ -161,11 +165,15 @@ function setupFeatureDetails(linkElement) {
                     break;
                 case '#fd_tongue':
                     linkPositionTop += 70;
-                    linkPositionLeft += 12;
+                    linkPositionLeft += 8;
                     break;
                 case '#fd_sole':
                     linkPositionTop += 50;
                     linkPositionLeft += 10;
+                    break;
+                case '#fd_shank':
+                    linkPositionTop += 50;
+                    linkPositionLeft += 8;
                     break;
             }
             $j(linkTitle).css({top: linkPositionTop, left: linkPositionLeft});

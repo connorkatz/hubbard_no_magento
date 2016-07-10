@@ -13,7 +13,6 @@
         p { margin-bottom: 20px; }
     }
 
-
     /* ---------------- Feature Blocks ------------------------------------- */
     /* ------------------------------------------------------------------ */
     .center_breaker_inner {
@@ -27,58 +26,63 @@
     }
 
     #feature_block_ingredients {
-        .feature_block_text {padding: 25px 50px; }
+        .feature_block_text { padding: 25px 50px; }
     }
 
     #feature_block_features {
-        .feature_block_image {position: relative; }
-        .feature_block_text {padding: 25px 50px;}
+        .feature_block_image { position: relative; }
+        .feature_block_text { padding: 25px 50px; max-width: 70%; margin: 0 auto; }
     }
 
     #feature_block_inside {
-        .feature_block_text {padding: 25px 50px 0 50px; }
+        .feature_block_text { padding: 25px 50px 0 50px; max-width: 70%; margin: 0 auto; }
     }
 
     #feature_block_size {
-        .feature_block_text {padding: 25px 50px; max-width: 800px; margin: 0 auto;}
+        .feature_block_text { padding: 25px 50px; max-width: 70%; max-width: 700px; margin: 0 auto; }
     }
 
     #feature_block_resole {
-        .feature_block_text {padding: 25px 50px 0 50px; max-width: 800px; margin: 0 auto;}
+        .feature_block_text { padding: 25px 50px 0 50px; width: 70%; max-width: 850px; margin: 0 auto; }
     }
 
     #feature_items_block {
+        a {
+            i { border: 3px solid transparent; }
+        }
         .fi_heel { top: 31%; left: 22%; }
-        .fi_tongue { top: 5%; left: 51%; }
+        .fi_tongue { top: 5%; left: 53%; }
         .fi_sole { top: 77%; left: 30%; }
     }
 
     .feature_details_block {
         .fd_item {
-            position: absolute; width: 250px; padding: 15px; margin: 0; background: $color_util_1; box-shadow: 0 1px 2px rgba(0,0,0,0.1);
-            &:before { position: absolute; left: 13px; top: -13px; width: 0; height: 0; border-radius: 0; background: transparent; border-top: none; border-right: 10px solid transparent; border-bottom: 12px solid rgba(0,0,0,0.2); border-left: 10px solid transparent; }
-            &:after { position: absolute; left: 15px; top: -10px; width: 0; height: 0; border-radius: 0; background: transparent; border-top: none; border-right: 8px solid transparent; border-bottom: 10px solid $color_util_1; border-left: 8px solid transparent;  }
+            position: absolute; width: 250px; padding: 15px; margin: 0; background: $color_util_1; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+            &:before { position: absolute; left: 13px; top: -13px; width: 0; height: 0; border-radius: 0; background: transparent; border-top: none; border-right: 10px solid transparent; border-bottom: 12px solid rgba(0, 0, 0, 0.2); border-left: 10px solid transparent; }
+            &:after { position: absolute; left: 15px; top: -10px; width: 0; height: 0; border-radius: 0; background: transparent; border-top: none; border-right: 8px solid transparent; border-bottom: 10px solid $color_util_1; border-left: 8px solid transparent; }
         }
-        #fd_heel {}
+        #fd_heel { }
         #fd_toe {
-            &:before { left: 163px; top: auto; bottom: -12px; border-top: 10px solid rgba(0,0,0,0.1); border-right: 10px solid transparent; border-bottom: none; border-left: 10px solid transparent; }
-            &:after { left: 165px; top: auto; bottom: -10px; border-top: 10px solid $color_util_1;; border-right: 8px solid transparent; border-bottom: none; border-left: 8px solid transparent;  }
+            &:before { left: 163px; top: auto; bottom: -12px; border-top: 10px solid rgba(0, 0, 0, 0.1); border-right: 10px solid transparent; border-bottom: none; border-left: 10px solid transparent; }
+            &:after { left: 165px; top: auto; bottom: -10px; border-top: 10px solid $color_util_1;; border-right: 8px solid transparent; border-bottom: none; border-left: 8px solid transparent; }
         }
         #fd_insole {
-            &:before { left: 113px; top: auto; bottom: -12px; border-top: 10px solid rgba(0,0,0,0.1); border-right: 10px solid transparent; border-bottom: none; border-left: 10px solid transparent; }
-            &:after { left: 111px; top: auto; bottom: -10px; border-top: 10px solid $color_util_1;; border-right: 8px solid transparent; border-bottom: none; border-left: 8px solid transparent;  }
+            &:before { left: 113px; top: auto; bottom: -12px; border-top: 10px solid rgba(0, 0, 0, 0.1); border-right: 10px solid transparent; border-bottom: none; border-left: 10px solid transparent; }
+            &:after { left: 111px; top: auto; bottom: -10px; border-top: 10px solid $color_util_1;; border-right: 8px solid transparent; border-bottom: none; border-left: 8px solid transparent; }
         }
         #fd_tongue {
             &:before { left: 40px; top: -13px; }
             &:after { left: 42px; top: -10px; }
         }
         #fd_sole {
-            &:before { left: 109px; top: auto; bottom: -12px; border-top: 10px solid rgba(0,0,0,0.1); border-right: 10px solid transparent; border-bottom: none; border-left: 10px solid transparent; }
-            &:after { left: 111px; top: auto; bottom: -10px; border-top: 10px solid $color_util_1;; border-right: 8px solid transparent; border-bottom: none; border-left: 8px solid transparent;  }
+            &:before { left: 109px; top: auto; bottom: -12px; border-top: 10px solid rgba(0, 0, 0, 0.1); border-right: 10px solid transparent; border-bottom: none; border-left: 10px solid transparent; }
+            &:after { left: 111px; top: auto; bottom: -10px; border-top: 10px solid $color_util_1; border-right: 8px solid transparent; border-bottom: none; border-left: 8px solid transparent; }
+        }
+        #fd_shank {
+            &:before { left: 32px; top: auto; bottom: -12px; border-top: 10px solid rgba(0, 0, 0, 0.1); border-right: 10px solid transparent; border-bottom: none; border-left: 10px solid transparent; }
+            &:after { left: 35px; top: auto; bottom: -10px; border-top: 10px solid $color_util_1; border-right: 8px solid transparent; border-bottom: none; border-left: 8px solid transparent; }
         }
     }
-
-
 
     /* ---------------- Site Callout ------------------------------------------ */
     /* ------------------------------------------------------------------ */
@@ -112,7 +116,7 @@
     #user_nav {
         padding: 0 20px; top: 10px;
         #account_link { display: inline-block; }
-        #cart_link {margin-left: 15px;}
+        #cart_link { margin-left: 15px; }
         #search_link { margin: 0; }
         #search_link a { padding: 8px 15px; }
     }
@@ -138,7 +142,7 @@
         li { width: auto; font-size: 16px; }
         li:nth-child(n+4) { display: inline-block; }
         li:nth-child(n+6) { display: none; }
-        a { padding: 20px 20px; font-size: 18px;}
+        a { padding: 20px 20px; font-size: 18px; }
     }
 
     #mobile_nav_items .standard_categories {
@@ -154,11 +158,11 @@
             display: inline-block; padding: 5px;
         }
         li:first-of-type {
-            a {font-weight: 400; }
+            a { font-weight: 400; }
         }
     }
 
-    #mobile_support_link {display: none;}
+    #mobile_support_link { display: none; }
 
     /* ---------------- Breadcrumbs ------------------------------------- */
     /* ------------------------------------------------------------------ */
@@ -182,7 +186,7 @@
         p { margin-bottom: 0px; font-size: 10px; }
         li {
             width: 25%;
-            img {max-height: 30px; }
+            img { max-height: 30px; }
         }
         li:last-of-type { display: inline-block; }
     }
@@ -423,17 +427,17 @@
 
     .customer_account_choice_content {
         min-height: 280px;
-        p {min-height: 120px;}
+        p { min-height: 120px; }
     }
 
     .customer_account_block {
         padding: 25px 35px;
-        h2 { font-size: 24px; margin-bottom: 20px;}
+        h2 { font-size: 24px; margin-bottom: 20px; }
     }
 
     .customer_details_block {
         display: inline-block; width: 50%; padding-right: 20px;
-        &.full_width {width: 100%;}
+        &.full_width { width: 100%; }
     }
 
     #customer_add_new_address {
@@ -441,56 +445,56 @@
     }
 
     #customer_orders_header {
-        > ul {padding: 15px 10px;}
+        > ul { padding: 15px 10px; }
         > ul > li { font-size: 14px; }
     }
 
     .customer_orders_item {
-        > ul {padding: 15px 10px;}
+        > ul { padding: 15px 10px; }
         > ul > li { font-size: 14px; }
     }
 
-    .customer_orders_details { border-width: 3px; padding: 25px;}
+    .customer_orders_details { border-width: 3px; padding: 25px; }
 
     .customer_orders_item {
-        i { margin-right: 10px; font-size: 14px;}
+        i { margin-right: 10px; font-size: 14px; }
     }
 
     .customer_order_items_group {
         text-align: left;
-        .item_1 {width: 35%; text-align: left;}
-        .item_2, .item_3 {display: inline-block;}
-        .item_2 {width: 25%;}
-        .item_3 {width: 15%;}
-        .item_4 {width: 10%}
-        .item_5 {width: 15%; text-align: right;}
+        .item_1 { width: 35%; text-align: left; }
+        .item_2, .item_3 { display: inline-block; }
+        .item_2 { width: 25%; }
+        .item_3 { width: 15%; }
+        .item_4 { width: 10% }
+        .item_5 { width: 15%; text-align: right; }
     }
 
     .customer_order_items_header {
-        ul {padding: 10px;}
-        li {font-size: 12px; text-transform: uppercase; display: inline-block; width: calc(100% / 5);}
+        ul { padding: 10px; }
+        li { font-size: 12px; text-transform: uppercase; display: inline-block; width: calc(100% / 5); }
 
     }
 
     .customer_order_item_block {
-        span {display: inline;}
-        > ul {padding: 10px;}
-        > ul > li {text-align: left; font-size: 13px;}
+        span { display: inline; }
+        > ul { padding: 10px; }
+        > ul > li { text-align: left; font-size: 13px; }
     }
 
     #customer_order_items_summary {
-        label {width: calc(100% - 100px); text-align: right;}
-        span {width: 100px;}
+        label { width: calc(100% - 100px); text-align: right; }
+        span { width: 100px; }
     }
 
     /* ---------------- Locations --------------------------------- */
     /* ------------------------------------------------------------------ */
-    #locations_map {display: block;}
+    #locations_map { display: block; }
 
     #locations_items_container {
         li {
             display: inline-block; width: 49.5%; margin-bottom: 10px;
-            &:nth-child(odd) {margin-right: 1%}
+            &:nth-child(odd) { margin-right: 1% }
         }
     }
 }
